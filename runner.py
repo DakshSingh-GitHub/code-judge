@@ -2,8 +2,8 @@ import subprocess
 import tempfile
 import os
 
-
 TIME_LIMIT = 2  # seconds
+
 
 def normalize_output(output: str) -> str:
     lines = output.strip().splitlines()
@@ -11,7 +11,16 @@ def normalize_output(output: str) -> str:
     return "\n".join(normalized_lines)
 
 
-def run_code_multiple(code, test_cases):
+def run_code_multiple(code, test_cases, mode="ALL"):
+    """
+    Runs user code against multiple test cases.
+
+    Modes:
+    - ALL: run all test cases and return detailed results
+    - FIRST_FAIL: stop execution on first non-AC verdict
+    """
+    mode = (mode or "ALL").upper()
+
     with tempfile.NamedTemporaryFile(
         suffix=".py", delete=False, mode="w"
     ) as temp:
@@ -25,7 +34,7 @@ def run_code_multiple(code, test_cases):
     try:
         for index, tc in enumerate(test_cases, start=1):
             user_input = tc.get("input", "")
-            expected_output = tc.get("output", "").strip()
+            expected_output = tc.get("output", "")
 
             try:
                 result = subprocess.run(
@@ -42,6 +51,9 @@ def run_code_multiple(code, test_cases):
                     "error": "Time Limit Exceeded"
                 })
                 final_status = "Time Limit Exceeded"
+
+                if mode == "FIRST_FAIL":
+                    break
                 continue
 
             if result.returncode != 0:
@@ -51,6 +63,9 @@ def run_code_multiple(code, test_cases):
                     "error": result.stderr
                 })
                 final_status = "Runtime Error"
+
+                if mode == "FIRST_FAIL":
+                    break
                 continue
 
             actual_output = normalize_output(result.stdout)
@@ -73,9 +88,12 @@ def run_code_multiple(code, test_cases):
                 })
                 final_status = "Wrong Answer"
 
-        # If all test cases pass
+                if mode == "FIRST_FAIL":
+                    break
+
         return {
             "final_status": final_status,
+            "mode": mode,
             "summary": {
                 "passed": passed_count,
                 "total": len(test_cases)
