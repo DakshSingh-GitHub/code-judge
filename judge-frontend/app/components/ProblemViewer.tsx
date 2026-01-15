@@ -1,0 +1,82 @@
+interface Problem {
+    title: string;
+    description: string;
+    input_format?: string;
+    output_format?: string;
+    constraints?: Record<string, unknown>;
+}
+
+interface ProblemViewerProps {
+    problem: Problem | null;
+}
+
+export default function ProblemViewer({ problem }: ProblemViewerProps) {
+    if (!problem) {
+        return (
+            <div className="flex flex-col items-center justify-center h-full text-center">
+                <h3 className="text-lg font-medium text-gray-900 dark:text-gray-50">
+                    No Problem Selected
+                </h3>
+                <p className="mt-1 text-sm text-gray-500 dark:text-gray-400">
+                    Please choose a problem from the dropdown above to see its
+                    details.
+                </p>
+            </div>
+        );
+    }
+
+    return (
+        <div className="space-y-6">
+            <h2 className="text-3xl font-bold tracking-tight text-gray-900 dark:text-gray-50">
+                {problem.title}
+            </h2>
+
+            <div className="prose prose-lg dark:prose-invert max-w-none">
+                <p>{problem.description}</p>
+            </div>
+
+            {problem.input_format && (
+                <div className="space-y-2">
+                    <h4 className="text-xl font-semibold text-gray-900 dark:text-gray-50">
+                        Input Format
+                    </h4>
+                    <p className="text-gray-600 dark:text-gray-300">
+                        {problem.input_format}
+                    </p>
+                </div>
+            )}
+
+            {problem.output_format && (
+                <div className="space-y-2">
+                    <h4 className="text-xl font-semibold text-gray-900 dark:text-gray-50">
+                        Output Format
+                    </h4>
+                    <p className="text-gray-600 dark:text-gray-300">
+                        {problem.output_format}
+                    </p>
+                </div>
+            )}
+
+            {problem.constraints && (
+                <div className="space-y-2">
+                    <h4 className="text-xl font-semibold text-gray-900 dark:text-gray-50">
+                        Constraints
+                    </h4>
+                    <pre className="mt-1 p-4 bg-gray-100 dark:bg-gray-900 rounded-md text-sm text-gray-800 dark:text-gray-200 overflow-x-auto">
+                        <code>
+                            {problem.constraints && typeof problem.constraints === 'object' ? (
+                                Object.entries(problem.constraints).map(([key, value], i) => (
+                                    <div key={i}>
+                                        <strong>{key}:</strong> {String(value)}
+                                    </div>
+                                ))
+                            ) : (
+                                problem.constraints
+                            )}
+                        </code>
+                    </pre>
+                </div>
+            )}
+        </div>
+    );
+}
