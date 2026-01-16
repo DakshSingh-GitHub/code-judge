@@ -1,20 +1,164 @@
 {
-  "id": "sum_of_doubles",
-  "title": "Sum of Doubles",
-  "description": "Given an integer N, print 2 × N.",
-  "input_format": "A single integer N",
-  "output_format": "A single integer",
-  "constraints": {
-    "N": "1 ≤ N ≤ 10⁹"
-  },
-  "judge_mode": "FIRST_FAIL",
-  "time_limit": 2,
-  "sample_test_cases": [
-    { "input": "2", "output": "4" },
-    { "input": "5", "output": "10" }
-  ],
-  "hidden_test_cases": [
-    { "input": "100", "output": "200" },
-    { "input": "999", "output": "1998" }
-  ]
+    "id": "sum_of_doubles",
+    "title": "Sum of Doubles",
+    "description": "Given an integer N, print 2 \u00d7 N.",
+    "input_format": "A single integer N",
+    "output_format": "A single integer",
+    "constraints": {
+        "N": "1 \u2264 N \u2264 10\u2079"
+    },
+    "judge_mode": "FIRST_FAIL",
+    "time_limit": 2,
+    "sample_test_cases": [
+        {
+            "input": "2",
+            "output": "4"
+        },
+        {
+            "input": "5",
+            "output": "10"
+        }
+    ],
+    "hidden_test_cases": [
+        {
+            "input": "100",
+            "output": "200"
+        },
+        {
+            "input": "999",
+            "output": "1998"
+        },
+        {
+            "input": "554",
+            "output": "1108"
+        },
+        {
+            "input": "140",
+            "output": "280"
+        },
+        {
+            "input": "920",
+            "output": "1840"
+        },
+        {
+            "input": "314",
+            "output": "628"
+        },
+        {
+            "input": "567",
+            "output": "1134"
+        },
+        {
+            "input": "562",
+            "output": "1124"
+        },
+        {
+            "input": "939",
+            "output": "1878"
+        },
+        {
+            "input": "79",
+            "output": "158"
+        },
+        {
+            "input": "391",
+            "output": "782"
+        },
+        {
+            "input": "564",
+            "output": "1128"
+        },
+        {
+            "input": "924",
+            "output": "1848"
+        },
+        {
+            "input": "73",
+            "output": "146"
+        },
+        {
+            "input": "403",
+            "output": "806"
+        },
+        {
+            "input": "676",
+            "output": "1352"
+        },
+        {
+            "input": "572",
+            "output": "1144"
+        },
+        {
+            "input": "478",
+            "output": "956"
+        },
+        {
+            "input": "270",
+            "output": "540"
+        },
+        {
+            "input": "980",
+            "output": "1960"
+        },
+        {
+            "input": "655",
+            "output": "1310"
+        },
+        {
+            "input": "158",
+            "output": "316"
+        },
+        {
+            "input": "136",
+            "output": "272"
+        },
+        {
+            "input": "977",
+            "output": "1954"
+        },
+        {
+            "input": "431",
+            "output": "862"
+        },
+        {
+            "input": "562",
+            "output": "1124"
+        },
+        {
+            "input": "258",
+            "output": "516"
+        },
+        {
+            "input": "909",
+            "output": "1818"
+        },
+        {
+            "input": "128",
+            "output": "256"
+        },
+        {
+            "input": "425",
+            "output": "850"
+        },
+        {
+            "input": "818",
+            "output": "1636"
+        },
+        {
+            "input": "71",
+            "output": "142"
+        },
+        {
+            "input": "394",
+            "output": "788"
+        },
+        {
+            "input": "894",
+            "output": "1788"
+        },
+        {
+            "input": "376",
+            "output": "752"
+        }
+    ]
 }

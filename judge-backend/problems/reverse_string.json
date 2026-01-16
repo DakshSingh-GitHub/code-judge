@@ -1,20 +1,164 @@
 {
-  "id": "reverse_string",
-  "title": "Reverse a String",
-  "description": "Given a string S, print the reversed string.",
-  "input_format": "A single string S.",
-  "output_format": "The reversed string.",
-  "constraints": {
-    "S": "1 <= length(S) <= 1000"
-  },
-  "judge_mode": "FIRST_FAIL",
-  "time_limit": 1,
-  "sample_test_cases": [
-    { "input": "hello", "output": "olleh" },
-    { "input": "world", "output": "dlrow" }
-  ],
-  "hidden_test_cases": [
-    { "input": "madam", "output": "madam" },
-    { "input": "A man a plan a canal Panama", "output": "amanaP lanac a nalp a nam A" }
-  ]
+    "id": "reverse_string",
+    "title": "Reverse a String",
+    "description": "Given a string S, print the reversed string.",
+    "input_format": "A single string S.",
+    "output_format": "The reversed string.",
+    "constraints": {
+        "S": "1 <= length(S) <= 1000"
+    },
+    "judge_mode": "FIRST_FAIL",
+    "time_limit": 1,
+    "sample_test_cases": [
+        {
+            "input": "hello",
+            "output": "olleh"
+        },
+        {
+            "input": "world",
+            "output": "dlrow"
+        }
+    ],
+    "hidden_test_cases": [
+        {
+            "input": "madam",
+            "output": "madam"
+        },
+        {
+            "input": "A man a plan a canal Panama",
+            "output": "amanaP lanac a nalp a nam A"
+        },
+        {
+            "input": "abdeddceggab",
+            "output": "baggecddedba"
+        },
+        {
+            "input": "cgdgcgbecdbdfd",
+            "output": "dfdbdcebgcgdgc"
+        },
+        {
+            "input": "edaadfdgdfga",
+            "output": "agfdgdfdaade"
+        },
+        {
+            "input": "cdacefdfaa",
+            "output": "aafdfecadc"
+        },
+        {
+            "input": "fgbaedfdfcbc",
+            "output": "cbcfdfdeabgf"
+        },
+        {
+            "input": "eefeegb",
+            "output": "bgeefee"
+        },
+        {
+            "input": "fgacgedgdgacga",
+            "output": "agcagdgdegcagf"
+        },
+        {
+            "input": "ccbfg",
+            "output": "gfbcc"
+        },
+        {
+            "input": "cgfaee",
+            "output": "eeafgc"
+        },
+        {
+            "input": "cccgbfadd",
+            "output": "ddafbgccc"
+        },
+        {
+            "input": "afadcagb",
+            "output": "bgacdafa"
+        },
+        {
+            "input": "bfbe",
+            "output": "ebfb"
+        },
+        {
+            "input": "fbcgfe",
+            "output": "efgcbf"
+        },
+        {
+            "input": "ebfc",
+            "output": "cfbe"
+        },
+        {
+            "input": "dagedg",
+            "output": "gdegad"
+        },
+        {
+            "input": "fafbacccd",
+            "output": "dcccabfaf"
+        },
+        {
+            "input": "dgeagbccg",
+            "output": "gccbgaegd"
+        },
+        {
+            "input": "fbdgebddddfag",
+            "output": "gafddddbegdbf"
+        },
+        {
+            "input": "feff",
+            "output": "ffef"
+        },
+        {
+            "input": "eaaabdgfbabc",
+            "output": "cbabfgdbaaae"
+        },
+        {
+            "input": "edcb",
+            "output": "bcde"
+        },
+        {
+            "input": "gggdadbdbfg",
+            "output": "gfbdbdadggg"
+        },
+        {
+            "input": "agbcb",
+            "output": "bcbga"
+        },
+        {
+            "input": "bgfgdgb",
+            "output": "bgdgfgb"
+        },
+        {
+            "input": "dggfbgcadf",
+            "output": "fdacgbfggd"
+        },
+        {
+            "input": "adafg",
+            "output": "gfada"
+        },
+        {
+            "input": "fddbdcdaac",
+            "output": "caadcdbddf"
+        },
+        {
+            "input": "dfbdfbfdcadc",
+            "output": "cdacdfbfdbfd"
+        },
+        {
+            "input": "dbbeeefd",
+            "output": "dfeeebbd"
+        },
+        {
+            "input": "efdadafagbggf",
+            "output": "fggbgafadadfe"
+        },
+        {
+            "input": "fgddbgddg",
+            "output": "gddgbddgf"
+        },
+        {
+            "input": "gggedb",
+            "output": "bdeggg"
+        },
+        {
+            "input": "efa",
+            "output": "afe"
+        }
+    ]
 }

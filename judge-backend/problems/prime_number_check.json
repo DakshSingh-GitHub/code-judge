@@ -1,20 +1,164 @@
 {
-  "id": "prime_number_check",
-  "title": "Prime Number Check",
-  "description": "Determine if a given integer N is a prime number.",
-  "input_format": "A single integer N.",
-  "output_format": "Print 'Yes' if N is prime, otherwise print 'No'.",
-  "constraints": {
-    "N": "1 <= N <= 10^9"
-  },
-  "judge_mode": "FIRST_FAIL",
-  "time_limit": 1,
-  "sample_test_cases": [
-    { "input": "7", "output": "Yes" },
-    { "input": "10", "output": "No" }
-  ],
-  "hidden_test_cases": [
-    { "input": "97", "output": "Yes" },
-    { "input": "1", "output": "No" }
-  ]
+    "id": "prime_number_check",
+    "title": "Prime Number Check",
+    "description": "Determine if a given integer N is a prime number.",
+    "input_format": "A single integer N.",
+    "output_format": "Print 'Yes' if N is prime, otherwise print 'No'.",
+    "constraints": {
+        "N": "1 <= N <= 10^9"
+    },
+    "judge_mode": "FIRST_FAIL",
+    "time_limit": 1,
+    "sample_test_cases": [
+        {
+            "input": "7",
+            "output": "Yes"
+        },
+        {
+            "input": "10",
+            "output": "No"
+        }
+    ],
+    "hidden_test_cases": [
+        {
+            "input": "97",
+            "output": "Yes"
+        },
+        {
+            "input": "1",
+            "output": "No"
+        },
+        {
+            "input": "488",
+            "output": "No"
+        },
+        {
+            "input": "375",
+            "output": "No"
+        },
+        {
+            "input": "244",
+            "output": "No"
+        },
+        {
+            "input": "376",
+            "output": "No"
+        },
+        {
+            "input": "326",
+            "output": "No"
+        },
+        {
+            "input": "466",
+            "output": "No"
+        },
+        {
+            "input": "156",
+            "output": "No"
+        },
+        {
+            "input": "93",
+            "output": "No"
+        },
+        {
+            "input": "63",
+            "output": "No"
+        },
+        {
+            "input": "9",
+            "output": "No"
+        },
+        {
+            "input": "259",
+            "output": "No"
+        },
+        {
+            "input": "106",
+            "output": "No"
+        },
+        {
+            "input": "341",
+            "output": "No"
+        },
+        {
+            "input": "179",
+            "output": "Yes"
+        },
+        {
+            "input": "320",
+            "output": "No"
+        },
+        {
+            "input": "66",
+            "output": "No"
+        },
+        {
+            "input": "54",
+            "output": "No"
+        },
+        {
+            "input": "316",
+            "output": "No"
+        },
+        {
+            "input": "395",
+            "output": "No"
+        },
+        {
+            "input": "469",
+            "output": "No"
+        },
+        {
+            "input": "384",
+            "output": "No"
+        },
+        {
+            "input": "149",
+            "output": "Yes"
+        },
+        {
+            "input": "49",
+            "output": "No"
+        },
+        {
+            "input": "421",
+            "output": "Yes"
+        },
+        {
+            "input": "302",
+            "output": "No"
+        },
+        {
+            "input": "174",
+            "output": "No"
+        },
+        {
+            "input": "370",
+            "output": "No"
+        },
+        {
+            "input": "476",
+            "output": "No"
+        },
+        {
+            "input": "322",
+            "output": "No"
+        },
+        {
+            "input": "12",
+            "output": "No"
+        },
+        {
+            "input": "169",
+            "output": "No"
+        },
+        {
+            "input": "204",
+            "output": "No"
+        },
+        {
+            "input": "120",
+            "output": "No"
+        }
+    ]
 }

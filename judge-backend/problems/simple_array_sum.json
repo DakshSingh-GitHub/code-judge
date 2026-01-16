@@ -1,21 +1,165 @@
 {
-  "id": "simple_array_sum",
-  "title": "Simple Array Sum",
-  "description": "Given a list of space-separated integers, calculate their sum.",
-  "input_format": "A single line of space-separated integers.",
-  "output_format": "The sum of the integers.",
-  "constraints": {
-    "list_elements": "-1000 <= element <= 1000",
-    "list_length": "1 <= length <= 100"
-  },
-  "judge_mode": "FIRST_FAIL",
-  "time_limit": 1,
-  "sample_test_cases": [
-    { "input": "1 2 3 4 5", "output": "15" },
-    { "input": "10 20 30", "output": "60" }
-  ],
-  "hidden_test_cases": [
-    { "input": "-1 -2 -3", "output": "-6" },
-    { "input": "0 0 0 0", "output": "0" }
-  ]
+    "id": "simple_array_sum",
+    "title": "Simple Array Sum",
+    "description": "Given a list of space-separated integers, calculate their sum.",
+    "input_format": "A single line of space-separated integers.",
+    "output_format": "The sum of the integers.",
+    "constraints": {
+        "list_elements": "-1000 <= element <= 1000",
+        "list_length": "1 <= length <= 100"
+    },
+    "judge_mode": "FIRST_FAIL",
+    "time_limit": 1,
+    "sample_test_cases": [
+        {
+            "input": "1 2 3 4 5",
+            "output": "15"
+        },
+        {
+            "input": "10 20 30",
+            "output": "60"
+        }
+    ],
+    "hidden_test_cases": [
+        {
+            "input": "-1 -2 -3",
+            "output": "-6"
+        },
+        {
+            "input": "0 0 0 0",
+            "output": "0"
+        },
+        {
+            "input": "7\n4 77 61 90 85 37 43",
+            "output": "397"
+        },
+        {
+            "input": "13\n39 86 4 40 34 97 44 95 41 70 87 59 76",
+            "output": "772"
+        },
+        {
+            "input": "3\n54 15 77",
+            "output": "146"
+        },
+        {
+            "input": "9\n77 93 78 91 91 12 19 57 13",
+            "output": "531"
+        },
+        {
+            "input": "20\n42 93 4 65 96 67 13 89 86 21 72 29 21 40 24 44 3 97 54 38",
+            "output": "998"
+        },
+        {
+            "input": "10\n25 80 87 50 35 5 87 56 73 73",
+            "output": "571"
+        },
+        {
+            "input": "9\n21 69 74 82 28 10 42 10 10",
+            "output": "346"
+        },
+        {
+            "input": "16\n39 5 3 49 94 32 93 78 30 39 1 61 58 3 17 22",
+            "output": "624"
+        },
+        {
+            "input": "11\n38 38 30 75 23 88 87 47 29 14 55",
+            "output": "524"
+        },
+        {
+            "input": "18\n85 18 39 78 48 96 58 62 78 42 37 5 86 64 17 29 54 7",
+            "output": "903"
+        },
+        {
+            "input": "15\n13 77 70 81 77 53 61 81 37 19 24 7 53 26 22",
+            "output": "701"
+        },
+        {
+            "input": "14\n73 3 9 1 92 88 15 97 94 34 2 62 2 96",
+            "output": "668"
+        },
+        {
+            "input": "20\n62 46 79 28 93 43 47 47 81 44 67 53 64 87 36 43 85 23 51 71",
+            "output": "1150"
+        },
+        {
+            "input": "19\n22 42 30 4 7 74 8 32 70 42 6 51 85 96 36 68 36 95 13",
+            "output": "817"
+        },
+        {
+            "input": "13\n67 78 96 86 14 33 66 78 42 51 41 66 39",
+            "output": "757"
+        },
+        {
+            "input": "14\n13 70 68 69 37 76 84 80 23 87 18 77 71 61",
+            "output": "834"
+        },
+        {
+            "input": "4\n43 72 68 41",
+            "output": "224"
+        },
+        {
+            "input": "5\n48 1 57 97 69",
+            "output": "272"
+        },
+        {
+            "input": "13\n42 82 19 56 55 52 2 79 9 68 32 55 100",
+            "output": "651"
+        },
+        {
+            "input": "19\n25 42 75 25 9 32 28 43 3 70 20 39 38 99 35 94 98 1 9",
+            "output": "785"
+        },
+        {
+            "input": "12\n68 3 34 70 87 44 81 75 42 50 87 92",
+            "output": "733"
+        },
+        {
+            "input": "6\n81 1 23 46 71 92",
+            "output": "314"
+        },
+        {
+            "input": "14\n80 36 92 27 96 92 37 33 42 97 93 82 48 12",
+            "output": "867"
+        },
+        {
+            "input": "9\n99 87 23 73 51 46 58 82 39",
+            "output": "558"
+        },
+        {
+            "input": "6\n36 73 31 94 89 27",
+            "output": "350"
+        },
+        {
+            "input": "16\n19 5 60 34 9 1 73 29 70 36 52 76 63 33 67 17",
+            "output": "644"
+        },
+        {
+            "input": "7\n71 82 32 95 30 48 92",
+            "output": "450"
+        },
+        {
+            "input": "9\n67 72 15 70 17 81 62 15 80",
+            "output": "479"
+        },
+        {
+            "input": "14\n60 71 58 95 69 12 9 32 23 32 60 24 98 97",
+            "output": "740"
+        },
+        {
+            "input": "11\n91 5 8 74 53 98 23 81 35 93 18",
+            "output": "579"
+        },
+        {
+            "input": "9\n78 77 94 20 21 2 90 67 79",
+            "output": "528"
+        },
+        {
+            "input": "9\n27 57 50 17 28 16 92 77 22",
+            "output": "386"
+        },
+        {
+            "input": "19\n55 10 62 12 66 51 94 78 45 63 86 1 75 29 14 88 35 34 92",
+            "output": "990"
+        }
+    ]
 }

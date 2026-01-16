@@ -1,21 +1,165 @@
 {
-  "id": "area_of_a_rectangle",
-  "title": "Area of a Rectangle",
-  "description": "Given the length and width of a rectangle, calculate its area.",
-  "input_format": "Two space-separated integers, length and width.",
-  "output_format": "The area of the rectangle.",
-  "constraints": {
-    "length": "1 <= length <= 1000",
-    "width": "1 <= width <= 1000"
-  },
-  "judge_mode": "FIRST_FAIL",
-  "time_limit": 1,
-  "sample_test_cases": [
-    { "input": "5 10", "output": "50" },
-    { "input": "3 7", "output": "21" }
-  ],
-  "hidden_test_cases": [
-    { "input": "100 100", "output": "10000" },
-    { "input": "1 1", "output": "1" }
-  ]
+    "id": "area_of_a_rectangle",
+    "title": "Area of a Rectangle",
+    "description": "Given the length and width of a rectangle, calculate its area.",
+    "input_format": "Two space-separated integers, length and width.",
+    "output_format": "The area of the rectangle.",
+    "constraints": {
+        "length": "1 <= length <= 1000",
+        "width": "1 <= width <= 1000"
+    },
+    "judge_mode": "FIRST_FAIL",
+    "time_limit": 1,
+    "sample_test_cases": [
+        {
+            "input": "5 10",
+            "output": "50"
+        },
+        {
+            "input": "3 7",
+            "output": "21"
+        }
+    ],
+    "hidden_test_cases": [
+        {
+            "input": "100 100",
+            "output": "10000"
+        },
+        {
+            "input": "1 1",
+            "output": "1"
+        },
+        {
+            "input": "589 369",
+            "output": "217341"
+        },
+        {
+            "input": "569 350",
+            "output": "199150"
+        },
+        {
+            "input": "421 574",
+            "output": "241654"
+        },
+        {
+            "input": "837 425",
+            "output": "355725"
+        },
+        {
+            "input": "789 580",
+            "output": "457620"
+        },
+        {
+            "input": "922 542",
+            "output": "499724"
+        },
+        {
+            "input": "959 705",
+            "output": "676095"
+        },
+        {
+            "input": "747 545",
+            "output": "407115"
+        },
+        {
+            "input": "349 747",
+            "output": "260703"
+        },
+        {
+            "input": "425 802",
+            "output": "340850"
+        },
+        {
+            "input": "301 421",
+            "output": "126721"
+        },
+        {
+            "input": "941 629",
+            "output": "591889"
+        },
+        {
+            "input": "769 220",
+            "output": "169180"
+        },
+        {
+            "input": "521 573",
+            "output": "298533"
+        },
+        {
+            "input": "176 677",
+            "output": "119152"
+        },
+        {
+            "input": "275 422",
+            "output": "116050"
+        },
+        {
+            "input": "783 893",
+            "output": "699219"
+        },
+        {
+            "input": "414 155",
+            "output": "64170"
+        },
+        {
+            "input": "392 58",
+            "output": "22736"
+        },
+        {
+            "input": "686 854",
+            "output": "585844"
+        },
+        {
+            "input": "921 734",
+            "output": "676014"
+        },
+        {
+            "input": "489 479",
+            "output": "234231"
+        },
+        {
+            "input": "151 951",
+            "output": "143601"
+        },
+        {
+            "input": "188 420",
+            "output": "78960"
+        },
+        {
+            "input": "600 985",
+            "output": "591000"
+        },
+        {
+            "input": "787 745",
+            "output": "586315"
+        },
+        {
+            "input": "266 971",
+            "output": "258286"
+        },
+        {
+            "input": "767 417",
+            "output": "319839"
+        },
+        {
+            "input": "557 796",
+            "output": "443372"
+        },
+        {
+            "input": "778 379",
+            "output": "294862"
+        },
+        {
+            "input": "469 804",
+            "output": "377076"
+        },
+        {
+            "input": "298 766",
+            "output": "228268"
+        },
+        {
+            "input": "778 91",
+            "output": "70798"
+        }
+    ]
 }

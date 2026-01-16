@@ -1,21 +1,168 @@
 {
-  "id": "even_or_odd",
-  "title": "Even or Odd",
-  "description": "Given an integer N, determine if it is even or odd.",
-  "input_format": "A single integer N",
-  "output_format": "Print 'Even' if N is even, 'Odd' otherwise.",
-  "constraints": {
-    "N": "1 <= N <= 1000000000"
-  },
-  "judge_mode": "FIRST_FAIL",
-  "time_limit": 1,
-  "sample_test_cases": [
-    { "input": "2", "output": "Even" },
-    { "input": "7", "output": "Odd" }
-  ],
-  "hidden_test_cases": [
-    { "input": "100", "output": "Even" },
-    { "input": "999", "output": "Odd" },
-    { "input": "0", "output": "Even" }
-  ]
+    "id": "even_or_odd",
+    "title": "Even or Odd",
+    "description": "Given an integer N, determine if it is even or odd.",
+    "input_format": "A single integer N",
+    "output_format": "Print 'Even' if N is even, 'Odd' otherwise.",
+    "constraints": {
+        "N": "1 <= N <= 1000000000"
+    },
+    "judge_mode": "FIRST_FAIL",
+    "time_limit": 1,
+    "sample_test_cases": [
+        {
+            "input": "2",
+            "output": "Even"
+        },
+        {
+            "input": "7",
+            "output": "Odd"
+        }
+    ],
+    "hidden_test_cases": [
+        {
+            "input": "100",
+            "output": "Even"
+        },
+        {
+            "input": "999",
+            "output": "Odd"
+        },
+        {
+            "input": "0",
+            "output": "Even"
+        },
+        {
+            "input": "85317",
+            "output": "Odd"
+        },
+        {
+            "input": "1556",
+            "output": "Even"
+        },
+        {
+            "input": "50460",
+            "output": "Even"
+        },
+        {
+            "input": "55228",
+            "output": "Even"
+        },
+        {
+            "input": "4119",
+            "output": "Odd"
+        },
+        {
+            "input": "44047",
+            "output": "Odd"
+        },
+        {
+            "input": "64665",
+            "output": "Odd"
+        },
+        {
+            "input": "75376",
+            "output": "Even"
+        },
+        {
+            "input": "39453",
+            "output": "Odd"
+        },
+        {
+            "input": "50112",
+            "output": "Even"
+        },
+        {
+            "input": "8584",
+            "output": "Even"
+        },
+        {
+            "input": "76100",
+            "output": "Even"
+        },
+        {
+            "input": "22527",
+            "output": "Odd"
+        },
+        {
+            "input": "32906",
+            "output": "Even"
+        },
+        {
+            "input": "62581",
+            "output": "Odd"
+        },
+        {
+            "input": "63169",
+            "output": "Odd"
+        },
+        {
+            "input": "17002",
+            "output": "Even"
+        },
+        {
+            "input": "41400",
+            "output": "Even"
+        },
+        {
+            "input": "64613",
+            "output": "Odd"
+        },
+        {
+            "input": "62886",
+            "output": "Even"
+        },
+        {
+            "input": "50255",
+            "output": "Odd"
+        },
+        {
+            "input": "29031",
+            "output": "Odd"
+        },
+        {
+            "input": "57733",
+            "output": "Odd"
+        },
+        {
+            "input": "90138",
+            "output": "Even"
+        },
+        {
+            "input": "33765",
+            "output": "Odd"
+        },
+        {
+            "input": "22040",
+            "output": "Even"
+        },
+        {
+            "input": "17169",
+            "output": "Odd"
+        },
+        {
+            "input": "36032",
+            "output": "Even"
+        },
+        {
+            "input": "60768",
+            "output": "Even"
+        },
+        {
+            "input": "32067",
+            "output": "Odd"
+        },
+        {
+            "input": "45536",
+            "output": "Even"
+        },
+        {
+            "input": "74497",
+            "output": "Odd"
+        },
+        {
+            "input": "70945",
+            "output": "Odd"
+        }
+    ]
 }
