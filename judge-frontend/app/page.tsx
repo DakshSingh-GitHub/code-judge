@@ -5,8 +5,10 @@ import { getProblemById, submitCode } from "./lib/api";
 import ProblemList from "./components/ProblemList";
 import ProblemViewer from "./components/ProblemViewer";
 import CodeEditor from "./components/CodeEditor";
+import ThemeToggle from "./components/ThemeToggle";
 
 const DEFAULT_CODE = "#Write your code here";
+const TITLE = "Code Judge";
 
 export default function Home() {
     const [problem, setProblem] = useState(null);
@@ -114,24 +116,25 @@ export default function Home() {
     return (
         <div className="min-h-screen bg-gray-50 dark:bg-gray-900 text-gray-900 dark:text-gray-50">
             <main className="flex h-screen flex-col">
-                <header className="bg-white dark:bg-gray-800 shadow border-b border-gray-200 dark:border-gray-700 px-6 py-6">
-                    <div className="flex items-center justify-center">
+                <header className="bg-white dark:bg-gray-800 shadow border-b border-gray-200 dark:border-gray-700 px-6 py-6 transition-colors duration-500">
+                    <div className="flex items-center justify-between">
                         <div>
                             <h1 className="text-3xl font-extrabold tracking-tight">
-                                Mini Online Judge
+                                {TITLE}
                             </h1>
                             <p className="mt-2 text-gray-500 dark:text-gray-400">
                                 Select a problem and start coding!
                             </p>
                         </div>
+                        <ThemeToggle />
                     </div>
                 </header>
 
                 <div
                     ref={containerRef}
                     className={`flex flex-1 overflow-hidden gap-4 p-4 ${isDraggingSidebar || isDraggingHorizontal
-                            ? "select-none"
-                            : ""
+                        ? "select-none"
+                        : ""
                         }`}
                 >
                     {/* Left Sidebar - Problem List */}
