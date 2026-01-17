@@ -411,6 +411,406 @@
         {
             "input": "CCB",
             "output": "BCC\nCBC\nCCB"
+        },
+        {
+            "input": "CB",
+            "output": "BC\nCB"
+        },
+        {
+            "input": "CCB",
+            "output": "BCC\nCBC\nCCB"
+        },
+        {
+            "input": "CA",
+            "output": "AC\nCA"
+        },
+        {
+            "input": "BBC",
+            "output": "BBC\nBCB\nCBB"
+        },
+        {
+            "input": "ABA",
+            "output": "AAB\nABA\nBAA"
+        },
+        {
+            "input": "BAC",
+            "output": "ABC\nACB\nBAC\nBCA\nCAB\nCBA"
+        },
+        {
+            "input": "AAC",
+            "output": "AAC\nACA\nCAA"
+        },
+        {
+            "input": "CAB",
+            "output": "ABC\nACB\nBAC\nBCA\nCAB\nCBA"
+        },
+        {
+            "input": "BC",
+            "output": "BC\nCB"
+        },
+        {
+            "input": "BBC",
+            "output": "BBC\nBCB\nCBB"
+        },
+        {
+            "input": "BAA",
+            "output": "AAB\nABA\nBAA"
+        },
+        {
+            "input": "AC",
+            "output": "AC\nCA"
+        },
+        {
+            "input": "BAA",
+            "output": "AAB\nABA\nBAA"
+        },
+        {
+            "input": "BA",
+            "output": "AB\nBA"
+        },
+        {
+            "input": "AC",
+            "output": "AC\nCA"
+        },
+        {
+            "input": "AA",
+            "output": "AA"
+        },
+        {
+            "input": "AB",
+            "output": "AB\nBA"
+        },
+        {
+            "input": "BAB",
+            "output": "ABB\nBAB\nBBA"
+        },
+        {
+            "input": "AC",
+            "output": "AC\nCA"
+        },
+        {
+            "input": "BAB",
+            "output": "ABB\nBAB\nBBA"
+        },
+        {
+            "input": "BB",
+            "output": "BB"
+        },
+        {
+            "input": "AAA",
+            "output": "AAA"
+        },
+        {
+            "input": "BC",
+            "output": "BC\nCB"
+        },
+        {
+            "input": "CB",
+            "output": "BC\nCB"
+        },
+        {
+            "input": "AC",
+            "output": "AC\nCA"
+        },
+        {
+            "input": "AA",
+            "output": "AA"
+        },
+        {
+            "input": "AA",
+            "output": "AA"
+        },
+        {
+            "input": "BC",
+            "output": "BC\nCB"
+        },
+        {
+            "input": "BAB",
+            "output": "ABB\nBAB\nBBA"
+        },
+        {
+            "input": "AA",
+            "output": "AA"
+        },
+        {
+            "input": "BCC",
+            "output": "BCC\nCBC\nCCB"
+        },
+        {
+            "input": "BCC",
+            "output": "BCC\nCBC\nCCB"
+        },
+        {
+            "input": "BA",
+            "output": "AB\nBA"
+        },
+        {
+            "input": "BB",
+            "output": "BB"
+        },
+        {
+            "input": "BB",
+            "output": "BB"
+        },
+        {
+            "input": "ABB",
+            "output": "ABB\nBAB\nBBA"
+        },
+        {
+            "input": "CC",
+            "output": "CC"
+        },
+        {
+            "input": "AB",
+            "output": "AB\nBA"
+        },
+        {
+            "input": "ABB",
+            "output": "ABB\nBAB\nBBA"
+        },
+        {
+            "input": "AB",
+            "output": "AB\nBA"
+        },
+        {
+            "input": "ABA",
+            "output": "AAB\nABA\nBAA"
+        },
+        {
+            "input": "AAB",
+            "output": "AAB\nABA\nBAA"
+        },
+        {
+            "input": "CC",
+            "output": "CC"
+        },
+        {
+            "input": "AAA",
+            "output": "AAA"
+        },
+        {
+            "input": "AAC",
+            "output": "AAC\nACA\nCAA"
+        },
+        {
+            "input": "BAB",
+            "output": "ABB\nBAB\nBBA"
+        },
+        {
+            "input": "CBA",
+            "output": "ABC\nACB\nBAC\nBCA\nCAB\nCBA"
+        },
+        {
+            "input": "CCB",
+            "output": "BCC\nCBC\nCCB"
+        },
+        {
+            "input": "AA",
+            "output": "AA"
+        },
+        {
+            "input": "CC",
+            "output": "CC"
+        },
+        {
+            "input": "CCC",
+            "output": "CCC"
+        },
+        {
+            "input": "BAA",
+            "output": "AAB\nABA\nBAA"
+        },
+        {
+            "input": "AB",
+            "output": "AB\nBA"
+        },
+        {
+            "input": "CCB",
+            "output": "BCC\nCBC\nCCB"
+        },
+        {
+            "input": "ACA",
+            "output": "AAC\nACA\nCAA"
+        },
+        {
+            "input": "CA",
+            "output": "AC\nCA"
+        },
+        {
+            "input": "BBB",
+            "output": "BBB"
+        },
+        {
+            "input": "CCC",
+            "output": "CCC"
+        },
+        {
+            "input": "AA",
+            "output": "AA"
+        },
+        {
+            "input": "CCB",
+            "output": "BCC\nCBC\nCCB"
+        },
+        {
+            "input": "ACB",
+            "output": "ABC\nACB\nBAC\nBCA\nCAB\nCBA"
+        },
+        {
+            "input": "BAA",
+            "output": "AAB\nABA\nBAA"
+        },
+        {
+            "input": "BBB",
+            "output": "BBB"
+        },
+        {
+            "input": "AAB",
+            "output": "AAB\nABA\nBAA"
+        },
+        {
+            "input": "BCC",
+            "output": "BCC\nCBC\nCCB"
+        },
+        {
+            "input": "CA",
+            "output": "AC\nCA"
+        },
+        {
+            "input": "BB",
+            "output": "BB"
+        },
+        {
+            "input": "CCA",
+            "output": "ACC\nCAC\nCCA"
+        },
+        {
+            "input": "AB",
+            "output": "AB\nBA"
+        },
+        {
+            "input": "AAB",
+            "output": "AAB\nABA\nBAA"
+        },
+        {
+            "input": "CA",
+            "output": "AC\nCA"
+        },
+        {
+            "input": "CC",
+            "output": "CC"
+        },
+        {
+            "input": "ABB",
+            "output": "ABB\nBAB\nBBA"
+        },
+        {
+            "input": "BC",
+            "output": "BC\nCB"
+        },
+        {
+            "input": "BBB",
+            "output": "BBB"
+        },
+        {
+            "input": "AAC",
+            "output": "AAC\nACA\nCAA"
+        },
+        {
+            "input": "BCC",
+            "output": "BCC\nCBC\nCCB"
+        },
+        {
+            "input": "CCA",
+            "output": "ACC\nCAC\nCCA"
+        },
+        {
+            "input": "ABB",
+            "output": "ABB\nBAB\nBBA"
+        },
+        {
+            "input": "CC",
+            "output": "CC"
+        },
+        {
+            "input": "BC",
+            "output": "BC\nCB"
+        },
+        {
+            "input": "BBC",
+            "output": "BBC\nBCB\nCBB"
+        },
+        {
+            "input": "CA",
+            "output": "AC\nCA"
+        },
+        {
+            "input": "BC",
+            "output": "BC\nCB"
+        },
+        {
+            "input": "BA",
+            "output": "AB\nBA"
+        },
+        {
+            "input": "BA",
+            "output": "AB\nBA"
+        },
+        {
+            "input": "BC",
+            "output": "BC\nCB"
+        },
+        {
+            "input": "BC",
+            "output": "BC\nCB"
+        },
+        {
+            "input": "AA",
+            "output": "AA"
+        },
+        {
+            "input": "ABA",
+            "output": "AAB\nABA\nBAA"
+        },
+        {
+            "input": "BB",
+            "output": "BB"
+        },
+        {
+            "input": "CCC",
+            "output": "CCC"
+        },
+        {
+            "input": "CC",
+            "output": "CC"
+        },
+        {
+            "input": "AC",
+            "output": "AC\nCA"
+        },
+        {
+            "input": "CBA",
+            "output": "ABC\nACB\nBAC\nBCA\nCAB\nCBA"
+        },
+        {
+            "input": "BC",
+            "output": "BC\nCB"
+        },
+        {
+            "input": "AB",
+            "output": "AB\nBA"
+        },
+        {
+            "input": "AAC",
+            "output": "AAC\nACA\nCAA"
+        },
+        {
+            "input": "AAA",
+            "output": "AAA"
+        },
+        {
+            "input": "AC",
+            "output": "AC\nCA"
         }
     ]
 }

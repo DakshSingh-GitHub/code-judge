@@ -411,6 +411,406 @@
         {
             "input": "bbacfffcbb",
             "output": "Not a Palindrome"
+        },
+        {
+            "input": "aeccadfbbbbfdaccea",
+            "output": "Palindrome"
+        },
+        {
+            "input": "aeccdfdaffadfdccea",
+            "output": "Palindrome"
+        },
+        {
+            "input": "bdccea",
+            "output": "Not a Palindrome"
+        },
+        {
+            "input": "facaaedfabbafdeaacaf",
+            "output": "Palindrome"
+        },
+        {
+            "input": "cbcfdbbdfcbc",
+            "output": "Palindrome"
+        },
+        {
+            "input": "bcbdd",
+            "output": "Not a Palindrome"
+        },
+        {
+            "input": "eedbec",
+            "output": "Not a Palindrome"
+        },
+        {
+            "input": "eaddae",
+            "output": "Palindrome"
+        },
+        {
+            "input": "dfeefd",
+            "output": "Palindrome"
+        },
+        {
+            "input": "eaedad",
+            "output": "Not a Palindrome"
+        },
+        {
+            "input": "beec",
+            "output": "Not a Palindrome"
+        },
+        {
+            "input": "ebfdada",
+            "output": "Not a Palindrome"
+        },
+        {
+            "input": "eeffee",
+            "output": "Palindrome"
+        },
+        {
+            "input": "cfefdbddbbddbdfefc",
+            "output": "Palindrome"
+        },
+        {
+            "input": "fdccdf",
+            "output": "Palindrome"
+        },
+        {
+            "input": "edacdcfbc",
+            "output": "Not a Palindrome"
+        },
+        {
+            "input": "fcdedceaaecdedcf",
+            "output": "Palindrome"
+        },
+        {
+            "input": "ecabbace",
+            "output": "Palindrome"
+        },
+        {
+            "input": "aceeca",
+            "output": "Palindrome"
+        },
+        {
+            "input": "bdafefeefefadb",
+            "output": "Palindrome"
+        },
+        {
+            "input": "accbceadffdaecbcca",
+            "output": "Palindrome"
+        },
+        {
+            "input": "ffbabaababff",
+            "output": "Palindrome"
+        },
+        {
+            "input": "cfacdccdcafc",
+            "output": "Palindrome"
+        },
+        {
+            "input": "bdaeaddaeadb",
+            "output": "Palindrome"
+        },
+        {
+            "input": "cecfceff",
+            "output": "Not a Palindrome"
+        },
+        {
+            "input": "cafefbabbeebbabfefac",
+            "output": "Palindrome"
+        },
+        {
+            "input": "ebeddceef",
+            "output": "Not a Palindrome"
+        },
+        {
+            "input": "aebedffaeeaffdebea",
+            "output": "Palindrome"
+        },
+        {
+            "input": "cdccdc",
+            "output": "Palindrome"
+        },
+        {
+            "input": "ecdebdbdf",
+            "output": "Not a Palindrome"
+        },
+        {
+            "input": "cadbbdac",
+            "output": "Palindrome"
+        },
+        {
+            "input": "dcfdeedfcd",
+            "output": "Palindrome"
+        },
+        {
+            "input": "fbccdb",
+            "output": "Not a Palindrome"
+        },
+        {
+            "input": "ddcccb",
+            "output": "Not a Palindrome"
+        },
+        {
+            "input": "feeeef",
+            "output": "Palindrome"
+        },
+        {
+            "input": "ecbdcedaaaadecdbce",
+            "output": "Palindrome"
+        },
+        {
+            "input": "baaeeeeaab",
+            "output": "Palindrome"
+        },
+        {
+            "input": "bbcefebfb",
+            "output": "Not a Palindrome"
+        },
+        {
+            "input": "ceffec",
+            "output": "Palindrome"
+        },
+        {
+            "input": "faefccffbe",
+            "output": "Not a Palindrome"
+        },
+        {
+            "input": "debab",
+            "output": "Not a Palindrome"
+        },
+        {
+            "input": "cbbdcaacdbbc",
+            "output": "Palindrome"
+        },
+        {
+            "input": "abffefdbaf",
+            "output": "Not a Palindrome"
+        },
+        {
+            "input": "aaaacdbbcc",
+            "output": "Not a Palindrome"
+        },
+        {
+            "input": "ebdceaccaecdbe",
+            "output": "Palindrome"
+        },
+        {
+            "input": "eefdbcbfda",
+            "output": "Not a Palindrome"
+        },
+        {
+            "input": "cabc",
+            "output": "Not a Palindrome"
+        },
+        {
+            "input": "deeddbdff",
+            "output": "Not a Palindrome"
+        },
+        {
+            "input": "bbddbb",
+            "output": "Palindrome"
+        },
+        {
+            "input": "ddbdebbedbdd",
+            "output": "Palindrome"
+        },
+        {
+            "input": "fccecddceccf",
+            "output": "Palindrome"
+        },
+        {
+            "input": "adeadbbbbdaeda",
+            "output": "Palindrome"
+        },
+        {
+            "input": "fdebf",
+            "output": "Not a Palindrome"
+        },
+        {
+            "input": "daaeab",
+            "output": "Not a Palindrome"
+        },
+        {
+            "input": "efeeafdafeefadfaeefe",
+            "output": "Palindrome"
+        },
+        {
+            "input": "ddabccbcfa",
+            "output": "Not a Palindrome"
+        },
+        {
+            "input": "bddddddb",
+            "output": "Palindrome"
+        },
+        {
+            "input": "aedeedea",
+            "output": "Palindrome"
+        },
+        {
+            "input": "ffaaff",
+            "output": "Palindrome"
+        },
+        {
+            "input": "dbecaabfbf",
+            "output": "Not a Palindrome"
+        },
+        {
+            "input": "ceccfcfa",
+            "output": "Not a Palindrome"
+        },
+        {
+            "input": "cdccffccdc",
+            "output": "Palindrome"
+        },
+        {
+            "input": "cccebfaaddaafbeccc",
+            "output": "Palindrome"
+        },
+        {
+            "input": "eecf",
+            "output": "Not a Palindrome"
+        },
+        {
+            "input": "bed",
+            "output": "Not a Palindrome"
+        },
+        {
+            "input": "fccabbaccf",
+            "output": "Palindrome"
+        },
+        {
+            "input": "faffaf",
+            "output": "Palindrome"
+        },
+        {
+            "input": "addcbbbccbbbcdda",
+            "output": "Palindrome"
+        },
+        {
+            "input": "bffdbaacf",
+            "output": "Not a Palindrome"
+        },
+        {
+            "input": "abea",
+            "output": "Not a Palindrome"
+        },
+        {
+            "input": "fdb",
+            "output": "Not a Palindrome"
+        },
+        {
+            "input": "daaaad",
+            "output": "Palindrome"
+        },
+        {
+            "input": "fcaddddddacf",
+            "output": "Palindrome"
+        },
+        {
+            "input": "daaadce",
+            "output": "Not a Palindrome"
+        },
+        {
+            "input": "eacfcbf",
+            "output": "Not a Palindrome"
+        },
+        {
+            "input": "eeccee",
+            "output": "Palindrome"
+        },
+        {
+            "input": "fbdfccfdbf",
+            "output": "Palindrome"
+        },
+        {
+            "input": "dfadfaeeafdafd",
+            "output": "Palindrome"
+        },
+        {
+            "input": "bfbdbeabd",
+            "output": "Not a Palindrome"
+        },
+        {
+            "input": "cebbec",
+            "output": "Palindrome"
+        },
+        {
+            "input": "bafcaeccfccfcceacfab",
+            "output": "Palindrome"
+        },
+        {
+            "input": "aeefaecaaaaceafeea",
+            "output": "Palindrome"
+        },
+        {
+            "input": "feefbdefec",
+            "output": "Not a Palindrome"
+        },
+        {
+            "input": "bfeaccaefb",
+            "output": "Palindrome"
+        },
+        {
+            "input": "cfbdadaeaffaeadadbfc",
+            "output": "Palindrome"
+        },
+        {
+            "input": "beebaffabeeb",
+            "output": "Palindrome"
+        },
+        {
+            "input": "ddbfef",
+            "output": "Not a Palindrome"
+        },
+        {
+            "input": "ccbbbfdbfc",
+            "output": "Not a Palindrome"
+        },
+        {
+            "input": "fabbfee",
+            "output": "Not a Palindrome"
+        },
+        {
+            "input": "cdfbdefff",
+            "output": "Not a Palindrome"
+        },
+        {
+            "input": "daaa",
+            "output": "Not a Palindrome"
+        },
+        {
+            "input": "aeddea",
+            "output": "Palindrome"
+        },
+        {
+            "input": "bbbdeccedbbb",
+            "output": "Palindrome"
+        },
+        {
+            "input": "afaafa",
+            "output": "Palindrome"
+        },
+        {
+            "input": "dfef",
+            "output": "Not a Palindrome"
+        },
+        {
+            "input": "dbeefdeedfeebd",
+            "output": "Palindrome"
+        },
+        {
+            "input": "ffebbeff",
+            "output": "Palindrome"
+        },
+        {
+            "input": "afdbfa",
+            "output": "Not a Palindrome"
+        },
+        {
+            "input": "feccfdaaee",
+            "output": "Not a Palindrome"
+        },
+        {
+            "input": "afbddbfa",
+            "output": "Palindrome"
         }
     ]
 }

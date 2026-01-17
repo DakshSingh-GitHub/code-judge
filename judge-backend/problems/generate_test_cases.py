@@ -275,7 +275,7 @@ def main():
             
             solver = SOLVERS[problem_id]
             new_cases = []
-            for _ in range(63):
+            for _ in range(100):
                 inp, outp = solver()
                 new_cases.append({"input": inp, "output": outp})
             
@@ -287,7 +287,7 @@ def main():
             with open(file_path, "w", encoding="utf-8") as f:
                 json.dump(data, f, indent=4) # Use indent for readability
             
-            print(f"Added 33 test cases to {filename}")
+            print(f"Added 100 test cases to {filename}")
             
         except Exception as e:
             print(f"Failed to process {filename}: {e}")
