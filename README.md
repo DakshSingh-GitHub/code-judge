@@ -78,3 +78,13 @@ Got questions? Suggestions? Just want to say hi? We're happy to have you here! H
 
 ---
 *Made with ❤️ for the coding community.*
+
+## Running the Project (Local Backend Required) / Pardon for this inconvinience
+
+This project uses a locally hosted backend for code execution.
+
+To test the application:
+1. Clone the backend repository / Or extract the `judge-backend.zip` file.
+2. Run the Flask server locally
+3. Open the deployed frontend
+4. The frontend will communicate with the local backend at `http://localhost:5000`
