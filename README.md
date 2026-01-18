@@ -88,3 +88,7 @@ To test the application:
 2. Run the Flask server locally
 3. Open the deployed frontend
 4. The frontend will communicate with the local backend at `http://localhost:5000`
+
+ALTERNATE: (FOR WINDOWS 10+)
+1. Clone the backend repository / Or extract the `judge-backend_s.zip` file.
+2. run script.ps1
