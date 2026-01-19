@@ -16,6 +16,7 @@ interface ProblemListProps {
 export default function ProblemList({ onSelect, selectedId }: ProblemListProps) {
     const [problems, setProblems] = useState<Problem[]>([]);
     const [isLoading, setIsLoading] = useState(true);
+    const [searchQuery, setSearchQuery] = useState("");
 
     useEffect(() => {
         getProblems().then((data) => {
@@ -24,12 +25,23 @@ export default function ProblemList({ onSelect, selectedId }: ProblemListProps) 
         });
     }, []);
 
+    const filteredProblems = problems.filter((problem) =>
+        problem.title.toLowerCase().includes(searchQuery.toLowerCase())
+    );
+
     return (
         <div className="h-full flex flex-col bg-white dark:bg-gray-800 shadow-lg rounded-xl overflow-hidden">
             <div className="p-4 border-b border-gray-200 dark:border-gray-700">
-                <h2 className="text-lg font-semibold text-gray-900 dark:text-gray-50">
+                <h2 className="text-lg font-semibold text-gray-900 dark:text-gray-50 mb-3">
                     Problems
                 </h2>
+                <input
+                    type="text"
+                    placeholder="Search problems..."
+                    value={searchQuery}
+                    onChange={(e) => setSearchQuery(e.target.value)}
+                    className="w-full px-3 py-2 text-sm text-gray-900 bg-gray-50 dark:bg-gray-700 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-indigo-500 focus:border-indigo-500 dark:text-white dark:placeholder-gray-400"
+                />
             </div>
 
             <div className="flex-1 overflow-y-auto">
@@ -37,13 +49,13 @@ export default function ProblemList({ onSelect, selectedId }: ProblemListProps) 
                     <div className="flex items-center justify-center h-32 text-gray-500 dark:text-gray-400">
                         Loading problems...
                     </div>
-                ) : problems.length === 0 ? (
+                ) : filteredProblems.length === 0 ? (
                     <div className="flex items-center justify-center h-32 text-gray-500 dark:text-gray-400">
-                        No problems available
+                        No problems found
                     </div>
                 ) : (
                     <ul className="divide-y divide-gray-200 dark:divide-gray-700">
-                        {problems.map((problem) => (
+                        {filteredProblems.map((problem) => (
                             <li key={problem.id}>
                                 <button
                                     onClick={() => onSelect(problem.id)}
