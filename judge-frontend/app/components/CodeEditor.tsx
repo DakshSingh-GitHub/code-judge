@@ -7,9 +7,10 @@ interface CodeEditorProps {
     code: string;
     setCode: (code: string) => void;
     isDisabled?: boolean;
+    isDark?: boolean;
 }
 
-export default function CodeEditor({ code, setCode, isDisabled = false }: CodeEditorProps) {
+export default function CodeEditor({ code, setCode, isDisabled = false, isDark = false }: CodeEditorProps) {
     const [showMinimap, setShowMinimap] = useState(false);
     const editorRef = useRef<any>(null);
     const [fontSize, setFontSize] = useState(15);
@@ -46,12 +47,12 @@ export default function CodeEditor({ code, setCode, isDisabled = false }: CodeEd
     };
 
     const Toolbar = () => (
-        <div className="bg-gray-800 p-1 flex items-center gap-2 text-white text-sm px-2">
+        <div className="bg-gray-100 dark:bg-gray-800 p-1 flex items-center gap-2 text-gray-900 dark:text-white text-sm px-2">
             {['(', ')', ',', '_'].map(char => (
                 <button
                     key={char}
                     onClick={() => handleInsert(char)}
-                    className="px-3 py-1 bg-gray-700 hover:bg-gray-600 rounded"
+                    className="px-3 py-1 bg-gray-200 hover:bg-gray-300 dark:bg-gray-700 dark:hover:bg-gray-600 rounded"
                 >
                     {char}
                 </button>
@@ -63,10 +64,10 @@ export default function CodeEditor({ code, setCode, isDisabled = false }: CodeEd
                         id="font-size"
                         value={fontSize}
                         onChange={(e) => setFontSize(parseInt(e.target.value, 10))}
-                        className="appearance-none w-24 bg-gray-700 border border-gray-600 hover:border-gray-500 pl-4 pr-8 py-1 rounded-lg text-sm focus:outline-none focus:ring-1 focus:ring-blue-500"
+                        className="appearance-none w-24 bg-white dark:bg-gray-700 border border-gray-300 dark:border-gray-600 hover:border-gray-400 dark:hover:border-gray-500 pl-4 pr-8 py-1 rounded-lg text-sm focus:outline-none focus:ring-1 focus:ring-blue-500 text-gray-900 dark:text-white"
                     >
                         {[12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24].map(size => (
-                            <option key={size} value={size} className="bg-gray-800">{size}px</option>
+                            <option key={size} value={size} className="bg-white dark:bg-gray-800">{size}px</option>
                         ))}
                     </select>
                     <div className="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-400">
@@ -88,7 +89,7 @@ export default function CodeEditor({ code, setCode, isDisabled = false }: CodeEd
                 <Editor
                     height="100%"
                     defaultLanguage="python"
-                    theme="vs-dark"
+                    theme={isDark ? "vs-dark" : "vs"}
                     value={code}
                     onMount={handleEditorDidMount}
                     onChange={(value) => setCode(value || "")}
@@ -99,7 +100,7 @@ export default function CodeEditor({ code, setCode, isDisabled = false }: CodeEd
                         automaticLayout: true,
                         readOnly: isDisabled,
                         cursorBlinking: "expand",
-                        fontFamily: "Jetbrains Mono, sans-serif, Arial"
+                        fontFamily: "Jetbrains Mono, sans-serif, Arial",
                     }}
                 />
             </div>

@@ -56,3 +56,13 @@ body {
   color: var(--foreground);
   font-family: var(--font-sans), Arial, Helvetica, sans-serif;
 }
+
+/* Custom cursor for light mode */
+html:not(.dark) {
+  cursor: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9jAAAAAXNSR0IArs4c6QAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAEAAADKADAAQAAAABAAAAEAAAAAAXqg+kAAABoSURBVDhPY2AgF2ARsWNgYHj37x+EGRmYPjAwMrC3t/+fGBgYGFwcqAQMDAysrWwMjIwsDKysbGysrAwMDDw/Pz8/MzMz+fn5/f0D+2MGBgYGdgYGJgYGFgYWdgYGBgbGwMDAQARgABxYQ133dD/QAAAAAElFTkSuQmCC") 8 8, auto;
+}
+
+/* Custom cursor for dark mode */
+html.dark {
+  cursor: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9jAAAAAXNSR0IArs4c6QAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAEAAADKADAAQAAAABAAAAEAAAAAAXqg+kAAABzSURBVDhPY2AgF2ARsWNgYGFgYGFhbm5uYmBgYGFgYGDg4+Pj4+fn5+bm5uZmZmaOjo6Ojo6+vr7+/v7+/v7+/v7+/v7+/v7+/v7+/gD+CjIyMoAqMDDQ0dHR0dHR0dHRAVKBhYUFQgYGBgYWBgaGAAMxAKjYAAQAKp9d9q/5lQAAAABJRU5ErkJggg==") 8 8, auto;
+}

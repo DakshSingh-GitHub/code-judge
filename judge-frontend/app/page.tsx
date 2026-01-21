@@ -27,6 +27,7 @@ export default function Home() {
     const [activeTab, setActiveTab] = useState<"editor" | "submissions">("editor");
     const [pastSubmissions, setPastSubmissions] = useState<Submission[]>([]);
     const [searchQuery, setSearchQuery] = useState("");
+    const [isDark, setIsDark] = useState(false);
 
     const [isMobile, setIsMobile] = useState(false);
     const [mobileTab, setMobileTab] = useState<"problem" | "code" | "submissions">("problem");
@@ -38,15 +39,33 @@ export default function Home() {
     const isResizingMain = useRef(false);
 
     useEffect(() => {
-        setIsMounted(true);
-        const checkScreenSize = () => {
-            const width = window.innerWidth;
-            setIsMobile(width <= 1024);
-            setIsSidebarOpen(width > 1024); // Desktop sidebar
-        };
-        checkScreenSize();
-        window.addEventListener("resize", checkScreenSize);
+        // Check initial theme preference
+        if (
+            localStorage.theme === "dark" ||
+            (!("theme" in localStorage) &&
+                window.matchMedia("(prefers-color-scheme: dark)").matches)
+        ) {
+            setIsDark(true);
+            document.documentElement.classList.add("dark");
+        } else {
+            setIsDark(false);
+            document.documentElement.classList.remove("dark");
+        }
+    }, []);
 
+    const toggleTheme = () => {
+        if (isDark) {
+            document.documentElement.classList.remove("dark");
+            localStorage.theme = "light";
+            setIsDark(false);
+        } else {
+            document.documentElement.classList.add("dark");
+            localStorage.theme = "dark";
+            setIsDark(true);
+        }
+    };
+
+    useEffect(() => {
         const handleMouseMove = (e: MouseEvent) => {
             if (isResizingSidebar.current) {
                 const newWidth = Math.max(200, Math.min(600, e.clientX - 16));
@@ -66,6 +85,24 @@ export default function Home() {
             document.body.style.cursor = "default";
         };
 
+        const checkScreenSize = () => {
+            const width = window.innerWidth;
+            const currentIsMobile = width <= 1024;
+            if (isMobile !== currentIsMobile) {
+                setIsSidebarOpen(!currentIsMobile);
+            }
+            setIsMobile(currentIsMobile);
+        };
+
+        if (!isMounted) {
+            const width = window.innerWidth;
+            const currentIsMobile = width <= 1024;
+            setIsMobile(currentIsMobile);
+            setIsSidebarOpen(!currentIsMobile);
+            setIsMounted(true);
+        }
+
+        window.addEventListener("resize", checkScreenSize);
         window.addEventListener("mousemove", handleMouseMove);
         window.addEventListener("mouseup", handleMouseUp);
 
@@ -74,7 +111,7 @@ export default function Home() {
             window.removeEventListener("mousemove", handleMouseMove);
             window.removeEventListener("mouseup", handleMouseUp);
         };
-    }, []);
+    }, [isMobile, isMounted]);
 
     const handleMouseDownSidebar = (e: React.MouseEvent) => {
         e.preventDefault();
@@ -208,7 +245,7 @@ export default function Home() {
                                             </svg>
                                         )}
                                     </button>
-                                    <ThemeToggle />
+                                    <ThemeToggle isDark={isDark} toggleTheme={toggleTheme} />
                                 </div>
                             </div>
                         </motion.header>
@@ -348,6 +385,7 @@ export default function Home() {
                                                     isDisabled={
                                                         !selectedProblemId || isSubmitting
                                                     }
+                                                    isDark={isDark}
                                                 />
                                             </div>
                                             <div className="flex-none min-h-[65px] max-h-[180px] flex flex-col md:flex-row w-full justify-between items-stretch gap-4 shrink-0">
@@ -366,7 +404,7 @@ export default function Home() {
                                                     {isSubmitting ? "Judging..." : "Submit"}
                                                 </button>
                                                 <div className="w-full md:w-3/4 h-full">
-                                                    <div className="p-3 rounded-xl bg-gray-900 text-gray-100 h-full overflow-y-auto border border-gray-700 shadow-2xl custom-scrollbar transition-all duration-300">
+                                                    <div className="p-3 rounded-xl bg-gray-100 dark:bg-gray-900 text-gray-800 dark:text-gray-100 h-full overflow-y-auto border border-gray-200 dark:border-gray-700 shadow-2xl custom-scrollbar transition-all duration-300">
                                                         <AnimatePresence mode="wait">
                                                             {!result ? (
                                                                 <motion.div
@@ -377,7 +415,7 @@ export default function Home() {
                                                                     className="flex flex-col items-center justify-center h-full space-y-2"
                                                                 >
                                                                     <span className="text-2xl animate-bounce [animation-timing-function:cubic-bezier(.3,1.5,.7,1)]">😊</span>
-                                                                    <p className="text-gray-400 italic text-center text-sm">
+                                                                    <p className="text-gray-500 dark:text-gray-400 italic text-center text-sm">
                                                                         Happy coding! Think carefully before submission.
                                                                         <br />
                                                                         <span className="text-amber-400 text-xs mt-1">⚠️ Don't add Prompts to Input ⚠️</span>
