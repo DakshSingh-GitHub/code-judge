@@ -10,7 +10,7 @@ interface PastSubmissionsProps {
 export default function PastSubmissions({ submissions, onLoadCode }: PastSubmissionsProps) {
     if (submissions.length === 0) {
         return (
-            <div className="flex-1 flex flex-col items-center justify-center text-gray-500 dark:text-gray-400 space-y-4 py-12">
+            <div className="h-full flex flex-col items-center justify-center text-gray-500 dark:text-gray-400 space-y-4 py-12">
                 <div className="p-4 rounded-full bg-gray-100 dark:bg-gray-700">
                     <svg className="w-12 h-12" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />

@@ -220,7 +220,7 @@ export default function Home() {
                                         className="flex flex-col md:flex-row h-full"
                                     >
                                         <aside
-                                            className="overflow-y-auto md:overflow-hidden flex-shrink-0 w-full max-h-[60vh] md:max-h-none pr-4"
+                                            className="overflow-y-auto md:overflow-hidden flex-shrink-0 w-full max-h-[60vh] md:max-h-none pr-0 md:pr-4"
                                             style={{ width: isMobile ? "100%" : `${sidebarWidth}px` }}
                                         >
                                             <ProblemList
@@ -282,7 +282,7 @@ export default function Home() {
                                 <div
                                     className={`flex-1 min-h-[400px] md:min-h-0 bg-white dark:bg-gray-800 shadow-lg rounded-xl overflow-hidden flex flex-col ${isMobile && mobileTab !== "problem" ? "hidden" : "flex"
                                         }`}
-                                    style={{ flex: isMobile ? "none" : mainContentWidth, width: isMobile ? "100%" : "auto" }}
+                                    style={{ flex: isMobile ? "none" : mainContentWidth, width: isMobile ? "100%" : "auto", height: isMobile ? "80%" : "auto" }}
                                 >
                                     <div className="flex items-center justify-between border-b border-gray-200 dark:border-gray-700 px-6 py-4">
                                         <h2 className="text-lg font-semibold text-gray-900 dark:text-gray-50">
@@ -305,7 +305,7 @@ export default function Home() {
                                 <div
                                     className={`flex-1 min-h-[400px] md:min-h-0 bg-white dark:bg-gray-800 shadow-lg rounded-xl flex flex-col overflow-hidden ${isMobile && mobileTab === "problem" ? "hidden" : "flex"
                                         }`}
-                                    style={{ flex: isMobile ? "none" : 100 - mainContentWidth, width: isMobile ? "100%" : "auto" }}
+                                    style={{ flex: isMobile ? "none" : 100 - mainContentWidth, width: isMobile ? "100%" : "auto", height: isMobile ? "80%" : "auto" }}
                                 >
                                     {/* Tabs Header - Desktop only or Submissions specific for mobile */}
                                     <div className={`flex border-b border-gray-200 dark:border-gray-700 bg-gray-50 dark:bg-gray-800/50 ${isMobile ? "hidden" : "flex"}`}>
