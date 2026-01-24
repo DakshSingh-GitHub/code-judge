@@ -148,8 +148,8 @@ export default function Home() {
     return (
         <div className="flex-1 flex flex-col min-h-0 bg-gray-50 dark:bg-gray-900 text-gray-900 dark:text-gray-50 relative overflow-hidden">
             {/* Ambient Background Glows */}
-            <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-indigo-500/5 dark:bg-indigo-500/10 rounded-full blur-[120px] pointer-events-none" />
-            <div className="absolute bottom-0 left-0 w-[400px] h-[400px] bg-purple-500/5 dark:bg-purple-500/10 rounded-full blur-[100px] pointer-events-none" />
+            <div className="absolute top-0 right-0 w-125 h-125 bg-indigo-500/5 dark:bg-indigo-500/10 rounded-full blur-[120px] pointer-events-none" />
+            <div className="absolute bottom-0 left-0 w-100 h-100 bg-purple-500/5 dark:bg-purple-500/10 rounded-full blur-[100px] pointer-events-none" />
 
             {!isMounted ? (
                 <div className="flex-1 flex flex-col items-center justify-center bg-white dark:bg-gray-900 z-50">
@@ -161,7 +161,7 @@ export default function Home() {
                             repeat: Infinity,
                             repeatType: "reverse"
                         }}
-                        className="text-4xl font-black tracking-tighter bg-clip-text text-transparent bg-gradient-to-r from-indigo-600 to-purple-600 dark:from-indigo-400 dark:to-purple-400"
+                        className="text-4xl font-black tracking-tighter bg-clip-text text-transparent bg-linear-to-r from-indigo-600 to-purple-600 dark:from-indigo-400 dark:to-purple-400"
                     >
                         {TITLE}
                     </motion.div>
