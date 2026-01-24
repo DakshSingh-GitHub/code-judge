@@ -187,10 +187,15 @@ export default function Home() {
                         <AnimatePresence>
                             {isSidebarOpen && (
                                 <motion.div
-                                    initial={{ x: -100, opacity: 0 }}
-                                    animate={{ x: 0, opacity: 1 }}
-                                    exit={{ x: -100, opacity: 0 }}
-                                    className="flex flex-col md:flex-row h-full"
+                                    layout
+                                    initial={{ width: 0, opacity: 0 }}
+                                    animate={{
+                                        width: isMobile ? "100%" : sidebarWidth + 20,
+                                        opacity: 1
+                                    }}
+                                    exit={{ width: 0, opacity: 0 }}
+                                    transition={{ duration: 0.4, ease: [0.4, 0, 0.2, 1] }}
+                                    className="flex flex-col md:flex-row h-full overflow-hidden shrink-0"
                                 >
                                     <aside
                                         className="overflow-y-auto md:overflow-hidden shrink-0 w-full max-h-[60vh] md:max-h-none pr-0 md:pr-4"
@@ -214,11 +219,12 @@ export default function Home() {
                             )}
                         </AnimatePresence>
 
-                        {/* Main Content Area */}
-                        <div
+                        <motion.div
+                            layout
                             ref={mainContentRef}
                             data-content-area
                             className="flex-1 overflow-y-auto md:overflow-hidden flex flex-col lg:flex-row gap-4"
+                            transition={{ duration: 0.4, ease: [0.4, 0, 0.2, 1] }}
                         >
                             {/* Mobile Tabs */}
                             {isMobile && (
@@ -462,11 +468,10 @@ export default function Home() {
                                     </div>
                                 </div>
                             </div>
-                        </div>
+                        </motion.div>
                     </div>
                 </>
             )}
-
         </div>
     );
 }
