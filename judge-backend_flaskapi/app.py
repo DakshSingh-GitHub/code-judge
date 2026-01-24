@@ -1,9 +1,9 @@
 import json
 import os
 from typing import List, Optional
-from fastapi import FastAPI, HTTPException, Body
+from fastapi import FastAPI, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
-from pydantic import BaseModel, Field
+from pydantic import BaseModel
 from runner import run_code_multiple
 
 app = FastAPI(title="Judge Backend", description="FastAPI migration of the Code Judge backend")

@@ -3,34 +3,30 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import ThemeToggle from './ThemeToggle'; // Assuming ThemeToggle is in the same directory
+import NavDropdown from './NavDropdown';
 
 interface NavBarProps {
-    TITLE: string;
     isSidebarOpen: boolean;
     setIsSidebarOpen: (isOpen: boolean) => void;
     isDark: boolean;
     toggleTheme: () => void;
 }
 
-const NavBar: React.FC<NavBarProps> = ({ TITLE, isSidebarOpen, setIsSidebarOpen, isDark, toggleTheme }) => {
+const NavBar: React.FC<NavBarProps> = ({ isSidebarOpen, setIsSidebarOpen, isDark, toggleTheme }) => {
     return (
         <motion.header
             initial={{ y: -50, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
-            className="bg-white dark:bg-gray-800 shadow border-b border-gray-200 dark:border-gray-700 px-4 py-3 md:px-6 md:py-6 transition-colors duration-500"
+            className="bg-white dark:bg-gray-800 shadow-sm border-b border-gray-200 dark:border-gray-700 px-4 py-3 md:px-6 md:py-3 transition-all duration-500 sticky top-0 z-50 shrink-0"
         >
-            <div className="flex items-center justify-between">
+            <div className="max-w-7xl mx-auto flex items-center justify-between">
                 <motion.div
                     initial={{ x: -20, opacity: 0 }}
                     animate={{ x: 0, opacity: 1 }}
                     transition={{ delay: 0.2 }}
+                    className="flex items-center gap-4"
                 >
-                    <h1 className="text-xl md:text-3xl font-extrabold tracking-tight">
-                        {TITLE}
-                    </h1>
-                    <p className="hidden md:block mt-2 text-gray-500 dark:text-gray-400">
-                        Select a problem and start coding!
-                    </p>
+                    <NavDropdown />
                 </motion.div>
                 <div className="flex items-center gap-2 md:gap-4">
                     <button
