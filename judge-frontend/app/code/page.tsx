@@ -2,8 +2,19 @@
 
 import { motion } from "framer-motion";
 import Link from "next/link";
+import { useEffect, useState } from "react";
 
 export default function Code() {
+    const [positions, setPositions] = useState<{ top: string; left: string }[]>([]);
+
+    useEffect(() => {
+        const newPositions = [...Array(6)].map(() => ({
+            top: `${20 + Math.random() * 60}%`,
+            left: `${10 + Math.random() * 80}%`,
+        }));
+        setPositions(newPositions);
+    }, []);
+
     return (
         <div className="flex-1 flex flex-col items-center justify-center p-6 text-center select-none overflow-hidden relative min-h-0">
             {/* Background Decorative Elements */}
@@ -26,7 +37,7 @@ export default function Code() {
                 </motion.div>
 
                 <h1 className="text-4xl md:text-6xl font-extrabold tracking-tight mb-4">
-                    <span className="bg-clip-text text-transparent bg-gradient-to-r from-indigo-600 to-purple-600 dark:from-indigo-400 dark:to-purple-400">
+                    <span className="bg-clip-text text-transparent bg-linear-to-r from-indigo-600 to-purple-600 dark:from-indigo-400 dark:to-purple-400">
                         Code IDE
                     </span>
                 </h1>
@@ -39,7 +50,7 @@ export default function Code() {
                     initial={{ width: 0 }}
                     animate={{ width: "100%" }}
                     transition={{ delay: 0.5, duration: 1 }}
-                    className="h-1 bg-gradient-to-r from-indigo-500 via-purple-500 to-indigo-500 rounded-full mb-8 max-w-xs mx-auto overflow-hidden"
+                    className="h-1 bg-linear-to-r from-indigo-500 via-purple-500 to-indigo-500 rounded-full mb-8 max-w-xs mx-auto overflow-hidden"
                 >
                     <motion.div
                         animate={{ x: ["-100%", "100%"] }}
@@ -82,10 +93,7 @@ export default function Code() {
                         delay: i * 0.5,
                     }}
                     className="absolute text-2xl opacity-10 pointer-events-none hidden md:block"
-                    style={{
-                        top: `${20 + Math.random() * 60}%`,
-                        left: `${10 + Math.random() * 80}%`,
-                    }}
+                    style={positions[i]}
                 >
                     {['{ }', '</>', '( )', '//', '=>', '::'][i]}
                 </motion.div>
