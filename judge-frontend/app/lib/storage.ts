@@ -18,6 +18,16 @@ export function saveSubmission(submission: Omit<Submission, "id" | "timestamp">)
     if (typeof window === "undefined") return;
 
     const submissions = getSubmissions();
+
+    // Check if the same code has already been submitted for this problem
+    const isDuplicate = submissions.some(
+        (s) => s.problemId === submission.problemId && s.code === submission.code
+    );
+
+    if (isDuplicate) {
+        return null; // Don't save if it's a duplicate
+    }
+
     const newSubmission: Submission = {
         ...submission,
         id: Math.random().toString(36).substr(2, 9),
