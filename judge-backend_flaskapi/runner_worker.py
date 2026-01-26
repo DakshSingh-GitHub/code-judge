@@ -66,7 +66,29 @@ def main():
             
             # Prepare fresh globals for isolation
             # We add builtins so they work
-            exec_globals = {"__builtins__": __builtins__}
+            exec_globals = {"__builtins__": __builtins__.copy()}
+            
+            # Custom input function to emulate terminal (echo input)
+            def custom_input(prompt=""):
+                if prompt:
+                    sys.stdout.write(str(prompt))
+                    sys.stdout.flush()
+                
+                # Read from our redirected stdin
+                input_line = sys.stdin.readline()
+                
+                # Echo the input back to stdout (mimicking a terminal)
+                # We add a newline because readline includes it if present, 
+                # but if it's the last line we might need to be careful.
+                if input_line:
+                    sys.stdout.write(input_line)
+                    if not input_line.endswith('\n'):
+                        sys.stdout.write('\n')
+                    sys.stdout.flush()
+                
+                return input_line.rstrip('\n')
+
+            exec_globals["input"] = custom_input
             
             try:
                 sys.stdin = input_stream

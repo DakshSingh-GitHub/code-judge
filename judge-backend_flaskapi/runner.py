@@ -72,8 +72,38 @@ def run_code_once(code: str, user_input: str, time_limit: int = TIME_LIMIT):
     """Executes code once in isolation and returns stdout, stderr, status, and duration."""
     import tempfile
     
-    with tempfile.NamedTemporaryFile(suffix=".py", delete=False, mode="w") as temp:
-        temp.write(code)
+    # Wrap code to emulate terminal behavior (echo input)
+    # We use a harness to avoid modifying user line numbers too much
+    harness = f"""
+import sys
+import builtins
+
+def custom_input(prompt=""):
+    if prompt:
+        sys.stdout.write(str(prompt))
+        sys.stdout.flush()
+    
+    # Read from original stdin
+    input_line = sys.stdin.readline()
+    
+    # Echo back to stdout
+    if input_line:
+        sys.stdout.write(input_line)
+        if not input_line.endswith('\\n'):
+            sys.stdout.write('\\n')
+        sys.stdout.flush()
+    
+    return input_line.rstrip('\\n')
+
+# Override the built-in input
+builtins.input = custom_input
+
+# User code follows
+{code}
+"""
+
+    with tempfile.NamedTemporaryFile(suffix=".py", delete=False, mode="w", encoding="utf-8") as temp:
+        temp.write(harness)
         filename = temp.name
 
     start_t = time.time()
