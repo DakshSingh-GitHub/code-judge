@@ -5,6 +5,7 @@ import traceback
 import io
 import time
 from contextlib import redirect_stdout, redirect_stderr
+from security import validate_code, get_safe_globals, WARNING_MESSAGE
 
 def main():
     # Read the code to execute from the first line of stdin (or separate file arg)
@@ -35,6 +36,13 @@ def main():
         if msg_type == "init":
             code = message.get("code")
             try:
+                # Static analysis check
+                is_valid, warning = validate_code(code)
+                if not is_valid:
+                    sys.stdout.write(json.dumps({"status": "error", "error": f"Security Error: {warning}"}) + "\n")
+                    sys.stdout.flush()
+                    continue
+
                 compiled_code = compile(code, "<string>", "exec")
                 # Reset global scope or keep it? For pure function, reset is safer.
                 # But typically we want user code to define functions/classes that persist?
@@ -64,9 +72,10 @@ def main():
             start_time = time.time()
             error_output = ""
             
-            # Prepare fresh globals for isolation
-            # We add builtins so they work
-            exec_globals = {"__builtins__": __builtins__.copy()}
+            # Prepare fresh globals for isolation using our security helper
+            security_context = get_safe_globals()
+            exec_globals = security_context.copy()
+            # Note: security_context["__builtins__"] already has our restricted __import__
             
             # Custom input function to emulate terminal (echo input)
             def custom_input(prompt=""):

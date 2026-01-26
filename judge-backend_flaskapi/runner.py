@@ -4,6 +4,7 @@ import time
 import json
 import psutil
 from concurrent.futures import ThreadPoolExecutor
+from security import validate_code
 
 TIME_LIMIT = 2  # seconds
 ENABLE_OPTIMIZATION = True # Set to False to disable threading/persistent workers
@@ -71,7 +72,16 @@ def run_single_test_case_sequential(index, tc, code_str, time_limit):
 def run_code_once(code: str, user_input: str, time_limit: int = TIME_LIMIT):
     """Executes code once in isolation and returns stdout, stderr, status, and duration."""
     import tempfile
-    
+    # Static analysis security check
+    is_valid, warning = validate_code(code)
+    if not is_valid:
+        return {
+            "stdout": "",
+            "stderr": f"Security Error: {warning}",
+            "status": "Security Violation",
+            "duration": 0
+        }
+
     # Wrap code to emulate terminal behavior (echo input)
     # We use a harness to avoid modifying user line numbers too much
     harness = f"""
