@@ -1,6 +1,6 @@
 import { getCachedProblems, setCachedProblems, getCachedProblemById, setCachedProblemById } from "./cache";
 
-const BASE_URL = "https://code-judge-5fgd.vercel.app";
+const BASE_URL = "http://localhost:5000";
 
 export async function getProblems() {
 	const cached = getCachedProblems();

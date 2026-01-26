@@ -42,6 +42,16 @@ class SubmitRequest(BaseModel):
     code: str
     test_only: Optional[bool] = False
 
+class RunRequest(BaseModel):
+    code: str
+    input: Optional[str] = ""
+
+class RunResponse(BaseModel):
+    stdout: str
+    stderr: Optional[str] = None
+    status: str
+    duration: float
+
 class TestCaseResult(BaseModel):
     test_case: int
     status: str
@@ -204,6 +214,37 @@ def submit(request_data: SubmitRequest):
         "total_duration": result["total_duration"],
         "summary": result["summary"],
         "test_case_results": visible_results
+    }
+
+@app.post("/run", response_model=RunResponse)
+def run_code_endpoint(request_data: RunRequest):
+    code = request_data.code
+    user_input = request_data.input
+
+    if not code:
+        raise HTTPException(status_code=400, detail="No code provided")
+
+    # Reuse run_code_multiple with a single dummy test case
+    dummy_tc = {"input": user_input, "output": ""}
+    
+    result = run_code_multiple(
+        code=code,
+        test_cases=[dummy_tc],
+        mode="ALL"
+    )
+
+    tc_res = result["test_case_results"][0]
+    
+    # For a general run, "Accepted" or "Wrong Answer" both mean the code executed successfully
+    status = tc_res["status"]
+    if status in ["Accepted", "Wrong Answer"]:
+        status = "Success"
+    
+    return {
+        "stdout": tc_res.get("actual_output", ""),
+        "stderr": tc_res.get("error"),
+        "status": status,
+        "duration": tc_res.get("duration", 0.0)
     }
 
 if __name__ == "__main__":
