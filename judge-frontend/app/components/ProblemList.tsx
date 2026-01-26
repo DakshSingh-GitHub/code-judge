@@ -18,9 +18,41 @@ export default function ProblemList({ onSelect, selectedId, setIsSidebarOpen, se
     const [problems, setProblems] = useState<Problem[]>([]);
     const [isLoading, setIsLoading] = useState(true);
 
+    const shuffleArray = <T,>(array: T[]): T[] => {
+        const shuffled = [...array];
+        for (let i = shuffled.length - 1; i > 0; i--) {
+            const j = Math.floor(Math.random() * (i + 1));
+            [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
+        }
+        return shuffled;
+    };
+
     useEffect(() => {
         getProblems().then((data) => {
-            setProblems(data.problems || []);
+            const problemList: Problem[] = data.problems || [];
+            const sessionOrder = sessionStorage.getItem("problemOrder");
+
+            if (sessionOrder) {
+                try {
+                    const orderIds: string[] = JSON.parse(sessionOrder);
+                    const orderedProblems = orderIds
+                        .map(id => problemList.find(p => p.id === id))
+                        .filter((p): p is Problem => !!p);
+
+                    // Add any problems that might be new or not in session storage
+                    const remainingProblems = problemList.filter(p => !orderIds.includes(p.id));
+                    setProblems([...orderedProblems, ...remainingProblems]);
+                } catch (e) {
+                    console.error("Failed to parse session order", e);
+                    const shuffled = shuffleArray(problemList);
+                    sessionStorage.setItem("problemOrder", JSON.stringify(shuffled.map(p => p.id)));
+                    setProblems(shuffled);
+                }
+            } else {
+                const shuffled = shuffleArray(problemList);
+                sessionStorage.setItem("problemOrder", JSON.stringify(shuffled.map(p => p.id)));
+                setProblems(shuffled);
+            }
             setIsLoading(false);
         });
     }, []);

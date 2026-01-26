@@ -360,13 +360,13 @@ export default function Home() {
                                         </div>
                                         <div className="flex-none min-h-16.25 max-h-45 flex flex-col md:flex-row w-full justify-between items-stretch gap-4 shrink-0">
 
-                                            <div className="flex flex-col w-full md:w-1/4 gap-2">
+                                            <div className="flex flex-row md:flex-col w-full md:w-1/4 gap-2">
                                                 <button
                                                     onClick={handleSubmit}
                                                     disabled={
                                                         isSubmitting || !selectedProblemId
                                                     }
-                                                    className={`px-6 py-1.5 rounded-xl font-semibold w-full flex-1 flex justify-center items-center transition-all duration-300 shadow-md hover:shadow-lg text-sm
+                                                    className={`px-6 py-1.5 rounded-xl font-semibold flex-1 flex justify-center items-center transition-all duration-300 shadow-md hover:shadow-lg text-sm
                                                 ${isSubmitting
                                                             ? "bg-gray-500 cursor-not-allowed"
                                                             : "bg-indigo-600 hover:bg-indigo-700 active:scale-95"
@@ -380,7 +380,7 @@ export default function Home() {
                                                     disabled={
                                                         isSubmitting || !selectedProblemId
                                                     }
-                                                    className={`px-6 py-1.5 rounded-xl font-semibold w-full flex-1 flex justify-center items-center transition-all duration-300 shadow-md hover:shadow-lg text-sm
+                                                    className={`px-6 py-1.5 rounded-xl font-semibold flex-1 flex justify-center items-center transition-all duration-300 shadow-md hover:shadow-lg text-sm
                                                 ${isSubmitting
                                                             ? "bg-gray-500 cursor-not-allowed"
                                                             : "bg-emerald-600 hover:bg-emerald-700 active:scale-95"
