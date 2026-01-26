@@ -1,43 +1,72 @@
 import { getCachedProblems, setCachedProblems, getCachedProblemById, setCachedProblemById } from "./cache";
 
-const BASE_URL = "http://localhost:5000";
+const LOCAL_URL = "http://localhost:5000";
+const REMOTE_URL = "https://code-judge-5fgd.vercel.app";
+
+let resolvedBaseUrl: string | null = null;
+
+async function getBaseUrl() {
+	if (resolvedBaseUrl) return resolvedBaseUrl;
+
+	try {
+		// Quick ping to check if local backend is alive
+		const controller = new AbortController();
+		const timeoutId = setTimeout(() => controller.abort(), 1500);
+
+		await fetch(`${LOCAL_URL}/`, {
+			method: 'GET',
+			signal: controller.signal
+		});
+
+		clearTimeout(timeoutId);
+		resolvedBaseUrl = LOCAL_URL;
+	} catch (e) {
+		console.warn("Local backend not found, falling back to remote:", REMOTE_URL);
+		resolvedBaseUrl = REMOTE_URL;
+	}
+
+	return resolvedBaseUrl;
+}
 
 export async function getProblems() {
+	const baseUrl = await getBaseUrl();
 	const cached = getCachedProblems();
 	if (cached) {
 		// Fetch in background to update cache for next time
-		fetch(`${BASE_URL}/problems`)
+		fetch(`${baseUrl}/problems`)
 			.then(res => res.json())
 			.then(data => setCachedProblems(data))
 			.catch(console.error);
 		return cached;
 	}
 
-	const res = await fetch(`${BASE_URL}/problems`);
+	const res = await fetch(`${baseUrl}/problems`);
 	const data = await res.json();
 	setCachedProblems(data);
 	return data;
 }
 
 export async function getProblemById(id: string) {
+	const baseUrl = await getBaseUrl();
 	const cached = getCachedProblemById(id);
 	if (cached) {
 		// Fetch in background to update cache
-		fetch(`${BASE_URL}/problems/${id}`)
+		fetch(`${baseUrl}/problems/${id}`)
 			.then(res => res.json())
 			.then(data => setCachedProblemById(id, data))
 			.catch(console.error);
 		return cached;
 	}
 
-	const res = await fetch(`${BASE_URL}/problems/${id}`);
+	const res = await fetch(`${baseUrl}/problems/${id}`);
 	const data = await res.json();
 	setCachedProblemById(id, data);
 	return data;
 }
 
 export async function submitCode(problemId: string, code: string, testOnly: boolean = false) {
-	const res = await fetch(`${BASE_URL}/submit`, {
+	const baseUrl = await getBaseUrl();
+	const res = await fetch(`${baseUrl}/submit`, {
 		method: "POST",
 		headers: {
 			"Content-Type": "application/json",
@@ -58,7 +87,8 @@ export async function submitCode(problemId: string, code: string, testOnly: bool
 }
 
 export async function runCode(code: string, input: string = "") {
-	const res = await fetch(`${BASE_URL}/run`, {
+	const baseUrl = await getBaseUrl();
+	const res = await fetch(`${baseUrl}/run`, {
 		method: "POST",
 		headers: {
 			"Content-Type": "application/json",
