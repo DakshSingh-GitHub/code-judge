@@ -96,7 +96,7 @@ export default function CodeTestPage() {
             <div className="absolute top-0 right-0 w-125 h-125 bg-indigo-500/5 dark:bg-indigo-500/10 rounded-full blur-[120px] pointer-events-none" />
             <div className="absolute bottom-0 left-0 w-100 h-100 bg-purple-500/5 dark:bg-purple-500/10 rounded-full blur-[100px] pointer-events-none" />
 
-            <div className="flex-1 flex flex-col lg:flex-row gap-6 p-6 relative z-10 overflow-hidden">
+            <div className="flex-1 flex flex-col lg:flex-row gap-4 lg:gap-6 p-4 sm:p-6 relative z-10 overflow-hidden">
                 {/* Left Pane - Code Editor */}
                 <motion.div
                     initial={{ opacity: 0, x: -20 }}
@@ -113,8 +113,8 @@ export default function CodeTestPage() {
                             </div>
                             <div className="h-4 w-px bg-gray-300 dark:bg-gray-700 mx-1" />
                             <div className="flex items-center gap-2">
-                                <Terminal className="w-4 h-4 text-indigo-500" />
-                                <span className="text-sm font-semibold text-gray-600 dark:text-gray-300 tracking-tight">playground.py</span>
+                                <Terminal className="w-4 h-4 text-indigo-500 shrink-0" />
+                                <span className="text-xs sm:text-sm font-semibold text-gray-600 dark:text-gray-300 tracking-tight truncate max-w-[100px] sm:max-w-none">playground.py</span>
                             </div>
                         </div>
 
@@ -124,7 +124,7 @@ export default function CodeTestPage() {
                                 whileTap={{ scale: 0.95 }}
                                 onClick={handleReset}
                                 disabled={isLoading}
-                                className="flex items-center gap-2 px-4 py-2 rounded-xl text-xs font-bold transition-all bg-gray-100 dark:bg-gray-700 text-gray-600 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-600 disabled:opacity-50"
+                                className="flex items-center gap-2 px-3 sm:px-4 py-1.5 sm:py-2 rounded-xl text-[10px] sm:text-xs font-bold transition-all bg-gray-100 dark:bg-gray-700 text-gray-600 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-600 disabled:opacity-50"
                             >
                                 Reset
                             </motion.button>
@@ -134,7 +134,7 @@ export default function CodeTestPage() {
                                 whileTap={{ scale: 0.95 }}
                                 onClick={handleRun}
                                 disabled={isLoading}
-                                className={`flex items-center gap-2 px-6 py-2 rounded-xl text-sm font-bold transition-all shadow-lg ${isLoading
+                                className={`flex items-center gap-2 px-4 sm:px-6 py-1.5 sm:py-2 rounded-xl text-xs sm:text-sm font-bold transition-all shadow-lg ${isLoading
                                     ? "bg-gray-100 dark:bg-gray-700 text-gray-400 cursor-not-allowed"
                                     : "bg-linear-to-r from-indigo-500 to-purple-600 text-white hover:shadow-indigo-500/25"
                                     }`}
@@ -148,7 +148,7 @@ export default function CodeTestPage() {
                             </motion.button>
                         </div>
                     </div>
-                    <div className="flex-1 min-h-0 relative">
+                    <div className="flex-1 min-h-[350px] lg:min-h-0 relative">
                         <CodeEditor
                             code={code}
                             setCode={setCode}
@@ -166,7 +166,7 @@ export default function CodeTestPage() {
                     className="flex-1 flex flex-col gap-6 min-h-0"
                 >
                     {/* Input Pane */}
-                    <div className="flex flex-col h-1/3 bg-white dark:bg-gray-800 shadow-xl rounded-2xl overflow-hidden border border-gray-200 dark:border-gray-700">
+                    <div className="flex flex-col h-[180px] lg:h-1/3 bg-white dark:bg-gray-800 shadow-xl rounded-2xl overflow-hidden border border-gray-200 dark:border-gray-700 shrink-0">
                         <div className="px-6 py-3 border-b border-gray-200 dark:border-gray-700 flex items-center gap-2 bg-gray-50/50 dark:bg-gray-800/50">
                             <MessageSquare className="w-4 h-4 text-indigo-500" />
                             <h2 className="text-xs font-bold text-gray-500 dark:text-gray-400 uppercase tracking-widest">
@@ -182,7 +182,7 @@ export default function CodeTestPage() {
                     </div>
 
                     {/* Output Pane */}
-                    <div className="flex-1 flex flex-col bg-white dark:bg-gray-800 shadow-xl rounded-2xl overflow-hidden border border-gray-200 dark:border-gray-700 min-h-0">
+                    <div className="flex-1 flex flex-col bg-white dark:bg-gray-800 shadow-xl rounded-2xl overflow-hidden border border-gray-200 dark:border-gray-700 min-h-[250px] lg:min-h-0">
                         <div className="px-6 py-3 border-b border-gray-200 dark:border-gray-700 flex items-center justify-between bg-gray-50/50 dark:bg-gray-800/50">
                             <div className="flex items-center gap-2">
                                 <Cpu className="w-4 h-4 text-purple-500" />
