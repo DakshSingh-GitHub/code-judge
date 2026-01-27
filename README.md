@@ -56,7 +56,10 @@ Ever wondered how a judge works? It's like a tiny robot 🤖 doing this:
 
 Ready to dive in? Here’s how to get the party started on your local machine! 🎈
 
-### 🌶 1. Fire up the Backend
+## ⚠️ WARNING NOTE ⚠️
+* If you want to test the code submissions aggressively, multiple submissions and high number of IDE execution, then I'll suggest you to fire up the backend on your machine. Current deployment can't handle that large number of submissions.
+
+### 🌶 1. Fire up the Backend (for aggressive testing)
 ```bash
 cd judge-backend
 python app.py
