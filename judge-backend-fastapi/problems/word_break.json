@@ -1,0 +1,4031 @@
+{
+    "id": "word_break",
+    "title": "Word Break",
+    "description": "Given a string s and a dictionary of strings wordDict, return true if s can be segmented into a space-separated sequence of one or more dictionary words. Note that the same word in the dictionary may be reused multiple times in the segmentation.",
+    "input_format": "First line: string s. Second line: space-separated words in wordDict.",
+    "output_format": "'true' or 'false'.",
+    "constraints": {
+        "s.length": "1 <= s.length <= 300",
+        "wordDict.length": "1 <= wordDict.length <= 1000",
+        "wordDict[i].length": "1 <= wordDict[i].length <= 20",
+        "s and wordDict[i]": "consist of only lowercase English letters."
+    },
+    "judge_mode": "FIRST_FAIL",
+    "time_limit": 1,
+    "sample_test_cases": [
+        {
+            "input": "leetcode\nleet code",
+            "output": "true"
+        },
+        {
+            "input": "applepenapple\napple pen",
+            "output": "true"
+        },
+        {
+            "input": "catsandog\ncats dog sand and cat",
+            "output": "false"
+        }
+    ],
+    "hidden_test_cases": [
+        {
+            "input": "fedaedfefe\napple code leet cats sand dog and pen car",
+            "output": "false"
+        },
+        {
+            "input": "adccbeccac\npen dog car code leet cats and apple sand",
+            "output": "false"
+        },
+        {
+            "input": "ddafbacfed\ndog leet code car cats and pen sand apple",
+            "output": "false"
+        },
+        {
+            "input": "appleappleleet\ndog and code apple sand leet appleappleleet pen cats car",
+            "output": "true"
+        },
+        {
+            "input": "andapplecatssand\napple dog sand pen car and leet cats code",
+            "output": "true"
+        },
+        {
+            "input": "carcodeleet\ndog sand apple pen cats and code leet car",
+            "output": "true"
+        },
+        {
+            "input": "fceeddcabc\nleet dog apple pen cats and car code sand",
+            "output": "false"
+        },
+        {
+            "input": "dcccbcdbbe\nleet code and dog sand car pen apple cats",
+            "output": "false"
+        },
+        {
+            "input": "codeandcode\ndog cats and sand car pen code leet apple",
+            "output": "true"
+        },
+        {
+            "input": "catspenandsand\npen apple and code cats sand leet car dog",
+            "output": "true"
+        },
+        {
+            "input": "cafecafaed\napple sand code cats pen dog leet and car",
+            "output": "false"
+        },
+        {
+            "input": "acbdbdbadc\nand car apple cats leet dog code pen sand",
+            "output": "false"
+        },
+        {
+            "input": "dcaafdfcbf\napple code sand pen leet car dog and cats",
+            "output": "false"
+        },
+        {
+            "input": "apple\ncats and sand dog pen apple leet code car",
+            "output": "true"
+        },
+        {
+            "input": "dcbaeeadda\nleet pen cats and dog code sand apple car",
+            "output": "false"
+        },
+        {
+            "input": "penand\nleet pen apple car dog sand cats and code",
+            "output": "true"
+        },
+        {
+            "input": "faacaaabcd\ncar and pen leet dog code cats sand apple",
+            "output": "false"
+        },
+        {
+            "input": "babbbdcdda\nleet dog and code apple sand pen cats car",
+            "output": "false"
+        },
+        {
+            "input": "cecaebbbce\ncats apple pen and code car dog leet sand",
+            "output": "false"
+        },
+        {
+            "input": "catsdog\ncode car and pen apple cats sand leet dog",
+            "output": "true"
+        },
+        {
+            "input": "dog\nand apple code cats leet car dog sand pen",
+            "output": "true"
+        },
+        {
+            "input": "dabbffcbee\ncode dog car cats leet pen and sand apple",
+            "output": "false"
+        },
+        {
+            "input": "applepen\nsand and leet pen cats apple dog car code",
+            "output": "true"
+        },
+        {
+            "input": "eaaebbffcd\ndog and cats car apple sand leet code pen",
+            "output": "false"
+        },
+        {
+            "input": "sandandapplesand\npen code sand car and cats dog apple leet",
+            "output": "true"
+        },
+        {
+            "input": "codeapplecar\ndog leet code sand car cats pen and apple",
+            "output": "true"
+        },
+        {
+            "input": "andcatscarcatscar\nleet car pen apple cats dog and sand code",
+            "output": "true"
+        },
+        {
+            "input": "dog\ncar and apple code dog sand cats pen leet",
+            "output": "true"
+        },
+        {
+            "input": "abfaffbdaa\npen and code apple car dog cats leet sand",
+            "output": "false"
+        },
+        {
+            "input": "dafdedccde\napple dog code car sand cats and leet pen",
+            "output": "false"
+        },
+        {
+            "input": "codecodeleetleetcar\ncode dog cats pen leet apple and sand car",
+            "output": "true"
+        },
+        {
+            "input": "bdcacebdaf\nsand car apple pen and leet cats dog code",
+            "output": "false"
+        },
+        {
+            "input": "ebaefffedb\ncar sand dog code pen leet and cats apple",
+            "output": "false"
+        },
+        {
+            "input": "fdefbebddd\ncode and car pen cats leet dog apple sand",
+            "output": "false"
+        },
+        {
+            "input": "cdbebdfdce\ndog code cats car leet and apple sand pen",
+            "output": "false"
+        },
+        {
+            "input": "eeeeaaefaf\nsand and pen car cats dog code apple leet",
+            "output": "false"
+        },
+        {
+            "input": "dogandapple\nsand dog and leet apple pen cats code car",
+            "output": "true"
+        },
+        {
+            "input": "beadaedcbe\nleet sand apple code car pen dog and cats",
+            "output": "false"
+        },
+        {
+            "input": "codecarpen\nsand car and apple dog code pen cats leet",
+            "output": "true"
+        },
+        {
+            "input": "efcedaabab\napple pen leet car cats dog and code sand",
+            "output": "false"
+        },
+        {
+            "input": "cefffefbbc\nleet car and sand apple code cats pen dog",
+            "output": "false"
+        },
+        {
+            "input": "acafdbefdc\napple pen car leet cats and code dog sand",
+            "output": "false"
+        },
+        {
+            "input": "bdecdeaeec\ncats and car sand apple code leet dog pen",
+            "output": "false"
+        },
+        {
+            "input": "codecarcatscats\nand pen sand car apple cats leet code dog",
+            "output": "true"
+        },
+        {
+            "input": "carandpencats\ncats and car apple dog code leet sand pen",
+            "output": "true"
+        },
+        {
+            "input": "codepenleetpenleet\nand apple code codepenleetpenleet pen cats dog car leet sand",
+            "output": "true"
+        },
+        {
+            "input": "cbbadddbce\ndog cats apple leet sand and car pen code",
+            "output": "false"
+        },
+        {
+            "input": "leetappledogcode\ncats car code leet pen apple dog and sand",
+            "output": "true"
+        },
+        {
+            "input": "caafbbabad\nleet pen dog apple car code sand and cats",
+            "output": "false"
+        },
+        {
+            "input": "code\nleet code sand apple and pen cats car dog",
+            "output": "true"
+        },
+        {
+            "input": "carcodeleetleet\nsand apple code cats dog car leet and pen",
+            "output": "true"
+        },
+        {
+            "input": "cdacbbbcfd\ndog sand cats code leet apple pen car and",
+            "output": "false"
+        },
+        {
+            "input": "dbaffbfddc\ncode cats pen car apple sand dog and leet",
+            "output": "false"
+        },
+        {
+            "input": "bbffaeaccc\npen car leet code dog and cats apple sand",
+            "output": "false"
+        },
+        {
+            "input": "pen\nand apple sand pen dog cats code car leet",
+            "output": "true"
+        },
+        {
+            "input": "and\npen car sand cats code dog and leet apple",
+            "output": "true"
+        },
+        {
+            "input": "pensandand\ncar apple leet sand dog and cats pen code",
+            "output": "true"
+        },
+        {
+            "input": "eccdfcfcce\ndog pen and leet apple code sand cats car",
+            "output": "false"
+        },
+        {
+            "input": "dcbfafcdab\npen cats sand and apple code leet car dog",
+            "output": "false"
+        },
+        {
+            "input": "afebfcedce\ndog car pen leet apple sand code and cats",
+            "output": "false"
+        },
+        {
+            "input": "sand\nand pen sand code dog car apple cats leet",
+            "output": "true"
+        },
+        {
+            "input": "leetcodepencodeapple\ncode leet car sand dog pen and cats apple",
+            "output": "true"
+        },
+        {
+            "input": "leetcatsandpen\ncode and cats car pen apple leet dog sand",
+            "output": "true"
+        },
+        {
+            "input": "eadbcbbfab\ncats code apple and car dog sand leet pen",
+            "output": "false"
+        },
+        {
+            "input": "sandsandcatsand\ncats leet pen apple code and sand car dog",
+            "output": "true"
+        },
+        {
+            "input": "leetleet\npen car apple dog cats and leet sand code",
+            "output": "true"
+        },
+        {
+            "input": "dogapple\ndog and cats sand dogapple car code apple leet pen",
+            "output": "true"
+        },
+        {
+            "input": "catscats\napple dog cats car sand and pen leet code",
+            "output": "true"
+        },
+        {
+            "input": "aaeeacdafd\nleet code dog pen cats car apple sand and",
+            "output": "false"
+        },
+        {
+            "input": "eacefacbbd\npen and dog cats apple sand leet code car",
+            "output": "false"
+        },
+        {
+            "input": "carand\nand sand apple code cats leet pen dog car",
+            "output": "true"
+        },
+        {
+            "input": "codepenappleand\nleet dog and car apple pen sand cats code",
+            "output": "true"
+        },
+        {
+            "input": "aedabecbec\ncar code and leet pen apple sand cats dog",
+            "output": "false"
+        },
+        {
+            "input": "efaeceddfc\nleet sand apple and dog cats pen code car",
+            "output": "false"
+        },
+        {
+            "input": "cbfeeecddd\nsand dog leet and car cats pen apple code",
+            "output": "false"
+        },
+        {
+            "input": "eeffaeaeed\ncode car pen dog leet cats apple and sand",
+            "output": "false"
+        },
+        {
+            "input": "ebfacacefa\nand cats dog car pen apple leet sand code",
+            "output": "false"
+        },
+        {
+            "input": "dogcarcarcats\nand leet dog apple pen car cats sand code",
+            "output": "true"
+        },
+        {
+            "input": "code\ndog and cats car sand code apple pen leet",
+            "output": "true"
+        },
+        {
+            "input": "adaadabafa\ncats and pen leet car code apple sand dog",
+            "output": "false"
+        },
+        {
+            "input": "carand\ncats sand pen car code apple and leet dog",
+            "output": "true"
+        },
+        {
+            "input": "pencodecarand\nsand code pen apple cats and dog car leet",
+            "output": "true"
+        },
+        {
+            "input": "dabfbaaada\ncats apple sand and car dog code pen leet",
+            "output": "false"
+        },
+        {
+            "input": "andapplecar\ncode cats car dog sand leet pen apple and",
+            "output": "true"
+        },
+        {
+            "input": "afebfcffbf\ndog sand pen and leet code cats apple car",
+            "output": "false"
+        },
+        {
+            "input": "pensand\nsand cats pen code leet apple dog car and",
+            "output": "true"
+        },
+        {
+            "input": "ffabdabedb\ncar sand apple dog cats code leet and pen",
+            "output": "false"
+        },
+        {
+            "input": "pen\napple sand code dog and cats leet pen car",
+            "output": "true"
+        },
+        {
+            "input": "sandleetapplecats\ncats dog pen and sand apple car leet code",
+            "output": "true"
+        },
+        {
+            "input": "ebeeceddfc\ncar and apple cats pen sand dog code leet",
+            "output": "false"
+        },
+        {
+            "input": "andcode\nsand cats pen dog apple and leet car code",
+            "output": "true"
+        },
+        {
+            "input": "andsandsanddogpen\npen cats apple dog car and sand leet code",
+            "output": "true"
+        },
+        {
+            "input": "catsdogapplecats\nsand and pen leet dog apple cats code car",
+            "output": "true"
+        },
+        {
+            "input": "dffcbcefcb\npen leet dog sand and car cats code apple",
+            "output": "false"
+        },
+        {
+            "input": "dogcarcarand\ncats and car code sand apple leet pen dog",
+            "output": "true"
+        },
+        {
+            "input": "code\npen dog cats car apple and sand leet code",
+            "output": "true"
+        },
+        {
+            "input": "cfbccfebde\nleet car pen cats dog apple and code sand",
+            "output": "false"
+        },
+        {
+            "input": "leetpendogandleet\nleet and code car pen sand dog cats apple",
+            "output": "true"
+        },
+        {
+            "input": "pencatsleetcar\napple leet dog sand car and code pen cats",
+            "output": "true"
+        },
+        {
+            "input": "applesandsand\nsand pen code apple cats car and leet dog",
+            "output": "true"
+        },
+        {
+            "input": "efdeadbfbc\ncats leet code dog sand car apple and pen",
+            "output": "false"
+        },
+        {
+            "input": "code\ncats and apple car dog leet sand pen code",
+            "output": "true"
+        },
+        {
+            "input": "applecar\ncode leet and dog pen sand cats apple car",
+            "output": "true"
+        },
+        {
+            "input": "fbfbccceab\napple cats code car and sand leet pen dog",
+            "output": "false"
+        },
+        {
+            "input": "cbfcfaeffb\ndog pen code and leet sand cats apple car",
+            "output": "false"
+        },
+        {
+            "input": "sandandcodecatsdog\nleet dog sand apple cats and pen code car",
+            "output": "true"
+        },
+        {
+            "input": "leetleetsandleet\npen sand car dog leet and code cats apple",
+            "output": "true"
+        },
+        {
+            "input": "applependogcodecode\nleet code dog apple pen and cats car sand",
+            "output": "true"
+        },
+        {
+            "input": "cdccacbfcc\napple dog code cats and car leet pen sand",
+            "output": "false"
+        },
+        {
+            "input": "sandappleleetcats\nleet sand code pen dog and car cats apple",
+            "output": "true"
+        },
+        {
+            "input": "sandandapple\ncode car cats dog apple leet and sand pen",
+            "output": "true"
+        },
+        {
+            "input": "cbafacbccd\napple code sand pen car and cats leet dog",
+            "output": "false"
+        },
+        {
+            "input": "aceefeaefe\ndog pen apple sand cats code leet and car",
+            "output": "false"
+        },
+        {
+            "input": "cfddbdfbdf\nleet pen and dog sand code cats apple car",
+            "output": "false"
+        },
+        {
+            "input": "sandcodeapple\napple and pen leet code cats dog car sand",
+            "output": "true"
+        },
+        {
+            "input": "abeafcafba\ndog apple car code and sand pen leet cats",
+            "output": "false"
+        },
+        {
+            "input": "sandpenandcodepen\ndog apple leet car pen cats sand code and",
+            "output": "true"
+        },
+        {
+            "input": "cardogcatspenand\ndog car leet apple cardogcatspenand pen sand and code cats",
+            "output": "true"
+        },
+        {
+            "input": "ecdafcaeae\ndog pen sand apple leet code car cats and",
+            "output": "false"
+        },
+        {
+            "input": "ebbcfaafcf\napple pen code leet sand car and cats dog",
+            "output": "false"
+        },
+        {
+            "input": "penleetleet\ncats car and code leet dog pen apple sand",
+            "output": "true"
+        },
+        {
+            "input": "eafddcdfca\ncar code cats apple leet sand pen dog and",
+            "output": "false"
+        },
+        {
+            "input": "catscodecar\ncats and sand pen code leet dog apple car",
+            "output": "true"
+        },
+        {
+            "input": "acafcddfec\ncode cats apple sand leet car pen dog and",
+            "output": "false"
+        },
+        {
+            "input": "fdbccbbcba\nsand apple cats dog code and car leet pen",
+            "output": "false"
+        },
+        {
+            "input": "dfeccfbdaf\nleet and cats pen dog apple code sand car",
+            "output": "false"
+        },
+        {
+            "input": "dogleetdogsandand\nsand dog leet car and code cats pen apple",
+            "output": "true"
+        },
+        {
+            "input": "dbcfbfefaa\napple cats car and sand pen dog leet code",
+            "output": "false"
+        },
+        {
+            "input": "cadaadbffa\ndog apple car and code pen sand leet cats",
+            "output": "false"
+        },
+        {
+            "input": "cbdefadbbf\nand sand pen car apple cats code leet dog",
+            "output": "false"
+        },
+        {
+            "input": "dog\nleet apple sand car dog pen and cats code",
+            "output": "true"
+        },
+        {
+            "input": "cfccedafcc\ncode car and pen apple leet dog sand cats",
+            "output": "false"
+        },
+        {
+            "input": "leetleetcarcar\nand apple code dog pen cats leet sand car",
+            "output": "true"
+        },
+        {
+            "input": "sandsandpen\ncar apple leet and pen sand code dog cats",
+            "output": "true"
+        },
+        {
+            "input": "pensandpen\nleet cats apple car code sand and dog pen",
+            "output": "true"
+        },
+        {
+            "input": "appleleetpensandand\npen sand car dog cats and apple leet code",
+            "output": "true"
+        },
+        {
+            "input": "catsapple\ncar apple pen catsapple sand cats leet and code dog",
+            "output": "true"
+        },
+        {
+            "input": "car\ncats code apple pen sand dog leet car and",
+            "output": "true"
+        },
+        {
+            "input": "afccfcdeda\nand dog pen sand apple car code cats leet",
+            "output": "false"
+        },
+        {
+            "input": "accabdfffe\ncar sand apple cats dog and leet pen code",
+            "output": "false"
+        },
+        {
+            "input": "fdececccac\nsand and pen car code leet cats apple dog",
+            "output": "false"
+        },
+        {
+            "input": "aabebdeefb\napple car leet code sand dog and pen cats",
+            "output": "false"
+        },
+        {
+            "input": "deafeccebf\ncar sand pen and apple cats dog code leet",
+            "output": "false"
+        },
+        {
+            "input": "bdadffbfcc\nsand car pen leet cats code and dog apple",
+            "output": "false"
+        },
+        {
+            "input": "sandleet\ncar leet pen cats code sand apple dog and",
+            "output": "true"
+        },
+        {
+            "input": "catsdogleetdogpen\ncar and sand dog leet apple pen code cats",
+            "output": "true"
+        },
+        {
+            "input": "ffdaafdfec\ncats code and sand apple car dog leet pen",
+            "output": "false"
+        },
+        {
+            "input": "catsdogdogpensand\ndog car cats leet pen sand apple code and",
+            "output": "true"
+        },
+        {
+            "input": "fdfcfedccd\npen and apple leet dog sand code cats car",
+            "output": "false"
+        },
+        {
+            "input": "eaafbdaeee\ncats pen sand leet car dog apple code and",
+            "output": "false"
+        },
+        {
+            "input": "fadfdaecba\npen code leet sand car cats and apple dog",
+            "output": "false"
+        },
+        {
+            "input": "applecodecats\nsand dog cats apple car code and pen leet",
+            "output": "true"
+        },
+        {
+            "input": "fbfabfaadb\napple sand code cats dog pen car leet and",
+            "output": "false"
+        },
+        {
+            "input": "leetcarcodepenpen\ncats pen car code dog sand leet and apple",
+            "output": "true"
+        },
+        {
+            "input": "code\ncode apple cats leet car pen sand and dog",
+            "output": "true"
+        },
+        {
+            "input": "ecdbadfecc\napple pen dog leet sand and cats code car",
+            "output": "false"
+        },
+        {
+            "input": "cdfdbeeafd\nleet cats pen code sand and apple car dog",
+            "output": "false"
+        },
+        {
+            "input": "pen\ndog pen car and sand code leet cats apple",
+            "output": "true"
+        },
+        {
+            "input": "codeapplesand\npen cats apple leet sand dog car code and",
+            "output": "true"
+        },
+        {
+            "input": "bfdfeadbdc\napple leet and dog cats code car sand pen",
+            "output": "false"
+        },
+        {
+            "input": "fbcaecffcb\ncode dog sand apple cats and car pen leet",
+            "output": "false"
+        },
+        {
+            "input": "carcardogcar\ndog pen cats leet code sand apple car and",
+            "output": "true"
+        },
+        {
+            "input": "dadcefafdb\ncode sand leet pen car cats apple and dog",
+            "output": "false"
+        },
+        {
+            "input": "bddfbeeaaf\npen leet sand dog code apple car and cats",
+            "output": "false"
+        },
+        {
+            "input": "ebfceedccd\ncats code and apple leet car pen dog sand",
+            "output": "false"
+        },
+        {
+            "input": "befffcadea\ncats and pen code leet car apple dog sand",
+            "output": "false"
+        },
+        {
+            "input": "sandsandsandcar\ndog cats code and sand apple pen car sandsandsandcar leet",
+            "output": "true"
+        },
+        {
+            "input": "cats\nsand car code cats pen apple leet dog and",
+            "output": "true"
+        },
+        {
+            "input": "anddogappleand\ndog anddogappleand pen cats apple car and sand leet code",
+            "output": "true"
+        },
+        {
+            "input": "dog\ndog pen apple leet cats car code and sand",
+            "output": "true"
+        },
+        {
+            "input": "penleetsandandcode\npen sand and dog car cats leet code apple",
+            "output": "true"
+        },
+        {
+            "input": "cardogcodecode\ncar sand cats dog leet pen apple and code",
+            "output": "true"
+        },
+        {
+            "input": "affccdeeaa\ncar pen code dog and apple cats sand leet",
+            "output": "false"
+        },
+        {
+            "input": "fbeafddfad\nand car pen sand code leet cats dog apple",
+            "output": "false"
+        },
+        {
+            "input": "ffcddfffaf\nleet code car dog apple and pen sand cats",
+            "output": "false"
+        },
+        {
+            "input": "catssandappleapplepen\napple leet sand code pen and dog cats car",
+            "output": "true"
+        },
+        {
+            "input": "adbfaeadfc\nleet sand code dog cats and pen apple car",
+            "output": "false"
+        },
+        {
+            "input": "beafcaffca\nsand apple pen code car leet and dog cats",
+            "output": "false"
+        },
+        {
+            "input": "codepen\nleet apple cats car dog and sand code pen",
+            "output": "true"
+        },
+        {
+            "input": "ebcababcbb\npen leet apple sand code dog car and cats",
+            "output": "false"
+        },
+        {
+            "input": "afdbbffefd\ncar apple code cats leet and sand dog pen",
+            "output": "false"
+        },
+        {
+            "input": "dabaafccda\ncar sand leet dog code cats and pen apple",
+            "output": "false"
+        },
+        {
+            "input": "and\npen and code leet car cats dog sand apple",
+            "output": "true"
+        },
+        {
+            "input": "ceddfdacee\npen dog sand leet car and cats apple code",
+            "output": "false"
+        },
+        {
+            "input": "ebcfdfabef\ncode apple leet pen car dog sand cats and",
+            "output": "false"
+        },
+        {
+            "input": "fdecdcdcab\ncats sand leet apple code and car dog pen",
+            "output": "false"
+        },
+        {
+            "input": "dogcats\ncats sand leet and apple code pen car dog",
+            "output": "true"
+        },
+        {
+            "input": "pencode\ncode pen cats apple sand dog car leet and",
+            "output": "true"
+        },
+        {
+            "input": "ffdbdddadc\nsand car pen dog cats apple and code leet",
+            "output": "false"
+        },
+        {
+            "input": "fdceaffeda\ncats and apple sand leet code dog pen car",
+            "output": "false"
+        },
+        {
+            "input": "fcfbbbbbfb\ncar sand and dog cats apple leet pen code",
+            "output": "false"
+        },
+        {
+            "input": "catsleet\nleet cats apple code car pen dog and sand",
+            "output": "true"
+        },
+        {
+            "input": "bfdfeafccc\ncar pen apple sand code cats leet and dog",
+            "output": "false"
+        },
+        {
+            "input": "cadeeabcbd\ncode and car dog apple cats pen sand leet",
+            "output": "false"
+        },
+        {
+            "input": "ecdcfebfea\nsand dog leet car pen and apple cats code",
+            "output": "false"
+        },
+        {
+            "input": "catsleet\nleet code apple cats sand pen car and dog",
+            "output": "true"
+        },
+        {
+            "input": "dfcdccdfad\ndog sand code apple car and cats pen leet",
+            "output": "false"
+        },
+        {
+            "input": "carcarleetdog\nand cats dog code pen car sand leet apple",
+            "output": "true"
+        },
+        {
+            "input": "dfadafbbfd\nand leet dog cats code apple sand pen car",
+            "output": "false"
+        },
+        {
+            "input": "adcfebfeac\nsand cats dog apple and code car pen leet",
+            "output": "false"
+        },
+        {
+            "input": "applecatsdog\napple sand dog car and leet pen cats code",
+            "output": "true"
+        },
+        {
+            "input": "eeabdaaebc\npen and dog sand leet apple cats car code",
+            "output": "false"
+        },
+        {
+            "input": "leetleetleetcatsand\nsand apple leet and car code cats pen dog",
+            "output": "true"
+        },
+        {
+            "input": "ffebbbcebc\ncode dog sand and pen cats leet apple car",
+            "output": "false"
+        },
+        {
+            "input": "penandpensand\ndog cats apple code car leet pen and sand",
+            "output": "true"
+        },
+        {
+            "input": "ecbfeacbad\nsand dog cats and pen apple car leet code",
+            "output": "false"
+        },
+        {
+            "input": "deeeccdabc\ncode dog and car cats leet apple pen sand",
+            "output": "false"
+        },
+        {
+            "input": "carcatspen\ncar sand apple code pen and leet dog cats",
+            "output": "true"
+        },
+        {
+            "input": "leetdogdogleetdog\nleet sand cats code dog apple pen and car",
+            "output": "true"
+        },
+        {
+            "input": "cats\napple and leet code sand car pen dog cats",
+            "output": "true"
+        },
+        {
+            "input": "andandcar\ncode dog pen and cats sand leet car apple",
+            "output": "true"
+        },
+        {
+            "input": "andleetappledogapple\napple leet sand cats and pen dog code andleetappledogapple car",
+            "output": "true"
+        },
+        {
+            "input": "cdcdcbecdb\napple dog leet code car pen sand cats and",
+            "output": "false"
+        },
+        {
+            "input": "apple\ndog apple pen and car sand cats code leet",
+            "output": "true"
+        },
+        {
+            "input": "pen\ncats sand pen dog leet and code apple car",
+            "output": "true"
+        },
+        {
+            "input": "sandleetcarcarand\napple pen car dog and cats leet sand code",
+            "output": "true"
+        },
+        {
+            "input": "catspencode\npen and sand cats dog code leet car apple",
+            "output": "true"
+        },
+        {
+            "input": "andcarpendogapple\npen car and leet dog code sand cats apple",
+            "output": "true"
+        },
+        {
+            "input": "afcdebbdae\napple dog leet and pen car sand cats code",
+            "output": "false"
+        },
+        {
+            "input": "bdfbecbbdf\nand apple code leet sand dog cats pen car",
+            "output": "false"
+        },
+        {
+            "input": "dogandandapplecode\napple code and pen leet car dog cats sand",
+            "output": "true"
+        },
+        {
+            "input": "befbffcbea\ncode pen dog car apple and leet sand cats",
+            "output": "false"
+        },
+        {
+            "input": "catsapple\ndog and code cats sand apple car leet pen",
+            "output": "true"
+        },
+        {
+            "input": "catssand\ncats dog leet pen car and apple code sand",
+            "output": "true"
+        },
+        {
+            "input": "dfbbcfdecd\npen sand dog code apple and cats leet car",
+            "output": "false"
+        },
+        {
+            "input": "aebfacccac\nsand and cats apple code car leet dog pen",
+            "output": "false"
+        },
+        {
+            "input": "catscode\ncats dog sand apple leet and pen car code",
+            "output": "true"
+        },
+        {
+            "input": "catsapplepen\nleet pen code cats and dog sand apple car",
+            "output": "true"
+        },
+        {
+            "input": "leetleetdogandsand\napple leet cats dog car sand and code pen",
+            "output": "true"
+        },
+        {
+            "input": "pen\napple pen car sand dog and cats leet code",
+            "output": "true"
+        },
+        {
+            "input": "pencarcatscodeleet\nand apple cats dog pen sand car code leet",
+            "output": "true"
+        },
+        {
+            "input": "carpensandcarleet\nleet code pen sand and apple dog cats car",
+            "output": "true"
+        },
+        {
+            "input": "apple\nand code cats sand car dog leet pen apple",
+            "output": "true"
+        },
+        {
+            "input": "dbecfacbcc\ncode cats sand dog apple pen leet car and",
+            "output": "false"
+        },
+        {
+            "input": "cdadfcacee\ncode car apple dog cats sand and leet pen",
+            "output": "false"
+        },
+        {
+            "input": "pen\nsand pen cats leet code dog and car apple",
+            "output": "true"
+        },
+        {
+            "input": "fbadedaaab\nsand apple code car dog leet cats and pen",
+            "output": "false"
+        },
+        {
+            "input": "cbdcecbffa\npen sand leet and apple code car dog cats",
+            "output": "false"
+        },
+        {
+            "input": "befccbdaed\ndog cats pen leet and code apple car sand",
+            "output": "false"
+        },
+        {
+            "input": "fbedfbabcc\nand sand leet car dog apple pen cats code",
+            "output": "false"
+        },
+        {
+            "input": "fcabbdabcf\nand apple car code pen cats sand dog leet",
+            "output": "false"
+        },
+        {
+            "input": "bafbbabfcf\ndog cats and code sand pen leet car apple",
+            "output": "false"
+        },
+        {
+            "input": "ddbaadeeed\ncats and pen sand car apple dog code leet",
+            "output": "false"
+        },
+        {
+            "input": "efdfbdaced\ncats code pen apple car dog sand leet and",
+            "output": "false"
+        },
+        {
+            "input": "decdbefbbb\ncode leet sand car pen apple dog cats and",
+            "output": "false"
+        },
+        {
+            "input": "bdacecabcf\ncats and code sand apple leet car dog pen",
+            "output": "false"
+        },
+        {
+            "input": "deabefebac\napple pen dog sand cats leet code and car",
+            "output": "false"
+        },
+        {
+            "input": "codedogleetapple\napple pen leet dog code sand cats and car",
+            "output": "true"
+        },
+        {
+            "input": "sand\ncode cats leet apple and car sand dog pen",
+            "output": "true"
+        },
+        {
+            "input": "codedogcodeleet\npen and dog sand leet car cats apple code",
+            "output": "true"
+        },
+        {
+            "input": "appleleetcar\nand apple dog code cats car pen leet sand",
+            "output": "true"
+        },
+        {
+            "input": "codecarcarandapple\napple code sand cats car pen and leet dog",
+            "output": "true"
+        },
+        {
+            "input": "cbeaaffadb\nleet car sand pen dog cats and code apple",
+            "output": "false"
+        },
+        {
+            "input": "daadbeeedf\npen dog leet and apple code car sand cats",
+            "output": "false"
+        },
+        {
+            "input": "codedogcardog\ndog sand leet code car and apple cats pen",
+            "output": "true"
+        },
+        {
+            "input": "cdbdbacdcf\nand leet cats code pen car sand apple dog",
+            "output": "false"
+        },
+        {
+            "input": "pencatsdogand\nleet and code apple pen sand car cats dog",
+            "output": "true"
+        },
+        {
+            "input": "leet\nleet cats and dog pen sand apple code car",
+            "output": "true"
+        },
+        {
+            "input": "penleet\napple code dog cats and car leet sand pen",
+            "output": "true"
+        },
+        {
+            "input": "appleand\ndog code car cats and sand leet apple pen",
+            "output": "true"
+        },
+        {
+            "input": "applecodeapple\nand pen car code sand apple dog leet cats",
+            "output": "true"
+        },
+        {
+            "input": "dcaedaaccf\npen sand code cats leet apple car dog and",
+            "output": "false"
+        },
+        {
+            "input": "dbeaaaddbf\ncode leet pen dog cats sand and apple car",
+            "output": "false"
+        },
+        {
+            "input": "carleet\npen sand leet dog car cats code and apple",
+            "output": "true"
+        },
+        {
+            "input": "aeefabadcb\napple car cats sand code leet pen and dog",
+            "output": "false"
+        },
+        {
+            "input": "carpenand\napple sand car dog cats pen code and leet",
+            "output": "true"
+        },
+        {
+            "input": "leetdogdogcats\nsand dog cats car leet pen and apple code",
+            "output": "true"
+        },
+        {
+            "input": "daecbecdbf\npen car cats apple leet code sand dog and",
+            "output": "false"
+        },
+        {
+            "input": "carcarsandcode\ncode leet and dog car pen apple cats sand",
+            "output": "true"
+        },
+        {
+            "input": "catsleetsanddogcode\ndog pen cats code apple sand leet car and",
+            "output": "true"
+        },
+        {
+            "input": "leetcodeandpendog\ncode leet cats car apple pen and dog sand",
+            "output": "true"
+        },
+        {
+            "input": "carapplecar\npen and apple code car leet cats sand dog",
+            "output": "true"
+        },
+        {
+            "input": "appleleetcode\nand car sand leet apple code cats dog appleleetcode pen",
+            "output": "true"
+        },
+        {
+            "input": "sanddogdogand\ncar leet code sand apple and cats dog pen",
+            "output": "true"
+        },
+        {
+            "input": "dog\nleet car dog sand cats pen code apple and",
+            "output": "true"
+        },
+        {
+            "input": "codeandcatsand\ndog cats and code pen leet sand car apple",
+            "output": "true"
+        },
+        {
+            "input": "edaacdacda\nleet pen cats apple car and dog code sand",
+            "output": "false"
+        },
+        {
+            "input": "sanddogcatssand\nand code leet sand cats pen apple dog car",
+            "output": "true"
+        },
+        {
+            "input": "catsandpensandleet\nand cats code leet car apple dog sand pen",
+            "output": "true"
+        },
+        {
+            "input": "acceeeaddb\nand code leet sand cats car apple pen dog",
+            "output": "false"
+        },
+        {
+            "input": "addbeceefd\npen code car and leet apple dog sand cats",
+            "output": "false"
+        },
+        {
+            "input": "cbedfffcac\ncats pen leet code car dog apple and sand",
+            "output": "false"
+        },
+        {
+            "input": "afcdccedaa\ncode sand cats and leet dog car pen apple",
+            "output": "false"
+        },
+        {
+            "input": "febdbfcafe\napple car code leet dog sand pen and cats",
+            "output": "false"
+        },
+        {
+            "input": "acffbdcaca\nleet code car apple pen sand cats and dog",
+            "output": "false"
+        },
+        {
+            "input": "carapple\ndog car apple code pen leet cats and sand",
+            "output": "true"
+        },
+        {
+            "input": "cbcfadbdfc\ncats pen code apple leet car and sand dog",
+            "output": "false"
+        },
+        {
+            "input": "bfabeaabbd\nand sand pen cats dog apple code leet car",
+            "output": "false"
+        },
+        {
+            "input": "dogpencode\ndog and code cats apple leet sand car pen",
+            "output": "true"
+        },
+        {
+            "input": "bbfbedaeae\napple and sand code cats pen car dog leet",
+            "output": "false"
+        },
+        {
+            "input": "penpencatspensand\napple car sand dog pen code and leet cats",
+            "output": "true"
+        },
+        {
+            "input": "bbeabaecfe\npen cats leet car dog code sand and apple",
+            "output": "false"
+        },
+        {
+            "input": "cbabdbddab\nsand apple leet car and pen dog code cats",
+            "output": "false"
+        },
+        {
+            "input": "ecfbdbbddd\ndog apple pen code cats car and sand leet",
+            "output": "false"
+        },
+        {
+            "input": "carcode\nsand car leet dog cats code apple and pen",
+            "output": "true"
+        },
+        {
+            "input": "deecaedeca\ncats leet pen and dog code sand apple car",
+            "output": "false"
+        },
+        {
+            "input": "andcar\nand dog car code sand leet apple cats pen",
+            "output": "true"
+        },
+        {
+            "input": "ececafcafc\ncode apple car cats leet pen and sand dog",
+            "output": "false"
+        },
+        {
+            "input": "ffaafbaccc\nsand apple leet dog car cats code pen and",
+            "output": "false"
+        },
+        {
+            "input": "codecarcardog\nsand car dog code and pen cats leet apple",
+            "output": "true"
+        },
+        {
+            "input": "sanddogapple\nand leet code sand dog pen cats car apple",
+            "output": "true"
+        },
+        {
+            "input": "sand\nand apple leet cats dog car code pen sand",
+            "output": "true"
+        },
+        {
+            "input": "andleetsandleet\ncar sand code and cats pen apple dog leet",
+            "output": "true"
+        },
+        {
+            "input": "eebecbeead\ncats and leet sand apple car code pen dog",
+            "output": "false"
+        },
+        {
+            "input": "eadedeecae\nleet code sand cats car apple dog and pen",
+            "output": "false"
+        },
+        {
+            "input": "leetleetdogcar\nand apple leet pen car code sand dog cats",
+            "output": "true"
+        },
+        {
+            "input": "pen\nsand car code leet pen apple cats dog and",
+            "output": "true"
+        },
+        {
+            "input": "pencodecarandleet\ndog apple pen leet cats sand code and car",
+            "output": "true"
+        },
+        {
+            "input": "ffceacbdbb\ncats dog car code apple pen sand leet and",
+            "output": "false"
+        },
+        {
+            "input": "appleandleetpenpen\ncode sand leet and pen dog cats apple car",
+            "output": "true"
+        },
+        {
+            "input": "penleetand\ncats leet pen dog and sand code apple car",
+            "output": "true"
+        },
+        {
+            "input": "penpendogcats\nand leet cats dog pen apple penpendogcats code sand car",
+            "output": "true"
+        },
+        {
+            "input": "carcodecodedog\nleet dog cats apple sand pen and code car",
+            "output": "true"
+        },
+        {
+            "input": "applepensand\napple and dog sand applepensand leet car pen code cats",
+            "output": "true"
+        },
+        {
+            "input": "acfcbfeccb\ncode pen and dog cats car apple sand leet",
+            "output": "false"
+        },
+        {
+            "input": "dogleetdogandand\ncats pen leet sand dog code car apple and",
+            "output": "true"
+        },
+        {
+            "input": "carcarapplepenpen\nand sand leet pen car dog code apple cats",
+            "output": "true"
+        },
+        {
+            "input": "adcbebccae\ndog leet pen cats sand car apple and code",
+            "output": "false"
+        },
+        {
+            "input": "and\napple car pen leet code sand cats dog and",
+            "output": "true"
+        },
+        {
+            "input": "dfcabcbaca\nand pen code sand cats apple car dog leet",
+            "output": "false"
+        },
+        {
+            "input": "pencodeandpenand\napple leet and pen dog sand cats pencodeandpenand code car",
+            "output": "true"
+        },
+        {
+            "input": "cats\nsand code cats leet apple pen dog car and",
+            "output": "true"
+        },
+        {
+            "input": "penpensand\ncats sand and dog pen car code apple leet",
+            "output": "true"
+        },
+        {
+            "input": "sandandcode\nleet dog code car pen sand and apple cats",
+            "output": "true"
+        },
+        {
+            "input": "cats\nleet and sand pen code dog apple car cats",
+            "output": "true"
+        },
+        {
+            "input": "cebeceefba\napple and cats car sand leet pen dog code",
+            "output": "false"
+        },
+        {
+            "input": "bfddbfcdda\napple dog cats leet code pen sand and car",
+            "output": "false"
+        },
+        {
+            "input": "catscatspenpen\nsand apple code and pen car cats dog leet",
+            "output": "true"
+        },
+        {
+            "input": "ddcddecafc\ncode pen apple leet cats dog sand and car",
+            "output": "false"
+        },
+        {
+            "input": "afebbcfada\ndog pen cats leet apple sand code and car",
+            "output": "false"
+        },
+        {
+            "input": "andpen\nleet apple cats car and code pen sand dog",
+            "output": "true"
+        },
+        {
+            "input": "andcarcode\ncode leet cats and apple pen car dog sand",
+            "output": "true"
+        },
+        {
+            "input": "feeaebbabe\napple pen and code dog cats sand car leet",
+            "output": "false"
+        },
+        {
+            "input": "sandcode\nand cats pen car dog code apple leet sand",
+            "output": "true"
+        },
+        {
+            "input": "bbcbcaafec\nsand cats pen and apple car code leet dog",
+            "output": "false"
+        },
+        {
+            "input": "pen\ncode and leet dog sand cats pen apple car",
+            "output": "true"
+        },
+        {
+            "input": "leetsand\nleet code sand cats apple and car dog pen",
+            "output": "true"
+        },
+        {
+            "input": "fadcacaefa\napple leet dog code sand cats car and pen",
+            "output": "false"
+        },
+        {
+            "input": "codesandandleetcode\npen code dog apple and cats car sand leet",
+            "output": "true"
+        },
+        {
+            "input": "catsandapplecode\nand car dog cats leet pen apple sand code",
+            "output": "true"
+        },
+        {
+            "input": "sandleet\ndog code sand apple pen car leet cats and",
+            "output": "true"
+        },
+        {
+            "input": "leetdogand\ndog pen cats sand and car code leet apple",
+            "output": "true"
+        },
+        {
+            "input": "code\ncode and sand pen dog leet apple cats car",
+            "output": "true"
+        },
+        {
+            "input": "sandcodepencarcode\ncar leet cats pen and code dog sand apple",
+            "output": "true"
+        },
+        {
+            "input": "carcarleetpen\ncar sand cats leet and pen apple code dog",
+            "output": "true"
+        },
+        {
+            "input": "pencatsleet\nsand pen apple leet cats code and car dog",
+            "output": "true"
+        },
+        {
+            "input": "sanddog\nand apple code pen sand car leet dog cats",
+            "output": "true"
+        },
+        {
+            "input": "cdbabbcefe\ndog pen apple code cats and leet car sand",
+            "output": "false"
+        },
+        {
+            "input": "penand\npen apple sand cats leet dog code car and",
+            "output": "true"
+        },
+        {
+            "input": "sandcatsandand\ncats and apple sand dog leet pen code car",
+            "output": "true"
+        },
+        {
+            "input": "aeadbffaec\nsand cats and car code pen apple leet dog",
+            "output": "false"
+        },
+        {
+            "input": "ddafbccafe\nand code leet cats dog sand pen apple car",
+            "output": "false"
+        },
+        {
+            "input": "sandapple\ncats sand apple leet pen dog and code car",
+            "output": "true"
+        },
+        {
+            "input": "carcardogsandcode\nand car pen cats sand dog leet code apple",
+            "output": "true"
+        },
+        {
+            "input": "appledogdog\ncats car sand pen leet and code dog apple",
+            "output": "true"
+        },
+        {
+            "input": "apple\npen code apple sand and car leet dog cats",
+            "output": "true"
+        },
+        {
+            "input": "ccefceaccd\ncats apple and car dog leet code sand pen",
+            "output": "false"
+        },
+        {
+            "input": "carcarpenpencar\nleet car dog code carcarpenpencar pen cats and apple sand",
+            "output": "true"
+        },
+        {
+            "input": "fabbaecbfc\ncats pen dog car leet sand apple code and",
+            "output": "false"
+        },
+        {
+            "input": "cats\nand leet cats sand dog code car pen apple",
+            "output": "true"
+        },
+        {
+            "input": "edfefdfddb\nand pen leet sand apple dog cats car code",
+            "output": "false"
+        },
+        {
+            "input": "fbefedbeed\ncats and code apple dog pen car sand leet",
+            "output": "false"
+        },
+        {
+            "input": "dbfdbfbffe\npen code cats and car sand dog leet apple",
+            "output": "false"
+        },
+        {
+            "input": "dog\ndog sand code car and apple cats leet pen",
+            "output": "true"
+        },
+        {
+            "input": "penpenand\ncats car apple dog code pen leet and sand",
+            "output": "true"
+        },
+        {
+            "input": "cffcdfadcf\npen cats leet and code dog sand car apple",
+            "output": "false"
+        },
+        {
+            "input": "acdfaabbfb\nand leet code dog pen cats apple sand car",
+            "output": "false"
+        },
+        {
+            "input": "bbbbaddafc\ncar apple cats sand and dog code leet pen",
+            "output": "false"
+        },
+        {
+            "input": "carappledogleetdog\ncar dog apple sand leet and pen cats code",
+            "output": "true"
+        },
+        {
+            "input": "cefbfcbeab\nsand and apple cats car leet code dog pen",
+            "output": "false"
+        },
+        {
+            "input": "aafbebfded\napple and cats sand code pen leet car dog",
+            "output": "false"
+        },
+        {
+            "input": "bafaffbecd\nand dog cats pen code car sand leet apple",
+            "output": "false"
+        },
+        {
+            "input": "decbccdfcc\nsand pen code apple cats dog car leet and",
+            "output": "false"
+        },
+        {
+            "input": "efedeeabca\npen and car leet apple code sand cats dog",
+            "output": "false"
+        },
+        {
+            "input": "leetsandpencode\ncar pen and apple leet sand cats code dog",
+            "output": "true"
+        },
+        {
+            "input": "appleappleapplecodeand\nleet dog apple and code car cats pen sand",
+            "output": "true"
+        },
+        {
+            "input": "fcaffedeea\ncode apple pen car and sand leet dog cats",
+            "output": "false"
+        },
+        {
+            "input": "defafaacdc\nleet car sand and dog code cats apple pen",
+            "output": "false"
+        },
+        {
+            "input": "ddcbaeabcb\nand sand leet cats car dog apple code pen",
+            "output": "false"
+        },
+        {
+            "input": "bbebeabffe\nand dog sand pen apple code car cats leet",
+            "output": "false"
+        },
+        {
+            "input": "sand\nsand apple dog and code cats pen car leet",
+            "output": "true"
+        },
+        {
+            "input": "efcccdaecc\nsand cats leet apple car and code pen dog",
+            "output": "false"
+        },
+        {
+            "input": "ebceeddefe\ncar leet and dog apple sand code cats pen",
+            "output": "false"
+        },
+        {
+            "input": "cddffffdac\ncats dog and car apple leet pen code sand",
+            "output": "false"
+        },
+        {
+            "input": "sandsand\ncode sandsand leet cats sand apple and pen car dog",
+            "output": "true"
+        },
+        {
+            "input": "car\nleet apple pen sand car and code dog cats",
+            "output": "true"
+        },
+        {
+            "input": "ffbacdccde\ncats car leet code sand pen and apple dog",
+            "output": "false"
+        },
+        {
+            "input": "acbcbcfdab\nand cats dog car code apple leet pen sand",
+            "output": "false"
+        },
+        {
+            "input": "cbeeccedcf\nand cats code pen leet car dog apple sand",
+            "output": "false"
+        },
+        {
+            "input": "ecfeabacfc\ndog car leet sand and apple code pen cats",
+            "output": "false"
+        },
+        {
+            "input": "fadcdededc\ncar dog sand leet and cats pen code apple",
+            "output": "false"
+        },
+        {
+            "input": "bccdceeefd\ndog car code apple sand leet cats pen and",
+            "output": "false"
+        },
+        {
+            "input": "faadbebcaf\nleet car dog pen cats and apple code sand",
+            "output": "false"
+        },
+        {
+            "input": "dogcodecodeleetcats\ncar code cats pen dog apple leet and sand",
+            "output": "true"
+        },
+        {
+            "input": "fbfcfebbbe\nleet pen apple dog sand cats code car and",
+            "output": "false"
+        },
+        {
+            "input": "pen\ncar apple pen cats dog and code sand leet",
+            "output": "true"
+        },
+        {
+            "input": "code\nleet dog car cats code sand and pen apple",
+            "output": "true"
+        },
+        {
+            "input": "edbccdadcc\ncar sand code apple pen leet dog cats and",
+            "output": "false"
+        },
+        {
+            "input": "applecodeandcats\nand dog pen leet code car apple sand cats",
+            "output": "true"
+        },
+        {
+            "input": "cfeacccfaa\ncar dog and pen leet apple cats code sand",
+            "output": "false"
+        },
+        {
+            "input": "applecats\ncode and sand leet car dog pen apple cats",
+            "output": "true"
+        },
+        {
+            "input": "bcecdbcdaf\napple pen car code leet cats sand dog and",
+            "output": "false"
+        },
+        {
+            "input": "ffbeecfbfc\ncode cats dog sand car apple leet and pen",
+            "output": "false"
+        },
+        {
+            "input": "ffdddcffec\napple leet code dog and sand cats car pen",
+            "output": "false"
+        },
+        {
+            "input": "bbcabedddf\ncar code sand apple and pen leet cats dog",
+            "output": "false"
+        },
+        {
+            "input": "dcceceecfc\npen code cats car dog apple leet sand and",
+            "output": "false"
+        },
+        {
+            "input": "carand\napple carand sand code leet and pen dog cats car",
+            "output": "true"
+        },
+        {
+            "input": "pencode\ncar leet apple and code pen cats sand dog",
+            "output": "true"
+        },
+        {
+            "input": "fafdeacadb\nleet apple cats pen sand car dog code and",
+            "output": "false"
+        },
+        {
+            "input": "applependog\nleet car apple code dog sand and pen cats",
+            "output": "true"
+        },
+        {
+            "input": "dcbeadfbda\ncats car and leet apple pen code sand dog",
+            "output": "false"
+        },
+        {
+            "input": "applecodecodecatscode\ncode dog apple and sand leet applecodecodecatscode car pen cats",
+            "output": "true"
+        },
+        {
+            "input": "cdefaafbbc\napple pen dog and leet code sand car cats",
+            "output": "false"
+        },
+        {
+            "input": "carcats\ncats code and leet apple sand pen car dog",
+            "output": "true"
+        },
+        {
+            "input": "cdcbddfdaf\nleet dog and car code sand cats apple pen",
+            "output": "false"
+        },
+        {
+            "input": "fdfcffbcad\ncats dog sand and code pen leet car apple",
+            "output": "false"
+        },
+        {
+            "input": "bcfcacdfcf\ndog code leet pen sand apple and cats car",
+            "output": "false"
+        },
+        {
+            "input": "sandleetcodeapplecats\npen dog cats apple sand and car code leet",
+            "output": "true"
+        },
+        {
+            "input": "catscats\nsand code pen cats apple dog car and leet",
+            "output": "true"
+        },
+        {
+            "input": "bcffecbaec\ncats code car leet dog apple sand and pen",
+            "output": "false"
+        },
+        {
+            "input": "dccfcddcaa\ndog apple cats sand leet car pen code and",
+            "output": "false"
+        },
+        {
+            "input": "carsandleet\ncar leet and dog sand code cats pen apple",
+            "output": "true"
+        },
+        {
+            "input": "pencodepen\napple pen cats leet code dog car sand and",
+            "output": "true"
+        },
+        {
+            "input": "codeleetcodecarcar\ncar cats sand dog apple leet pen code and",
+            "output": "true"
+        },
+        {
+            "input": "bacdbdcdff\nleet sand dog cats and code car apple pen",
+            "output": "false"
+        },
+        {
+            "input": "codeapplepencats\napple dog leet sand pen cats car code and",
+            "output": "true"
+        },
+        {
+            "input": "deffdacdcc\ncats dog and leet car sand code apple pen",
+            "output": "false"
+        },
+        {
+            "input": "dogsandpendogpen\ncats sand code apple pen and leet dog car",
+            "output": "true"
+        },
+        {
+            "input": "beddeffdce\npen leet code car and sand cats dog apple",
+            "output": "false"
+        },
+        {
+            "input": "ecdcedabed\npen code car leet and apple sand dog cats",
+            "output": "false"
+        },
+        {
+            "input": "code\ncar dog sand apple leet code and pen cats",
+            "output": "true"
+        },
+        {
+            "input": "cfbffeaaef\nand cats apple leet pen code sand dog car",
+            "output": "false"
+        },
+        {
+            "input": "dbbdfbcfec\ncode car leet and cats dog pen sand apple",
+            "output": "false"
+        },
+        {
+            "input": "leetandsand\ncode apple cats and pen car leet sand dog",
+            "output": "true"
+        },
+        {
+            "input": "fbccdcbcdc\napple dog leet and sand pen cats code car",
+            "output": "false"
+        },
+        {
+            "input": "cardogdog\npen apple dog code sand cats leet car and",
+            "output": "true"
+        },
+        {
+            "input": "fcabeeaefd\ncar cats sand leet apple and pen code dog",
+            "output": "false"
+        },
+        {
+            "input": "anddogcodecarand\ncar pen dog apple cats code and leet sand",
+            "output": "true"
+        },
+        {
+            "input": "edbccfcdff\nleet pen cats code apple dog sand and car",
+            "output": "false"
+        },
+        {
+            "input": "bedfefdcaf\ncats car code dog and pen leet apple sand",
+            "output": "false"
+        },
+        {
+            "input": "applecodecode\ncode pen leet cats and apple sand dog car",
+            "output": "true"
+        },
+        {
+            "input": "sandpen\nsandpen pen car sand and leet apple dog cats code",
+            "output": "true"
+        },
+        {
+            "input": "andcatscarcodecar\nleet and code cats sand apple dog car pen",
+            "output": "true"
+        },
+        {
+            "input": "dogdogcats\nleet code dog apple car pen and sand dogdogcats cats",
+            "output": "true"
+        },
+        {
+            "input": "decffcafca\npen car apple code and cats leet dog sand",
+            "output": "false"
+        },
+        {
+            "input": "dog\nsand apple code car and leet cats dog pen",
+            "output": "true"
+        },
+        {
+            "input": "aeefcdaeca\nsand and code dog leet pen cats car apple",
+            "output": "false"
+        },
+        {
+            "input": "bfedecbaef\nsand pen car apple and leet cats code dog",
+            "output": "false"
+        },
+        {
+            "input": "bdedabbabc\ncar dog pen apple and code leet sand cats",
+            "output": "false"
+        },
+        {
+            "input": "beefcadceb\ncar dog apple sand pen and code cats leet",
+            "output": "false"
+        },
+        {
+            "input": "efedbbafed\nleet sand apple dog cats and code car pen",
+            "output": "false"
+        },
+        {
+            "input": "dogsand\napple cats car sand pen leet dog code and",
+            "output": "true"
+        },
+        {
+            "input": "defeccdcac\ncar and cats dog pen apple leet code sand",
+            "output": "false"
+        },
+        {
+            "input": "carapple\nand leet pen dog sand car code cats apple",
+            "output": "true"
+        },
+        {
+            "input": "abeefaeaab\npen cats code leet dog car and apple sand",
+            "output": "false"
+        },
+        {
+            "input": "eabfdcfceb\nleet car sand code pen cats dog apple and",
+            "output": "false"
+        },
+        {
+            "input": "applesandandand\nsand cats leet pen code car and apple dog",
+            "output": "true"
+        },
+        {
+            "input": "abfdbbcfde\nsand cats leet and pen dog apple car code",
+            "output": "false"
+        },
+        {
+            "input": "aedcfbfada\ncode cats apple pen dog car leet and sand",
+            "output": "false"
+        },
+        {
+            "input": "catssandcar\npen dog car cats and sand leet code apple",
+            "output": "true"
+        },
+        {
+            "input": "ecfbabeceb\nleet and sand car cats pen apple code dog",
+            "output": "false"
+        },
+        {
+            "input": "carapplepen\napple and code pen sand dog cats car leet",
+            "output": "true"
+        },
+        {
+            "input": "catsleetappledogcode\nleet apple pen car cats and sand dog code",
+            "output": "true"
+        },
+        {
+            "input": "sand\ncar code cats leet pen apple and dog sand",
+            "output": "true"
+        },
+        {
+            "input": "efabdefcee\nleet apple pen and cats code dog sand car",
+            "output": "false"
+        },
+        {
+            "input": "andappleandcarcode\nand apple code dog car pen cats sand leet",
+            "output": "true"
+        },
+        {
+            "input": "leetcats\npen dog sand and car code leet apple cats",
+            "output": "true"
+        },
+        {
+            "input": "bffabcbaec\nleet and sand car apple dog pen cats code",
+            "output": "false"
+        },
+        {
+            "input": "cefceeffec\nand cats code pen car apple dog leet sand",
+            "output": "false"
+        },
+        {
+            "input": "ccabebebfe\ncats pen and car code apple leet dog sand",
+            "output": "false"
+        },
+        {
+            "input": "daedaabbab\ncar and dog cats pen apple leet code sand",
+            "output": "false"
+        },
+        {
+            "input": "cfdcfdbece\ndog car code apple sand cats leet pen and",
+            "output": "false"
+        },
+        {
+            "input": "codecode\nleet sand code and dog cats pen car apple",
+            "output": "true"
+        },
+        {
+            "input": "cacbddffbf\nand leet pen cats sand apple car code dog",
+            "output": "false"
+        },
+        {
+            "input": "apple\nsand code car leet and dog pen cats apple",
+            "output": "true"
+        },
+        {
+            "input": "cffceafeaf\ncode apple dog and pen cats car leet sand",
+            "output": "false"
+        },
+        {
+            "input": "sanddogpenandcar\nand cats apple dog sand code car leet pen",
+            "output": "true"
+        },
+        {
+            "input": "andpencodesand\nsand car pen leet cats code and dog apple",
+            "output": "true"
+        },
+        {
+            "input": "sanddogcarcodesand\npen code sand and apple leet dog car cats",
+            "output": "true"
+        },
+        {
+            "input": "dogcarcodecar\npen and leet car apple sand code cats dog",
+            "output": "true"
+        },
+        {
+            "input": "sandleetcode\ncode car dog sand leet pen cats and apple",
+            "output": "true"
+        },
+        {
+            "input": "leetleetcode\npen and code car apple dog sand leet cats",
+            "output": "true"
+        },
+        {
+            "input": "fddafdbaea\napple car dog cats and leet code sand pen",
+            "output": "false"
+        },
+        {
+            "input": "catscar\ndog leet code and pen cats apple sand car",
+            "output": "true"
+        },
+        {
+            "input": "dbcadfdabd\ncats car code leet pen apple and dog sand",
+            "output": "false"
+        },
+        {
+            "input": "baacaebdee\ndog code car apple pen and leet sand cats",
+            "output": "false"
+        },
+        {
+            "input": "dogapplepenpen\ncode cats leet and car apple sand dog pen",
+            "output": "true"
+        },
+        {
+            "input": "abaedfcabd\npen sand cats code apple car leet dog and",
+            "output": "false"
+        },
+        {
+            "input": "pen\ndog apple cats pen leet sand car code and",
+            "output": "true"
+        },
+        {
+            "input": "bdcbabdfcc\ncats leet pen and code sand dog apple car",
+            "output": "false"
+        },
+        {
+            "input": "facfadbddf\ncar cats pen dog sand apple leet code and",
+            "output": "false"
+        },
+        {
+            "input": "catscarand\nleet car apple cats code pen and sand dog",
+            "output": "true"
+        },
+        {
+            "input": "andleetappleand\nleet code car apple pen sand and cats dog",
+            "output": "true"
+        },
+        {
+            "input": "cdffcacbbd\nleet sand apple code dog cats car pen and",
+            "output": "false"
+        },
+        {
+            "input": "dogandleet\npen and cats code sand apple dog car leet",
+            "output": "true"
+        },
+        {
+            "input": "cfcbcdecfb\ncode apple pen cats dog sand leet car and",
+            "output": "false"
+        },
+        {
+            "input": "codeleetcarsand\nleet sand cats pen car dog code apple and",
+            "output": "true"
+        },
+        {
+            "input": "bcdebaedff\ncats pen and leet car sand apple dog code",
+            "output": "false"
+        },
+        {
+            "input": "catsleetleetand\ncats sand code and pen leet dog apple car",
+            "output": "true"
+        },
+        {
+            "input": "andleetcode\nand apple andleetcode cats pen car sand code leet dog",
+            "output": "true"
+        },
+        {
+            "input": "aaebefffad\nleet pen apple cats and sand car dog code",
+            "output": "false"
+        },
+        {
+            "input": "dogpen\nleet code and car pen apple cats dog sand",
+            "output": "true"
+        },
+        {
+            "input": "codepenanddog\nand cats car code sand apple leet pen dog",
+            "output": "true"
+        },
+        {
+            "input": "catspencatsdog\ncats car code pen sand leet and dog apple",
+            "output": "true"
+        },
+        {
+            "input": "pensandleet\nand cats code car leet sand apple pen dog",
+            "output": "true"
+        },
+        {
+            "input": "fbbfcffbaa\nleet dog apple pen and car cats code sand",
+            "output": "false"
+        },
+        {
+            "input": "leetandcodeandleet\ncode sand and leet cats dog car pen apple",
+            "output": "true"
+        },
+        {
+            "input": "caacbbebee\ncats and leet apple pen sand code dog car",
+            "output": "false"
+        },
+        {
+            "input": "abbbbfffcb\nleet sand car and cats pen code apple dog",
+            "output": "false"
+        },
+        {
+            "input": "code\nand pen sand car code cats leet dog apple",
+            "output": "true"
+        },
+        {
+            "input": "penandpen\ncode and dog sand cats leet pen apple car",
+            "output": "true"
+        },
+        {
+            "input": "eedcffaccf\nleet cats sand pen apple car dog and code",
+            "output": "false"
+        },
+        {
+            "input": "fcefbebafd\npen sand car and dog leet cats code apple",
+            "output": "false"
+        },
+        {
+            "input": "fceeffecdd\ncats apple car code sand pen dog and leet",
+            "output": "false"
+        },
+        {
+            "input": "sand\ncats dog pen car sand apple and code leet",
+            "output": "true"
+        },
+        {
+            "input": "sandapplecode\napple code dog and leet pen cats car sand",
+            "output": "true"
+        },
+        {
+            "input": "applecarleet\nsand apple code pen car and leet dog cats",
+            "output": "true"
+        },
+        {
+            "input": "edbfddaddb\nleet apple sand dog code car and cats pen",
+            "output": "false"
+        },
+        {
+            "input": "acffdfdefb\npen apple and car leet code cats sand dog",
+            "output": "false"
+        },
+        {
+            "input": "leetapplesandcodeapple\nleet and dog pen code car sand apple cats",
+            "output": "true"
+        },
+        {
+            "input": "cats\ncar apple leet and code pen dog sand cats",
+            "output": "true"
+        },
+        {
+            "input": "appleapplecar\ncar sand apple and dog cats appleapplecar pen code leet",
+            "output": "true"
+        },
+        {
+            "input": "leetpenpen\ncar sand leet dog cats apple code pen and",
+            "output": "true"
+        },
+        {
+            "input": "codepencarcardog\napple pen dog sand code car leet and cats",
+            "output": "true"
+        },
+        {
+            "input": "carcar\ndog and car leet sand pen apple code cats",
+            "output": "true"
+        },
+        {
+            "input": "bedfbafccd\ncar sand cats dog code apple leet and pen",
+            "output": "false"
+        },
+        {
+            "input": "ecfedabfea\ncats car and dog code apple leet pen sand",
+            "output": "false"
+        },
+        {
+            "input": "carsandcodedogcode\nleet car apple sand pen and code cats dog",
+            "output": "true"
+        },
+        {
+            "input": "sandcodecatssandcar\ncats leet code apple pen dog car sand and",
+            "output": "true"
+        },
+        {
+            "input": "dddfdfcdbc\napple pen sand cats leet car code and dog",
+            "output": "false"
+        },
+        {
+            "input": "dogandleetdogcode\ncode car dog leet cats pen sand and apple",
+            "output": "true"
+        },
+        {
+            "input": "and\napple cats leet code pen sand car dog and",
+            "output": "true"
+        },
+        {
+            "input": "leetsandcar\ncats pen sand and car apple dog code leet",
+            "output": "true"
+        },
+        {
+            "input": "pencatscarapple\npen cats and dog sand car code apple leet",
+            "output": "true"
+        },
+        {
+            "input": "ecdedadadc\ncats leet dog sand apple code car pen and",
+            "output": "false"
+        },
+        {
+            "input": "dogpen\ndog and leet car cats pen apple sand code",
+            "output": "true"
+        },
+        {
+            "input": "fdadccbcbe\nsand leet code apple pen dog cats car and",
+            "output": "false"
+        },
+        {
+            "input": "leetpencodedogcats\ndog car apple pen and sand leet cats code",
+            "output": "true"
+        },
+        {
+            "input": "acbcabbeaf\npen dog and car leet code sand apple cats",
+            "output": "false"
+        },
+        {
+            "input": "fddafcbbee\napple sand pen car leet and cats dog code",
+            "output": "false"
+        },
+        {
+            "input": "codedog\ncode leet apple cats dog sand car pen and",
+            "output": "true"
+        },
+        {
+            "input": "sandpensandcatspen\nsand apple cats pen and leet code car dog",
+            "output": "true"
+        },
+        {
+            "input": "aaeddbafcd\ncar code pen apple and cats dog leet sand",
+            "output": "false"
+        },
+        {
+            "input": "catscodecatsleetleet\ndog car sand code leet cats pen apple and",
+            "output": "true"
+        },
+        {
+            "input": "eedcffccfe\npen car code dog cats sand apple leet and",
+            "output": "false"
+        },
+        {
+            "input": "cats\npen car sand leet apple dog cats and code",
+            "output": "true"
+        },
+        {
+            "input": "catspencarcardog\nleet car sand pen dog and apple code cats catspencarcardog",
+            "output": "true"
+        },
+        {
+            "input": "applecarandleet\nleet car and sand cats dog code apple pen",
+            "output": "true"
+        },
+        {
+            "input": "aafcbaceab\nand code car apple leet dog sand cats pen",
+            "output": "false"
+        },
+        {
+            "input": "dogsand\npen code leet cats car and dog apple sand",
+            "output": "true"
+        },
+        {
+            "input": "edbafdcbce\nand sand code pen car dog leet apple cats",
+            "output": "false"
+        },
+        {
+            "input": "penleet\nsand apple code cats leet and dog pen car",
+            "output": "true"
+        },
+        {
+            "input": "cafdacfeee\ncats and dog code pen sand car leet apple",
+            "output": "false"
+        },
+        {
+            "input": "aefcfcbfbf\ndog car cats pen sand and leet code apple",
+            "output": "false"
+        },
+        {
+            "input": "edaffcddee\nand code cats leet dog pen apple sand car",
+            "output": "false"
+        },
+        {
+            "input": "appleapplecodeand\napple dog leet code car sand cats and pen",
+            "output": "true"
+        },
+        {
+            "input": "fbacfefcbf\ndog code car sand pen and cats leet apple",
+            "output": "false"
+        },
+        {
+            "input": "apple\ncats leet code sand and pen dog car apple",
+            "output": "true"
+        },
+        {
+            "input": "codecodeandapplecar\ncats apple leet dog car and pen sand code",
+            "output": "true"
+        },
+        {
+            "input": "fcabbebcab\npen sand car cats apple leet and code dog",
+            "output": "false"
+        },
+        {
+            "input": "abccdfadcf\nand dog sand leet apple code cats pen car",
+            "output": "false"
+        },
+        {
+            "input": "carcatsappleleetcar\nand code leet apple pen car cats dog sand",
+            "output": "true"
+        },
+        {
+            "input": "cccfbbfedb\napple leet car code sand and dog cats pen",
+            "output": "false"
+        },
+        {
+            "input": "penleet\ncats code dog apple sand and car pen leet",
+            "output": "true"
+        },
+        {
+            "input": "catsandcats\nand cats code leet apple car sand dog pen",
+            "output": "true"
+        },
+        {
+            "input": "ddffdbecaf\ndog and leet pen car sand cats code apple",
+            "output": "false"
+        },
+        {
+            "input": "leetand\nleet dog cats code apple sand pen car and",
+            "output": "true"
+        },
+        {
+            "input": "bffdafddea\ncar apple sand dog code pen and cats leet",
+            "output": "false"
+        },
+        {
+            "input": "cbdfbbfada\nleet dog and pen cats car code apple sand",
+            "output": "false"
+        },
+        {
+            "input": "catspensandcarcode\napple car dog pen cats code leet sand and",
+            "output": "true"
+        },
+        {
+            "input": "carcodeapplecodecar\ncats sand and pen car dog apple code leet",
+            "output": "true"
+        },
+        {
+            "input": "sandsandpencarcats\npen code cats leet sand apple car dog and",
+            "output": "true"
+        },
+        {
+            "input": "fabcfdccaf\ncode and apple pen cats car leet dog sand",
+            "output": "false"
+        },
+        {
+            "input": "appleapplepen\nand car code pen dog cats leet sand apple",
+            "output": "true"
+        },
+        {
+            "input": "eabdbdffed\ndog car apple and pen cats code sand leet",
+            "output": "false"
+        },
+        {
+            "input": "catscatscarleet\ncats pen leet car apple sand and code dog",
+            "output": "true"
+        },
+        {
+            "input": "abcfdbcdda\ncar and dog cats apple pen sand code leet",
+            "output": "false"
+        },
+        {
+            "input": "ddacdfcdce\npen sand cats car and apple code dog leet",
+            "output": "false"
+        },
+        {
+            "input": "leet\npen and leet car apple sand cats dog code",
+            "output": "true"
+        },
+        {
+            "input": "sandcatsdog\nsand and cats dog code pen apple leet car",
+            "output": "true"
+        },
+        {
+            "input": "dfebfdcfcc\nand car pen leet apple code sand dog cats",
+            "output": "false"
+        },
+        {
+            "input": "cfffbdaefc\nand car apple pen cats leet sand dog code",
+            "output": "false"
+        },
+        {
+            "input": "cfedaaaaae\ncar apple sand and dog leet pen code cats",
+            "output": "false"
+        },
+        {
+            "input": "adefabbade\nleet and pen apple sand car cats code dog",
+            "output": "false"
+        },
+        {
+            "input": "deadfaeeed\ncar sand leet apple dog cats pen code and",
+            "output": "false"
+        },
+        {
+            "input": "daefefecdb\npen dog apple cats and sand car code leet",
+            "output": "false"
+        },
+        {
+            "input": "appleand\ncode and sand pen car leet cats apple dog",
+            "output": "true"
+        },
+        {
+            "input": "carcodecode\ncats and pen code sand apple car leet dog",
+            "output": "true"
+        },
+        {
+            "input": "edcbbcaeab\ndog sand leet code car and cats apple pen",
+            "output": "false"
+        },
+        {
+            "input": "penpendogcodepen\npen cats sand leet dog car apple code and",
+            "output": "true"
+        },
+        {
+            "input": "afbeaecfec\ncats code apple car dog leet pen and sand",
+            "output": "false"
+        },
+        {
+            "input": "eddcbcbeba\nand car code apple sand pen dog leet cats",
+            "output": "false"
+        },
+        {
+            "input": "ceadbfccaa\ndog sand leet cats car code pen apple and",
+            "output": "false"
+        },
+        {
+            "input": "dfbebadfec\nsand pen code cats dog leet and apple car",
+            "output": "false"
+        },
+        {
+            "input": "ffcffcfeba\npen code car apple dog cats and leet sand",
+            "output": "false"
+        },
+        {
+            "input": "acbabebfaa\npen code apple sand and car dog cats leet",
+            "output": "false"
+        },
+        {
+            "input": "codecarleet\nleet apple dog cats code car and sand pen",
+            "output": "true"
+        },
+        {
+            "input": "pensandcar\npen apple cats leet car and dog code sand",
+            "output": "true"
+        },
+        {
+            "input": "bfbcfdabfa\ndog sand code and apple leet cats pen car",
+            "output": "false"
+        },
+        {
+            "input": "facdfaabde\nsand cats and dog code apple leet pen car",
+            "output": "false"
+        },
+        {
+            "input": "sandcarappleapplesand\napple car dog sand code pen and cats leet",
+            "output": "true"
+        },
+        {
+            "input": "sandandleet\ncar cats dog pen code apple sand and leet",
+            "output": "true"
+        },
+        {
+            "input": "ffcfdcdfce\ncode cats car apple sand dog leet pen and",
+            "output": "false"
+        },
+        {
+            "input": "caebacdabf\ncar and sand apple cats leet pen dog code",
+            "output": "false"
+        },
+        {
+            "input": "anddog\nsand apple and car pen cats leet code dog",
+            "output": "true"
+        },
+        {
+            "input": "fddbadcaaa\ncode car dog leet cats apple sand and pen",
+            "output": "false"
+        },
+        {
+            "input": "dog\ncats leet apple car code pen and sand dog",
+            "output": "true"
+        },
+        {
+            "input": "catsleetsandcarsand\nand car dog catsleetsandcarsand leet cats apple code sand pen",
+            "output": "true"
+        },
+        {
+            "input": "dceffefade\npen dog code apple car leet sand and cats",
+            "output": "false"
+        },
+        {
+            "input": "dogsandcode\nsand pen and cats code apple car leet dog",
+            "output": "true"
+        },
+        {
+            "input": "bcefeedbac\npen leet car code and dog cats sand apple",
+            "output": "false"
+        },
+        {
+            "input": "dbbcdefdcc\ncar cats and apple dog sand leet code pen",
+            "output": "false"
+        },
+        {
+            "input": "baccdecfbe\ndog code and sand car pen cats apple leet",
+            "output": "false"
+        },
+        {
+            "input": "cats\npen sand and code leet dog apple cats car",
+            "output": "true"
+        },
+        {
+            "input": "dog\nleet sand pen code car apple cats and dog",
+            "output": "true"
+        },
+        {
+            "input": "sandpen\nsand leet pen apple dog car code cats and",
+            "output": "true"
+        },
+        {
+            "input": "caafcfedba\npen and code cats leet apple car sand dog",
+            "output": "false"
+        },
+        {
+            "input": "anddogcode\napple cats sand pen dog and car code leet",
+            "output": "true"
+        },
+        {
+            "input": "adafccbcca\nsand car code pen apple cats dog leet and",
+            "output": "false"
+        },
+        {
+            "input": "baaddedece\napple and dog pen car sand leet code cats",
+            "output": "false"
+        },
+        {
+            "input": "ffeefdaecf\npen leet sand car apple and cats code dog",
+            "output": "false"
+        },
+        {
+            "input": "fffbcbcccd\nsand pen car code cats dog leet apple and",
+            "output": "false"
+        },
+        {
+            "input": "bedfeecdef\napple pen cats sand and car dog leet code",
+            "output": "false"
+        },
+        {
+            "input": "pen\ncar pen dog apple code cats leet and sand",
+            "output": "true"
+        },
+        {
+            "input": "appleand\ncar leet apple cats pen code and dog sand",
+            "output": "true"
+        },
+        {
+            "input": "aaaddbebad\ncar cats dog and sand leet code apple pen",
+            "output": "false"
+        },
+        {
+            "input": "effebfdaab\nsand cats code pen dog apple and car leet",
+            "output": "false"
+        },
+        {
+            "input": "carpencodedog\ndog car cats pen sand apple leet code and",
+            "output": "true"
+        },
+        {
+            "input": "andandcatsdog\ncats car and pen apple code sand leet dog",
+            "output": "true"
+        },
+        {
+            "input": "debaedbdbc\nand cats dog car sand apple leet pen code",
+            "output": "false"
+        },
+        {
+            "input": "sandappleappleandcats\nleet code car cats sand and apple pen dog",
+            "output": "true"
+        },
+        {
+            "input": "effaccabee\npen and leet apple sand cats dog code car",
+            "output": "false"
+        },
+        {
+            "input": "ebdececeef\nand apple leet code cats dog sand pen car",
+            "output": "false"
+        },
+        {
+            "input": "appleappleandcatspen\napple code leet car and pen sand dog cats",
+            "output": "true"
+        },
+        {
+            "input": "cedececdfe\ncar apple leet pen sand code dog cats and",
+            "output": "false"
+        },
+        {
+            "input": "car\ndog code leet pen cats car sand and apple",
+            "output": "true"
+        },
+        {
+            "input": "dbcdeeecca\nleet dog code pen apple sand and car cats",
+            "output": "false"
+        },
+        {
+            "input": "ffcbacaebe\nleet car sand code dog cats and apple pen",
+            "output": "false"
+        },
+        {
+            "input": "caedaabeec\nand sand leet dog code cats pen car apple",
+            "output": "false"
+        },
+        {
+            "input": "sand\npen code dog sand car apple and leet cats",
+            "output": "true"
+        },
+        {
+            "input": "bdcdabbfed\nand leet car sand cats dog apple pen code",
+            "output": "false"
+        },
+        {
+            "input": "dogcodecode\nleet sand cats dog code car and apple pen",
+            "output": "true"
+        },
+        {
+            "input": "catsleetapplecatsand\npen leet cats sand car apple and dog code",
+            "output": "true"
+        },
+        {
+            "input": "leet\nleet code and pen sand car apple dog cats",
+            "output": "true"
+        },
+        {
+            "input": "dogapplecar\ncar pen leet code sand and apple dog cats",
+            "output": "true"
+        },
+        {
+            "input": "catsandcarpencats\napple sand car and cats pen leet dog code",
+            "output": "true"
+        },
+        {
+            "input": "sand\nand sand code leet cats dog car pen apple",
+            "output": "true"
+        },
+        {
+            "input": "dbbedbdbcf\npen code cats car and dog leet apple sand",
+            "output": "false"
+        },
+        {
+            "input": "dbacccacfe\ncode car sand pen cats apple leet dog and",
+            "output": "false"
+        },
+        {
+            "input": "efeceebeea\nand dog code pen leet sand car apple cats",
+            "output": "false"
+        },
+        {
+            "input": "dog\nleet cats pen car dog and code apple sand",
+            "output": "true"
+        },
+        {
+            "input": "leetandsandleet\ndog cats leet car and sand apple code pen",
+            "output": "true"
+        },
+        {
+            "input": "dogleetand\nleet apple sand pen code car cats dog and",
+            "output": "true"
+        },
+        {
+            "input": "bacefbadcf\ncode dog pen leet sand apple and car cats",
+            "output": "false"
+        },
+        {
+            "input": "andcarcode\npen dog code cats car apple leet sand and",
+            "output": "true"
+        },
+        {
+            "input": "codecats\nleet pen code and car dog cats apple sand",
+            "output": "true"
+        },
+        {
+            "input": "dbfdcccebf\ncats sand car pen code dog apple leet and",
+            "output": "false"
+        },
+        {
+            "input": "penleet\ncats apple car and dog code pen leet sand",
+            "output": "true"
+        },
+        {
+            "input": "dfdebdaedb\ncode apple pen sand and dog leet car cats",
+            "output": "false"
+        },
+        {
+            "input": "carappleapple\npen code car sand apple dog cats and leet",
+            "output": "true"
+        },
+        {
+            "input": "cfcfebdfda\nand leet car sand cats dog code apple pen",
+            "output": "false"
+        },
+        {
+            "input": "eccbfcaacc\ncode sand cats apple pen car dog leet and",
+            "output": "false"
+        },
+        {
+            "input": "dfebedadec\nsand apple car dog leet code cats and pen",
+            "output": "false"
+        },
+        {
+            "input": "andsandpencarcar\npen dog code leet sand apple cats car and",
+            "output": "true"
+        },
+        {
+            "input": "cddccfbead\napple sand car cats pen code dog leet and",
+            "output": "false"
+        },
+        {
+            "input": "fccbfcadaf\ncats pen car sand code apple leet and dog",
+            "output": "false"
+        },
+        {
+            "input": "bcedecfcda\ncar sand pen leet code apple dog cats and",
+            "output": "false"
+        },
+        {
+            "input": "dbbefdeeea\ncar sand and cats apple dog leet code pen",
+            "output": "false"
+        },
+        {
+            "input": "sanddogcatscar\ncar apple code and dog sand leet pen cats",
+            "output": "true"
+        },
+        {
+            "input": "pen\ncode apple pen dog and leet sand cats car",
+            "output": "true"
+        },
+        {
+            "input": "leet\nsand cats code leet car pen and dog apple",
+            "output": "true"
+        },
+        {
+            "input": "carpenappleandleet\ncar pen dog and cats sand code leet apple",
+            "output": "true"
+        },
+        {
+            "input": "aecdfeabed\nsand pen and dog leet car code cats apple",
+            "output": "false"
+        },
+        {
+            "input": "acaaadcfee\npen leet and apple sand cats car dog code",
+            "output": "false"
+        },
+        {
+            "input": "leetcodeleetleet\npen leetcodeleetleet dog sand leet apple and code car cats",
+            "output": "true"
+        },
+        {
+            "input": "eafaefcdfb\ndog and pen car cats apple leet sand code",
+            "output": "false"
+        },
+        {
+            "input": "catsapplecats\nleet car code pen apple sand and dog cats",
+            "output": "true"
+        },
+        {
+            "input": "bceeceffdb\napple pen dog cats leet code and car sand",
+            "output": "false"
+        },
+        {
+            "input": "cabeaddfdb\nsand dog pen leet code car apple cats and",
+            "output": "false"
+        },
+        {
+            "input": "applesandcodecats\ncar sand pen apple and dog cats code leet",
+            "output": "true"
+        },
+        {
+            "input": "efaedbdadf\ndog cats code apple leet and car pen sand",
+            "output": "false"
+        },
+        {
+            "input": "cdbafacfad\ncode dog cats sand and car leet apple pen",
+            "output": "false"
+        },
+        {
+            "input": "ffcbdadebc\nand sand pen leet dog apple car cats code",
+            "output": "false"
+        },
+        {
+            "input": "bceabafcca\ncats pen sand code apple and dog car leet",
+            "output": "false"
+        },
+        {
+            "input": "cardogsandand\ndog sand leet apple pen and cats car code",
+            "output": "true"
+        },
+        {
+            "input": "applecodependogpen\nsand and car apple dog code cats pen leet",
+            "output": "true"
+        },
+        {
+            "input": "applesand\nand code pen dog sand leet apple cats car",
+            "output": "true"
+        },
+        {
+            "input": "bdbfcacbaf\ncats code apple dog sand car and leet pen",
+            "output": "false"
+        },
+        {
+            "input": "bcfcfabeea\npen dog sand apple leet cats car code and",
+            "output": "false"
+        },
+        {
+            "input": "fbcbbeebcc\ndog code sand pen leet apple cats and car",
+            "output": "false"
+        },
+        {
+            "input": "faebfcbfcb\ncode dog pen cats and leet car apple sand",
+            "output": "false"
+        },
+        {
+            "input": "pensandappledogleet\ncode sand cats dog pen apple car leet and",
+            "output": "true"
+        },
+        {
+            "input": "eddfcadbbb\npen cats sand dog apple leet and code car",
+            "output": "false"
+        },
+        {
+            "input": "pen\nleet apple sand and pen car code dog cats",
+            "output": "true"
+        },
+        {
+            "input": "fbfedcabbd\nsand cats code pen leet dog apple car and",
+            "output": "false"
+        },
+        {
+            "input": "faefdebbff\ndog code and cats leet apple pen sand car",
+            "output": "false"
+        },
+        {
+            "input": "dedfbbfdaa\nsand and cats apple car leet pen dog code",
+            "output": "false"
+        },
+        {
+            "input": "bbafdafcbf\napple cats leet code car and dog sand pen",
+            "output": "false"
+        },
+        {
+            "input": "codeandandsandand\nsand codeandandsandand pen dog apple car code and cats leet",
+            "output": "true"
+        },
+        {
+            "input": "leetsand\ndog pen sand and apple cats leet code car",
+            "output": "true"
+        },
+        {
+            "input": "ffafcceeee\npen dog car cats leet sand apple and code",
+            "output": "false"
+        },
+        {
+            "input": "abbbefebbb\nleet and cats code car dog sand pen apple",
+            "output": "false"
+        },
+        {
+            "input": "applecarcats\nsand apple car pen leet and cats dog code",
+            "output": "true"
+        },
+        {
+            "input": "fcbafacbdf\napple code dog cats pen car sand leet and",
+            "output": "false"
+        },
+        {
+            "input": "cfcefffedd\nand dog car cats sand leet apple pen code",
+            "output": "false"
+        },
+        {
+            "input": "apple\nleet car and code apple cats dog pen sand",
+            "output": "true"
+        },
+        {
+            "input": "pen\nand pen apple code dog sand car cats leet",
+            "output": "true"
+        },
+        {
+            "input": "carappleleetapple\npen dog sand and leet car apple cats code",
+            "output": "true"
+        },
+        {
+            "input": "eaabbcfdfa\nsand and apple car code leet cats pen dog",
+            "output": "false"
+        },
+        {
+            "input": "bebebcdafe\napple dog pen car code leet and sand cats",
+            "output": "false"
+        },
+        {
+            "input": "cfceccfacf\nleet car cats code pen dog and sand apple",
+            "output": "false"
+        },
+        {
+            "input": "cdedaaacbf\napple car dog code leet and sand pen cats",
+            "output": "false"
+        },
+        {
+            "input": "applecatsand\npen car and cats leet dog apple code sand",
+            "output": "true"
+        },
+        {
+            "input": "carsand\npen code dog cats car leet sand apple and",
+            "output": "true"
+        },
+        {
+            "input": "fbeafbbfbf\ncats code dog sand apple and car pen leet",
+            "output": "false"
+        },
+        {
+            "input": "anddog\ndog pen apple and sand car cats leet code",
+            "output": "true"
+        },
+        {
+            "input": "dbafcbcabb\nleet sand dog apple pen car and code cats",
+            "output": "false"
+        },
+        {
+            "input": "adfbddacad\ndog leet code cats apple sand and car pen",
+            "output": "false"
+        },
+        {
+            "input": "catsappleleetsand\ndog car and apple sand cats pen code leet",
+            "output": "true"
+        },
+        {
+            "input": "bfeccdaccd\nleet code cats pen dog apple sand car and",
+            "output": "false"
+        },
+        {
+            "input": "ffaadccecc\ncats and leet apple dog car pen sand code",
+            "output": "false"
+        },
+        {
+            "input": "cffeeabdfd\ncats dog code apple leet pen sand and car",
+            "output": "false"
+        },
+        {
+            "input": "leet\ncats sand dog apple car pen leet code and",
+            "output": "true"
+        },
+        {
+            "input": "leetpencatscarapple\npen car leetpencatscarapple dog apple leet sand cats code and",
+            "output": "true"
+        },
+        {
+            "input": "carcodeapplecar\nleet code cats dog and apple car pen sand",
+            "output": "true"
+        },
+        {
+            "input": "leetandapple\nand sand pen cats leet apple code dog car",
+            "output": "true"
+        },
+        {
+            "input": "dogpenpen\nleet cats car pen and sand apple dog code",
+            "output": "true"
+        },
+        {
+            "input": "ffebeafaaa\ncats dog car and code leet pen apple sand",
+            "output": "false"
+        },
+        {
+            "input": "carsandleet\npen cats leet car dog and code apple sand",
+            "output": "true"
+        },
+        {
+            "input": "ceebdbfdbb\ncar leet code cats sand and pen apple dog",
+            "output": "false"
+        },
+        {
+            "input": "applecodepen\nsand code dog cats pen car and leet apple",
+            "output": "true"
+        },
+        {
+            "input": "bdfafbbffd\ncode apple car dog pen cats leet sand and",
+            "output": "false"
+        },
+        {
+            "input": "dacfadabca\ncats and pen leet dog apple code car sand",
+            "output": "false"
+        },
+        {
+            "input": "ccdceeabfc\nand pen apple cats sand car code dog leet",
+            "output": "false"
+        },
+        {
+            "input": "bdbbbfafad\nand pen apple sand car leet code cats dog",
+            "output": "false"
+        },
+        {
+            "input": "apple\ncar dog sand leet pen apple and cats code",
+            "output": "true"
+        },
+        {
+            "input": "and\ncode dog car apple leet sand pen and cats",
+            "output": "true"
+        },
+        {
+            "input": "effecbbcef\ncode leet apple and dog cats sand car pen",
+            "output": "false"
+        },
+        {
+            "input": "ddfebecfab\ncats leet code apple pen car sand and dog",
+            "output": "false"
+        },
+        {
+            "input": "dogapplecodecardog\npen dog leet car cats sand apple code and",
+            "output": "true"
+        },
+        {
+            "input": "aceaaebcdc\ncar code pen dog apple sand and leet cats",
+            "output": "false"
+        },
+        {
+            "input": "edbefbdacd\nand pen cats dog code apple car sand leet",
+            "output": "false"
+        },
+        {
+            "input": "dacbdebeff\ncode leet apple dog sand cats car and pen",
+            "output": "false"
+        },
+        {
+            "input": "fdebbfbafc\napple leet sand car cats pen and code dog",
+            "output": "false"
+        },
+        {
+            "input": "appledog\ncats leet sand apple code pen dog and car",
+            "output": "true"
+        },
+        {
+            "input": "daaffcfdbc\nleet and car cats code apple dog sand pen",
+            "output": "false"
+        },
+        {
+            "input": "bcdfbdedce\nleet cats and sand apple car pen dog code",
+            "output": "false"
+        },
+        {
+            "input": "apple\ndog sand and cats car apple pen code leet",
+            "output": "true"
+        },
+        {
+            "input": "sandcats\npen code apple sand dog car and leet cats",
+            "output": "true"
+        },
+        {
+            "input": "aacefedccb\ncode apple pen sand leet dog car cats and",
+            "output": "false"
+        },
+        {
+            "input": "pencodepensand\ncats apple leet car dog and sand code pen",
+            "output": "true"
+        },
+        {
+            "input": "adfceefded\nand code pen leet car cats dog sand apple",
+            "output": "false"
+        },
+        {
+            "input": "decbdbabea\nleet and pen sand car cats code apple dog",
+            "output": "false"
+        },
+        {
+            "input": "baebeafbeb\nsand car dog apple pen and cats leet code",
+            "output": "false"
+        },
+        {
+            "input": "and\ncar code sand dog and apple cats leet pen",
+            "output": "true"
+        },
+        {
+            "input": "cardogleetcode\nsand code dog cats apple car pen and leet",
+            "output": "true"
+        },
+        {
+            "input": "ffbfccbccf\nand dog car pen leet code cats sand apple",
+            "output": "false"
+        },
+        {
+            "input": "cedeedabec\npen car apple sand leet dog and cats code",
+            "output": "false"
+        },
+        {
+            "input": "cdfeffabfc\ndog car pen apple cats code leet and sand",
+            "output": "false"
+        },
+        {
+            "input": "cdadfcefdd\nleet code car cats apple and dog sand pen",
+            "output": "false"
+        },
+        {
+            "input": "ffbbbddfbe\nsand apple and car dog leet code cats pen",
+            "output": "false"
+        },
+        {
+            "input": "eecbedadfe\ncats sand pen and code car leet dog apple",
+            "output": "false"
+        },
+        {
+            "input": "andcarcats\ncar leet pen dog and code apple sand cats",
+            "output": "true"
+        },
+        {
+            "input": "leet\nleet code and pen car dog sand apple cats",
+            "output": "true"
+        },
+        {
+            "input": "aeecaafbfd\ndog apple sand leet pen and cats code car",
+            "output": "false"
+        },
+        {
+            "input": "pencode\nleet pen sand and car dog apple code cats",
+            "output": "true"
+        },
+        {
+            "input": "dafcbcadfe\nand apple leet sand code car dog cats pen",
+            "output": "false"
+        },
+        {
+            "input": "eedbeeacad\nsand pen and code cats car dog apple leet",
+            "output": "false"
+        },
+        {
+            "input": "pen\ndog apple sand and pen car code leet cats",
+            "output": "true"
+        },
+        {
+            "input": "ffabdbbbda\napple dog car code cats and pen sand leet",
+            "output": "false"
+        },
+        {
+            "input": "anddogcodesand\ncats code pen sand leet and car apple dog",
+            "output": "true"
+        },
+        {
+            "input": "pensandpencats\napple dog leet and car code sand pen cats",
+            "output": "true"
+        },
+        {
+            "input": "catscatssand\nsand and cats code car dog leet apple pen",
+            "output": "true"
+        },
+        {
+            "input": "apple\npen sand car dog code leet apple cats and",
+            "output": "true"
+        },
+        {
+            "input": "febcbbbcba\ndog cats pen sand code car and apple leet",
+            "output": "false"
+        },
+        {
+            "input": "deffabfcfb\nsand code dog cats apple car and pen leet",
+            "output": "false"
+        },
+        {
+            "input": "ccfbbbdfdc\nleet cats and sand code dog pen car apple",
+            "output": "false"
+        },
+        {
+            "input": "edebeceacd\napple leet cats code car dog sand and pen",
+            "output": "false"
+        },
+        {
+            "input": "andcar\nsand pen dog andcar apple leet cats and car code",
+            "output": "true"
+        },
+        {
+            "input": "eaecfffbaf\ncats and dog pen leet car sand code apple",
+            "output": "false"
+        },
+        {
+            "input": "cbaadafbdb\npen sand dog car apple code leet cats and",
+            "output": "false"
+        },
+        {
+            "input": "dog\ncar leet and sand apple cats pen code dog",
+            "output": "true"
+        },
+        {
+            "input": "bcebebdcfa\napple pen code sand cats and leet car dog",
+            "output": "false"
+        },
+        {
+            "input": "afebcbfbec\npen and dog car sand apple cats code leet",
+            "output": "false"
+        },
+        {
+            "input": "efcaabebea\nand car sand dog leet apple code cats pen",
+            "output": "false"
+        },
+        {
+            "input": "leetleetand\ncar dog sand cats and code pen apple leet",
+            "output": "true"
+        },
+        {
+            "input": "dccdafabff\ndog sand apple code pen leet and car cats",
+            "output": "false"
+        },
+        {
+            "input": "ebcbdbaedf\nand car code pen apple leet sand dog cats",
+            "output": "false"
+        },
+        {
+            "input": "ffffeddebd\ndog car leet cats pen code sand and apple",
+            "output": "false"
+        },
+        {
+            "input": "bebfabddfb\npen leet sand car cats code and apple dog",
+            "output": "false"
+        },
+        {
+            "input": "pencarpenleetleet\npen cats apple sand code dog leet and car",
+            "output": "true"
+        },
+        {
+            "input": "car\nand code leet apple dog car cats pen sand",
+            "output": "true"
+        },
+        {
+            "input": "dog\ndog apple leet pen cats code car sand and",
+            "output": "true"
+        },
+        {
+            "input": "applecarpen\nand apple pen dog cats leet code car sand",
+            "output": "true"
+        },
+        {
+            "input": "febdcdecac\ncode leet cats car apple sand and dog pen",
+            "output": "false"
+        },
+        {
+            "input": "dfeefccaca\ncats and car sand leet apple pen code dog",
+            "output": "false"
+        },
+        {
+            "input": "adcbebbcca\npen dog code and leet car sand apple cats",
+            "output": "false"
+        },
+        {
+            "input": "applecardogsandcode\nleet apple pen car sand code dog cats and",
+            "output": "true"
+        },
+        {
+            "input": "becddddada\nand leet dog cats apple code sand car pen",
+            "output": "false"
+        },
+        {
+            "input": "dog\nsand code car and leet apple cats dog pen",
+            "output": "true"
+        },
+        {
+            "input": "carandsandpen\ncar dog cats sand apple code leet pen and",
+            "output": "true"
+        },
+        {
+            "input": "debbbbfded\npen apple code sand leet dog car cats and",
+            "output": "false"
+        },
+        {
+            "input": "applepencarleetpen\npen code sand and dog car apple applepencarleetpen leet cats",
+            "output": "true"
+        },
+        {
+            "input": "badddcfcaa\ncats and pen car apple code dog sand leet",
+            "output": "false"
+        },
+        {
+            "input": "codecodecodepen\nsand cats dog apple car code leet pen and",
+            "output": "true"
+        },
+        {
+            "input": "aceadcdffc\ncode apple dog leet pen and car sand cats",
+            "output": "false"
+        },
+        {
+            "input": "dogdog\ncats dog code sand apple car leet pen and",
+            "output": "true"
+        },
+        {
+            "input": "penandcode\napple leet pen code dog cats sand car and",
+            "output": "true"
+        },
+        {
+            "input": "leetandandcats\napple cats code leet and car dog sand pen",
+            "output": "true"
+        },
+        {
+            "input": "codesandandcodedog\nand pen apple cats leet dog car sand code",
+            "output": "true"
+        },
+        {
+            "input": "afadeccbee\napple leet cats pen car dog sand code and",
+            "output": "false"
+        },
+        {
+            "input": "dog\nsand and cats leet code dog apple car pen",
+            "output": "true"
+        },
+        {
+            "input": "codeandapplesandand\nand apple code pen dog car sand cats leet",
+            "output": "true"
+        },
+        {
+            "input": "febafdcaac\nsand apple and leet car dog pen code cats",
+            "output": "false"
+        },
+        {
+            "input": "bfbebdadef\ndog apple code cats and car leet pen sand",
+            "output": "false"
+        },
+        {
+            "input": "acfbadcbee\nleet dog sand car code pen apple and cats",
+            "output": "false"
+        },
+        {
+            "input": "bbfbccefae\ndog cats car and code pen leet apple sand",
+            "output": "false"
+        },
+        {
+            "input": "efffefcbac\ncode sand pen cats car and dog apple leet",
+            "output": "false"
+        },
+        {
+            "input": "cbffbecfdc\ncats leet dog code sand and car apple pen",
+            "output": "false"
+        },
+        {
+            "input": "deafefdada\nleet car cats apple sand pen dog code and",
+            "output": "false"
+        },
+        {
+            "input": "bbffcacdfe\ncar and leet pen code cats apple dog sand",
+            "output": "false"
+        },
+        {
+            "input": "leetapple\ndog apple car leet sand and code cats pen",
+            "output": "true"
+        },
+        {
+            "input": "bdcbecfabc\npen code leet dog apple sand cats and car",
+            "output": "false"
+        },
+        {
+            "input": "catsandleetapple\ncats dog apple pen sand leet and car code",
+            "output": "true"
+        },
+        {
+            "input": "fcefccdaff\ncar apple cats code pen and leet sand dog",
+            "output": "false"
+        },
+        {
+            "input": "andpen\ncode pen car leet cats apple and sand dog",
+            "output": "true"
+        },
+        {
+            "input": "dogcodesandcode\npen leet cats car dog code apple and sand",
+            "output": "true"
+        },
+        {
+            "input": "codecode\ncode car leet sand dog cats and pen apple",
+            "output": "true"
+        },
+        {
+            "input": "codeand\ndog and sand car pen cats apple code leet",
+            "output": "true"
+        },
+        {
+            "input": "carpencar\nand leet car apple dog cats sand pen code",
+            "output": "true"
+        },
+        {
+            "input": "ecdecdfccf\nsand and pen code car apple cats leet dog",
+            "output": "false"
+        },
+        {
+            "input": "leetcarleetcodecar\ncar pen dog and leet apple cats code sand",
+            "output": "true"
+        },
+        {
+            "input": "faccdabbca\nand pen leet cats apple car sand code dog",
+            "output": "false"
+        },
+        {
+            "input": "dcfedcaaed\ncar apple pen code cats dog and leet sand",
+            "output": "false"
+        },
+        {
+            "input": "andpenapplecodesand\npen sand car dog and code cats leet apple",
+            "output": "true"
+        },
+        {
+            "input": "code\nleet car apple cats pen and sand code dog",
+            "output": "true"
+        },
+        {
+            "input": "sandcatsapple\ncar and sand apple code leet dog pen cats",
+            "output": "true"
+        },
+        {
+            "input": "cbdcdaffaf\nleet code and apple pen cats car sand dog",
+            "output": "false"
+        },
+        {
+            "input": "bcfeaaedad\ncar and cats pen apple leet code dog sand",
+            "output": "false"
+        },
+        {
+            "input": "fbdfcadace\npen dog cats code leet and sand car apple",
+            "output": "false"
+        },
+        {
+            "input": "appledogpen\napple sand leet car cats and dog pen code",
+            "output": "true"
+        },
+        {
+            "input": "apple\napple dog leet pen car code and cats sand",
+            "output": "true"
+        },
+        {
+            "input": "eccedffbaa\ncar apple cats and leet sand dog code pen",
+            "output": "false"
+        },
+        {
+            "input": "cbfddaeada\ncats pen car leet apple code and sand dog",
+            "output": "false"
+        },
+        {
+            "input": "febceadaeb\nleet dog apple sand car pen and cats code",
+            "output": "false"
+        },
+        {
+            "input": "fccfbccfec\ndog and code cats sand leet car apple pen",
+            "output": "false"
+        },
+        {
+            "input": "leetleetcodepenapple\ncode pen dog leet sand apple car cats and",
+            "output": "true"
+        },
+        {
+            "input": "dacbbdcfce\nleet car dog and sand apple code pen cats",
+            "output": "false"
+        },
+        {
+            "input": "cccddefcbf\nand pen sand code dog apple leet cats car",
+            "output": "false"
+        },
+        {
+            "input": "bbfebdeffc\ncar code leet sand apple dog and cats pen",
+            "output": "false"
+        },
+        {
+            "input": "codeleetappleapple\napple code leet pen sand and cats dog car",
+            "output": "true"
+        },
+        {
+            "input": "cfaaafeeae\npen dog car leet cats code apple and sand",
+            "output": "false"
+        },
+        {
+            "input": "afeefffbfd\ndog sand leet and apple cats car pen code",
+            "output": "false"
+        },
+        {
+            "input": "afddadddab\nand apple pen dog cats car sand leet code",
+            "output": "false"
+        },
+        {
+            "input": "code\ncar cats dog leet pen apple sand and code",
+            "output": "true"
+        },
+        {
+            "input": "ebccaebbac\ncats leet dog apple code and sand car pen",
+            "output": "false"
+        },
+        {
+            "input": "leet\ndog apple car cats sand pen and code leet",
+            "output": "true"
+        },
+        {
+            "input": "ebfedcedfb\npen apple leet sand cats and code dog car",
+            "output": "false"
+        },
+        {
+            "input": "fabcbdddda\ncar leet and sand cats code dog pen apple",
+            "output": "false"
+        },
+        {
+            "input": "andsand\npen sand code car cats leet apple dog and",
+            "output": "true"
+        },
+        {
+            "input": "bdfbaddbbd\nsand and cats dog car leet apple code pen",
+            "output": "false"
+        },
+        {
+            "input": "aacecdefdd\nleet car apple sand dog and pen code cats",
+            "output": "false"
+        },
+        {
+            "input": "eadfabefad\npen sand code leet and apple cats dog car",
+            "output": "false"
+        },
+        {
+            "input": "adceeffdef\nsand cats leet code dog car and pen apple",
+            "output": "false"
+        },
+        {
+            "input": "dbadfadfab\nand leet dog sand apple car code pen cats",
+            "output": "false"
+        },
+        {
+            "input": "dogapplecar\ncode cats leet car and dog pen apple sand",
+            "output": "true"
+        },
+        {
+            "input": "car\nand leet sand pen dog car code cats apple",
+            "output": "true"
+        },
+        {
+            "input": "car\napple cats code sand leet car and dog pen",
+            "output": "true"
+        },
+        {
+            "input": "dedfaccacd\napple leet code cats and dog car sand pen",
+            "output": "false"
+        },
+        {
+            "input": "fddcacfffe\nsand car leet pen cats and apple dog code",
+            "output": "false"
+        },
+        {
+            "input": "ffcddadcae\nleet sand and dog code pen apple cats car",
+            "output": "false"
+        },
+        {
+            "input": "leetapple\nand dog apple cats car code leet sand pen",
+            "output": "true"
+        },
+        {
+            "input": "dffeebbadb\ncar leet cats sand pen code dog and apple",
+            "output": "false"
+        },
+        {
+            "input": "sandcode\ncode sand leet dog and car cats pen apple",
+            "output": "true"
+        },
+        {
+            "input": "bfdefdfede\ncats and dog pen car leet code apple sand",
+            "output": "false"
+        },
+        {
+            "input": "andsand\ncar sand code pen cats and dog leet apple",
+            "output": "true"
+        },
+        {
+            "input": "bbcaedfdca\nand leet car sand dog apple code pen cats",
+            "output": "false"
+        },
+        {
+            "input": "cbaccdbfca\ncar and sand pen apple leet code dog cats",
+            "output": "false"
+        },
+        {
+            "input": "adafabacba\ndog cats and code pen apple leet sand car",
+            "output": "false"
+        },
+        {
+            "input": "effbafdcad\nand pen code sand leet dog car cats apple",
+            "output": "false"
+        },
+        {
+            "input": "fceadaaccf\ncats apple leet sand code pen dog car and",
+            "output": "false"
+        },
+        {
+            "input": "codecatscodecarsand\nleet dog and pen sand cats car code apple",
+            "output": "true"
+        },
+        {
+            "input": "aceddbbdfa\nsand leet cats car dog and pen apple code",
+            "output": "false"
+        },
+        {
+            "input": "car\nleet sand apple and dog car cats pen code",
+            "output": "true"
+        },
+        {
+            "input": "bfcabdcefd\ncar code and sand leet cats dog pen apple",
+            "output": "false"
+        },
+        {
+            "input": "carapplecatspen\nand car carapplecatspen dog code leet apple pen cats sand",
+            "output": "true"
+        },
+        {
+            "input": "aafcadefac\ncats leet sand dog apple car code pen and",
+            "output": "false"
+        },
+        {
+            "input": "efdaddecae\ndog leet pen and code sand car apple cats",
+            "output": "false"
+        },
+        {
+            "input": "leetcarcarcar\nand leet cats sand dog code pen car apple",
+            "output": "true"
+        },
+        {
+            "input": "car\napple car sand and dog code cats pen leet",
+            "output": "true"
+        },
+        {
+            "input": "edceecbebd\ncode sand pen apple dog car cats and leet",
+            "output": "false"
+        },
+        {
+            "input": "bdaccebdcc\napple leet and car pen dog code sand cats",
+            "output": "false"
+        },
+        {
+            "input": "cbfdbceccf\napple code car leet dog and cats pen sand",
+            "output": "false"
+        },
+        {
+            "input": "leetdogcarleetand\ncar and apple leet sand code pen dog cats",
+            "output": "true"
+        },
+        {
+            "input": "dedabcfcdd\npen and leet car apple dog sand cats code",
+            "output": "false"
+        },
+        {
+            "input": "afabeedadd\ncode apple pen leet cats dog car and sand",
+            "output": "false"
+        },
+        {
+            "input": "apple\npen dog and sand car apple code cats leet",
+            "output": "true"
+        },
+        {
+            "input": "dogcodecarcar\napple code cats leet and dog sand car pen",
+            "output": "true"
+        },
+        {
+            "input": "dbddfeddec\ncode apple cats sand leet car dog and pen",
+            "output": "false"
+        },
+        {
+            "input": "bfeeeacacc\napple and car sand leet dog code pen cats",
+            "output": "false"
+        },
+        {
+            "input": "fbfccfecde\ndog and sand code apple pen cats leet car",
+            "output": "false"
+        },
+        {
+            "input": "pencarcatsdogcar\nleet dog pencarcatsdogcar car sand pen and cats apple code",
+            "output": "true"
+        },
+        {
+            "input": "code\ncar and leet apple pen code dog cats sand",
+            "output": "true"
+        },
+        {
+            "input": "baeffebcce\ncode dog apple cats sand pen and leet car",
+            "output": "false"
+        },
+        {
+            "input": "dogcodedogpen\npen car code leet dog sand and cats apple",
+            "output": "true"
+        },
+        {
+            "input": "dbadbdeffd\ndog pen code apple car cats leet sand and",
+            "output": "false"
+        },
+        {
+            "input": "leetpensanddogand\ncode car leet cats and sand apple dog pen",
+            "output": "true"
+        },
+        {
+            "input": "catssandleetcar\napple pen sand leet and dog code cats car",
+            "output": "true"
+        },
+        {
+            "input": "ecadfdadcb\nsand apple dog pen car cats code leet and",
+            "output": "false"
+        },
+        {
+            "input": "eecfacbffd\nleet car code pen and dog sand cats apple",
+            "output": "false"
+        },
+        {
+            "input": "dabacacfbc\nand sand car cats dog code leet apple pen",
+            "output": "false"
+        },
+        {
+            "input": "catscodedogpenand\nleet car code sand cats apple dog pen and",
+            "output": "true"
+        },
+        {
+            "input": "andcodepenand\nleet and dog code cats pen apple sand car",
+            "output": "true"
+        },
+        {
+            "input": "bffcfeedad\napple and pen car sand code cats dog leet",
+            "output": "false"
+        },
+        {
+            "input": "sandappleapplesandapple\npen dog and car apple leet cats sand code",
+            "output": "true"
+        },
+        {
+            "input": "cabbdefcbd\nand leet car pen sand code apple dog cats",
+            "output": "false"
+        },
+        {
+            "input": "ccbbacacdf\npen car cats dog apple code and sand leet",
+            "output": "false"
+        },
+        {
+            "input": "apple\npen and dog code sand leet apple car cats",
+            "output": "true"
+        },
+        {
+            "input": "catscarcodeandleet\ncats apple leet code and sand pen dog car",
+            "output": "true"
+        },
+        {
+            "input": "eebefbbcba\napple dog car cats and code sand leet pen",
+            "output": "false"
+        },
+        {
+            "input": "leetcodedog\nsand apple cats dog car pen leet and code",
+            "output": "true"
+        },
+        {
+            "input": "fdcecfdaea\ndog code cats sand leet car and apple pen",
+            "output": "false"
+        },
+        {
+            "input": "appleapplecode\ndog pen apple leet code appleapplecode and cats sand car",
+            "output": "true"
+        },
+        {
+            "input": "dogpenleetsandcode\ncats sand code dog apple pen car leet and",
+            "output": "true"
+        },
+        {
+            "input": "sandcarpen\npen dog and cats code sand car apple leet",
+            "output": "true"
+        },
+        {
+            "input": "catscarcarcatsapple\npen sand car cats leet dog code apple and",
+            "output": "true"
+        },
+        {
+            "input": "cardog\ncats dog sand leet code car and apple pen",
+            "output": "true"
+        },
+        {
+            "input": "dcdcebdbdd\nand apple cats leet dog code sand pen car",
+            "output": "false"
+        },
+        {
+            "input": "fcfdadaebf\napple car dog and sand leet cats code pen",
+            "output": "false"
+        },
+        {
+            "input": "dcdacfdfeb\ncar code pen cats leet apple dog and sand",
+            "output": "false"
+        },
+        {
+            "input": "applecar\nleet pen sand and apple car cats code dog",
+            "output": "true"
+        },
+        {
+            "input": "and\npen car code and dog sand cats apple leet",
+            "output": "true"
+        },
+        {
+            "input": "acfaafffad\npen dog cats and code sand leet apple car",
+            "output": "false"
+        },
+        {
+            "input": "dbaebcebdf\npen car leet sand and apple code dog cats",
+            "output": "false"
+        },
+        {
+            "input": "catssanddogapple\nleet pen code apple and car cats sand dog",
+            "output": "true"
+        },
+        {
+            "input": "abfbdbedad\nleet dog cats apple pen code sand and car",
+            "output": "false"
+        },
+        {
+            "input": "catsand\nleet apple and dog pen cats car code sand",
+            "output": "true"
+        },
+        {
+            "input": "dccccadedb\napple leet pen dog code car cats sand and",
+            "output": "false"
+        },
+        {
+            "input": "dedceadede\napple code leet and pen dog cats car sand",
+            "output": "false"
+        },
+        {
+            "input": "bbedbfcefa\ncar dog sand code cats leet apple and pen",
+            "output": "false"
+        },
+        {
+            "input": "decaffdabc\napple leet and code pen sand cats car dog",
+            "output": "false"
+        },
+        {
+            "input": "codesandleetapplecats\ncode car dog leet cats sand and apple pen",
+            "output": "true"
+        },
+        {
+            "input": "dogcatspencats\napple code cats dog leet sand car pen and",
+            "output": "true"
+        },
+        {
+            "input": "catsdogcatsand\nsand car pen apple leet code and dog cats",
+            "output": "true"
+        },
+        {
+            "input": "penleetcats\ncar pen and sand cats code leet dog apple",
+            "output": "true"
+        },
+        {
+            "input": "car\npen and leet apple cats code car sand dog",
+            "output": "true"
+        },
+        {
+            "input": "edefcdcefb\ndog and sand pen car code cats leet apple",
+            "output": "false"
+        },
+        {
+            "input": "codependogleetleet\nleet code cats apple pen sand dog car and",
+            "output": "true"
+        },
+        {
+            "input": "andleetsandanddog\ncar and pen sand code dog cats apple leet",
+            "output": "true"
+        },
+        {
+            "input": "catsanddog\napple code pen car leet and sand cats dog",
+            "output": "true"
+        },
+        {
+            "input": "penappleandand\nleet car sand apple pen and cats code dog",
+            "output": "true"
+        },
+        {
+            "input": "ccafdcaaeb\napple dog pen sand and leet car code cats",
+            "output": "false"
+        },
+        {
+            "input": "ecafcbbafb\npen leet sand dog car and cats apple code",
+            "output": "false"
+        },
+        {
+            "input": "carpen\nand car pen sand code cats dog leet apple",
+            "output": "true"
+        },
+        {
+            "input": "catsdogand\napple car leet cats sand and dog pen code",
+            "output": "true"
+        },
+        {
+            "input": "pensandcar\ndog apple and car leet sand cats pen code",
+            "output": "true"
+        },
+        {
+            "input": "ceeaaedbcc\ncar dog leet and code pen cats apple sand",
+            "output": "false"
+        },
+        {
+            "input": "dabadfceaf\nsand car apple code pen and dog cats leet",
+            "output": "false"
+        },
+        {
+            "input": "penandcatsapplecode\ncats car code sand pen apple leet dog and",
+            "output": "true"
+        },
+        {
+            "input": "cats\npen and dog sand code leet car apple cats",
+            "output": "true"
+        },
+        {
+            "input": "abdeeaebba\ncats dog leet and car sand code pen apple",
+            "output": "false"
+        },
+        {
+            "input": "catspenleet\nsand pen leet apple car code cats and dog",
+            "output": "true"
+        },
+        {
+            "input": "feabbfafdd\npen and leet cats car dog apple sand code",
+            "output": "false"
+        },
+        {
+            "input": "cbbeaeaddc\ncar code and dog leet cats sand pen apple",
+            "output": "false"
+        },
+        {
+            "input": "catscodeleet\nleet apple dog pen sand cats code car and",
+            "output": "true"
+        },
+        {
+            "input": "appleleetpencode\ndog and pen apple code leet cats car sand",
+            "output": "true"
+        },
+        {
+            "input": "eebecadecd\ncar sand and cats leet pen code apple dog",
+            "output": "false"
+        },
+        {
+            "input": "cfdbbacbda\nand cats car apple dog code pen leet sand",
+            "output": "false"
+        },
+        {
+            "input": "dbcbcdfefe\nleet pen dog car and apple sand code cats",
+            "output": "false"
+        },
+        {
+            "input": "carsandapplecode\ncar apple code sand cats dog leet and pen",
+            "output": "true"
+        },
+        {
+            "input": "andleet\nand apple pen cats code sand leet dog car",
+            "output": "true"
+        },
+        {
+            "input": "sandsand\ndog apple cats leet and pen car sand code",
+            "output": "true"
+        },
+        {
+            "input": "becfbceeee\ndog and sand apple code pen car cats leet",
+            "output": "false"
+        },
+        {
+            "input": "leetcatssandapple\ncar pen sand dog code cats apple and leet",
+            "output": "true"
+        },
+        {
+            "input": "dfdeadbedf\nleet sand pen car code and cats dog apple",
+            "output": "false"
+        },
+        {
+            "input": "dogleet\ndog apple leet sand car and pen code cats",
+            "output": "true"
+        },
+        {
+            "input": "andappleapple\napple pen cats dog sand leet and code car",
+            "output": "true"
+        },
+        {
+            "input": "bedbadadcd\ncar pen leet sand code apple dog cats and",
+            "output": "false"
+        },
+        {
+            "input": "ababecffda\napple sand code leet cats and car dog pen",
+            "output": "false"
+        },
+        {
+            "input": "sandcodesandapple\ndog code car cats pen apple leet and sand",
+            "output": "true"
+        },
+        {
+            "input": "ebecebfbde\ncode dog pen and cats leet apple sand car",
+            "output": "false"
+        },
+        {
+            "input": "ccfbbddffb\nand code leet cats car pen sand apple dog",
+            "output": "false"
+        },
+        {
+            "input": "ccbcbaecff\nsand pen dog code cats and leet car apple",
+            "output": "false"
+        },
+        {
+            "input": "fbaefbaecf\nleet cats and pen apple car sand dog code",
+            "output": "false"
+        },
+        {
+            "input": "dogpenandand\ncar code dog sand apple leet and cats pen",
+            "output": "true"
+        },
+        {
+            "input": "cbcedadefd\nleet car pen and sand cats apple code dog",
+            "output": "false"
+        },
+        {
+            "input": "dogcodesandapplecar\ndog code pen cats car leet sand and apple",
+            "output": "true"
+        },
+        {
+            "input": "andsandcats\nleet cats apple dog car pen sand and code",
+            "output": "true"
+        },
+        {
+            "input": "befadecade\ncar cats apple dog leet sand code pen and",
+            "output": "false"
+        },
+        {
+            "input": "codeapplecatspen\ncar cats code sand pen dog and leet apple",
+            "output": "true"
+        },
+        {
+            "input": "aaedecfdac\ndog and code leet cats pen car sand apple",
+            "output": "false"
+        },
+        {
+            "input": "fcacaccaed\ncode pen leet and dog apple cats sand car",
+            "output": "false"
+        },
+        {
+            "input": "catscatscode\ndog code apple pen sand cats leet and car",
+            "output": "true"
+        },
+        {
+            "input": "ddbcccbdbc\ncode cats leet and sand dog car apple pen",
+            "output": "false"
+        },
+        {
+            "input": "bccefbedcd\npen leet and car sand code dog cats apple",
+            "output": "false"
+        },
+        {
+            "input": "codecarcarsandsand\ncode sand car and pen cats dog apple leet",
+            "output": "true"
+        },
+        {
+            "input": "dogand\nsand cats car pen and apple dog code leet",
+            "output": "true"
+        },
+        {
+            "input": "pensandcode\ncar code dog apple cats and sand leet pen",
+            "output": "true"
+        },
+        {
+            "input": "bcaddeeadc\ncode pen and apple leet dog car sand cats",
+            "output": "false"
+        },
+        {
+            "input": "adbbdfaaea\ncar code pen cats sand apple dog leet and",
+            "output": "false"
+        }
+    ]
+}

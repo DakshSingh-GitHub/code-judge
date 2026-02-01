@@ -21,1711 +21,1003 @@
     ],
     "hidden_test_cases": [
         {
-            "input": "dbdb\ncaeb",
-            "output": "No"
-        },
-        {
-            "input": "eebabc\nadeaad",
-            "output": "No"
-        },
-        {
-            "input": "dce\neab",
-            "output": "No"
-        },
-        {
-            "input": "cabce\ncabec",
+            "input": "adebecbd\ncbbadeed",
             "output": "Yes"
         },
         {
-            "input": "dcade\neacdd",
+            "input": "dbcbc\nbdbcc",
             "output": "Yes"
         },
         {
-            "input": "becedbdc\ndaeceadd",
+            "input": "cadab\nceabb",
             "output": "No"
-        },
-        {
-            "input": "ebada\nbaead",
-            "output": "Yes"
-        },
-        {
-            "input": "babc\nbcba",
-            "output": "Yes"
-        },
-        {
-            "input": "bcabecaa\nbeacacab",
-            "output": "Yes"
-        },
-        {
-            "input": "eddc\necdd",
-            "output": "Yes"
         },
         {
-            "input": "dceaccaa\ncdebecbc",
+            "input": "bcbbedc\neadeaed",
             "output": "No"
         },
         {
-            "input": "eccbccee\neceebccc",
+            "input": "cbeee\neebec",
             "output": "Yes"
-        },
-        {
-            "input": "cab\ncac",
-            "output": "No"
         },
         {
-            "input": "aebedeb\nbedbeea",
+            "input": "addcc\nadccd",
             "output": "Yes"
         },
         {
-            "input": "caebc\nabdda",
+            "input": "dbdadaed\ncdcbbede",
             "output": "No"
         },
         {
-            "input": "eeaeae\naeaeee",
-            "output": "Yes"
-        },
-        {
-            "input": "bedadecb\ndadcbbec",
+            "input": "bac\ncaa",
             "output": "No"
         },
         {
-            "input": "abaadc\naacdab",
+            "input": "cebadcad\nceadabdc",
             "output": "Yes"
         },
         {
-            "input": "cdc\nccd",
+            "input": "dcebade\nbdcdaee",
             "output": "Yes"
         },
         {
-            "input": "daecbb\ndabceb",
+            "input": "badbcbdd\nacdbdbbd",
             "output": "Yes"
         },
         {
-            "input": "bebbcdaa\ndababbce",
+            "input": "bacc\nabcc",
             "output": "Yes"
         },
         {
-            "input": "ededecad\nddebbbea",
+            "input": "abc\naaa",
             "output": "No"
-        },
-        {
-            "input": "bea\nbae",
-            "output": "Yes"
-        },
-        {
-            "input": "dacede\neaeddc",
-            "output": "Yes"
         },
         {
-            "input": "cec\ndcb",
+            "input": "becbacc\neabecec",
             "output": "No"
-        },
-        {
-            "input": "edba\ndeab",
-            "output": "Yes"
-        },
-        {
-            "input": "ebdbddba\nbebdabdd",
-            "output": "Yes"
-        },
-        {
-            "input": "accabbaa\nbbcaacaa",
-            "output": "Yes"
         },
         {
-            "input": "dbcab\nbdacb",
-            "output": "Yes"
+            "input": "dbcec\neeeed",
+            "output": "No"
         },
         {
-            "input": "aedcce\naddedb",
+            "input": "bebbb\nacbda",
             "output": "No"
         },
         {
-            "input": "ecccbee\nacddbbb",
+            "input": "eecab\nbbcdb",
             "output": "No"
         },
         {
-            "input": "bcbac\neeecd",
+            "input": "dbda\necad",
             "output": "No"
         },
         {
-            "input": "ccbaecc\ncccebca",
+            "input": "cccda\ndaccc",
             "output": "Yes"
         },
         {
-            "input": "becaeac\nccebcbd",
+            "input": "dceccdda\ndaaeccde",
             "output": "No"
         },
         {
-            "input": "bbaa\ndeab",
+            "input": "eaeebba\necdbece",
             "output": "No"
         },
         {
-            "input": "daece\neacde",
-            "output": "Yes"
-        },
-        {
-            "input": "ccedee\nbbeadd",
+            "input": "aeceaac\ndbeccbc",
             "output": "No"
         },
         {
-            "input": "eaeeddb\ndebeaed",
+            "input": "eeebcd\neceedb",
             "output": "Yes"
         },
         {
-            "input": "daebc\nbaabb",
+            "input": "ededbbd\nbeaabcb",
             "output": "No"
         },
         {
-            "input": "becbaedb\ndbacdccb",
+            "input": "bbdcca\neeaace",
             "output": "No"
         },
         {
-            "input": "bdead\nddcbb",
+            "input": "eabec\ncdbba",
             "output": "No"
         },
         {
-            "input": "cbceaab\nbcaceba",
-            "output": "Yes"
+            "input": "acbda\nabaed",
+            "output": "No"
         },
         {
-            "input": "ace\nace",
+            "input": "aadc\ncdaa",
             "output": "Yes"
         },
         {
-            "input": "acedbb\nddabca",
+            "input": "dcb\naed",
             "output": "No"
         },
         {
-            "input": "eaccbaaa\ncdebebad",
+            "input": "ebeed\nbddbd",
             "output": "No"
         },
         {
-            "input": "ceacbdee\nebecaedc",
-            "output": "Yes"
+            "input": "badeec\ncabdea",
+            "output": "No"
         },
         {
-            "input": "beddccda\ndbccdaed",
+            "input": "bebbbbcd\nbdbbbceb",
             "output": "Yes"
         },
         {
-            "input": "dddbad\ndbcbea",
+            "input": "bdbadaee\neacdacad",
             "output": "No"
         },
         {
-            "input": "cdcade\ndabdcc",
-            "output": "No"
+            "input": "dbedcba\nbcbadde",
+            "output": "Yes"
         },
         {
-            "input": "aade\nbaad",
-            "output": "No"
+            "input": "edcdcbab\ncabdebcd",
+            "output": "Yes"
         },
         {
-            "input": "dbcdb\nbbddc",
+            "input": "bdedd\ndedbd",
             "output": "Yes"
         },
         {
-            "input": "cee\naea",
+            "input": "dbc\neea",
             "output": "No"
-        },
-        {
-            "input": "eec\ncee",
-            "output": "Yes"
         },
         {
-            "input": "dbdeec\necacab",
+            "input": "bceaae\nbaadcb",
             "output": "No"
         },
         {
-            "input": "dce\ndec",
+            "input": "dcdeaee\ndeecead",
             "output": "Yes"
-        },
-        {
-            "input": "cad\naae",
-            "output": "No"
         },
         {
-            "input": "dbde\nddeb",
+            "input": "dbbe\nbbed",
             "output": "Yes"
         },
         {
-            "input": "deadcabc\nbbdcebeb",
-            "output": "No"
+            "input": "decacec\ncedacce",
+            "output": "Yes"
         },
         {
-            "input": "daa\nddb",
+            "input": "beabcceb\naebbadde",
             "output": "No"
-        },
-        {
-            "input": "bbbdbd\nbdbdbb",
-            "output": "Yes"
         },
         {
-            "input": "cbd\ndeb",
+            "input": "edad\ncdbc",
             "output": "No"
         },
         {
-            "input": "accddde\necbacac",
+            "input": "eebc\nbebc",
             "output": "No"
         },
         {
-            "input": "aadaaa\naadaaa",
+            "input": "ebaeee\naeeebe",
             "output": "Yes"
         },
         {
-            "input": "cbecdb\nbcdceb",
+            "input": "dabdcae\ncdbadae",
             "output": "Yes"
         },
         {
-            "input": "beae\nebae",
+            "input": "dacecca\nccacaed",
             "output": "Yes"
         },
         {
-            "input": "eeaebea\nddccdbb",
+            "input": "eaedacb\nbebccad",
             "output": "No"
         },
         {
-            "input": "eaaad\nbbbab",
+            "input": "abbedae\naeadccd",
             "output": "No"
         },
         {
-            "input": "dbba\ndddd",
-            "output": "No"
+            "input": "ecadcaed\nacedecad",
+            "output": "Yes"
         },
         {
-            "input": "daebadb\nbbeacba",
+            "input": "ceaeeec\naaaabad",
             "output": "No"
         },
         {
-            "input": "dcaeedad\nccdbaebd",
+            "input": "cbccb\nbbcba",
             "output": "No"
         },
         {
-            "input": "dbeec\neecbd",
-            "output": "Yes"
-        },
-        {
-            "input": "eecbdad\nbcdddae",
+            "input": "ecbade\nabaedc",
             "output": "No"
         },
         {
-            "input": "dbcdbdd\ncaaaaae",
+            "input": "bdecbba\nbbabeee",
             "output": "No"
         },
         {
-            "input": "cecbdc\nacaabe",
+            "input": "eeecbadb\naceedaba",
             "output": "No"
         },
         {
-            "input": "ddcaab\neaaeda",
+            "input": "baacc\ncecdb",
             "output": "No"
         },
         {
-            "input": "aeace\neeaca",
+            "input": "cedbbbbb\nbbecbdbb",
             "output": "Yes"
-        },
-        {
-            "input": "bbae\ndbad",
-            "output": "No"
         },
         {
-            "input": "ebbedbaa\ncbeadacb",
+            "input": "deddeebb\nbbacaebe",
             "output": "No"
-        },
-        {
-            "input": "bbadb\ndbabb",
-            "output": "Yes"
         },
         {
-            "input": "dcbdbdcc\ncdcdbcdb",
+            "input": "cac\ncca",
             "output": "Yes"
         },
         {
-            "input": "cee\ncee",
+            "input": "aeeddded\nedddaeed",
             "output": "Yes"
-        },
-        {
-            "input": "dcdb\nbdde",
-            "output": "No"
         },
         {
-            "input": "aacd\nbeee",
+            "input": "bbe\nccb",
             "output": "No"
         },
         {
-            "input": "dded\neded",
-            "output": "No"
-        },
-        {
-            "input": "cbbeecaa\neeeceddb",
-            "output": "No"
-        },
-        {
-            "input": "acbb\ndbcc",
-            "output": "No"
+            "input": "cada\nadca",
+            "output": "Yes"
         },
         {
-            "input": "aecbcadd\ndeabadcc",
+            "input": "dabcabde\ndbeacdba",
             "output": "Yes"
         },
         {
-            "input": "bacde\ndbeba",
+            "input": "dccebaee\ncbcaaaaa",
             "output": "No"
         },
         {
-            "input": "aedebece\ncbcedeeb",
+            "input": "dcbda\necadc",
             "output": "No"
         },
         {
-            "input": "eaad\neada",
-            "output": "Yes"
+            "input": "dbed\nbccc",
+            "output": "No"
         },
         {
-            "input": "adcbede\ndebedac",
+            "input": "addcbbba\nbcbbdaad",
             "output": "Yes"
-        },
-        {
-            "input": "bee\ncdc",
-            "output": "No"
         },
         {
-            "input": "cca\ndcc",
+            "input": "cceeaae\nbacedbb",
             "output": "No"
-        },
-        {
-            "input": "eeaeddc\nceadeed",
-            "output": "Yes"
         },
         {
-            "input": "cabccdae\ncceeebba",
+            "input": "aaeceb\ndddead",
             "output": "No"
         },
         {
-            "input": "eda\nbae",
+            "input": "bacdde\ndeebeb",
             "output": "No"
         },
         {
-            "input": "ceeebd\neddebd",
-            "output": "No"
+            "input": "bdbce\ncbbde",
+            "output": "Yes"
         },
         {
-            "input": "acedb\nbedcc",
+            "input": "dceeeed\ndddedbb",
             "output": "No"
         },
         {
-            "input": "abb\nbbc",
-            "output": "No"
+            "input": "ddda\naddd",
+            "output": "Yes"
         },
         {
-            "input": "beaed\neacbe",
+            "input": "ddceda\naddbad",
             "output": "No"
         },
         {
-            "input": "cbeaed\ndbbdbd",
+            "input": "cebc\nacec",
             "output": "No"
         },
         {
-            "input": "deeccebc\nceecdceb",
+            "input": "dbdbdcb\ndddbbbc",
             "output": "Yes"
         },
         {
-            "input": "becbdac\naebdccb",
+            "input": "debdddad\nbdddddae",
             "output": "Yes"
         },
         {
-            "input": "bca\ncee",
-            "output": "No"
-        },
-        {
-            "input": "bba\nbab",
+            "input": "bdabded\nabedbdd",
             "output": "Yes"
         },
         {
-            "input": "adaacbca\ndddbeaed",
+            "input": "daebe\nccaed",
             "output": "No"
         },
         {
-            "input": "acb\nacb",
+            "input": "cccabdec\ndbccecca",
             "output": "Yes"
         },
         {
-            "input": "cdad\ndcda",
+            "input": "cddec\ndccde",
             "output": "Yes"
         },
         {
-            "input": "dacbdbe\nbdabcde",
+            "input": "adeeed\neddaee",
             "output": "Yes"
-        },
-        {
-            "input": "dbbccb\neadceb",
-            "output": "No"
         },
         {
-            "input": "ddd\nddd",
+            "input": "dbdda\nddbda",
             "output": "Yes"
         },
         {
-            "input": "dee\nacd",
+            "input": "dedc\ncdeb",
             "output": "No"
         },
         {
-            "input": "bbcc\ncbbc",
+            "input": "cdaa\ncada",
             "output": "Yes"
         },
         {
-            "input": "ecddcedc\necedcdcd",
+            "input": "bcaa\nbaac",
             "output": "Yes"
         },
         {
-            "input": "abc\naee",
+            "input": "cdcda\nadcda",
             "output": "No"
         },
         {
-            "input": "daeebabb\nceeedbae",
+            "input": "edac\neaba",
             "output": "No"
         },
         {
-            "input": "cea\neec",
-            "output": "No"
+            "input": "ddeb\nedbd",
+            "output": "Yes"
         },
         {
-            "input": "cdd\naad",
-            "output": "No"
+            "input": "dadccb\nbaccdd",
+            "output": "Yes"
         },
         {
-            "input": "dbe\nbed",
+            "input": "decec\ncecde",
             "output": "Yes"
         },
         {
-            "input": "dbaebdec\nceadcdec",
-            "output": "No"
+            "input": "bdbabc\nbbdabc",
+            "output": "Yes"
         },
         {
-            "input": "bdabacce\neebddeaa",
+            "input": "ead\nbeb",
             "output": "No"
         },
         {
-            "input": "dbbeea\nedeeba",
-            "output": "No"
+            "input": "eddcd\ndcded",
+            "output": "Yes"
         },
         {
-            "input": "eda\neba",
+            "input": "ded\nbed",
             "output": "No"
         },
         {
-            "input": "bdbae\ncabed",
-            "output": "No"
+            "input": "edccedbb\nbdecdbec",
+            "output": "Yes"
         },
         {
-            "input": "aceea\ndcdde",
+            "input": "dbde\nbecd",
             "output": "No"
         },
         {
-            "input": "adbdceca\nbadeacdc",
+            "input": "cba\nbac",
             "output": "Yes"
         },
         {
-            "input": "dceacaa\ncaedaac",
-            "output": "Yes"
+            "input": "cadbed\nbceeba",
+            "output": "No"
         },
         {
-            "input": "eeeeb\neeeeb",
+            "input": "dba\ndba",
             "output": "Yes"
         },
         {
-            "input": "baabdd\nbbddaa",
+            "input": "bdbaa\ndbaab",
             "output": "Yes"
         },
         {
-            "input": "deddc\nddcde",
+            "input": "bdcac\ncadbc",
             "output": "Yes"
         },
         {
-            "input": "aeedbcd\nbaceaed",
-            "output": "No"
+            "input": "aaaeae\neeaaaa",
+            "output": "Yes"
         },
         {
-            "input": "eaeaa\naaaee",
+            "input": "bbeecd\nbdbeec",
             "output": "Yes"
         },
         {
-            "input": "eecdb\necbed",
-            "output": "Yes"
+            "input": "beed\nadaa",
+            "output": "No"
         },
         {
-            "input": "eeccdaec\nadcbedac",
+            "input": "ccc\nbcc",
             "output": "No"
         },
         {
-            "input": "cdda\ndcad",
+            "input": "babddca\ncbddbaa",
             "output": "Yes"
         },
         {
-            "input": "bdbacbbb\nabdbbbcb",
+            "input": "ebacea\neecaba",
             "output": "Yes"
         },
         {
-            "input": "eabdceb\ncdddbbd",
+            "input": "cae\nbae",
             "output": "No"
         },
         {
-            "input": "cecb\ncceb",
+            "input": "aee\naee",
             "output": "Yes"
         },
         {
-            "input": "eabacdb\nbaabedc",
+            "input": "aba\nbaa",
             "output": "Yes"
         },
         {
-            "input": "ecaecadd\ndeadecca",
+            "input": "bacdaacc\naccbdcaa",
             "output": "Yes"
         },
         {
-            "input": "aebcb\necacc",
+            "input": "acebda\ndbcbcb",
             "output": "No"
         },
         {
-            "input": "cbdbb\ndcbbb",
+            "input": "cccb\ncbcc",
             "output": "Yes"
         },
         {
-            "input": "dec\ncee",
+            "input": "ceebb\naaeab",
             "output": "No"
         },
         {
-            "input": "bbdcdd\ndbcbdd",
-            "output": "Yes"
+            "input": "daae\nddee",
+            "output": "No"
         },
         {
-            "input": "dbbab\nabbbd",
-            "output": "Yes"
+            "input": "adde\needd",
+            "output": "No"
         },
         {
-            "input": "bdeeecaa\necceeebc",
+            "input": "daec\nccec",
             "output": "No"
         },
         {
-            "input": "beebd\nebedb",
+            "input": "ebaaad\nabaaed",
             "output": "Yes"
         },
         {
-            "input": "bdedca\nbebcee",
+            "input": "bccaacd\nccedbaa",
             "output": "No"
         },
         {
-            "input": "eedbbbce\neebbdceb",
+            "input": "dcadebab\nbacdbdea",
             "output": "Yes"
         },
         {
-            "input": "bcaebdb\nddbbcbc",
+            "input": "dcabcbce\ndcdaaabe",
             "output": "No"
         },
         {
-            "input": "dedded\ndedded",
+            "input": "dcceebee\needecbce",
             "output": "Yes"
         },
         {
-            "input": "aaace\ndaebd",
-            "output": "No"
+            "input": "aaaeceb\nbaaeeca",
+            "output": "Yes"
         },
         {
-            "input": "acbdbb\nabbcbd",
-            "output": "Yes"
+            "input": "abaccb\ndebecd",
+            "output": "No"
         },
         {
-            "input": "cabeeca\neccaeba",
+            "input": "dbcbedea\naecddbbe",
             "output": "Yes"
         },
         {
-            "input": "ceaaaece\neaecacae",
+            "input": "dee\need",
             "output": "Yes"
         },
         {
-            "input": "bdeddd\ndedbdd",
+            "input": "eeaec\nceeae",
             "output": "Yes"
         },
         {
-            "input": "ddca\nbccd",
+            "input": "aeebad\neaabdd",
             "output": "No"
         },
         {
-            "input": "eccabb\nddcbdc",
+            "input": "edb\naee",
             "output": "No"
         },
         {
-            "input": "acbcbbb\nbcbbcab",
+            "input": "bdaacadd\nddabacad",
             "output": "Yes"
         },
         {
-            "input": "dceaab\nbceaad",
+            "input": "cdaedcec\naeccddce",
             "output": "Yes"
         },
         {
-            "input": "aabeadc\nadaddcb",
+            "input": "cdad\nbcee",
             "output": "No"
-        },
-        {
-            "input": "ccbdbbba\nabbcbdbc",
-            "output": "Yes"
         },
         {
-            "input": "adadd\ncceca",
+            "input": "edbaeedc\necadbbbb",
             "output": "No"
         },
         {
-            "input": "eddad\ncecbb",
-            "output": "No"
+            "input": "edcad\naddec",
+            "output": "Yes"
         },
         {
-            "input": "bcbaeead\neebacadb",
+            "input": "cebcdece\neecdccbe",
             "output": "Yes"
         },
         {
-            "input": "decddeac\naceaeedc",
-            "output": "No"
+            "input": "ccecbbe\ncebbecc",
+            "output": "Yes"
         },
         {
-            "input": "bbceca\nbbceac",
+            "input": "adeeae\ndeaeae",
             "output": "Yes"
         },
         {
-            "input": "cecda\ncecba",
+            "input": "aabb\nacde",
             "output": "No"
         },
         {
-            "input": "acadad\ndadaac",
+            "input": "beaaab\naeaabb",
             "output": "Yes"
         },
         {
-            "input": "deccbdd\ncbbbcde",
-            "output": "No"
+            "input": "aecadb\ncaedba",
+            "output": "Yes"
         },
         {
-            "input": "dceede\nceddcb",
+            "input": "ccccbbbd\necebecda",
             "output": "No"
         },
         {
-            "input": "ebdba\nbebad",
+            "input": "cbcabbce\nbbccbcae",
             "output": "Yes"
-        },
-        {
-            "input": "adad\ndbec",
-            "output": "No"
         },
         {
-            "input": "bbaec\nadcbc",
+            "input": "eadc\nbebc",
             "output": "No"
         },
         {
-            "input": "ccbaeb\nbcabce",
+            "input": "daeaab\naeabda",
             "output": "Yes"
         },
         {
-            "input": "baebad\nbdeaba",
+            "input": "eceebac\neaebecc",
             "output": "Yes"
-        },
-        {
-            "input": "aeaa\nccad",
-            "output": "No"
         },
         {
-            "input": "edcac\naccde",
+            "input": "adcec\ncdaec",
             "output": "Yes"
-        },
-        {
-            "input": "bdcdbea\naaddebd",
-            "output": "No"
         },
         {
-            "input": "eed\neea",
+            "input": "aadecaed\ndebcdeea",
             "output": "No"
         },
         {
-            "input": "deeae\nccdee",
+            "input": "dcbb\ncebe",
             "output": "No"
         },
         {
-            "input": "beaeeee\neeebeae",
+            "input": "cadccb\nccbcad",
             "output": "Yes"
-        },
-        {
-            "input": "cdd\nbad",
-            "output": "No"
-        },
-        {
-            "input": "dbbda\nddeaa",
-            "output": "No"
         },
         {
-            "input": "baddccd\nacbdbeb",
+            "input": "dccecbbb\nbbbbeddc",
             "output": "No"
         },
         {
-            "input": "beab\nebea",
+            "input": "cebeadc\nbebeebd",
             "output": "No"
         },
         {
-            "input": "bddbabb\nbcbeeca",
+            "input": "bbbe\needb",
             "output": "No"
         },
         {
-            "input": "adedc\ndaecd",
+            "input": "aed\neda",
             "output": "Yes"
         },
         {
-            "input": "daeedd\ndaabab",
+            "input": "edbed\neebbb",
             "output": "No"
         },
         {
-            "input": "baeb\nceed",
+            "input": "bed\nbad",
             "output": "No"
         },
         {
-            "input": "eadbeb\nbedeba",
+            "input": "aacec\naceac",
             "output": "Yes"
         },
         {
-            "input": "cccbdec\naacebde",
+            "input": "aabedcca\nacedbaea",
             "output": "No"
         },
         {
-            "input": "cebcaeea\necadbaaa",
-            "output": "No"
+            "input": "baeebd\nebebda",
+            "output": "Yes"
         },
         {
-            "input": "cadca\nababd",
-            "output": "No"
+            "input": "ebcd\ncbde",
+            "output": "Yes"
+        },
+        {
+            "input": "abceaab\naaacbeb",
+            "output": "Yes"
         },
         {
-            "input": "cecbdbca\nbbcaccde",
+            "input": "abdd\ndabd",
             "output": "Yes"
         },
         {
-            "input": "adcbc\ndccab",
+            "input": "dcdaacbc\ncbdcadac",
             "output": "Yes"
         },
         {
-            "input": "eedbccd\nbabecea",
+            "input": "abec\nccbd",
             "output": "No"
         },
         {
-            "input": "cedd\nacdc",
+            "input": "cbc\nade",
             "output": "No"
         },
         {
-            "input": "cbd\ndbc",
+            "input": "bbc\ncbb",
             "output": "Yes"
         },
         {
-            "input": "ddc\ndce",
+            "input": "bee\ndba",
             "output": "No"
         },
         {
-            "input": "deebabec\nacaeebca",
+            "input": "ceeec\ndacad",
             "output": "No"
         },
         {
-            "input": "ecccacad\nceacaccd",
-            "output": "Yes"
+            "input": "ddeeabe\ncdecabb",
+            "output": "No"
         },
         {
-            "input": "dceeabd\ncddaebe",
+            "input": "eecc\necce",
             "output": "Yes"
         },
         {
-            "input": "abccbceb\naecbcbbc",
-            "output": "Yes"
+            "input": "badac\nbdeba",
+            "output": "No"
         },
         {
-            "input": "aecceee\neeceace",
-            "output": "Yes"
+            "input": "ace\naae",
+            "output": "No"
         },
         {
-            "input": "aacac\ncedbd",
+            "input": "ccaa\nddaa",
             "output": "No"
         },
         {
-            "input": "aeacacca\naaaeccca",
-            "output": "Yes"
+            "input": "eadeda\neecddb",
+            "output": "No"
         },
         {
-            "input": "ccaad\ndccdb",
+            "input": "bdde\ncbed",
             "output": "No"
         },
         {
-            "input": "deedddd\nddddeed",
-            "output": "Yes"
+            "input": "ebcebea\nbdaebde",
+            "output": "No"
         },
         {
-            "input": "edabdeca\nebaabacb",
+            "input": "dceaba\ncdaada",
             "output": "No"
         },
         {
-            "input": "adaba\nabada",
+            "input": "dee\ndee",
             "output": "Yes"
         },
         {
-            "input": "cbced\nbcdec",
+            "input": "eecace\ncceeea",
             "output": "Yes"
         },
         {
-            "input": "eaa\naae",
+            "input": "ccacda\ncacadc",
             "output": "Yes"
         },
         {
-            "input": "cbdabccb\ncccbabdb",
-            "output": "Yes"
+            "input": "debbc\nabcbc",
+            "output": "No"
         },
         {
-            "input": "ecbee\nbecee",
+            "input": "edd\ndde",
             "output": "Yes"
         },
         {
-            "input": "eeccea\nceceea",
+            "input": "ccbbeba\nbaccbbe",
             "output": "Yes"
         },
         {
-            "input": "eedebc\nabceba",
+            "input": "bbdbbcb\ndcabcdc",
             "output": "No"
-        },
-        {
-            "input": "caedbee\nedbacee",
-            "output": "Yes"
         },
         {
-            "input": "eacaedd\ncaeddae",
+            "input": "cddbeb\ndcbbed",
             "output": "Yes"
         },
         {
-            "input": "aadb\nedee",
+            "input": "adbcd\ncaabc",
             "output": "No"
         },
         {
-            "input": "dcebdeb\nceededc",
+            "input": "bcecba\naadcec",
             "output": "No"
         },
         {
-            "input": "dcee\necde",
+            "input": "eeebcc\neebecc",
             "output": "Yes"
         },
         {
-            "input": "ddab\naddb",
+            "input": "baebe\nebaeb",
             "output": "Yes"
         },
         {
-            "input": "aeaab\neabaa",
+            "input": "ede\nede",
             "output": "Yes"
         },
         {
-            "input": "bdacc\nddaac",
-            "output": "No"
-        },
-        {
-            "input": "eaeded\ndeeead",
+            "input": "dcba\nadcb",
             "output": "Yes"
         },
         {
-            "input": "addbadee\nabeedbde",
+            "input": "ebbeb\nbccdd",
             "output": "No"
         },
         {
-            "input": "bcd\nbcd",
+            "input": "acc\ncac",
             "output": "Yes"
-        },
-        {
-            "input": "dcc\necb",
-            "output": "No"
         },
         {
-            "input": "acbabbec\naedccdec",
-            "output": "No"
+            "input": "cccaa\naccca",
+            "output": "Yes"
         },
         {
-            "input": "aebcca\nacbcae",
+            "input": "dceed\ndeced",
             "output": "Yes"
         },
         {
-            "input": "aaeb\ndded",
+            "input": "dbcdcaa\nebbeeee",
             "output": "No"
         },
         {
-            "input": "dbdbc\nadadb",
+            "input": "aed\ncbe",
             "output": "No"
         },
         {
-            "input": "dde\nace",
+            "input": "ccccdb\nadbaea",
             "output": "No"
         },
         {
-            "input": "edc\ndec",
+            "input": "dcddbd\ndddbdc",
             "output": "Yes"
         },
         {
-            "input": "dbd\nddb",
+            "input": "eaeac\naacee",
             "output": "Yes"
         },
         {
-            "input": "adadabcd\ncccdeceb",
+            "input": "bebdc\nddbec",
             "output": "No"
         },
         {
-            "input": "cedda\ncbcee",
+            "input": "ebeace\naaeeda",
             "output": "No"
         },
         {
-            "input": "ddaded\neaddce",
+            "input": "abbdbbb\nbbcaeae",
             "output": "No"
         },
         {
-            "input": "ddeebbbe\nccbeacda",
+            "input": "debabbba\nbeabcabb",
             "output": "No"
         },
         {
-            "input": "aaedccc\ncaecadc",
+            "input": "beaced\ndeaecb",
             "output": "Yes"
         },
         {
-            "input": "aeec\naeaa",
-            "output": "No"
-        },
-        {
-            "input": "cadaac\nacadac",
-            "output": "Yes"
-        },
-        {
-            "input": "dceb\ncebd",
+            "input": "cabbc\nabbcc",
             "output": "Yes"
         },
         {
-            "input": "dcbd\ndcdb",
+            "input": "ceacdbec\naedccebc",
             "output": "Yes"
         },
         {
-            "input": "dedcdb\nbedeca",
+            "input": "babd\nbaeb",
             "output": "No"
-        },
-        {
-            "input": "cdebded\nbcdddee",
-            "output": "Yes"
-        },
-        {
-            "input": "deb\nbed",
-            "output": "Yes"
         },
         {
-            "input": "dcddd\ndbbaa",
+            "input": "ecaebcb\naedbdad",
             "output": "No"
         },
         {
-            "input": "daedced\naccbdce",
+            "input": "bbdeaeb\naacdcdd",
             "output": "No"
         },
         {
-            "input": "dcadb\ncbacc",
+            "input": "cbaeb\nddcba",
             "output": "No"
         },
         {
-            "input": "dddcc\nddcdc",
+            "input": "aaccbba\nbccaaba",
             "output": "Yes"
         },
         {
-            "input": "bccedc\nddbbda",
+            "input": "bada\naddd",
             "output": "No"
         },
         {
-            "input": "bcebebd\ncdebebb",
+            "input": "beaad\neadba",
             "output": "Yes"
         },
         {
-            "input": "ebaaed\naedeba",
+            "input": "ada\ndaa",
             "output": "Yes"
         },
         {
-            "input": "ebabc\nbecba",
+            "input": "eab\neab",
             "output": "Yes"
         },
         {
-            "input": "bdecdc\necdcbd",
+            "input": "abbdeebc\ncdebbeba",
             "output": "Yes"
         },
         {
-            "input": "daedbdbc\nbddcbdea",
+            "input": "daeab\naaedb",
             "output": "Yes"
         },
         {
-            "input": "bbc\ncee",
-            "output": "No"
+            "input": "dddbbcd\ndddbdbc",
+            "output": "Yes"
         },
         {
-            "input": "ceeaeaca\nbabadcdb",
+            "input": "ddee\ncacc",
             "output": "No"
         },
         {
-            "input": "cdca\nacad",
+            "input": "abbae\ndbdac",
             "output": "No"
-        },
-        {
-            "input": "bdd\nddb",
-            "output": "Yes"
-        },
-        {
-            "input": "bdcdcdac\ncdddbcca",
-            "output": "Yes"
-        },
-        {
-            "input": "bbeeceba\nebbabcee",
-            "output": "Yes"
-        },
-        {
-            "input": "addbcebd\ndbcdedab",
-            "output": "Yes"
-        },
-        {
-            "input": "bda\ndba",
-            "output": "Yes"
         },
         {
-            "input": "ceb\ncdb",
+            "input": "aaeceaa\naaaccbb",
             "output": "No"
         },
         {
-            "input": "bcae\nbbca",
+            "input": "babebbd\naccaace",
             "output": "No"
         },
         {
-            "input": "adbc\nabad",
+            "input": "cbcdaebd\nbcbbeeaa",
             "output": "No"
-        },
-        {
-            "input": "acbacbce\ncbceaacb",
-            "output": "Yes"
         },
         {
-            "input": "beeeb\nbbeee",
-            "output": "Yes"
+            "input": "dedbdb\ndbbdaa",
+            "output": "No"
         },
         {
-            "input": "aaa\naaa",
-            "output": "Yes"
+            "input": "daaebcd\nedebdaa",
+            "output": "No"
         },
         {
-            "input": "ecc\necc",
-            "output": "Yes"
+            "input": "decbabdb\naeedcccb",
+            "output": "No"
         },
         {
-            "input": "eeb\nbee",
+            "input": "bbcba\nbbbac",
             "output": "Yes"
         },
         {
-            "input": "aeacbdd\nbdeabec",
+            "input": "deedb\nadcdd",
             "output": "No"
         },
         {
-            "input": "eeaed\neeeda",
-            "output": "Yes"
+            "input": "bdaceaec\nbcabcbae",
+            "output": "No"
         },
         {
-            "input": "bebedad\naddebeb",
+            "input": "dbdc\ncbdd",
             "output": "Yes"
         },
         {
-            "input": "aeeb\neeab",
+            "input": "bcac\nccba",
             "output": "Yes"
         },
         {
-            "input": "dbeddabd\nadbddedb",
+            "input": "bbab\nbbba",
             "output": "Yes"
         },
         {
-            "input": "addaecea\naeeddcaa",
+            "input": "eccdbbcc\nbbedcccc",
             "output": "Yes"
         },
         {
-            "input": "beadbae\naeaacbc",
+            "input": "aaeccdac\nacaeedce",
             "output": "No"
         },
         {
-            "input": "deeaadac\nddccdcda",
-            "output": "No"
-        },
-        {
-            "input": "eceeeeae\naebadebe",
-            "output": "No"
-        },
-        {
-            "input": "cbecbd\nbaeabe",
-            "output": "No"
-        },
-        {
-            "input": "dbeec\needbc",
+            "input": "dbea\nebda",
             "output": "Yes"
         },
         {
-            "input": "dabdaac\ndadcebc",
+            "input": "abcbacbb\naaebadec",
             "output": "No"
         },
         {
-            "input": "ced\ncad",
+            "input": "abdde\naeede",
             "output": "No"
         },
         {
-            "input": "bac\ncba",
-            "output": "Yes"
+            "input": "becbcacb\ncbeebbab",
+            "output": "No"
         },
         {
-            "input": "ebdcae\nacbeed",
+            "input": "ccaccc\nccaccc",
             "output": "Yes"
         },
         {
-            "input": "aceedeb\neebedac",
+            "input": "acaddadc\nccddaaad",
             "output": "Yes"
         },
         {
-            "input": "ecc\naed",
+            "input": "baeadebc\ncdabcedd",
             "output": "No"
         },
         {
-            "input": "cedcaa\ncdaedd",
+            "input": "aeadcaa\nbebbcec",
             "output": "No"
-        },
-        {
-            "input": "eddebdbc\nbbcdedde",
-            "output": "Yes"
-        },
-        {
-            "input": "aeaaba\nebaaaa",
-            "output": "Yes"
-        },
-        {
-            "input": "acbb\nbacb",
-            "output": "Yes"
-        },
-        {
-            "input": "dcddbd\ndddcdb",
-            "output": "Yes"
-        },
-        {
-            "input": "abee\nbeae",
-            "output": "Yes"
         },
         {
-            "input": "bbdecab\ndbcebab",
+            "input": "bcbcbd\nbbdbcc",
             "output": "Yes"
         },
         {
-            "input": "ecadbdce\ndcbddbec",
+            "input": "acaceb\nbeebbc",
             "output": "No"
-        },
-        {
-            "input": "deb\ndeb",
-            "output": "Yes"
         },
         {
-            "input": "ddeb\ndbde",
-            "output": "Yes"
+            "input": "bbeca\nacecc",
+            "output": "No"
         },
         {
-            "input": "abcd\nabcd",
+            "input": "bcacbb\nacbbcb",
             "output": "Yes"
         },
         {
-            "input": "eeaabbc\nbdaebde",
+            "input": "acaceae\ncbcbcec",
             "output": "No"
-        },
-        {
-            "input": "aecdedb\ndaedbce",
-            "output": "Yes"
-        },
-        {
-            "input": "cecee\neadbe",
-            "output": "No"
-        },
-        {
-            "input": "aceae\nbdbcd",
-            "output": "No"
-        },
-        {
-            "input": "bbabaeeb\ndceaebbb",
-            "output": "No"
-        },
-        {
-            "input": "ecebac\nebceab",
-            "output": "No"
-        },
-        {
-            "input": "bddaaeb\nadaedbb",
-            "output": "Yes"
-        },
-        {
-            "input": "bbceeac\nabadcac",
-            "output": "No"
-        },
-        {
-            "input": "eccdd\ndecdc",
-            "output": "Yes"
-        },
-        {
-            "input": "eaeea\neeaae",
-            "output": "Yes"
-        },
-        {
-            "input": "bacac\nacbca",
-            "output": "Yes"
-        },
-        {
-            "input": "cadab\nbaadc",
-            "output": "Yes"
-        },
-        {
-            "input": "cbacaae\neccbaaa",
-            "output": "Yes"
-        },
-        {
-            "input": "eca\neca",
-            "output": "Yes"
-        },
-        {
-            "input": "dbadc\nbaddd",
-            "output": "No"
-        },
-        {
-            "input": "ccabdae\nceadaed",
-            "output": "No"
-        },
-        {
-            "input": "bbbea\neddcb",
-            "output": "No"
-        },
-        {
-            "input": "dacebaa\neadcbaa",
-            "output": "Yes"
-        },
-        {
-            "input": "acdcdeb\neeacdcc",
-            "output": "No"
-        },
-        {
-            "input": "dba\nbad",
-            "output": "Yes"
-        },
-        {
-            "input": "eec\ndda",
-            "output": "No"
-        },
-        {
-            "input": "ccc\nbca",
-            "output": "No"
-        },
-        {
-            "input": "babd\neeea",
-            "output": "No"
-        },
-        {
-            "input": "acedbcdc\nceddbdac",
-            "output": "No"
-        },
-        {
-            "input": "dda\ndad",
-            "output": "Yes"
-        },
-        {
-            "input": "cca\nbee",
-            "output": "No"
-        },
-        {
-            "input": "ecb\nbcc",
-            "output": "No"
-        },
-        {
-            "input": "acce\neacc",
-            "output": "Yes"
-        },
-        {
-            "input": "baaecc\nacbcae",
-            "output": "Yes"
-        },
-        {
-            "input": "aaacc\naaacc",
-            "output": "Yes"
-        },
-        {
-            "input": "babbb\nacebb",
-            "output": "No"
-        },
-        {
-            "input": "adaeccdd\ndccddeaa",
-            "output": "Yes"
-        },
-        {
-            "input": "eacca\neaacc",
-            "output": "Yes"
-        },
-        {
-            "input": "ceeebde\nedeeceb",
-            "output": "Yes"
-        },
-        {
-            "input": "eeebbe\nbeebee",
-            "output": "Yes"
-        },
-        {
-            "input": "adbdddd\ndaddddb",
-            "output": "Yes"
-        },
-        {
-            "input": "ececed\nebadcd",
-            "output": "No"
-        },
-        {
-            "input": "ddadcbee\nceedacec",
-            "output": "No"
-        },
-        {
-            "input": "adbcbae\nbbdacae",
-            "output": "Yes"
-        },
-        {
-            "input": "bcbead\nebcbda",
-            "output": "Yes"
-        },
-        {
-            "input": "dcd\nddc",
-            "output": "Yes"
-        },
-        {
-            "input": "caaecd\ndaaecc",
-            "output": "Yes"
-        },
-        {
-            "input": "ace\neac",
-            "output": "Yes"
-        },
-        {
-            "input": "aaced\nceecd",
-            "output": "No"
-        },
-        {
-            "input": "cbbab\nabaca",
-            "output": "No"
-        },
-        {
-            "input": "cdcbe\nebcdc",
-            "output": "Yes"
-        },
-        {
-            "input": "bddbbdac\nabebebaa",
-            "output": "No"
-        },
-        {
-            "input": "cdabadbe\naaaeaece",
-            "output": "No"
-        },
-        {
-            "input": "ebebdb\nbbdeeb",
-            "output": "Yes"
-        },
-        {
-            "input": "ababda\nadabab",
-            "output": "Yes"
-        },
-        {
-            "input": "edb\ncbb",
-            "output": "No"
-        },
-        {
-            "input": "baadaa\naaabda",
-            "output": "Yes"
-        },
-        {
-            "input": "acb\nabc",
-            "output": "Yes"
-        },
-        {
-            "input": "dcdeb\nbdecd",
-            "output": "Yes"
-        },
-        {
-            "input": "eedc\naeac",
-            "output": "No"
-        },
-        {
-            "input": "dda\ndda",
-            "output": "Yes"
-        },
-        {
-            "input": "dccd\ncaad",
-            "output": "No"
-        },
-        {
-            "input": "edbb\nbbed",
-            "output": "Yes"
-        },
-        {
-            "input": "cebbddd\ndceddbb",
-            "output": "Yes"
-        },
-        {
-            "input": "adcd\ncadd",
-            "output": "Yes"
-        },
-        {
-            "input": "eeabae\neaadbe",
-            "output": "No"
-        },
-        {
-            "input": "dabacd\nbeceee",
-            "output": "No"
-        },
-        {
-            "input": "acbaaebb\ndccacdbc",
-            "output": "No"
-        },
-        {
-            "input": "ddabce\nacdedb",
-            "output": "Yes"
-        },
-        {
-            "input": "bdaeabd\nddeabab",
-            "output": "Yes"
-        },
-        {
-            "input": "aae\nbcc",
-            "output": "No"
-        },
-        {
-            "input": "adecaccc\ncaeccdea",
-            "output": "No"
-        },
-        {
-            "input": "bcdcadac\nadbdabde",
-            "output": "No"
-        },
-        {
-            "input": "eaacccc\naeacccc",
-            "output": "Yes"
-        },
-        {
-            "input": "bbbbcdc\ncecbcda",
-            "output": "No"
-        },
-        {
-            "input": "bee\nebe",
-            "output": "Yes"
-        },
-        {
-            "input": "adcdcb\ndcdacb",
-            "output": "Yes"
-        },
-        {
-            "input": "bcd\ndbc",
-            "output": "Yes"
-        },
-        {
-            "input": "cde\nedc",
-            "output": "Yes"
-        },
-        {
-            "input": "eca\naea",
-            "output": "No"
-        },
-        {
-            "input": "eeeecd\neeedce",
-            "output": "Yes"
-        },
-        {
-            "input": "bcbacdda\nbebebdce",
-            "output": "No"
-        },
-        {
-            "input": "bcacecbc\nbceccacb",
-            "output": "Yes"
-        },
-        {
-            "input": "ccccbbad\nddcdaecd",
-            "output": "No"
-        },
-        {
-            "input": "ddceac\nebdcee",
-            "output": "No"
-        },
-        {
-            "input": "cbdcdbcd\ncdccbdbd",
-            "output": "Yes"
-        },
-        {
-            "input": "cdd\ndcc",
-            "output": "No"
-        },
-        {
-            "input": "adbac\neadae",
-            "output": "No"
-        },
-        {
-            "input": "baccbe\nedecdb",
-            "output": "No"
-        },
-        {
-            "input": "cebbccbc\neadcaedb",
-            "output": "No"
-        },
-        {
-            "input": "bcdcbab\nabbeadc",
-            "output": "No"
-        },
-        {
-            "input": "bcbab\nbdcbb",
-            "output": "No"
-        },
-        {
-            "input": "bcea\nbace",
-            "output": "Yes"
-        },
-        {
-            "input": "dcecb\ndbcec",
-            "output": "Yes"
-        },
-        {
-            "input": "cdddaea\nccedddb",
-            "output": "No"
-        },
-        {
-            "input": "cceeec\nbcbecb",
-            "output": "No"
-        },
-        {
-            "input": "abe\neae",
-            "output": "No"
-        },
-        {
-            "input": "dbbcebd\ndbebdbc",
-            "output": "Yes"
-        },
-        {
-            "input": "ecabca\nabbcda",
-            "output": "No"
-        },
-        {
-            "input": "daed\ndade",
-            "output": "Yes"
-        },
-        {
-            "input": "abec\ncbae",
-            "output": "Yes"
-        },
-        {
-            "input": "eedae\naeeed",
-            "output": "Yes"
-        },
-        {
-            "input": "bbcddbb\ndbbcbdb",
-            "output": "Yes"
-        },
-        {
-            "input": "edbec\nbeedc",
-            "output": "Yes"
-        },
-        {
-            "input": "dcddbddc\ncdcddbdd",
-            "output": "Yes"
-        },
-        {
-            "input": "abba\nadbb",
-            "output": "No"
-        },
-        {
-            "input": "cddcdb\nbdcdcd",
-            "output": "Yes"
-        },
-        {
-            "input": "edcea\nebaab",
-            "output": "No"
-        },
-        {
-            "input": "dadcdc\neeaabb",
-            "output": "No"
-        },
-        {
-            "input": "eaead\ndaeea",
-            "output": "Yes"
-        },
-        {
-            "input": "eddcedc\ncddceed",
-            "output": "Yes"
-        },
-        {
-            "input": "dbacbeab\nbbabcade",
-            "output": "Yes"
-        },
-        {
-            "input": "dbac\ncdba",
-            "output": "Yes"
-        },
-        {
-            "input": "deaee\naedee",
-            "output": "Yes"
-        },
-        {
-            "input": "acbeecdc\ndedaebdc",
-            "output": "No"
-        },
-        {
-            "input": "cdbdeb\nbdedbc",
-            "output": "Yes"
-        },
-        {
-            "input": "abdb\ncbbe",
-            "output": "No"
-        },
-        {
-            "input": "acdbbd\nddcbab",
-            "output": "Yes"
-        },
-        {
-            "input": "aaecccd\ncecaacd",
-            "output": "Yes"
-        },
-        {
-            "input": "cbabdb\neadcad",
-            "output": "No"
-        },
-        {
-            "input": "aebdebd\nbdaeebd",
-            "output": "Yes"
-        },
-        {
-            "input": "cbcecdcd\naeddaeea",
-            "output": "No"
-        },
-        {
-            "input": "aecd\nabad",
-            "output": "No"
-        },
-        {
-            "input": "ecabeee\ndaaeadb",
-            "output": "No"
-        },
-        {
-            "input": "eada\nccca",
-            "output": "No"
-        },
-        {
-            "input": "cddbb\nbddbc",
-            "output": "Yes"
-        },
-        {
-            "input": "baadad\ndaaabd",
-            "output": "Yes"
-        },
-        {
-            "input": "adcdac\naadccd",
-            "output": "Yes"
         },
         {
-            "input": "cdd\naae",
+            "input": "bcd\nceb",
             "output": "No"
         },
         {
-            "input": "bcbacdd\nbcbddca",
+            "input": "bdecacce\ndacececb",
             "output": "Yes"
         },
         {
@@ -1733,135 +1025,343 @@
             "output": "Yes"
         },
         {
-            "input": "bcecd\ndcbce",
-            "output": "Yes"
-        },
-        {
-            "input": "bcddebd\neadddbb",
+            "input": "ddee\nbdcb",
             "output": "No"
         },
         {
-            "input": "dabbcbb\nbdcabbb",
+            "input": "adcded\ndddcea",
             "output": "Yes"
         },
         {
-            "input": "edd\nedd",
+            "input": "eead\ncabd",
+            "output": "No"
+        },
+        {
+            "input": "bbda\nbadb",
             "output": "Yes"
         },
         {
-            "input": "baabee\naabbee",
+            "input": "edc\nead",
+            "output": "No"
+        },
+        {
+            "input": "eadbcea\nbddcabd",
+            "output": "No"
+        },
+        {
+            "input": "deccecc\nccbadcd",
+            "output": "No"
+        },
+        {
+            "input": "cbbccbcb\nbbbccbcc",
             "output": "Yes"
         },
         {
-            "input": "aeaaba\naabaae",
+            "input": "deeeaecd\ncbebcdec",
+            "output": "No"
+        },
+        {
+            "input": "eaaaa\naaaae",
             "output": "Yes"
         },
         {
-            "input": "cea\nedc",
-            "output": "No"
-        },
-        {
-            "input": "dadadbec\nedeeaeee",
-            "output": "No"
-        },
-        {
-            "input": "dcadcb\naccbdd",
+            "input": "ecb\nbce",
             "output": "Yes"
         },
         {
-            "input": "bbdbebb\nbdbbbeb",
+            "input": "aad\nbba",
+            "output": "No"
+        },
+        {
+            "input": "dcd\nddc",
             "output": "Yes"
         },
         {
-            "input": "aebcb\nbecee",
-            "output": "No"
-        },
-        {
-            "input": "aaa\nddd",
-            "output": "No"
-        },
-        {
-            "input": "bbadebeb\nabdbeebb",
+            "input": "eeba\neeba",
             "output": "Yes"
         },
         {
-            "input": "ececdce\neecdcec",
+            "input": "ccc\nccc",
             "output": "Yes"
         },
         {
-            "input": "abbb\nbbcb",
+            "input": "ddcbe\ndcbee",
             "output": "No"
         },
         {
-            "input": "ceadeeba\nedeaacac",
+            "input": "aeadc\nbbabb",
             "output": "No"
         },
         {
-            "input": "bbededcb\nbeedbbcd",
+            "input": "addd\ndadd",
             "output": "Yes"
         },
         {
-            "input": "ccacec\naabaec",
+            "input": "eaccedbd\nccabbbde",
             "output": "No"
         },
         {
-            "input": "dbeeb\ncedbc",
-            "output": "No"
-        },
-        {
-            "input": "ada\naea",
-            "output": "No"
-        },
-        {
-            "input": "ccebbedd\nddcbecbe",
+            "input": "dcbb\nbdbc",
             "output": "Yes"
         },
         {
-            "input": "ccd\ncaa",
-            "output": "No"
-        },
-        {
-            "input": "cecc\ndcda",
-            "output": "No"
-        },
-        {
-            "input": "adecacc\nacccade",
+            "input": "acb\nabc",
             "output": "Yes"
         },
         {
-            "input": "ccebacda\ncacabedc",
-            "output": "Yes"
-        },
-        {
-            "input": "decaaddc\naabdecdb",
+            "input": "beccddae\nddeeabee",
             "output": "No"
         },
         {
-            "input": "acaabec\ndaecdde",
-            "output": "No"
-        },
-        {
-            "input": "cedb\necbd",
+            "input": "ccedaadd\ndaaedcdc",
             "output": "Yes"
         },
         {
-            "input": "deddee\naacced",
-            "output": "No"
-        },
-        {
-            "input": "cecaaded\nadaceced",
+            "input": "beeca\nacebe",
             "output": "Yes"
         },
         {
-            "input": "edecceab\neeacdebc",
-            "output": "Yes"
-        },
-        {
-            "input": "ecc\ncad",
+            "input": "adb\neeb",
             "output": "No"
         },
         {
-            "input": "eab\nacc",
+            "input": "cdcde\ncdcde",
+            "output": "Yes"
+        },
+        {
+            "input": "aecec\naaaae",
+            "output": "No"
+        },
+        {
+            "input": "dccaa\nadcac",
+            "output": "Yes"
+        },
+        {
+            "input": "bad\naab",
+            "output": "No"
+        },
+        {
+            "input": "aee\ndae",
+            "output": "No"
+        },
+        {
+            "input": "daaebdba\ndbbceaad",
+            "output": "No"
+        },
+        {
+            "input": "cbdbbe\nbdbebc",
+            "output": "Yes"
+        },
+        {
+            "input": "abcbcecb\naaccacde",
+            "output": "No"
+        },
+        {
+            "input": "ddccbea\nbdaeccd",
+            "output": "Yes"
+        },
+        {
+            "input": "bddc\nbaad",
+            "output": "No"
+        },
+        {
+            "input": "bdbe\nbddc",
+            "output": "No"
+        },
+        {
+            "input": "eca\nbad",
+            "output": "No"
+        },
+        {
+            "input": "deddddc\nbeabded",
+            "output": "No"
+        },
+        {
+            "input": "adebded\ndaddbee",
+            "output": "Yes"
+        },
+        {
+            "input": "aeb\nbae",
+            "output": "Yes"
+        },
+        {
+            "input": "ddbbed\nabdede",
+            "output": "No"
+        },
+        {
+            "input": "cdb\ncdb",
+            "output": "Yes"
+        },
+        {
+            "input": "abba\nbbaa",
+            "output": "Yes"
+        },
+        {
+            "input": "aacebbed\ndbaacbee",
+            "output": "Yes"
+        },
+        {
+            "input": "cab\ncab",
+            "output": "Yes"
+        },
+        {
+            "input": "dbdadd\nddadbd",
+            "output": "Yes"
+        },
+        {
+            "input": "abdbceb\nadbcbeb",
+            "output": "Yes"
+        },
+        {
+            "input": "bbbeb\nedeae",
+            "output": "No"
+        },
+        {
+            "input": "cccaeeec\nbeaeeada",
+            "output": "No"
+        },
+        {
+            "input": "ddbccb\nccccaa",
+            "output": "No"
+        },
+        {
+            "input": "cbdb\ndbbc",
+            "output": "Yes"
+        },
+        {
+            "input": "edbbecaa\naadbcebe",
+            "output": "Yes"
+        },
+        {
+            "input": "dcdc\nacdb",
+            "output": "No"
+        },
+        {
+            "input": "edbabca\nadcebab",
+            "output": "Yes"
+        },
+        {
+            "input": "bacede\nadbeac",
+            "output": "No"
+        },
+        {
+            "input": "aece\nacee",
+            "output": "Yes"
+        },
+        {
+            "input": "daeaac\ndbacda",
+            "output": "No"
+        },
+        {
+            "input": "abeb\ncebc",
+            "output": "No"
+        },
+        {
+            "input": "eddbdbb\neebddce",
+            "output": "No"
+        },
+        {
+            "input": "baa\nbaa",
+            "output": "Yes"
+        },
+        {
+            "input": "cdbabdae\nbdcaadeb",
+            "output": "Yes"
+        },
+        {
+            "input": "bcb\nbcb",
+            "output": "Yes"
+        },
+        {
+            "input": "ecbecca\ncdaddbc",
+            "output": "No"
+        },
+        {
+            "input": "aebbdcdb\nadbcdebb",
+            "output": "Yes"
+        },
+        {
+            "input": "bcdbc\nbcbdc",
+            "output": "Yes"
+        },
+        {
+            "input": "ccbcdebb\ndacbccea",
+            "output": "No"
+        },
+        {
+            "input": "cbcea\nebbee",
+            "output": "No"
+        },
+        {
+            "input": "aecbaaa\ndacbecd",
+            "output": "No"
+        },
+        {
+            "input": "eadaaa\naaeaad",
+            "output": "Yes"
+        },
+        {
+            "input": "edee\nedee",
+            "output": "Yes"
+        },
+        {
+            "input": "aeaba\naaeba",
+            "output": "Yes"
+        },
+        {
+            "input": "bcceb\ncebbc",
+            "output": "Yes"
+        },
+        {
+            "input": "dbeaac\nacdbae",
+            "output": "Yes"
+        },
+        {
+            "input": "accbee\nceeabc",
+            "output": "Yes"
+        },
+        {
+            "input": "bea\nebd",
+            "output": "No"
+        },
+        {
+            "input": "cdb\ndcb",
+            "output": "Yes"
+        },
+        {
+            "input": "bdd\nddb",
+            "output": "Yes"
+        },
+        {
+            "input": "dbe\nedb",
+            "output": "Yes"
+        },
+        {
+            "input": "bdda\nabbe",
+            "output": "No"
+        },
+        {
+            "input": "edeaabae\naeeabdae",
+            "output": "Yes"
+        },
+        {
+            "input": "eedc\ncdee",
+            "output": "Yes"
+        },
+        {
+            "input": "cbcaceca\naabcccce",
+            "output": "Yes"
+        },
+        {
+            "input": "eaaae\neaaae",
+            "output": "Yes"
+        },
+        {
+            "input": "ccdaaace\nacedccaa",
+            "output": "Yes"
+        },
+        {
+            "input": "ccabec\ncaadeb",
             "output": "No"
         },
         {
@@ -1869,155 +1369,655 @@
             "output": "Yes"
         },
         {
-            "input": "abd\nabd",
-            "output": "Yes"
-        },
-        {
-            "input": "ecd\neee",
+            "input": "deaa\nadab",
             "output": "No"
         },
         {
-            "input": "dbaae\ndcbce",
+            "input": "cadde\nadecd",
+            "output": "Yes"
+        },
+        {
+            "input": "cbedb\ndbada",
             "output": "No"
         },
         {
-            "input": "cbb\ncec",
+            "input": "edadbe\nbcddac",
             "output": "No"
         },
         {
-            "input": "daeacbd\nbecedee",
+            "input": "aacc\nbedb",
             "output": "No"
         },
         {
-            "input": "bcbe\nbbce",
-            "output": "Yes"
-        },
-        {
-            "input": "bad\nbda",
-            "output": "Yes"
-        },
-        {
-            "input": "abed\nbdcc",
+            "input": "eebc\ncaaa",
             "output": "No"
         },
         {
-            "input": "aacdadee\naeeaadcd",
+            "input": "abbaad\nbabada",
             "output": "Yes"
         },
         {
-            "input": "dba\nbda",
-            "output": "Yes"
-        },
-        {
-            "input": "bdccbb\neabaca",
+            "input": "ebced\nddabe",
             "output": "No"
         },
         {
-            "input": "cccdeade\neadcecdc",
+            "input": "ade\naed",
             "output": "Yes"
         },
         {
-            "input": "cbbbea\nbdaeee",
+            "input": "eccaad\ncdeaac",
+            "output": "Yes"
+        },
+        {
+            "input": "caaee\nadcbb",
             "output": "No"
         },
         {
-            "input": "dbdbcc\neacdae",
+            "input": "cbacaa\nddbeaa",
             "output": "No"
         },
         {
-            "input": "cedc\naaeb",
+            "input": "deeaeccb\ncbdeceae",
+            "output": "Yes"
+        },
+        {
+            "input": "eacaa\neaaac",
+            "output": "Yes"
+        },
+        {
+            "input": "cebecd\nebecdc",
+            "output": "Yes"
+        },
+        {
+            "input": "beceeaed\naceaadae",
             "output": "No"
         },
         {
-            "input": "acedccdc\neddcdbed",
+            "input": "adaddc\nbceddd",
             "output": "No"
         },
         {
-            "input": "deeeae\neeaede",
+            "input": "bdeeb\ndebbe",
             "output": "Yes"
         },
         {
-            "input": "ddaec\nceadd",
+            "input": "aca\ncaa",
             "output": "Yes"
         },
         {
-            "input": "aeeeed\naeeeed",
+            "input": "eecedbaa\nbeedceaa",
             "output": "Yes"
         },
         {
-            "input": "bacaadab\naabadbca",
+            "input": "ceab\nceba",
             "output": "Yes"
         },
         {
-            "input": "aeaeaac\neceaaaa",
+            "input": "bacd\nbadc",
             "output": "Yes"
         },
         {
-            "input": "bdaa\nbdaa",
+            "input": "aabeecc\nbaccaee",
             "output": "Yes"
         },
         {
-            "input": "abccdc\nbaccdc",
-            "output": "Yes"
-        },
-        {
-            "input": "aecbdcba\ncaceabdb",
-            "output": "Yes"
-        },
-        {
-            "input": "acdb\nbdee",
+            "input": "bee\neea",
             "output": "No"
         },
         {
-            "input": "acdaadc\ncdebaaa",
-            "output": "No"
-        },
-        {
-            "input": "abeebbd\nabebbde",
+            "input": "cdcadc\ncdccda",
             "output": "Yes"
         },
         {
-            "input": "bead\nabde",
+            "input": "ecbab\nacbbe",
             "output": "Yes"
         },
         {
-            "input": "bbbae\neabbb",
+            "input": "cbacaa\ncbcaaa",
             "output": "Yes"
         },
         {
-            "input": "ddcbdded\nbaeabaaa",
-            "output": "No"
-        },
-        {
-            "input": "bdcdd\nbddcd",
+            "input": "eedb\nbdee",
             "output": "Yes"
         },
         {
-            "input": "dceaae\naacdee",
+            "input": "bad\nabd",
             "output": "Yes"
         },
         {
-            "input": "ccbba\neccec",
+            "input": "ddabe\ncceba",
             "output": "No"
         },
         {
-            "input": "eaeeabcb\ncbadaeda",
+            "input": "bebaad\nccddec",
             "output": "No"
         },
         {
-            "input": "eabdce\nadbece",
+            "input": "abbdaeab\nbaccacad",
+            "output": "No"
+        },
+        {
+            "input": "dbaeeca\neaebcda",
             "output": "Yes"
         },
         {
-            "input": "eabecebd\nbaaeaddc",
+            "input": "eaeea\ncedcb",
             "output": "No"
         },
         {
-            "input": "bbab\nadba",
+            "input": "bacacc\nbcccec",
             "output": "No"
         },
         {
-            "input": "dec\ndce",
+            "input": "abe\naeb",
+            "output": "Yes"
+        },
+        {
+            "input": "cdeacc\nbcdded",
+            "output": "No"
+        },
+        {
+            "input": "bec\nbec",
+            "output": "Yes"
+        },
+        {
+            "input": "cbbea\nbabce",
+            "output": "Yes"
+        },
+        {
+            "input": "cece\necce",
+            "output": "Yes"
+        },
+        {
+            "input": "cee\nece",
+            "output": "Yes"
+        },
+        {
+            "input": "eadcb\ndcbea",
+            "output": "Yes"
+        },
+        {
+            "input": "bcadec\naaebec",
+            "output": "No"
+        },
+        {
+            "input": "edadbced\needdcbda",
+            "output": "Yes"
+        },
+        {
+            "input": "cbbecde\neeadcea",
+            "output": "No"
+        },
+        {
+            "input": "ceca\necec",
+            "output": "No"
+        },
+        {
+            "input": "cde\need",
+            "output": "No"
+        },
+        {
+            "input": "abdd\nbdad",
+            "output": "Yes"
+        },
+        {
+            "input": "edaecc\nadccee",
+            "output": "Yes"
+        },
+        {
+            "input": "daa\ndaa",
+            "output": "Yes"
+        },
+        {
+            "input": "bcecdaea\nddddaecd",
+            "output": "No"
+        },
+        {
+            "input": "cdcdaecb\nacdbadde",
+            "output": "No"
+        },
+        {
+            "input": "bcdad\nbadac",
+            "output": "No"
+        },
+        {
+            "input": "ccaaacee\nacaceace",
+            "output": "Yes"
+        },
+        {
+            "input": "bec\ncab",
+            "output": "No"
+        },
+        {
+            "input": "dbcbecbe\nbcbebecd",
+            "output": "Yes"
+        },
+        {
+            "input": "becddd\ncecbab",
+            "output": "No"
+        },
+        {
+            "input": "dbaeac\ndaeabc",
+            "output": "Yes"
+        },
+        {
+            "input": "dbbbeea\ncdeaeda",
+            "output": "No"
+        },
+        {
+            "input": "accbeeee\ncaeeecbe",
+            "output": "Yes"
+        },
+        {
+            "input": "addcab\ncbcdad",
+            "output": "No"
+        },
+        {
+            "input": "bba\ncac",
+            "output": "No"
+        },
+        {
+            "input": "bbeda\naabde",
+            "output": "No"
+        },
+        {
+            "input": "bddb\nbddb",
+            "output": "Yes"
+        },
+        {
+            "input": "dace\nbdec",
+            "output": "No"
+        },
+        {
+            "input": "bed\ndee",
+            "output": "No"
+        },
+        {
+            "input": "aabceaeb\naeabecba",
+            "output": "Yes"
+        },
+        {
+            "input": "eca\nece",
+            "output": "No"
+        },
+        {
+            "input": "ebbde\nbeece",
+            "output": "No"
+        },
+        {
+            "input": "cecedce\ncabaedd",
+            "output": "No"
+        },
+        {
+            "input": "bdeaeea\nedeebaa",
+            "output": "Yes"
+        },
+        {
+            "input": "dbeb\nadcc",
+            "output": "No"
+        },
+        {
+            "input": "dde\nbca",
+            "output": "No"
+        },
+        {
+            "input": "aaeeaead\naedaeaae",
+            "output": "Yes"
+        },
+        {
+            "input": "aeba\nabae",
+            "output": "Yes"
+        },
+        {
+            "input": "ccceaebd\ndbeccaec",
+            "output": "Yes"
+        },
+        {
+            "input": "ace\ncdc",
+            "output": "No"
+        },
+        {
+            "input": "cdda\ndacd",
+            "output": "Yes"
+        },
+        {
+            "input": "eba\nbea",
+            "output": "Yes"
+        },
+        {
+            "input": "dddaac\nacdadd",
+            "output": "Yes"
+        },
+        {
+            "input": "bdaaedab\nbdadaeab",
+            "output": "Yes"
+        },
+        {
+            "input": "ddba\ndccd",
+            "output": "No"
+        },
+        {
+            "input": "dcddab\nddcbad",
+            "output": "Yes"
+        },
+        {
+            "input": "dacdedce\ndacddcee",
+            "output": "Yes"
+        },
+        {
+            "input": "adaaecbb\necaaabdb",
+            "output": "Yes"
+        },
+        {
+            "input": "edbac\nabcaa",
+            "output": "No"
+        },
+        {
+            "input": "bbcad\nabcdb",
+            "output": "Yes"
+        },
+        {
+            "input": "babdbad\ndbaddcd",
+            "output": "No"
+        },
+        {
+            "input": "adcdbdc\ncdddacb",
+            "output": "Yes"
+        },
+        {
+            "input": "eccbda\nabecdc",
+            "output": "Yes"
+        },
+        {
+            "input": "ecbdde\ndebced",
+            "output": "Yes"
+        },
+        {
+            "input": "bbbb\nbbbb",
+            "output": "Yes"
+        },
+        {
+            "input": "abeeed\neeebad",
+            "output": "Yes"
+        },
+        {
+            "input": "ecbbeb\nebbcbe",
+            "output": "Yes"
+        },
+        {
+            "input": "ebdcbea\nbbdecae",
+            "output": "Yes"
+        },
+        {
+            "input": "aecbbbdb\nbebbcbad",
+            "output": "Yes"
+        },
+        {
+            "input": "cdddbcee\neaccddde",
+            "output": "No"
+        },
+        {
+            "input": "ebee\nbeee",
+            "output": "Yes"
+        },
+        {
+            "input": "acab\nedda",
+            "output": "No"
+        },
+        {
+            "input": "debbcb\necbdbb",
+            "output": "Yes"
+        },
+        {
+            "input": "bcdbdbec\ncbdedddb",
+            "output": "No"
+        },
+        {
+            "input": "aade\nadea",
+            "output": "Yes"
+        },
+        {
+            "input": "bacddccb\nebebadcc",
+            "output": "No"
+        },
+        {
+            "input": "beee\nebee",
+            "output": "Yes"
+        },
+        {
+            "input": "cecc\nccec",
+            "output": "Yes"
+        },
+        {
+            "input": "dabbecb\ncccacbc",
+            "output": "No"
+        },
+        {
+            "input": "ccdabbe\ndbcadec",
+            "output": "No"
+        },
+        {
+            "input": "aabdebea\nabebdaea",
+            "output": "Yes"
+        },
+        {
+            "input": "adbdddde\nbacccccc",
+            "output": "No"
+        },
+        {
+            "input": "dedeecea\ncdcabbad",
+            "output": "No"
+        },
+        {
+            "input": "aabb\nbaba",
+            "output": "Yes"
+        },
+        {
+            "input": "cbcaae\necbaac",
+            "output": "Yes"
+        },
+        {
+            "input": "dce\ndbd",
+            "output": "No"
+        },
+        {
+            "input": "aeaeba\nbedbeb",
+            "output": "No"
+        },
+        {
+            "input": "bdacae\nbacaeb",
+            "output": "No"
+        },
+        {
+            "input": "bbdbdc\nbdbcbd",
+            "output": "Yes"
+        },
+        {
+            "input": "dcba\ndede",
+            "output": "No"
+        },
+        {
+            "input": "dadabb\nabbadd",
+            "output": "Yes"
+        },
+        {
+            "input": "cddeb\ncdedc",
+            "output": "No"
+        },
+        {
+            "input": "dacdabbe\ndaedabbc",
+            "output": "Yes"
+        },
+        {
+            "input": "bcceeeeb\neeeeccbb",
+            "output": "Yes"
+        },
+        {
+            "input": "bcbc\nedad",
+            "output": "No"
+        },
+        {
+            "input": "ecbbc\nccbbe",
+            "output": "Yes"
+        },
+        {
+            "input": "dceedba\nbdcbebe",
+            "output": "No"
+        },
+        {
+            "input": "ababccea\naeabbcac",
+            "output": "Yes"
+        },
+        {
+            "input": "cddbbcb\ndbbdcbc",
+            "output": "Yes"
+        },
+        {
+            "input": "bddbb\ndbbbd",
+            "output": "Yes"
+        },
+        {
+            "input": "dededd\nddedde",
+            "output": "Yes"
+        },
+        {
+            "input": "eed\nccc",
+            "output": "No"
+        },
+        {
+            "input": "ddcdbac\nbbbdead",
+            "output": "No"
+        },
+        {
+            "input": "bbbcdce\ncbedbde",
+            "output": "No"
+        },
+        {
+            "input": "ebadd\nccecc",
+            "output": "No"
+        },
+        {
+            "input": "ebc\ncbe",
+            "output": "Yes"
+        },
+        {
+            "input": "cbceab\nbcbaec",
+            "output": "Yes"
+        },
+        {
+            "input": "daaaabb\naedecba",
+            "output": "No"
+        },
+        {
+            "input": "cbd\nbad",
+            "output": "No"
+        },
+        {
+            "input": "eceedac\nedcecea",
+            "output": "Yes"
+        },
+        {
+            "input": "dbda\nddba",
+            "output": "Yes"
+        },
+        {
+            "input": "bccccaee\nccecceab",
+            "output": "Yes"
+        },
+        {
+            "input": "bbdddda\nbdaddbd",
+            "output": "Yes"
+        },
+        {
+            "input": "decd\nbbcd",
+            "output": "No"
+        },
+        {
+            "input": "eedecdb\nddeeebc",
+            "output": "Yes"
+        },
+        {
+            "input": "adedbba\ndaebbad",
+            "output": "Yes"
+        },
+        {
+            "input": "ccda\ncacb",
+            "output": "No"
+        },
+        {
+            "input": "bba\nbab",
+            "output": "Yes"
+        },
+        {
+            "input": "ecb\nebc",
+            "output": "Yes"
+        },
+        {
+            "input": "eccd\nedcc",
+            "output": "Yes"
+        },
+        {
+            "input": "bbceea\ncecbbd",
+            "output": "No"
+        },
+        {
+            "input": "adbddae\nddbaead",
+            "output": "Yes"
+        },
+        {
+            "input": "eaa\neaa",
+            "output": "Yes"
+        },
+        {
+            "input": "eecbab\nbeebcb",
+            "output": "No"
+        },
+        {
+            "input": "ece\nece",
+            "output": "Yes"
+        },
+        {
+            "input": "eadb\nbdae",
+            "output": "Yes"
+        },
+        {
+            "input": "cbea\naebc",
+            "output": "Yes"
+        },
+        {
+            "input": "dbdce\ndcbed",
+            "output": "Yes"
+        },
+        {
+            "input": "accadcaa\naaadccac",
+            "output": "Yes"
+        },
+        {
+            "input": "ddaedbd\nedddbda",
+            "output": "Yes"
+        },
+        {
+            "input": "dbcbce\ndccbbe",
+            "output": "Yes"
+        },
+        {
+            "input": "aecebcec\ncaaedbbe",
+            "output": "No"
+        },
+        {
+            "input": "baacec\naedabb",
+            "output": "No"
+        },
+        {
+            "input": "ccd\ncdc",
+            "output": "Yes"
+        },
+        {
+            "input": "dbcdb\nddbcb",
+            "output": "Yes"
+        },
+        {
+            "input": "dabaaeb\nedaaabb",
             "output": "Yes"
         }
     ]

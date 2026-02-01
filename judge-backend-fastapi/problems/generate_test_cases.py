@@ -776,6 +776,386 @@ def solve_sudoku_solver():
     ]
     return "\n".join(puzzle), "\n".join(solution)
 
+def solve_search_in_rotated_sorted_array():
+    n = random.randint(1, 100)
+    nums = sorted(random.sample(range(-1000, 1000), n))
+    k = random.randint(0, n - 1)
+    nums = nums[k:] + nums[:k]
+    
+    if random.choice([True, False]):
+        target = random.choice(nums)
+        expected = nums.index(target)
+    else:
+        target = random.randint(-2000, 2000)
+        expected = nums.index(target) if target in nums else -1
+        
+    return f"{' '.join(map(str, nums))}\n{target}", str(expected)
+
+def solve_three_sum():
+    n = random.randint(0, 50)
+    nums = [random.randint(-20, 20) for _ in range(n)]
+    
+    res = set()
+    nums_sorted = sorted(nums)
+    for i in range(len(nums_sorted) - 2):
+        if i > 0 and nums_sorted[i] == nums_sorted[i-1]:
+            continue
+        l, r = i + 1, len(nums_sorted) - 1
+        while l < r:
+            s = nums_sorted[i] + nums_sorted[l] + nums_sorted[r]
+            if s < 0:
+                l += 1
+            elif s > 0:
+                r -= 1
+            else:
+                res.add((nums_sorted[i], nums_sorted[l], nums_sorted[r]))
+                while l < r and nums_sorted[l] == nums_sorted[l+1]: l += 1
+                while l < r and nums_sorted[r] == nums_sorted[r-1]: r -= 1
+                l += 1; r -= 1
+                
+    output = "\n".join(f"{x} {y} {z}" for x, y, z in sorted(list(res)))
+    return " ".join(map(str, nums)), output
+
+def solve_merge_intervals():
+    n = random.randint(1, 50)
+    intervals = []
+    for _ in range(n):
+        s = random.randint(0, 100)
+        e = random.randint(s, 100)
+        intervals.append([s, e])
+    
+    # Format input as flattened list
+    input_str = " ".join(f"{i[0]} {i[1]}" for i in intervals)
+    
+    intervals.sort(key=lambda x: x[0])
+    merged = []
+    for interval in intervals:
+        if not merged or merged[-1][1] < interval[0]:
+            merged.append(interval)
+        else:
+            merged[-1][1] = max(merged[-1][1], interval[1])
+            
+    output_str = "\n".join(f"{m[0]} {m[1]}" for m in merged)
+    return input_str, output_str
+
+def solve_insert_interval():
+    n = random.randint(0, 50)
+    intervals = []
+    curr = 0
+    for _ in range(n):
+        s = curr + random.randint(1, 10)
+        e = s + random.randint(1, 10)
+        intervals.append([s, e])
+        curr = e + 2
+        
+    new_start = random.randint(0, curr + 5)
+    new_end = new_start + random.randint(0, 10)
+    new_interval = [new_start, new_end]
+    
+    input_str = " ".join(f"{i[0]} {i[1]}" for i in intervals) + f"\n{new_start} {new_end}"
+    
+    intervals.append(new_interval)
+    intervals.sort(key=lambda x: x[0])
+    
+    merged = []
+    for interval in intervals:
+        if not merged or merged[-1][1] < interval[0]:
+            merged.append(interval)
+        else:
+            merged[-1][1] = max(merged[-1][1], interval[1])
+            
+    output_str = "\n".join(f"{m[0]} {m[1]}" for m in merged)
+    return input_str, output_str
+
+def solve_simplify_path():
+    parts = ["..", ".", "home", "user", "docs", "tmp", "var"]
+    n = random.randint(1, 20)
+    path = "/" + "/".join(random.choices(parts, k=n))
+    # inject some random slashes
+    if random.choice([True, False]):
+        path = path.replace("/", "//", 1)
+        
+    stack = []
+    for p in path.split("/"):
+        if p == "..":
+            if stack: stack.pop()
+        elif p == "." or not p:
+            continue
+        else:
+            stack.append(p)
+            
+    return path, "/" + "/".join(stack)
+
+def solve_minimum_path_sum():
+    m, n = random.randint(1, 20), random.randint(1, 20)
+    grid = [[random.randint(0, 20) for _ in range(n)] for _ in range(m)]
+    
+    dp = [[0]*n for _ in range(m)]
+    for i in range(m):
+        for j in range(n):
+            if i == 0 and j == 0:
+                dp[i][j] = grid[i][j]
+            elif i == 0:
+                dp[i][j] = dp[i][j-1] + grid[i][j]
+            elif j == 0:
+                dp[i][j] = dp[i-1][j] + grid[i][j]
+            else:
+                dp[i][j] = min(dp[i-1][j], dp[i][j-1]) + grid[i][j]
+                
+    input_str = f"{m} {n}\n" + "\n".join(" ".join(map(str, row)) for row in grid)
+    return input_str, str(dp[m-1][n-1])
+
+def solve_unique_paths():
+    m, n = random.randint(1, 20), random.randint(1, 20)
+    # math.comb(m+n-2, m-1)
+    res = math.comb(m + n - 2, m - 1)
+    return f"{m} {n}", str(res)
+
+def solve_unique_paths_ii():
+    m, n = random.randint(1, 20), random.randint(1, 20)
+    grid = [[0]*n for _ in range(m)]
+    # Place random obstacles (approx 20%)
+    for i in range(m):
+        for j in range(n):
+            if random.random() < 0.2:
+                grid[i][j] = 1
+    
+    # Ensure start and end are not obstacles for guaranteed valid path? 
+    # Problem doesn't say guaranteed, can return 0
+    
+    if grid[0][0] == 1:
+        return f"{m} {n}\n" + "\n".join(" ".join(map(str, row)) for row in grid), "0"
+        
+    dp = [[0]*n for _ in range(m)]
+    dp[0][0] = 1
+    
+    for i in range(m):
+        for j in range(n):
+            if grid[i][j] == 1:
+                dp[i][j] = 0
+            else:
+                if i > 0: dp[i][j] += dp[i-1][j]
+                if j > 0: dp[i][j] += dp[i][j-1]
+                
+    input_str = f"{m} {n}\n" + "\n".join(" ".join(map(str, row)) for row in grid)
+    return input_str, str(dp[m-1][n-1])
+
+def solve_coin_change_ii():
+    amount = random.randint(0, 100)
+    n = random.randint(1, 10)
+    coins = sorted(random.sample(range(1, 50), n))
+    
+    dp = [0] * (amount + 1)
+    dp[0] = 1
+    
+    for coin in coins:
+        for x in range(coin, amount + 1):
+            dp[x] += dp[x - coin]
+            
+    input_str = f"{amount}\n{' '.join(map(str, coins))}"
+    return input_str, str(dp[amount])
+
+def solve_decode_ways():
+    s = "".join(random.choices("0123456789", k=random.randint(1, 30)))
+    # Ensure no leading zeroes unless it's just meant to be invalid
+    
+    if not s: return "", "0"
+    
+    dp = [0] * (len(s) + 1)
+    dp[0] = 1
+    
+    if s[0] != '0': dp[1] = 1
+    else: dp[1] = 0
+    
+    for i in range(2, len(s) + 1):
+        one_digit = int(s[i-1:i])
+        two_digits = int(s[i-2:i])
+        
+        if one_digit >= 1:
+            dp[i] += dp[i-1]
+        
+        if 10 <= two_digits <= 26:
+            dp[i] += dp[i-2]
+            
+    return s, str(dp[len(s)])
+
+def solve_word_break():
+    # Construct a valid case or random case
+    words = ["leet", "code", "apple", "pen", "cats", "sand", "and", "dog", "car"]
+    if random.choice([True, False]):
+        # Valid
+        t = random.randint(1, 5)
+        s = "".join(random.choices(words, k=t))
+        # Ensure words list contains parts
+        word_list = list(set(words + [s])) if random.random() < 0.1 else words
+    else:
+        s = "".join(random.choices("abcdef", k=10))
+        word_list = words
+        
+    random.shuffle(word_list)
+    
+    dp = [False] * (len(s) + 1)
+    dp[0] = True
+    
+    dict_set = set(word_list)
+    
+    for i in range(1, len(s) + 1):
+        for j in range(i):
+            if dp[j] and s[j:i] in dict_set:
+                dp[i] = True
+                break
+                
+    return f"{s}\n{' '.join(word_list)}", "true" if dp[len(s)] else "false"
+
+def solve_longest_consecutive_sequence():
+    n = random.randint(0, 50)
+    nums = random.sample(range(-100, 100), n)
+    
+    num_set = set(nums)
+    longest = 0
+    
+    for num in num_set:
+        if num - 1 not in num_set:
+            curr = num
+            curr_streak = 1
+            while curr + 1 in num_set:
+                curr += 1
+                curr_streak += 1
+            longest = max(longest, curr_streak)
+            
+    return " ".join(map(str, nums)), str(longest)
+
+def solve_top_k_frequent_elements():
+    n = random.randint(1, 50)
+    nums = [random.randint(1, 10) for _ in range(n)]
+    unique_count = len(set(nums))
+    if unique_count == 0: k = 1
+    else: k = random.randint(1, unique_count)
+    
+    from collections import Counter
+    count = Counter(nums)
+    most_common = count.most_common(k)
+    res = [str(x[0]) for x in most_common]
+    res.sort() # Order doesn't matter for correctness but consistency
+    
+    return f"{' '.join(map(str, nums))}\n{k}", " ".join(res)
+
+def solve_find_peak_element():
+    n = random.randint(1, 50)
+    nums = [random.randint(1, 100) for _ in range(n)] 
+    # Ensure peaks exist (almost always will)
+    
+    # Linear scan to find ANY peak
+    peak_idx = 0
+    for i in range(n):
+        left = nums[i-1] if i > 0 else -float('inf')
+        right = nums[i+1] if i < n-1 else -float('inf')
+        if nums[i] > left and nums[i] > right:
+            peak_idx = i
+            break # Just need one
+            
+    # Note: O(N) verification is fine for generator
+    return " ".join(map(str, nums)), str(peak_idx)
+
+def solve_find_first_and_last_position():
+    n = random.randint(0, 50)
+    nums = sorted([random.randint(1, 20) for _ in range(n)])
+    if nums:
+        if random.choice([True, False]):
+            target = random.choice(nums)
+        else:
+            target = random.randint(1, 25)
+    else:
+        target = 5
+        
+    start, end = -1, -1
+    for i, x in enumerate(nums):
+        if x == target:
+            if start == -1: start = i
+            end = i
+            
+    return f"{' '.join(map(str, nums))}\n{target}", f"{start} {end}"
+
+def solve_search_a_2d_matrix():
+    m, n = random.randint(1, 20), random.randint(1, 20)
+    vals = sorted(random.sample(range(1, 5000), m*n))
+    matrix = []
+    for i in range(m):
+        matrix.append(vals[i*n : (i+1)*n])
+        
+    if matrix and random.choice([True, False]):
+        target = random.choice(random.choice(matrix))
+        found = "true"
+    else:
+        target = random.randint(1, 5000)
+        found = "false"
+        if any(target in row for row in matrix): found = "true"
+        
+    input_str = f"{m} {n}\n" + "\n".join(" ".join(map(str, row)) for row in matrix) + f"\n{target}"
+    return input_str, found
+
+def solve_sort_colors():
+    n = random.randint(1, 50)
+    nums = [random.choice([0, 1, 2]) for _ in range(n)]
+    res = sorted(nums)
+    return " ".join(map(str, nums)), " ".join(map(str, res))
+
+def solve_subsets():
+    n = random.randint(0, 6) # Small n for power set
+    nums = sorted(random.sample(range(1, 20), n))
+    
+    subsets = []
+    def backtrack(start, curr):
+        subsets.append(list(curr))
+        for i in range(start, n):
+            curr.append(nums[i])
+            backtrack(i+1, curr)
+            curr.pop()
+            
+    backtrack(0, [])
+    # Format: each subset on new line, space separated, sorted output
+    # Since specific order in json output might differ, we generally expect some standard
+    # The solver returns consistent format
+    
+    # Sort subsets for consistent output checking if using string diff
+    subsets.sort()
+    # Actually just print them
+    output_str = "\n".join(" ".join(map(str, s)) for s in subsets)
+    return " ".join(map(str, nums)), output_str
+
+def solve_letter_combinations():
+    mapping = {
+        "2": "abc", "3": "def", "4": "ghi", "5": "jkl", 
+        "6": "mno", "7": "pqrs", "8": "tuv", "9": "wxyz"
+    }
+    digits = "".join(random.choices("23456789", k=random.randint(0, 4)))
+    
+    if not digits: return "", ""
+    
+    res = []
+    def backtrack(idx, curr):
+        if idx == len(digits):
+            res.append(curr)
+            return
+        for char in mapping[digits[idx]]:
+            backtrack(idx+1, curr + char)
+            
+    backtrack(0, "")
+    return digits, " ".join(res)
+
+def solve_sliding_window_maximum():
+    n = random.randint(1, 50)
+    nums = [random.randint(-50, 50) for _ in range(n)]
+    k = random.randint(1, n)
+    
+    res = []
+    # O(N*K) naive is enough for generator
+    for i in range(n - k + 1):
+        window = nums[i:i+k]
+        res.append(max(window))
+        
+    return f"{' '.join(map(str, nums))}\n{k}", " ".join(map(str, res))
+
 SOLVERS = {
     "area_of_a_rectangle": solve_area_of_a_rectangle,
     "binary_to_decimal": solve_binary_to_decimal,
@@ -847,6 +1227,26 @@ SOLVERS = {
     "regular_expression_matching": solve_regular_expression_matching,
     "longest_valid_parentheses": solve_longest_valid_parentheses,
     "sudoku_solver": solve_sudoku_solver,
+    "search_in_rotated_sorted_array": solve_search_in_rotated_sorted_array,
+    "three_sum": solve_three_sum,
+    "merge_intervals": solve_merge_intervals,
+    "insert_interval": solve_insert_interval,
+    "simplify_path": solve_simplify_path,
+    "minimum_path_sum": solve_minimum_path_sum,
+    "unique_paths": solve_unique_paths,
+    "unique_paths_ii": solve_unique_paths_ii,
+    "coin_change_ii": solve_coin_change_ii,
+    "decode_ways": solve_decode_ways,
+    "word_break": solve_word_break,
+    "longest_consecutive_sequence": solve_longest_consecutive_sequence,
+    "top_k_frequent_elements": solve_top_k_frequent_elements,
+    "find_peak_element": solve_find_peak_element,
+    "find_first_and_last_position_of_element_in_sorted_array": solve_find_first_and_last_position,
+    "search_a_2d_matrix": solve_search_a_2d_matrix,
+    "sort_colors": solve_sort_colors,
+    "subsets": solve_subsets,
+    "letter_combinations_of_a_phone_number": solve_letter_combinations,
+    "sliding_window_maximum": solve_sliding_window_maximum,
 }
 
 HARD_PROBLEMS = {
@@ -866,7 +1266,9 @@ HARD_PROBLEMS = {
     "sudoku_solver",
     "combination_sum",
     "word_search",
-    "number_of_islands"
+    "number_of_islands",
+    "word_break",
+    "sliding_window_maximum"
 }
 
 def main():
