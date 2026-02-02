@@ -17,763 +17,851 @@
     ],
     "hidden_test_cases": [
         {
-            "input": "baaac",
-            "output": "aaa"
-        },
-        {
-            "input": "accaaaa",
-            "output": "acca"
-        },
-        {
-            "input": "aabcbcaacb",
-            "output": "bcaacb"
-        },
-        {
-            "input": "cccaa",
-            "output": "ccc"
-        },
-        {
-            "input": "accabaaca",
-            "output": "acca"
-        },
-        {
-            "input": "bacaba",
-            "output": "bacab"
-        },
-        {
-            "input": "bcbabb",
-            "output": "bcb"
-        },
-        {
-            "input": "cca",
-            "output": "cc"
-        },
-        {
-            "input": "cccbc",
-            "output": "ccc"
-        },
-        {
-            "input": "bbb",
-            "output": "bbb"
-        },
-        {
-            "input": "ccbbcaaba",
-            "output": "cbbc"
-        },
-        {
-            "input": "bab",
-            "output": "bab"
-        },
-        {
-            "input": "bcccc",
-            "output": "cccc"
-        },
-        {
-            "input": "bbaac",
-            "output": "bb"
-        },
-        {
-            "input": "acabcccbb",
-            "output": "bcccb"
-        },
-        {
-            "input": "cbaabacbc",
-            "output": "baab"
-        },
-        {
-            "input": "abbbbbb",
-            "output": "bbbbbb"
-        },
-        {
-            "input": "cbcbbb",
+            "input": "acbcbbb",
             "output": "cbc"
         },
         {
-            "input": "caaacaaabc",
-            "output": "aaacaaa"
-        },
-        {
-            "input": "bacbbbaca",
+            "input": "bbba",
             "output": "bbb"
         },
         {
-            "input": "bcb",
-            "output": "bcb"
+            "input": "baacaaccc",
+            "output": "aacaa"
         },
         {
-            "input": "cccbbbb",
-            "output": "bbbb"
+            "input": "cbbabbbaba",
+            "output": "babbbab"
         },
         {
-            "input": "ccaacbca",
-            "output": "acbca"
+            "input": "cbaabc",
+            "output": "cbaabc"
         },
         {
-            "input": "babbbaac",
-            "output": "abbba"
+            "input": "bacacbb",
+            "output": "aca"
         },
         {
-            "input": "bcbbba",
-            "output": "bcb"
-        },
-        {
-            "input": "cbbbacc",
-            "output": "bbb"
-        },
-        {
-            "input": "cbca",
-            "output": "cbc"
-        },
-        {
-            "input": "ccb",
-            "output": "cc"
-        },
-        {
-            "input": "aabcabcc",
-            "output": "aa"
-        },
-        {
-            "input": "aabbb",
-            "output": "bbb"
-        },
-        {
-            "input": "ccacbbcbab",
-            "output": "cbbc"
-        },
-        {
-            "input": "bacaabaaab",
-            "output": "aabaa"
-        },
-        {
-            "input": "cacabbb",
-            "output": "cac"
-        },
-        {
-            "input": "acbbbab",
-            "output": "bbb"
-        },
-        {
-            "input": "bcbbabacac",
-            "output": "bcb"
-        },
-        {
-            "input": "aabacb",
-            "output": "aba"
-        },
-        {
-            "input": "bbccbaacc",
-            "output": "bccb"
-        },
-        {
-            "input": "aabcabcbbb",
-            "output": "bcb"
-        },
-        {
-            "input": "cbaaabb",
+            "input": "abbaaab",
             "output": "baaab"
-        },
-        {
-            "input": "cbcb",
-            "output": "cbc"
-        },
-        {
-            "input": "cccccbcaab",
-            "output": "ccccc"
-        },
-        {
-            "input": "bccbaba",
-            "output": "bccb"
-        },
-        {
-            "input": "caccabaaaa",
-            "output": "acca"
-        },
-        {
-            "input": "cbaa",
-            "output": "aa"
-        },
-        {
-            "input": "bccaccaa",
-            "output": "ccacc"
-        },
-        {
-            "input": "cbaabbbc",
-            "output": "baab"
-        },
-        {
-            "input": "acacbaa",
-            "output": "aca"
-        },
-        {
-            "input": "acbbbc",
-            "output": "cbbbc"
-        },
-        {
-            "input": "bcabbbccc",
-            "output": "bbb"
-        },
-        {
-            "input": "bcbcacc",
-            "output": "bcb"
-        },
-        {
-            "input": "bcabbcabab",
-            "output": "aba"
-        },
-        {
-            "input": "cbab",
-            "output": "bab"
-        },
-        {
-            "input": "aab",
-            "output": "aa"
-        },
-        {
-            "input": "baaa",
-            "output": "aaa"
-        },
-        {
-            "input": "baaaba",
-            "output": "baaab"
-        },
-        {
-            "input": "aca",
-            "output": "aca"
-        },
-        {
-            "input": "cbccaacca",
-            "output": "ccaacc"
-        },
-        {
-            "input": "babb",
-            "output": "bab"
-        },
-        {
-            "input": "bccab",
-            "output": "cc"
-        },
-        {
-            "input": "ababaabbac",
-            "output": "ababa"
-        },
-        {
-            "input": "aaaccbc",
-            "output": "aaa"
-        },
-        {
-            "input": "aaabcb",
-            "output": "aaa"
-        },
-        {
-            "input": "abaabcba",
-            "output": "abcba"
-        },
-        {
-            "input": "babcb",
-            "output": "bab"
-        },
-        {
-            "input": "bbaaccacb",
-            "output": "acca"
-        },
-        {
-            "input": "bccbaaa",
-            "output": "bccb"
-        },
-        {
-            "input": "abcbc",
-            "output": "bcb"
-        },
-        {
-            "input": "bcbbbc",
-            "output": "cbbbc"
-        },
-        {
-            "input": "caaab",
-            "output": "aaa"
-        },
-        {
-            "input": "bbacabaaaa",
-            "output": "bacab"
-        },
-        {
-            "input": "acbaba",
-            "output": "bab"
-        },
-        {
-            "input": "bbcccc",
-            "output": "cccc"
-        },
-        {
-            "input": "abacbb",
-            "output": "aba"
-        },
-        {
-            "input": "aaacb",
-            "output": "aaa"
-        },
-        {
-            "input": "bcabab",
-            "output": "aba"
-        },
-        {
-            "input": "caacabab",
-            "output": "caac"
-        },
-        {
-            "input": "baacbaaaa",
-            "output": "aaaa"
-        },
-        {
-            "input": "bbbc",
-            "output": "bbb"
-        },
-        {
-            "input": "aabcccaa",
-            "output": "ccc"
-        },
-        {
-            "input": "bcbaa",
-            "output": "bcb"
-        },
-        {
-            "input": "cbbcacabb",
-            "output": "cbbc"
-        },
-        {
-            "input": "bcbcccc",
-            "output": "cccc"
-        },
-        {
-            "input": "bbbabcac",
-            "output": "bbb"
-        },
-        {
-            "input": "cbbbc",
-            "output": "cbbbc"
-        },
-        {
-            "input": "acb",
-            "output": "a"
-        },
-        {
-            "input": "bbcbbbca",
-            "output": "bbcbb"
-        },
-        {
-            "input": "aaaabccccc",
-            "output": "ccccc"
-        },
-        {
-            "input": "caac",
-            "output": "caac"
-        },
-        {
-            "input": "acbc",
-            "output": "cbc"
-        },
-        {
-            "input": "acaacaa",
-            "output": "acaaca"
-        },
-        {
-            "input": "cbbcaca",
-            "output": "cbbc"
-        },
-        {
-            "input": "cabba",
-            "output": "abba"
-        },
-        {
-            "input": "cacab",
-            "output": "cac"
-        },
-        {
-            "input": "aabcaaaab",
-            "output": "aaaa"
-        },
-        {
-            "input": "bbbb",
-            "output": "bbbb"
-        },
-        {
-            "input": "babaaac",
-            "output": "bab"
-        },
-        {
-            "input": "acbbaaccaa",
-            "output": "aaccaa"
-        },
-        {
-            "input": "abcabbbc",
-            "output": "bbb"
-        },
-        {
-            "input": "babbbcb",
-            "output": "bab"
-        },
-        {
-            "input": "aaaaabab",
-            "output": "aaaaa"
-        },
-        {
-            "input": "ababaa",
-            "output": "ababa"
-        },
-        {
-            "input": "bccaacbac",
-            "output": "caac"
-        },
-        {
-            "input": "bbaa",
-            "output": "bb"
-        },
-        {
-            "input": "baca",
-            "output": "aca"
-        },
-        {
-            "input": "cbbca",
-            "output": "cbbc"
-        },
-        {
-            "input": "bbbaacbbac",
-            "output": "bbb"
-        },
-        {
-            "input": "bbcacbaaa",
-            "output": "bcacb"
-        },
-        {
-            "input": "bbab",
-            "output": "bab"
-        },
-        {
-            "input": "cabccbaa",
-            "output": "abccba"
-        },
-        {
-            "input": "cbccbcaa",
-            "output": "cbccbc"
-        },
-        {
-            "input": "ccbbccaab",
-            "output": "ccbbcc"
-        },
-        {
-            "input": "ccaabacb",
-            "output": "aba"
-        },
-        {
-            "input": "babbbaca",
-            "output": "abbba"
-        },
-        {
-            "input": "cba",
-            "output": "c"
-        },
-        {
-            "input": "cbc",
-            "output": "cbc"
-        },
-        {
-            "input": "acbacaccac",
-            "output": "caccac"
-        },
-        {
-            "input": "aabccb",
-            "output": "bccb"
-        },
-        {
-            "input": "ccbbbba",
-            "output": "bbbb"
-        },
-        {
-            "input": "abcbcbc",
-            "output": "bcbcb"
-        },
-        {
-            "input": "cabbaa",
-            "output": "abba"
-        },
-        {
-            "input": "bcbacc",
-            "output": "bcb"
-        },
-        {
-            "input": "bcabccb",
-            "output": "bccb"
-        },
-        {
-            "input": "cbcacca",
-            "output": "acca"
-        },
-        {
-            "input": "bbaacacbc",
-            "output": "aca"
-        },
-        {
-            "input": "baaab",
-            "output": "baaab"
-        },
-        {
-            "input": "abaababa",
-            "output": "abaaba"
-        },
-        {
-            "input": "aabccbcbbb",
-            "output": "bccb"
-        },
-        {
-            "input": "bcbaba",
-            "output": "bcb"
-        },
-        {
-            "input": "aacabcbaa",
-            "output": "abcba"
-        },
-        {
-            "input": "ababccca",
-            "output": "aba"
-        },
-        {
-            "input": "acbb",
-            "output": "bb"
-        },
-        {
-            "input": "abbabb",
-            "output": "bbabb"
-        },
-        {
-            "input": "aaacba",
-            "output": "aaa"
-        },
-        {
-            "input": "aac",
-            "output": "aa"
-        },
-        {
-            "input": "babbab",
-            "output": "babbab"
-        },
-        {
-            "input": "acccb",
-            "output": "ccc"
-        },
-        {
-            "input": "bcbbaac",
-            "output": "bcb"
-        },
-        {
-            "input": "acacab",
-            "output": "acaca"
-        },
-        {
-            "input": "abab",
-            "output": "aba"
-        },
-        {
-            "input": "cbabac",
-            "output": "bab"
-        },
-        {
-            "input": "bcbcbbb",
-            "output": "bcbcb"
-        },
-        {
-            "input": "aacbabc",
-            "output": "cbabc"
-        },
-        {
-            "input": "bccbac",
-            "output": "bccb"
-        },
-        {
-            "input": "baaaaaabab",
-            "output": "baaaaaab"
-        },
-        {
-            "input": "acacaaa",
-            "output": "acaca"
         },
         {
             "input": "baba",
             "output": "bab"
         },
         {
-            "input": "bbcbb",
-            "output": "bbcbb"
-        },
-        {
-            "input": "babac",
+            "input": "bab",
             "output": "bab"
         },
         {
-            "input": "cccbb",
+            "input": "baca",
+            "output": "aca"
+        },
+        {
+            "input": "baacb",
+            "output": "aa"
+        },
+        {
+            "input": "bcccac",
             "output": "ccc"
         },
         {
-            "input": "cbcacbcab",
-            "output": "cbcacbc"
+            "input": "cbbbcab",
+            "output": "cbbbc"
         },
         {
-            "input": "bbbcab",
-            "output": "bbb"
+            "input": "aab",
+            "output": "aa"
         },
         {
-            "input": "caabcbccbb",
+            "input": "bccb",
             "output": "bccb"
         },
         {
-            "input": "cbacc",
+            "input": "abbcaaabba",
+            "output": "abba"
+        },
+        {
+            "input": "aaacaabc",
+            "output": "aacaa"
+        },
+        {
+            "input": "abaa",
+            "output": "aba"
+        },
+        {
+            "input": "aaaa",
+            "output": "aaaa"
+        },
+        {
+            "input": "baccbacca",
+            "output": "acca"
+        },
+        {
+            "input": "acccaabaa",
+            "output": "accca"
+        },
+        {
+            "input": "cabccc",
+            "output": "ccc"
+        },
+        {
+            "input": "aababb",
+            "output": "aba"
+        },
+        {
+            "input": "baacaa",
+            "output": "aacaa"
+        },
+        {
+            "input": "aacbcaa",
+            "output": "aacbcaa"
+        },
+        {
+            "input": "bbcacb",
+            "output": "bcacb"
+        },
+        {
+            "input": "bcac",
+            "output": "cac"
+        },
+        {
+            "input": "acba",
+            "output": "a"
+        },
+        {
+            "input": "bcbbacbcca",
+            "output": "bcb"
+        },
+        {
+            "input": "cbccaca",
+            "output": "cbc"
+        },
+        {
+            "input": "aaabacbabb",
+            "output": "aaa"
+        },
+        {
+            "input": "bbbbcaba",
+            "output": "bbbb"
+        },
+        {
+            "input": "acbcca",
+            "output": "cbc"
+        },
+        {
+            "input": "cca",
             "output": "cc"
+        },
+        {
+            "input": "ccb",
+            "output": "cc"
+        },
+        {
+            "input": "aacc",
+            "output": "aa"
+        },
+        {
+            "input": "caaabacaa",
+            "output": "aaa"
+        },
+        {
+            "input": "aaacabcbc",
+            "output": "aaa"
+        },
+        {
+            "input": "caccbac",
+            "output": "cac"
+        },
+        {
+            "input": "acbbaba",
+            "output": "bab"
+        },
+        {
+            "input": "aacbb",
+            "output": "aa"
+        },
+        {
+            "input": "acbbaaa",
+            "output": "aaa"
+        },
+        {
+            "input": "bacaaabcaa",
+            "output": "aca"
+        },
+        {
+            "input": "baacbacabc",
+            "output": "cbacabc"
+        },
+        {
+            "input": "cacb",
+            "output": "cac"
+        },
+        {
+            "input": "aabccabcbb",
+            "output": "bcb"
+        },
+        {
+            "input": "abcacb",
+            "output": "bcacb"
+        },
+        {
+            "input": "cbc",
+            "output": "cbc"
+        },
+        {
+            "input": "bbbb",
+            "output": "bbbb"
+        },
+        {
+            "input": "aacbcaaccb",
+            "output": "aacbcaa"
+        },
+        {
+            "input": "acbca",
+            "output": "acbca"
+        },
+        {
+            "input": "abccbb",
+            "output": "bccb"
+        },
+        {
+            "input": "aabbbbbcac",
+            "output": "bbbbb"
+        },
+        {
+            "input": "baccbcacb",
+            "output": "bcacb"
+        },
+        {
+            "input": "abcbca",
+            "output": "bcb"
+        },
+        {
+            "input": "cba",
+            "output": "c"
+        },
+        {
+            "input": "abcbc",
+            "output": "bcb"
+        },
+        {
+            "input": "cccbbcba",
+            "output": "cbbc"
+        },
+        {
+            "input": "acccbbbca",
+            "output": "cbbbc"
+        },
+        {
+            "input": "accb",
+            "output": "cc"
+        },
+        {
+            "input": "bccaaccbbc",
+            "output": "bccaaccb"
+        },
+        {
+            "input": "ccaaa",
+            "output": "aaa"
+        },
+        {
+            "input": "cbacbb",
+            "output": "bb"
+        },
+        {
+            "input": "baaacc",
+            "output": "aaa"
+        },
+        {
+            "input": "caccacc",
+            "output": "caccac"
+        },
+        {
+            "input": "ccaaaacaba",
+            "output": "caaaac"
         },
         {
             "input": "bbccb",
             "output": "bccb"
         },
         {
-            "input": "bcaccaaaaa",
-            "output": "aaaaa"
+            "input": "abcabab",
+            "output": "aba"
         },
         {
-            "input": "bccbbacbcb",
-            "output": "bccb"
+            "input": "acbcaaaa",
+            "output": "acbca"
         },
         {
-            "input": "acac",
+            "input": "ccbabacaac",
+            "output": "caac"
+        },
+        {
+            "input": "aabcac",
+            "output": "cac"
+        },
+        {
+            "input": "bbcaab",
+            "output": "bb"
+        },
+        {
+            "input": "bababcb",
+            "output": "babab"
+        },
+        {
+            "input": "bbacbac",
+            "output": "bb"
+        },
+        {
+            "input": "acbcb",
+            "output": "cbc"
+        },
+        {
+            "input": "ccca",
+            "output": "ccc"
+        },
+        {
+            "input": "ccbcb",
+            "output": "cbc"
+        },
+        {
+            "input": "caabacbbbc",
+            "output": "cbbbc"
+        },
+        {
+            "input": "baabcaacb",
+            "output": "bcaacb"
+        },
+        {
+            "input": "ccc",
+            "output": "ccc"
+        },
+        {
+            "input": "babbca",
+            "output": "bab"
+        },
+        {
+            "input": "aaba",
+            "output": "aba"
+        },
+        {
+            "input": "bbaabaabcb",
+            "output": "baabaab"
+        },
+        {
+            "input": "baabaab",
+            "output": "baabaab"
+        },
+        {
+            "input": "accacabc",
+            "output": "acca"
+        },
+        {
+            "input": "ccccac",
+            "output": "cccc"
+        },
+        {
+            "input": "baaccac",
+            "output": "acca"
+        },
+        {
+            "input": "bbaabbbcc",
+            "output": "bbaabb"
+        },
+        {
+            "input": "bcbbcb",
+            "output": "bcbbcb"
+        },
+        {
+            "input": "bcabbcc",
+            "output": "bb"
+        },
+        {
+            "input": "bacaacab",
+            "output": "bacaacab"
+        },
+        {
+            "input": "bbbabccccb",
+            "output": "bccccb"
+        },
+        {
+            "input": "cbaca",
             "output": "aca"
         },
         {
-            "input": "bcacb",
-            "output": "bcacb"
+            "input": "baaccab",
+            "output": "acca"
         },
         {
-            "input": "cacbcbbc",
+            "input": "bbccaabcc",
+            "output": "bb"
+        },
+        {
+            "input": "cbcacc",
+            "output": "cbc"
+        },
+        {
+            "input": "cababacaaa",
+            "output": "cababac"
+        },
+        {
+            "input": "accbaabccc",
+            "output": "ccbaabcc"
+        },
+        {
+            "input": "bcabbab",
+            "output": "abba"
+        },
+        {
+            "input": "bbbcacc",
+            "output": "bbb"
+        },
+        {
+            "input": "bbbcbbb",
+            "output": "bbbcbbb"
+        },
+        {
+            "input": "bccaabbbcb",
+            "output": "bbb"
+        },
+        {
+            "input": "bcaaabcc",
+            "output": "aaa"
+        },
+        {
+            "input": "cbbcc",
             "output": "cbbc"
+        },
+        {
+            "input": "ccccbccab",
+            "output": "ccbcc"
+        },
+        {
+            "input": "abb",
+            "output": "bb"
+        },
+        {
+            "input": "ccacbaabc",
+            "output": "cbaabc"
+        },
+        {
+            "input": "abbbbbcc",
+            "output": "bbbbb"
+        },
+        {
+            "input": "abccbbb",
+            "output": "bccb"
+        },
+        {
+            "input": "cccbabbac",
+            "output": "abba"
+        },
+        {
+            "input": "ccaaabb",
+            "output": "aaa"
+        },
+        {
+            "input": "cbcbac",
+            "output": "cbc"
+        },
+        {
+            "input": "bbbaaa",
+            "output": "bbb"
         },
         {
             "input": "aaac",
             "output": "aaa"
         },
         {
-            "input": "acab",
-            "output": "aca"
+            "input": "bbcaabcaac",
+            "output": "caac"
         },
         {
-            "input": "babbbab",
-            "output": "babbbab"
+            "input": "bccaabc",
+            "output": "cc"
         },
         {
-            "input": "bcaacbabac",
-            "output": "bcaacb"
+            "input": "ccccab",
+            "output": "cccc"
         },
         {
-            "input": "bcbabac",
+            "input": "bbbcb",
+            "output": "bbb"
+        },
+        {
+            "input": "abccbcbbcc",
+            "output": "bccb"
+        },
+        {
+            "input": "bbcabababc",
+            "output": "ababa"
+        },
+        {
+            "input": "abcbbaca",
             "output": "bcb"
         },
         {
-            "input": "cacbbcccca",
+            "input": "cbcabaccbc",
+            "output": "cabac"
+        },
+        {
+            "input": "bca",
+            "output": "b"
+        },
+        {
+            "input": "cabcbab",
+            "output": "abcba"
+        },
+        {
+            "input": "bbaaacbbcb",
             "output": "cbbc"
         },
         {
-            "input": "caaacabb",
-            "output": "caaac"
+            "input": "bbbcba",
+            "output": "bbb"
         },
         {
-            "input": "bccbcbcbaa",
-            "output": "cbcbc"
+            "input": "cacaaa",
+            "output": "cac"
+        },
+        {
+            "input": "acaab",
+            "output": "aca"
+        },
+        {
+            "input": "abcccabbb",
+            "output": "ccc"
         },
         {
             "input": "bcca",
             "output": "cc"
         },
         {
-            "input": "cbbbbcc",
-            "output": "cbbbbc"
-        },
-        {
-            "input": "accabb",
-            "output": "acca"
-        },
-        {
-            "input": "ccabaab",
-            "output": "baab"
-        },
-        {
-            "input": "abca",
-            "output": "a"
-        },
-        {
-            "input": "babbcccccc",
-            "output": "cccccc"
-        },
-        {
-            "input": "aaccba",
+            "input": "aacb",
             "output": "aa"
         },
         {
-            "input": "acccc",
-            "output": "cccc"
+            "input": "aababccb",
+            "output": "bccb"
         },
         {
-            "input": "bccc",
-            "output": "ccc"
+            "input": "cbba",
+            "output": "bb"
         },
         {
-            "input": "cabaacbbc",
-            "output": "cbbc"
+            "input": "acabaac",
+            "output": "aca"
         },
         {
-            "input": "cbabbba",
-            "output": "abbba"
+            "input": "acbababba",
+            "output": "babab"
         },
         {
-            "input": "acabbaccac",
-            "output": "cabbac"
-        },
-        {
-            "input": "babbaa",
-            "output": "abba"
-        },
-        {
-            "input": "cab",
-            "output": "c"
-        },
-        {
-            "input": "babacbc",
-            "output": "bab"
-        },
-        {
-            "input": "bcbbacabbc",
-            "output": "cbbacabbc"
-        },
-        {
-            "input": "cabccaa",
+            "input": "bcc",
             "output": "cc"
         },
         {
-            "input": "ccbacbbbcc",
-            "output": "cbbbc"
+            "input": "ababc",
+            "output": "aba"
         },
         {
-            "input": "baab",
+            "input": "cbbbabac",
+            "output": "bbb"
+        },
+        {
+            "input": "aababcaac",
+            "output": "caac"
+        },
+        {
+            "input": "caccbba",
+            "output": "cac"
+        },
+        {
+            "input": "bcb",
+            "output": "bcb"
+        },
+        {
+            "input": "ccabcbacab",
+            "output": "cabcbac"
+        },
+        {
+            "input": "ccbcbcab",
+            "output": "cbcbc"
+        },
+        {
+            "input": "bbbbcaacac",
+            "output": "bbbb"
+        },
+        {
+            "input": "cbaccacbc",
+            "output": "acca"
+        },
+        {
+            "input": "acbcbcb",
+            "output": "cbcbc"
+        },
+        {
+            "input": "acccbaccac",
+            "output": "acca"
+        },
+        {
+            "input": "cacaccca",
+            "output": "cacac"
+        },
+        {
+            "input": "ccbacccbcc",
+            "output": "ccbcc"
+        },
+        {
+            "input": "acca",
+            "output": "acca"
+        },
+        {
+            "input": "ccbbaabbb",
+            "output": "bbaabb"
+        },
+        {
+            "input": "bcaa",
+            "output": "aa"
+        },
+        {
+            "input": "aac",
+            "output": "aa"
+        },
+        {
+            "input": "baabcc",
             "output": "baab"
         },
         {
-            "input": "abbbabcbac",
-            "output": "abbba"
+            "input": "cbcbcbcac",
+            "output": "cbcbcbc"
         },
         {
-            "input": "bcccbca",
-            "output": "bcccb"
+            "input": "bbaccacca",
+            "output": "accacca"
         },
         {
-            "input": "bcaacba",
-            "output": "bcaacb"
+            "input": "cccacbacc",
+            "output": "ccc"
         },
         {
-            "input": "ccabcbcab",
+            "input": "cbaabbb",
+            "output": "baab"
+        },
+        {
+            "input": "bbabbca",
+            "output": "bbabb"
+        },
+        {
+            "input": "acbcbccccc",
+            "output": "cbcbc"
+        },
+        {
+            "input": "bba",
+            "output": "bb"
+        },
+        {
+            "input": "cbbcbaa",
+            "output": "cbbc"
+        },
+        {
+            "input": "baabb",
+            "output": "baab"
+        },
+        {
+            "input": "bccaccb",
+            "output": "bccaccb"
+        },
+        {
+            "input": "cbaacabc",
+            "output": "aca"
+        },
+        {
+            "input": "abbcacb",
+            "output": "bcacb"
+        },
+        {
+            "input": "abcbac",
+            "output": "abcba"
+        },
+        {
+            "input": "aaaccaacbc",
+            "output": "aaccaa"
+        },
+        {
+            "input": "aaacbbabb",
+            "output": "bbabb"
+        },
+        {
+            "input": "bcccab",
+            "output": "ccc"
+        },
+        {
+            "input": "cbacbbab",
+            "output": "bab"
+        },
+        {
+            "input": "cabaccbc",
+            "output": "cabac"
+        },
+        {
+            "input": "cbcacbacac",
+            "output": "bcacb"
+        },
+        {
+            "input": "acbbcaaca",
+            "output": "acbbca"
+        },
+        {
+            "input": "aaabcbab",
+            "output": "abcba"
+        },
+        {
+            "input": "cabcc",
+            "output": "cc"
+        },
+        {
+            "input": "bcabccbaba",
+            "output": "abccba"
+        },
+        {
+            "input": "cccab",
+            "output": "ccc"
+        },
+        {
+            "input": "babcab",
+            "output": "bab"
+        },
+        {
+            "input": "aabaccaac",
+            "output": "acca"
+        },
+        {
+            "input": "bcaccbbbbb",
+            "output": "bbbbb"
+        },
+        {
+            "input": "bbc",
+            "output": "bb"
+        },
+        {
+            "input": "cbaaa",
+            "output": "aaa"
+        },
+        {
+            "input": "bbbabc",
+            "output": "bbb"
+        },
+        {
+            "input": "cbbaaacbba",
+            "output": "aaa"
+        },
+        {
+            "input": "bacccbb",
+            "output": "ccc"
+        },
+        {
+            "input": "cabbbcba",
+            "output": "bbb"
+        },
+        {
+            "input": "bacacbaa",
+            "output": "aca"
+        },
+        {
+            "input": "abba",
+            "output": "abba"
+        },
+        {
+            "input": "cbbbbc",
+            "output": "cbbbbc"
+        },
+        {
+            "input": "accccccbba",
+            "output": "cccccc"
+        },
+        {
+            "input": "acbcbcab",
+            "output": "acbcbca"
+        },
+        {
+            "input": "bbacca",
+            "output": "acca"
+        },
+        {
+            "input": "cbbacb",
+            "output": "bb"
+        },
+        {
+            "input": "abbab",
+            "output": "abba"
+        },
+        {
+            "input": "bbbbcaaac",
+            "output": "caaac"
+        },
+        {
+            "input": "aacbab",
+            "output": "bab"
+        },
+        {
+            "input": "bcccaaca",
+            "output": "caac"
+        },
+        {
+            "input": "bccbcaaaaa",
+            "output": "aaaaa"
+        },
+        {
+            "input": "bcbbbac",
+            "output": "bcb"
+        },
+        {
+            "input": "bcabaac",
+            "output": "aba"
+        },
+        {
+            "input": "aaacc",
+            "output": "aaa"
+        },
+        {
+            "input": "abcbabb",
+            "output": "abcba"
+        },
+        {
+            "input": "caababa",
+            "output": "ababa"
+        },
+        {
+            "input": "abaabbcabc",
+            "output": "baab"
+        },
+        {
+            "input": "cacabb",
+            "output": "cac"
+        },
+        {
+            "input": "acc",
+            "output": "cc"
+        },
+        {
+            "input": "bcabbaa",
+            "output": "abba"
+        },
+        {
+            "input": "bccbac",
+            "output": "bccb"
+        },
+        {
+            "input": "ccbc",
+            "output": "cbc"
+        },
+        {
+            "input": "ababaa",
+            "output": "ababa"
+        },
+        {
+            "input": "bcbbacc",
             "output": "bcb"
         },
         {
@@ -781,1240 +869,1153 @@
             "output": "a"
         },
         {
-            "input": "bacc",
-            "output": "cc"
+            "input": "baaabcbac",
+            "output": "baaab"
+        },
+        {
+            "input": "cbcbcbcc",
+            "output": "cbcbcbc"
+        },
+        {
+            "input": "abccbc",
+            "output": "bccb"
+        },
+        {
+            "input": "abcaaaaa",
+            "output": "aaaaa"
+        },
+        {
+            "input": "baccabbbbb",
+            "output": "baccab"
+        },
+        {
+            "input": "abbaaaccaa",
+            "output": "aaccaa"
+        },
+        {
+            "input": "bbabbbb",
+            "output": "bbabb"
+        },
+        {
+            "input": "abccc",
+            "output": "ccc"
         },
         {
             "input": "bbcc",
             "output": "bb"
         },
         {
-            "input": "bccabc",
-            "output": "cc"
-        },
-        {
-            "input": "cacba",
-            "output": "cac"
-        },
-        {
-            "input": "cabaa",
-            "output": "aba"
-        },
-        {
-            "input": "aacaabcc",
-            "output": "aacaa"
-        },
-        {
-            "input": "acabbabccb",
-            "output": "abba"
-        },
-        {
-            "input": "aaacaaccb",
-            "output": "aacaa"
-        },
-        {
-            "input": "baaca",
-            "output": "aca"
-        },
-        {
-            "input": "abaacbb",
-            "output": "aba"
-        },
-        {
-            "input": "caaccabbaa",
-            "output": "caac"
-        },
-        {
-            "input": "abcaaaaccc",
-            "output": "caaaac"
-        },
-        {
-            "input": "aacabbbb",
-            "output": "bbbb"
-        },
-        {
-            "input": "cabbbbbbcc",
-            "output": "bbbbbb"
-        },
-        {
-            "input": "bbccbcbb",
-            "output": "bccb"
-        },
-        {
-            "input": "ccabacb",
-            "output": "cabac"
-        },
-        {
-            "input": "bcbbcc",
-            "output": "cbbc"
-        },
-        {
-            "input": "bcaacabbac",
-            "output": "cabbac"
-        },
-        {
-            "input": "cbaabcba",
-            "output": "cbaabc"
-        },
-        {
-            "input": "bbbccabab",
-            "output": "bbb"
-        },
-        {
-            "input": "baa",
-            "output": "aa"
-        },
-        {
-            "input": "cbbab",
-            "output": "bab"
-        },
-        {
-            "input": "acabba",
-            "output": "abba"
-        },
-        {
-            "input": "cbbcb",
-            "output": "cbbc"
-        },
-        {
-            "input": "caab",
-            "output": "aa"
-        },
-        {
-            "input": "bcbcbaaa",
-            "output": "bcbcb"
-        },
-        {
-            "input": "aacb",
-            "output": "aa"
-        },
-        {
-            "input": "cbb",
-            "output": "bb"
-        },
-        {
-            "input": "aabcbaaa",
-            "output": "aabcbaa"
-        },
-        {
-            "input": "bcbbacbbaa",
-            "output": "bcb"
-        },
-        {
-            "input": "abccaa",
-            "output": "cc"
-        },
-        {
-            "input": "bcbbac",
-            "output": "bcb"
-        },
-        {
-            "input": "accbcbaca",
-            "output": "cbc"
-        },
-        {
-            "input": "aaab",
-            "output": "aaa"
-        },
-        {
-            "input": "baacbb",
-            "output": "aa"
-        },
-        {
-            "input": "babbaaba",
-            "output": "abba"
-        },
-        {
-            "input": "baccaa",
-            "output": "acca"
-        },
-        {
-            "input": "bcbbbaaaab",
-            "output": "baaaab"
-        },
-        {
-            "input": "bbaabccbcb",
-            "output": "baab"
-        },
-        {
-            "input": "cbcccbbcba",
-            "output": "bcccb"
-        },
-        {
-            "input": "acbbb",
-            "output": "bbb"
-        },
-        {
-            "input": "cacbbc",
-            "output": "cbbc"
-        },
-        {
-            "input": "bccaaccc",
-            "output": "ccaacc"
-        },
-        {
-            "input": "abcbcbccaa",
-            "output": "bcbcb"
-        },
-        {
-            "input": "abb",
-            "output": "bb"
-        },
-        {
-            "input": "bbabcb",
-            "output": "bab"
-        },
-        {
-            "input": "caccbb",
-            "output": "cac"
-        },
-        {
-            "input": "abbbaa",
-            "output": "abbba"
-        },
-        {
-            "input": "bbcac",
-            "output": "cac"
-        },
-        {
-            "input": "cabcba",
-            "output": "abcba"
-        },
-        {
-            "input": "abcabcca",
-            "output": "cc"
-        },
-        {
-            "input": "acacaaacba",
-            "output": "acaca"
-        },
-        {
-            "input": "cabccbbbb",
-            "output": "bccb"
-        },
-        {
-            "input": "bcabababa",
-            "output": "abababa"
-        },
-        {
-            "input": "caabc",
-            "output": "aa"
-        },
-        {
-            "input": "ccbc",
-            "output": "cbc"
-        },
-        {
-            "input": "acaccc",
-            "output": "aca"
-        },
-        {
-            "input": "baccaaaabb",
-            "output": "acca"
-        },
-        {
-            "input": "cacb",
-            "output": "cac"
-        },
-        {
-            "input": "bbbabac",
-            "output": "bbb"
-        },
-        {
-            "input": "abacabaa",
-            "output": "abacaba"
-        },
-        {
-            "input": "ccccccbba",
-            "output": "cccccc"
-        },
-        {
-            "input": "cacbcbcaca",
-            "output": "cacbcbcac"
-        },
-        {
-            "input": "aaaba",
-            "output": "aaa"
-        },
-        {
-            "input": "bccabca",
-            "output": "cc"
-        },
-        {
-            "input": "abccacc",
-            "output": "ccacc"
-        },
-        {
-            "input": "bbbcb",
-            "output": "bbb"
-        },
-        {
-            "input": "aabaaac",
-            "output": "aabaa"
-        },
-        {
-            "input": "bcbcb",
-            "output": "bcbcb"
-        },
-        {
-            "input": "abccbaac",
-            "output": "abccba"
-        },
-        {
-            "input": "aaca",
-            "output": "aca"
-        },
-        {
-            "input": "aabacacbc",
-            "output": "aba"
-        },
-        {
-            "input": "bbba",
-            "output": "bbb"
-        },
-        {
-            "input": "abaa",
-            "output": "aba"
-        },
-        {
-            "input": "ccbcbabac",
-            "output": "cbc"
-        },
-        {
-            "input": "bcacbccc",
-            "output": "bcacb"
-        },
-        {
-            "input": "baabb",
-            "output": "baab"
-        },
-        {
-            "input": "caaacabaaa",
-            "output": "caaac"
-        },
-        {
-            "input": "caaaca",
-            "output": "caaac"
-        },
-        {
-            "input": "aabbc",
-            "output": "aa"
-        },
-        {
-            "input": "caca",
-            "output": "cac"
-        },
-        {
-            "input": "aaba",
-            "output": "aba"
-        },
-        {
-            "input": "bcc",
-            "output": "cc"
-        },
-        {
-            "input": "accc",
-            "output": "ccc"
-        },
-        {
-            "input": "baccc",
-            "output": "ccc"
-        },
-        {
-            "input": "abcc",
-            "output": "cc"
-        },
-        {
-            "input": "bcbccacbcb",
-            "output": "bcb"
-        },
-        {
-            "input": "cabb",
-            "output": "bb"
-        },
-        {
-            "input": "caaabac",
-            "output": "aaa"
-        },
-        {
-            "input": "babbbcaa",
-            "output": "bab"
-        },
-        {
-            "input": "bcccb",
-            "output": "bcccb"
-        },
-        {
-            "input": "accaccacaa",
-            "output": "accacca"
-        },
-        {
-            "input": "bcccbc",
-            "output": "bcccb"
-        },
-        {
-            "input": "aacacbcaac",
-            "output": "acbca"
-        },
-        {
-            "input": "cbcaaccbc",
-            "output": "caac"
-        },
-        {
-            "input": "ccaaaba",
-            "output": "aaa"
-        },
-        {
-            "input": "bababbccbb",
-            "output": "bbccbb"
-        },
-        {
-            "input": "accb",
-            "output": "cc"
-        },
-        {
-            "input": "caba",
-            "output": "aba"
-        },
-        {
-            "input": "bccaa",
-            "output": "cc"
-        },
-        {
-            "input": "caaaaaac",
-            "output": "caaaaaac"
-        },
-        {
-            "input": "abbacabbb",
-            "output": "bbacabb"
-        },
-        {
-            "input": "cccab",
-            "output": "ccc"
-        },
-        {
-            "input": "cbaabbac",
-            "output": "baab"
-        },
-        {
-            "input": "bacccc",
+            "input": "bbccccaca",
             "output": "cccc"
         },
         {
-            "input": "ccbccacaba",
-            "output": "ccbcc"
-        },
-        {
-            "input": "caaaccac",
-            "output": "caaac"
-        },
-        {
-            "input": "aaacbccabb",
-            "output": "aaa"
-        },
-        {
-            "input": "cbaabacca",
-            "output": "baab"
-        },
-        {
-            "input": "caaacc",
-            "output": "caaac"
-        },
-        {
-            "input": "cbcaabacac",
-            "output": "cbc"
-        },
-        {
-            "input": "abbc",
-            "output": "bb"
-        },
-        {
-            "input": "bcacaa",
-            "output": "cac"
-        },
-        {
-            "input": "cacc",
-            "output": "cac"
-        },
-        {
-            "input": "caaa",
-            "output": "aaa"
-        },
-        {
-            "input": "bcbcbbaa",
-            "output": "bcbcb"
-        },
-        {
-            "input": "bacccbc",
-            "output": "ccc"
-        },
-        {
-            "input": "aaaca",
-            "output": "aaa"
-        },
-        {
-            "input": "acccaac",
-            "output": "accca"
-        },
-        {
-            "input": "caaacabbcb",
-            "output": "caaac"
-        },
-        {
-            "input": "abcaacbab",
-            "output": "abcaacba"
-        },
-        {
-            "input": "caaabb",
-            "output": "aaa"
-        },
-        {
-            "input": "acaacbc",
-            "output": "caac"
-        },
-        {
-            "input": "bbac",
-            "output": "bb"
-        },
-        {
-            "input": "babcabcac",
+            "input": "babaca",
             "output": "bab"
         },
         {
-            "input": "aaaaaa",
-            "output": "aaaaaa"
-        },
-        {
-            "input": "caccbc",
-            "output": "cac"
-        },
-        {
-            "input": "acbcb",
-            "output": "cbc"
-        },
-        {
-            "input": "ccba",
+            "input": "bcabcc",
             "output": "cc"
         },
         {
-            "input": "baaabbcbcc",
-            "output": "baaab"
+            "input": "bbbbbc",
+            "output": "bbbbb"
         },
         {
-            "input": "bcabaac",
-            "output": "aba"
+            "input": "aaaab",
+            "output": "aaaa"
         },
         {
-            "input": "acaacc",
-            "output": "caac"
-        },
-        {
-            "input": "bcbbacaaa",
-            "output": "bcb"
-        },
-        {
-            "input": "babcbbbaca",
-            "output": "bab"
-        },
-        {
-            "input": "cabccbcacb",
-            "output": "bcacb"
-        },
-        {
-            "input": "abccac",
-            "output": "cac"
-        },
-        {
-            "input": "abbacbacbb",
-            "output": "abba"
-        },
-        {
-            "input": "cbba",
-            "output": "bb"
-        },
-        {
-            "input": "acbaa",
-            "output": "aa"
-        },
-        {
-            "input": "acabc",
-            "output": "aca"
-        },
-        {
-            "input": "bbc",
-            "output": "bb"
-        },
-        {
-            "input": "ccac",
-            "output": "cac"
-        },
-        {
-            "input": "aaaccabcc",
-            "output": "acca"
-        },
-        {
-            "input": "ccbbacca",
-            "output": "acca"
-        },
-        {
-            "input": "bbabbaa",
-            "output": "bbabb"
-        },
-        {
-            "input": "cccbaca",
-            "output": "ccc"
-        },
-        {
-            "input": "cbccabc",
-            "output": "cbc"
-        },
-        {
-            "input": "bccaacaabc",
-            "output": "aacaa"
-        },
-        {
-            "input": "aabaab",
-            "output": "aabaa"
-        },
-        {
-            "input": "abaaacbac",
-            "output": "aba"
-        },
-        {
-            "input": "cac",
-            "output": "cac"
-        },
-        {
-            "input": "cbcbabc",
-            "output": "cbabc"
-        },
-        {
-            "input": "acaabb",
-            "output": "aca"
-        },
-        {
-            "input": "babaccbaab",
-            "output": "baab"
-        },
-        {
-            "input": "cccacabbba",
-            "output": "abbba"
-        },
-        {
-            "input": "cabab",
-            "output": "aba"
-        },
-        {
-            "input": "bcccaa",
-            "output": "ccc"
-        },
-        {
-            "input": "bcbacabcb",
-            "output": "bcbacabcb"
-        },
-        {
-            "input": "cabbbaacc",
-            "output": "abbba"
-        },
-        {
-            "input": "cacabac",
-            "output": "cabac"
-        },
-        {
-            "input": "acaa",
-            "output": "aca"
-        },
-        {
-            "input": "baacbcac",
-            "output": "acbca"
-        },
-        {
-            "input": "bcacaaabca",
-            "output": "cac"
-        },
-        {
-            "input": "cbbbabca",
-            "output": "bbb"
-        },
-        {
-            "input": "abbcabcc",
-            "output": "bb"
-        },
-        {
-            "input": "abcacbc",
-            "output": "bcacb"
-        },
-        {
-            "input": "accccbabb",
-            "output": "cccc"
-        },
-        {
-            "input": "aaccbc",
-            "output": "cbc"
-        },
-        {
-            "input": "ccbbaaa",
-            "output": "aaa"
-        },
-        {
-            "input": "bbbcaccca",
-            "output": "accca"
-        },
-        {
-            "input": "aaacccbaab",
-            "output": "baab"
-        },
-        {
-            "input": "cbbcaabc",
-            "output": "cbbc"
-        },
-        {
-            "input": "bbabcbacbb",
-            "output": "abcba"
-        },
-        {
-            "input": "baacaba",
-            "output": "aca"
-        },
-        {
-            "input": "cbaaabbcba",
-            "output": "baaab"
-        },
-        {
-            "input": "ccaacbab",
-            "output": "caac"
-        },
-        {
-            "input": "aacaaaba",
-            "output": "aacaa"
-        },
-        {
-            "input": "bacaccabcc",
-            "output": "acca"
-        },
-        {
-            "input": "cabbbaa",
-            "output": "abbba"
-        },
-        {
-            "input": "acccbbcbbb",
-            "output": "bbcbb"
-        },
-        {
-            "input": "bcaacacb",
-            "output": "caac"
-        },
-        {
-            "input": "babaccb",
-            "output": "bab"
-        },
-        {
-            "input": "caaccb",
-            "output": "caac"
-        },
-        {
-            "input": "abccbbccca",
-            "output": "ccbbcc"
-        },
-        {
-            "input": "babaaca",
-            "output": "bab"
-        },
-        {
-            "input": "bcbaab",
-            "output": "baab"
-        },
-        {
-            "input": "baabbbcaa",
-            "output": "baab"
-        },
-        {
-            "input": "baabbabacc",
-            "output": "baab"
-        },
-        {
-            "input": "caacbba",
-            "output": "caac"
-        },
-        {
-            "input": "bbbbcbcabc",
-            "output": "bbbb"
-        },
-        {
-            "input": "acaacaaabc",
-            "output": "acaaca"
-        },
-        {
-            "input": "bbbaacbcba",
-            "output": "bbb"
+            "input": "abca",
+            "output": "a"
         },
         {
             "input": "abbba",
             "output": "abbba"
         },
         {
-            "input": "ccccbaaa",
-            "output": "cccc"
+            "input": "acbaaacba",
+            "output": "aaa"
         },
         {
-            "input": "cabaccabb",
-            "output": "baccab"
+            "input": "ccbcbcaaab",
+            "output": "cbcbc"
         },
         {
-            "input": "bcaabbbcb",
-            "output": "bbb"
+            "input": "abbabccba",
+            "output": "abccba"
         },
         {
-            "input": "babccacbcb",
-            "output": "bab"
+            "input": "cabacaccb",
+            "output": "cabac"
         },
         {
-            "input": "cbbbacaccc",
-            "output": "bbb"
+            "input": "bbcacbccac",
+            "output": "bcacb"
         },
         {
-            "input": "bbbcccbba",
-            "output": "bbcccbb"
+            "input": "caccaccb",
+            "output": "caccac"
         },
         {
-            "input": "ccbbbacaca",
-            "output": "acaca"
+            "input": "bbcacab",
+            "output": "cac"
         },
         {
-            "input": "bbaaccc",
-            "output": "ccc"
+            "input": "bbca",
+            "output": "bb"
         },
         {
-            "input": "cbbba",
-            "output": "bbb"
-        },
-        {
-            "input": "bbbccbccaa",
-            "output": "ccbcc"
-        },
-        {
-            "input": "ccabc",
-            "output": "cc"
-        },
-        {
-            "input": "ccabcaabc",
-            "output": "cc"
-        },
-        {
-            "input": "bcbcbabab",
-            "output": "bcbcb"
-        },
-        {
-            "input": "abbcb",
-            "output": "bcb"
-        },
-        {
-            "input": "aabbcccc",
-            "output": "cccc"
-        },
-        {
-            "input": "aacac",
+            "input": "acabcb",
             "output": "aca"
         },
         {
-            "input": "cacccacaca",
-            "output": "cacccac"
-        },
-        {
-            "input": "cccaca",
-            "output": "ccc"
-        },
-        {
-            "input": "aabacacc",
+            "input": "abac",
             "output": "aba"
         },
         {
-            "input": "bcccacccb",
-            "output": "bcccacccb"
-        },
-        {
-            "input": "cbacca",
-            "output": "acca"
-        },
-        {
-            "input": "cccabbca",
+            "input": "abcccac",
             "output": "ccc"
         },
         {
-            "input": "abccacb",
-            "output": "cac"
+            "input": "aacacabb",
+            "output": "acaca"
         },
         {
-            "input": "bbacbc",
-            "output": "cbc"
-        },
-        {
-            "input": "bbbaaca",
-            "output": "bbb"
-        },
-        {
-            "input": "cbcccbbc",
-            "output": "bcccb"
-        },
-        {
-            "input": "cacccbcccc",
-            "output": "cccbccc"
-        },
-        {
-            "input": "ccacacba",
-            "output": "cacac"
-        },
-        {
-            "input": "ccabaccb",
-            "output": "ccabacc"
-        },
-        {
-            "input": "bcac",
-            "output": "cac"
-        },
-        {
-            "input": "caabbcaacc",
-            "output": "caac"
-        },
-        {
-            "input": "cbcaaabaa",
-            "output": "aabaa"
-        },
-        {
-            "input": "ccbabcbaa",
-            "output": "cbabc"
-        },
-        {
-            "input": "ccbcacca",
+            "input": "baaccacb",
             "output": "acca"
         },
         {
-            "input": "bacbbbbaaa",
-            "output": "bbbb"
+            "input": "cbacba",
+            "output": "c"
         },
         {
-            "input": "accccac",
-            "output": "acccca"
+            "input": "aacabbcabc",
+            "output": "aca"
         },
         {
-            "input": "cabbacbabb",
-            "output": "cabbac"
+            "input": "baaaaac",
+            "output": "aaaaa"
         },
         {
-            "input": "aacaaa",
-            "output": "aacaa"
+            "input": "bcabaca",
+            "output": "cabac"
         },
         {
-            "input": "accaacba",
-            "output": "acca"
+            "input": "caaacacca",
+            "output": "caaac"
         },
         {
-            "input": "cabcbcc",
-            "output": "bcb"
+            "input": "abaabababc",
+            "output": "abaaba"
         },
         {
-            "input": "bbabbc",
-            "output": "bbabb"
+            "input": "bbcacabaaa",
+            "output": "cac"
         },
         {
-            "input": "cccbbbc",
+            "input": "cbbbcbbaa",
             "output": "cbbbc"
         },
         {
-            "input": "bcba",
-            "output": "bcb"
+            "input": "cabc",
+            "output": "c"
         },
         {
-            "input": "aacbbbaaa",
-            "output": "bbb"
+            "input": "cbbcacb",
+            "output": "bcacb"
         },
         {
-            "input": "bcabaaca",
+            "input": "abacbcaca",
+            "output": "acbca"
+        },
+        {
+            "input": "ccccbbccbb",
+            "output": "ccbbcc"
+        },
+        {
+            "input": "aacaaaac",
+            "output": "caaaac"
+        },
+        {
+            "input": "aabac",
             "output": "aba"
         },
         {
-            "input": "cacacabba",
-            "output": "cacac"
+            "input": "acabababc",
+            "output": "ababa"
         },
         {
-            "input": "abbaaaaba",
-            "output": "baaaab"
+            "input": "bcbcbbca",
+            "output": "bcbcb"
         },
         {
-            "input": "ababcc",
-            "output": "aba"
+            "input": "accbcbaba",
+            "output": "cbc"
+        },
+        {
+            "input": "bbcca",
+            "output": "bb"
+        },
+        {
+            "input": "cacccaac",
+            "output": "accca"
+        },
+        {
+            "input": "baacaaaab",
+            "output": "aacaa"
+        },
+        {
+            "input": "ccccacbaa",
+            "output": "cccc"
+        },
+        {
+            "input": "cacacacc",
+            "output": "cacacac"
+        },
+        {
+            "input": "baaa",
+            "output": "aaa"
+        },
+        {
+            "input": "bbcaccc",
+            "output": "cac"
+        },
+        {
+            "input": "abbacaabc",
+            "output": "abba"
+        },
+        {
+            "input": "abcbbcaac",
+            "output": "cbbc"
+        },
+        {
+            "input": "bcbaab",
+            "output": "baab"
+        },
+        {
+            "input": "aacabab",
+            "output": "aca"
+        },
+        {
+            "input": "acbcbaaac",
+            "output": "cbc"
+        },
+        {
+            "input": "ccbbbbc",
+            "output": "cbbbbc"
+        },
+        {
+            "input": "acccc",
+            "output": "cccc"
+        },
+        {
+            "input": "aacaca",
+            "output": "acaca"
         },
         {
             "input": "bacb",
             "output": "b"
         },
         {
-            "input": "bcaba",
-            "output": "aba"
-        },
-        {
-            "input": "baaccbcbca",
-            "output": "cbcbc"
-        },
-        {
-            "input": "abccacca",
-            "output": "ccacc"
-        },
-        {
-            "input": "cabbbcacb",
-            "output": "bcacb"
-        },
-        {
-            "input": "bababa",
-            "output": "babab"
-        },
-        {
-            "input": "cacbccac",
-            "output": "cac"
-        },
-        {
-            "input": "aaaabcbaac",
-            "output": "aabcbaa"
-        },
-        {
-            "input": "cccbbac",
-            "output": "ccc"
-        },
-        {
-            "input": "bbbbac",
-            "output": "bbbb"
-        },
-        {
-            "input": "baabaccaa",
-            "output": "baab"
-        },
-        {
-            "input": "baacbcbba",
-            "output": "cbc"
-        },
-        {
-            "input": "bbabccac",
-            "output": "bab"
-        },
-        {
-            "input": "bcccbbba",
-            "output": "bcccb"
-        },
-        {
-            "input": "acbaaaa",
+            "input": "aaaabac",
             "output": "aaaa"
         },
         {
-            "input": "cacbc",
-            "output": "cac"
+            "input": "acccbcbc",
+            "output": "cbcbc"
         },
         {
-            "input": "bbabaccc",
-            "output": "bab"
-        },
-        {
-            "input": "bcbaccbb",
-            "output": "bcb"
-        },
-        {
-            "input": "bbccbc",
-            "output": "bccb"
-        },
-        {
-            "input": "baabac",
-            "output": "baab"
-        },
-        {
-            "input": "aaccbaab",
-            "output": "baab"
-        },
-        {
-            "input": "acc",
-            "output": "cc"
-        },
-        {
-            "input": "aacaaab",
+            "input": "aacaabca",
             "output": "aacaa"
         },
         {
-            "input": "cbbabc",
+            "input": "ccaccb",
+            "output": "ccacc"
+        },
+        {
+            "input": "acaababcc",
+            "output": "aca"
+        },
+        {
+            "input": "cccaabaccb",
+            "output": "ccc"
+        },
+        {
+            "input": "accaacb",
+            "output": "acca"
+        },
+        {
+            "input": "baaaaaa",
+            "output": "aaaaaa"
+        },
+        {
+            "input": "accbbac",
+            "output": "cc"
+        },
+        {
+            "input": "cccac",
+            "output": "ccc"
+        },
+        {
+            "input": "baabbbbcaa",
+            "output": "baab"
+        },
+        {
+            "input": "cbab",
             "output": "bab"
         },
         {
-            "input": "aabcb",
-            "output": "bcb"
+            "input": "aabbbc",
+            "output": "bbb"
+        },
+        {
+            "input": "cbaabbcb",
+            "output": "baab"
+        },
+        {
+            "input": "cbca",
+            "output": "cbc"
+        },
+        {
+            "input": "cccaba",
+            "output": "ccc"
+        },
+        {
+            "input": "ccbccbccc",
+            "output": "ccbccbcc"
+        },
+        {
+            "input": "cbccaba",
+            "output": "cbc"
+        },
+        {
+            "input": "bbbcbaccbb",
+            "output": "bbb"
+        },
+        {
+            "input": "ccabccc",
+            "output": "ccc"
+        },
+        {
+            "input": "cccaababc",
+            "output": "ccc"
+        },
+        {
+            "input": "cbaccccb",
+            "output": "cccc"
+        },
+        {
+            "input": "bccabb",
+            "output": "cc"
+        },
+        {
+            "input": "abccaaccc",
+            "output": "ccaacc"
+        },
+        {
+            "input": "bbbba",
+            "output": "bbbb"
+        },
+        {
+            "input": "ccbabcba",
+            "output": "cbabc"
+        },
+        {
+            "input": "bbcabbcbb",
+            "output": "bbcbb"
+        },
+        {
+            "input": "cacc",
+            "output": "cac"
+        },
+        {
+            "input": "ccccacbbc",
+            "output": "cccc"
+        },
+        {
+            "input": "cacbcc",
+            "output": "cac"
+        },
+        {
+            "input": "caacca",
+            "output": "caac"
+        },
+        {
+            "input": "cbbbbb",
+            "output": "bbbbb"
+        },
+        {
+            "input": "cccaabba",
+            "output": "abba"
+        },
+        {
+            "input": "acbcc",
+            "output": "cbc"
+        },
+        {
+            "input": "bcababbbc",
+            "output": "aba"
         },
         {
             "input": "aba",
             "output": "aba"
         },
         {
-            "input": "cababcc",
-            "output": "aba"
-        },
-        {
-            "input": "babba",
-            "output": "abba"
-        },
-        {
-            "input": "abaabcab",
-            "output": "baab"
-        },
-        {
-            "input": "bcabbcacbc",
-            "output": "bcacb"
-        },
-        {
-            "input": "cacbbab",
+            "input": "ccabccaca",
             "output": "cac"
         },
         {
-            "input": "bbacbb",
-            "output": "bb"
-        },
-        {
-            "input": "bccacaaa",
+            "input": "bccac",
             "output": "cac"
         },
         {
-            "input": "bbbac",
-            "output": "bbb"
+            "input": "abaaaac",
+            "output": "aaaa"
         },
         {
-            "input": "cabccbcb",
+            "input": "accbaaac",
+            "output": "aaa"
+        },
+        {
+            "input": "ccbbbcc",
+            "output": "ccbbbcc"
+        },
+        {
+            "input": "acacbcaa",
+            "output": "acbca"
+        },
+        {
+            "input": "bbccbcbaba",
             "output": "bccb"
         },
         {
-            "input": "aacaba",
+            "input": "ccacaabc",
+            "output": "cac"
+        },
+        {
+            "input": "ababbc",
+            "output": "aba"
+        },
+        {
+            "input": "aabc",
+            "output": "aa"
+        },
+        {
+            "input": "cbccabac",
+            "output": "cabac"
+        },
+        {
+            "input": "ababa",
+            "output": "ababa"
+        },
+        {
+            "input": "baa",
+            "output": "aa"
+        },
+        {
+            "input": "abbac",
+            "output": "abba"
+        },
+        {
+            "input": "caac",
+            "output": "caac"
+        },
+        {
+            "input": "bcabba",
+            "output": "abba"
+        },
+        {
+            "input": "abcccbabc",
+            "output": "abcccba"
+        },
+        {
+            "input": "cbcac",
+            "output": "cbc"
+        },
+        {
+            "input": "caccbca",
+            "output": "cac"
+        },
+        {
+            "input": "bbcbaccb",
+            "output": "bcb"
+        },
+        {
+            "input": "acbac",
+            "output": "a"
+        },
+        {
+            "input": "caccbcaac",
+            "output": "caac"
+        },
+        {
+            "input": "cbcaa",
+            "output": "cbc"
+        },
+        {
+            "input": "aaaccccc",
+            "output": "ccccc"
+        },
+        {
+            "input": "cbabaccb",
+            "output": "bab"
+        },
+        {
+            "input": "bacabbcba",
+            "output": "bacab"
+        },
+        {
+            "input": "bcabccc",
+            "output": "ccc"
+        },
+        {
+            "input": "bbb",
+            "output": "bbb"
+        },
+        {
+            "input": "baccbbbaba",
+            "output": "bbb"
+        },
+        {
+            "input": "cbbbbacb",
+            "output": "bbbb"
+        },
+        {
+            "input": "cccabba",
+            "output": "abba"
+        },
+        {
+            "input": "aabbcca",
+            "output": "aa"
+        },
+        {
+            "input": "acb",
+            "output": "a"
+        },
+        {
+            "input": "abcabba",
+            "output": "abba"
+        },
+        {
+            "input": "cbbacbbb",
+            "output": "bbb"
+        },
+        {
+            "input": "ababbabb",
+            "output": "babbab"
+        },
+        {
+            "input": "acaaaacbca",
+            "output": "caaaac"
+        },
+        {
+            "input": "cbbacacac",
+            "output": "acaca"
+        },
+        {
+            "input": "cbabb",
+            "output": "bab"
+        },
+        {
+            "input": "acaabacab",
+            "output": "bacab"
+        },
+        {
+            "input": "babcabc",
+            "output": "bab"
+        },
+        {
+            "input": "cbacbabbb",
+            "output": "bab"
+        },
+        {
+            "input": "caabcc",
+            "output": "aa"
+        },
+        {
+            "input": "aacccacbab",
+            "output": "accca"
+        },
+        {
+            "input": "ccbccab",
+            "output": "ccbcc"
+        },
+        {
+            "input": "caca",
+            "output": "cac"
+        },
+        {
+            "input": "accbcacbb",
+            "output": "bcacb"
+        },
+        {
+            "input": "acaca",
+            "output": "acaca"
+        },
+        {
+            "input": "ccbbbb",
+            "output": "bbbb"
+        },
+        {
+            "input": "acbbcbaaba",
+            "output": "cbbc"
+        },
+        {
+            "input": "bbcbaccacc",
+            "output": "ccacc"
+        },
+        {
+            "input": "acbaab",
+            "output": "baab"
+        },
+        {
+            "input": "aca",
             "output": "aca"
+        },
+        {
+            "input": "bbabccba",
+            "output": "abccba"
+        },
+        {
+            "input": "bcbbabb",
+            "output": "bbabb"
+        },
+        {
+            "input": "aaacbab",
+            "output": "aaa"
+        },
+        {
+            "input": "bcbac",
+            "output": "bcb"
+        },
+        {
+            "input": "ccabbccbbb",
+            "output": "bbccbb"
+        },
+        {
+            "input": "bcab",
+            "output": "b"
+        },
+        {
+            "input": "aabacabab",
+            "output": "abacaba"
+        },
+        {
+            "input": "babbabcc",
+            "output": "babbab"
+        },
+        {
+            "input": "bcbcacbbb",
+            "output": "bcacb"
+        },
+        {
+            "input": "aacccbab",
+            "output": "ccc"
+        },
+        {
+            "input": "bacbcccb",
+            "output": "bcccb"
+        },
+        {
+            "input": "caabbaa",
+            "output": "aabbaa"
+        },
+        {
+            "input": "abaccabbb",
+            "output": "baccab"
+        },
+        {
+            "input": "bbbcbbcba",
+            "output": "bcbbcb"
+        },
+        {
+            "input": "cbbab",
+            "output": "bab"
+        },
+        {
+            "input": "bbcbaba",
+            "output": "bcb"
+        },
+        {
+            "input": "bac",
+            "output": "b"
+        },
+        {
+            "input": "cbcbcbbba",
+            "output": "cbcbc"
+        },
+        {
+            "input": "cbccbb",
+            "output": "bccb"
+        },
+        {
+            "input": "bccaa",
+            "output": "cc"
+        },
+        {
+            "input": "bacaababb",
+            "output": "aca"
+        },
+        {
+            "input": "ccaab",
+            "output": "cc"
+        },
+        {
+            "input": "cbacb",
+            "output": "c"
+        },
+        {
+            "input": "accbbb",
+            "output": "bbb"
+        },
+        {
+            "input": "cbbaacb",
+            "output": "bb"
+        },
+        {
+            "input": "cbbaacbb",
+            "output": "bb"
+        },
+        {
+            "input": "aabcca",
+            "output": "aa"
+        },
+        {
+            "input": "baac",
+            "output": "aa"
+        },
+        {
+            "input": "bbcba",
+            "output": "bcb"
+        },
+        {
+            "input": "abcab",
+            "output": "a"
+        },
+        {
+            "input": "abacba",
+            "output": "aba"
+        },
+        {
+            "input": "bbbbbbc",
+            "output": "bbbbbb"
+        },
+        {
+            "input": "bcbaabb",
+            "output": "baab"
+        },
+        {
+            "input": "cbccb",
+            "output": "bccb"
+        },
+        {
+            "input": "abababa",
+            "output": "abababa"
+        },
+        {
+            "input": "cbbccacb",
+            "output": "cbbc"
+        },
+        {
+            "input": "cccbcaaaba",
+            "output": "ccc"
+        },
+        {
+            "input": "cbbcbcc",
+            "output": "cbbc"
         },
         {
             "input": "caacb",
             "output": "caac"
         },
         {
-            "input": "bbcaaba",
-            "output": "aba"
+            "input": "abbaa",
+            "output": "abba"
         },
         {
-            "input": "ccccb",
-            "output": "cccc"
+            "input": "aacaabb",
+            "output": "aacaa"
         },
         {
-            "input": "bbccabcaa",
-            "output": "bb"
-        },
-        {
-            "input": "cabbbccaa",
-            "output": "bbb"
-        },
-        {
-            "input": "caccaac",
-            "output": "acca"
-        },
-        {
-            "input": "bbabbb",
-            "output": "bbabb"
-        },
-        {
-            "input": "aabcc",
-            "output": "aa"
-        },
-        {
-            "input": "cabbcaabcb",
-            "output": "bcb"
-        },
-        {
-            "input": "ccbcaca",
+            "input": "bbacbccab",
             "output": "cbc"
         },
         {
-            "input": "ccbabbb",
-            "output": "bab"
+            "input": "aabcaaba",
+            "output": "aba"
         },
         {
-            "input": "ccbbacc",
+            "input": "ccba",
             "output": "cc"
         },
         {
-            "input": "bbaacccab",
-            "output": "accca"
+            "input": "abcccb",
+            "output": "bcccb"
         },
         {
-            "input": "cbacacab",
-            "output": "bacacab"
+            "input": "bcbaac",
+            "output": "bcb"
         },
         {
-            "input": "baaacbcbba",
-            "output": "aaa"
+            "input": "acbccbabb",
+            "output": "bccb"
         },
         {
-            "input": "baabaaaa",
-            "output": "aabaa"
+            "input": "acccba",
+            "output": "ccc"
         },
         {
-            "input": "bbbcabcbcc",
-            "output": "bbb"
+            "input": "caabca",
+            "output": "aa"
         },
         {
-            "input": "abacaaaa",
-            "output": "aaaa"
-        },
-        {
-            "input": "bcbbccc",
+            "input": "cbbcaabc",
             "output": "cbbc"
         },
         {
-            "input": "caacc",
-            "output": "caac"
+            "input": "cab",
+            "output": "c"
         },
         {
-            "input": "caaac",
-            "output": "caaac"
+            "input": "cbaaacaab",
+            "output": "aacaa"
         },
         {
-            "input": "bbbcccacab",
-            "output": "bbb"
+            "input": "cbaabcaa",
+            "output": "cbaabc"
         },
         {
-            "input": "aaacac",
+            "input": "cbbabcbaa",
+            "output": "abcba"
+        },
+        {
+            "input": "ccccabac",
+            "output": "cabac"
+        },
+        {
+            "input": "acbacaccba",
+            "output": "aca"
+        },
+        {
+            "input": "aaacb",
             "output": "aaa"
         },
         {
-            "input": "cbbaccabca",
-            "output": "baccab"
+            "input": "caabcaba",
+            "output": "aba"
         },
         {
-            "input": "abbb",
-            "output": "bbb"
+            "input": "acbaaaaab",
+            "output": "baaaaab"
         },
         {
-            "input": "bcbcaaabaa",
-            "output": "aabaa"
+            "input": "abacc",
+            "output": "aba"
         },
         {
-            "input": "caacba",
-            "output": "caac"
+            "input": "cbcc",
+            "output": "cbc"
         },
         {
-            "input": "ababac",
-            "output": "ababa"
+            "input": "acacbaccb",
+            "output": "aca"
         },
         {
-            "input": "bcabacbbc",
-            "output": "bcabacb"
+            "input": "bccc",
+            "output": "ccc"
         },
         {
-            "input": "acaccbbcab",
-            "output": "cbbc"
+            "input": "aaccb",
+            "output": "aa"
         },
         {
-            "input": "cbababbcbc",
+            "input": "abbababa",
             "output": "babab"
         },
         {
-            "input": "cabcabcbbc",
+            "input": "ccbb",
+            "output": "cc"
+        },
+        {
+            "input": "cabcacbc",
+            "output": "bcacb"
+        },
+        {
+            "input": "bcbc",
+            "output": "bcb"
+        },
+        {
+            "input": "abbbaaccb",
+            "output": "abbba"
+        },
+        {
+            "input": "ccbccbbac",
+            "output": "ccbcc"
+        },
+        {
+            "input": "cbcbc",
+            "output": "cbcbc"
+        },
+        {
+            "input": "babcccabb",
+            "output": "bab"
+        },
+        {
+            "input": "aaaaca",
+            "output": "aaaa"
+        },
+        {
+            "input": "cbacc",
+            "output": "cc"
+        },
+        {
+            "input": "baaccb",
+            "output": "aa"
+        },
+        {
+            "input": "abcaca",
+            "output": "cac"
+        },
+        {
+            "input": "cccccba",
+            "output": "ccccc"
+        },
+        {
+            "input": "aaabaa",
+            "output": "aabaa"
+        },
+        {
+            "input": "bcacbbbaca",
+            "output": "bcacb"
+        },
+        {
+            "input": "abcb",
+            "output": "bcb"
+        },
+        {
+            "input": "acbbbbc",
+            "output": "cbbbbc"
+        },
+        {
+            "input": "abbcbcab",
+            "output": "bcb"
+        },
+        {
+            "input": "bacabbcbc",
+            "output": "bacab"
+        },
+        {
+            "input": "aaacbcaccb",
+            "output": "acbca"
+        },
+        {
+            "input": "caa",
+            "output": "aa"
+        },
+        {
+            "input": "bbabc",
+            "output": "bab"
+        },
+        {
+            "input": "cccababbb",
+            "output": "ccc"
+        },
+        {
+            "input": "cbbaaccc",
+            "output": "ccc"
+        },
+        {
+            "input": "bcacc",
+            "output": "cac"
+        },
+        {
+            "input": "acabc",
+            "output": "aca"
+        },
+        {
+            "input": "bcbcbb",
+            "output": "bcbcb"
+        },
+        {
+            "input": "ccaccaba",
+            "output": "ccacc"
+        },
+        {
+            "input": "bbcabbcaa",
+            "output": "bb"
+        },
+        {
+            "input": "aacaaccbbc",
+            "output": "aacaa"
+        },
+        {
+            "input": "aaacab",
+            "output": "aaa"
+        },
+        {
+            "input": "aabcbbab",
+            "output": "bcb"
+        },
+        {
+            "input": "acabcabbab",
+            "output": "abba"
+        },
+        {
+            "input": "aabcbbca",
             "output": "cbbc"
+        },
+        {
+            "input": "cbb",
+            "output": "bb"
+        },
+        {
+            "input": "bcbbbcaab",
+            "output": "cbbbc"
+        },
+        {
+            "input": "cccbbc",
+            "output": "cbbc"
+        },
+        {
+            "input": "bbbaa",
+            "output": "bbb"
+        },
+        {
+            "input": "ccacabcbab",
+            "output": "abcba"
+        },
+        {
+            "input": "cccabc",
+            "output": "ccc"
+        },
+        {
+            "input": "cbbcbbccbb",
+            "output": "cbbcbbc"
+        },
+        {
+            "input": "ccacba",
+            "output": "cac"
+        },
+        {
+            "input": "bbccacba",
+            "output": "cac"
+        },
+        {
+            "input": "bcccaa",
+            "output": "ccc"
+        },
+        {
+            "input": "ccbbaabcbb",
+            "output": "baab"
+        },
+        {
+            "input": "bbbacac",
+            "output": "bbb"
+        },
+        {
+            "input": "baaacaab",
+            "output": "aacaa"
+        },
+        {
+            "input": "bacccaacba",
+            "output": "accca"
+        },
+        {
+            "input": "cbaa",
+            "output": "aa"
+        },
+        {
+            "input": "abaacbcca",
+            "output": "aba"
+        },
+        {
+            "input": "bcbcaabc",
+            "output": "bcb"
+        },
+        {
+            "input": "ccbacac",
+            "output": "aca"
+        },
+        {
+            "input": "ccbbcb",
+            "output": "cbbc"
+        },
+        {
+            "input": "bccabccc",
+            "output": "ccc"
+        },
+        {
+            "input": "bbbbbabacc",
+            "output": "bbbbb"
+        },
+        {
+            "input": "baaaaccc",
+            "output": "aaaa"
+        },
+        {
+            "input": "acbbcbba",
+            "output": "bbcbb"
+        },
+        {
+            "input": "cbbaabcbc",
+            "output": "baab"
+        },
+        {
+            "input": "ababacabb",
+            "output": "ababa"
+        },
+        {
+            "input": "ccabacac",
+            "output": "cabac"
+        },
+        {
+            "input": "abaaa",
+            "output": "aba"
+        },
+        {
+            "input": "bbbabcbc",
+            "output": "bbb"
+        },
+        {
+            "input": "cabbcb",
+            "output": "bcb"
+        },
+        {
+            "input": "ccbcba",
+            "output": "cbc"
+        },
+        {
+            "input": "cababcac",
+            "output": "aba"
+        },
+        {
+            "input": "cbbabb",
+            "output": "bbabb"
+        },
+        {
+            "input": "ccabaaaaba",
+            "output": "abaaaaba"
+        },
+        {
+            "input": "bacba",
+            "output": "b"
+        },
+        {
+            "input": "cbccbaac",
+            "output": "bccb"
+        },
+        {
+            "input": "bccbacb",
+            "output": "bccb"
+        },
+        {
+            "input": "bcbbac",
+            "output": "bcb"
+        },
+        {
+            "input": "bababbbbca",
+            "output": "babab"
         }
-    ]
+    ],
+    "difficulty": "medium"
 }

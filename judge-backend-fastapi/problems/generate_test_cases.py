@@ -1156,6 +1156,312 @@ def solve_sliding_window_maximum():
         
     return f"{' '.join(map(str, nums))}\n{k}", " ".join(map(str, res))
 
+def solve_count_odd_numbers_in_interval_range():
+    low = random.randint(0, 1000)
+    high = random.randint(low, 1000 + low)
+    # The count of odd numbers between low and high
+    # Number of odd numbers up to N is (N+1)//2
+    count = (high + 1) // 2 - (low) // 2
+    return f"{low} {high}", str(count)
+
+def solve_add_digits():
+    n = random.randint(0, 10000)
+    if n == 0: res = 0
+    else: res = 1 + (n - 1) % 9
+    return str(n), str(res)
+
+def solve_power_of_three():
+    if random.choice([True, False]):
+        n = 3**random.randint(0, 19)
+    else:
+        n = random.randint(-100, 10000)
+    
+    # Check
+    if n <= 0: is_pow = False
+    else:
+        # 1162261467 is 3^19, max power of 3 in signed 32-bit integer
+        is_pow = (1162261467 % n == 0)
+    return str(n), "true" if is_pow else "false"
+
+def solve_power_of_four():
+    if random.choice([True, False]):
+        n = 4**random.randint(0, 15)
+    else:
+        n = random.randint(-100, 10000)
+    
+    # Check
+    is_pow = n > 0 and (n & (n - 1)) == 0 and (n & 0x55555555) != 0
+    return str(n), "true" if is_pow else "false"
+
+def solve_ugly_number():
+    if random.choice([True, False]):
+        # Generate an ugly number
+        n = 1
+        for _ in range(random.randint(0, 10)):
+            n *= random.choice([2, 3, 5])
+    else:
+        n = random.randint(-100, 10000)
+        
+    def isUgly(num):
+        if num <= 0: return False
+        for p in [2, 3, 5]:
+            while num % p == 0:
+                num //= p
+        return num == 1
+    
+    return str(n), "true" if isUgly(n) else "false"
+
+def solve_move_zeroes():
+    n = random.randint(1, 20)
+    nums = [random.randint(0, 10) for _ in range(n)] # Higher chance of 0 since range is small?
+    # Let's adjust frequencies to have reasonable zeros
+    nums = []
+    for _ in range(n):
+        if random.random() < 0.3: nums.append(0)
+        else: nums.append(random.randint(1, 10))
+    
+    # Solve
+    res = [x for x in nums if x != 0]
+    res.extend([0] * (n - len(res)))
+    
+    return f"{n}\n{' '.join(map(str, nums))}", " ".join(map(str, res))
+
+def solve_isomorphic_strings():
+    length = random.randint(3, 10)
+    pattern = [random.randint(0, 25) for _ in range(length)]
+    
+    def generate_from_pattern(pat):
+        mapping = {}
+        used = set()
+        res = []
+        alphabet = list("abcdefghijklmnopqrstuvwxyz")
+        random.shuffle(alphabet)
+        
+        needed = set(pat)
+        char_map = {idx: alphabet[i] for i, idx in enumerate(needed)}
+        
+        for p in pat:
+            res.append(char_map[p])
+        return "".join(res)
+    
+    s = generate_from_pattern(pattern)
+    if random.choice([True, False]):
+        t = generate_from_pattern(pattern) # same structure
+    else:
+        # completely random or modified pattern
+        t = "".join(random.choices("abcdef", k=length))
+        
+    def isIsomorphic(s, t):
+        if len(s) != len(t): return False
+        d1, d2 = {}, {}
+        for a, b in zip(s, t):
+            if a in d1 and d1[a] != b: return False
+            if b in d2 and d2[b] != a: return False
+            d1[a] = b
+            d2[b] = a
+        return True
+        
+    return f"{s}\n{t}", "true" if isIsomorphic(s, t) else "false"
+
+def solve_contains_duplicate():
+    n = random.randint(1, 20)
+    if random.choice([True, False]):
+        nums = list(range(n)) # distinct
+        random.shuffle(nums)
+    else:
+        nums = [random.randint(1, n) for _ in range(n)] # likely dupes
+        
+    return f"{n}\n{' '.join(map(str, nums))}", "true" if len(set(nums)) < len(nums) else "false"
+
+def solve_contains_duplicate_ii():
+    n = random.randint(2, 20)
+    nums = [random.randint(1, 10) for _ in range(n)]
+    k = random.randint(0, n)
+    
+    found = False
+    d = {}
+    for i, x in enumerate(nums):
+        if x in d and abs(i - d[x]) <= k:
+            found = True
+            break
+        d[x] = i
+        
+    return f"{n} {k}\n{' '.join(map(str, nums))}", "true" if found else "false"
+
+def solve_intersection_of_two_arrays():
+    n = random.randint(1, 10)
+    m = random.randint(1, 10)
+    nums1 = [random.randint(1, 10) for _ in range(n)]
+    nums2 = [random.randint(1, 10) for _ in range(m)]
+    
+    res = sorted(list(set(nums1) & set(nums2)))
+    return f"{n}\n{' '.join(map(str, nums1))}\n{m}\n{' '.join(map(str, nums2))}", " ".join(map(str, res))
+
+def solve_ransom_note():
+    n = random.randint(1, 10)
+    m = random.randint(n, 20)
+    mag = "".join(random.choices("abcdef", k=m))
+    
+    if random.choice([True, False]):
+        # Construct valid
+        note_chars = random.sample(mag, n)
+        note = "".join(note_chars)
+    else:
+        note = "".join(random.choices("abcdef", k=n))
+        
+    from collections import Counter
+    c1 = Counter(note)
+    c2 = Counter(mag)
+    res = all(c1[char] <= c2[char] for char in c1)
+    
+    return f"{note}\n{mag}", "true" if res else "false"
+
+def solve_first_unique_character():
+    s = "".join(random.choices("abc", k=random.randint(5, 20)))
+    from collections import Counter
+    count = Counter(s)
+    idx = -1
+    for i, c in enumerate(s):
+        if count[c] == 1:
+            idx = i
+            break
+    return s, str(idx)
+
+def solve_sort_characters_by_frequency():
+    s = "".join(random.choices("abcde", k=random.randint(5, 20)))
+    from collections import Counter
+    count = Counter(s)
+    
+    # Sort by frequency desc, then char
+    chars = sorted(s, key=lambda x: (-count[x], x))
+    return s, "".join(chars)
+
+def solve_integer_to_roman():
+    nums = [1000, 900, 500, 400, 100, 90, 50, 40, 10, 9, 5, 4, 1]
+    romans = ["M", "CM", "D", "CD", "C", "XC", "L", "XL", "X", "IX", "V", "IV", "I"]
+    
+    n = random.randint(1, 3999)
+    val = n
+    res = ""
+    for i in range(len(nums)):
+        while n >= nums[i]:
+            res += romans[i]
+            n -= nums[i]
+            
+    return str(val), res
+
+def solve_roman_to_integer():
+    mapping = {'I': 1, 'V': 5, 'X': 10, 'L': 50, 'C': 100, 'D': 500, 'M': 1000}
+    # Generate valid roman (reuse logic)
+    nums = [1000, 900, 500, 400, 100, 90, 50, 40, 10, 9, 5, 4, 1]
+    romans = ["M", "CM", "D", "CD", "C", "XC", "L", "XL", "X", "IX", "V", "IV", "I"]
+    n = random.randint(1, 3999)
+    expected = n
+    s = ""
+    for i in range(len(nums)):
+        while n >= nums[i]:
+            s += romans[i]
+            n -= nums[i]
+            
+    return s, str(expected)
+
+def solve_zigzag_conversion():
+    s = "".join(random.choices("ABCDEFGHIJKLMNOPQRSTUVWXYZ", k=random.randint(5, 20)))
+    numRows = random.randint(1, len(s))
+    
+    if numRows == 1 or numRows >= len(s):
+        return f"{s}\n{numRows}", s
+        
+    rows = [""] * numRows
+    curRow = 0
+    goingDown = False
+    
+    for c in s:
+        rows[curRow] += c
+        if curRow == 0 or curRow == numRows - 1:
+            goingDown = not goingDown
+        curRow += 1 if goingDown else -1
+        
+    return f"{s}\n{numRows}", "".join(rows)
+
+def solve_set_matrix_zeroes():
+    m = random.randint(2, 5)
+    n = random.randint(2, 5)
+    matrix = [[random.choice([0, 1, 2, 3]) for _ in range(n)] for _ in range(m)]
+    
+    # Calculate output
+    rows = set()
+    cols = set()
+    for i in range(m):
+        for j in range(n):
+            if matrix[i][j] == 0:
+                rows.add(i)
+                cols.add(j)
+                
+    res = [row[:] for row in matrix]
+    for i in range(m):
+        for j in range(n):
+            if i in rows or j in cols:
+                res[i][j] = 0
+                
+    input_str = f"{m} {n}\n" + "\n".join(" ".join(map(str, row)) for row in matrix)
+    output_str = "\n".join(" ".join(map(str, row)) for row in res)
+    return input_str, output_str
+
+def solve_gas_station():
+    n = random.randint(3, 10)
+    gas = [random.randint(1, 5) for _ in range(n)]
+    cost = [random.randint(1, 5) for _ in range(n)]
+    
+    # Ensure a solution exists sometimes? 
+    # Or just solve it exactly.
+    
+    total_gas = sum(gas)
+    total_cost = sum(cost)
+    
+    start = 0
+    tank = 0
+    res = -1
+    
+    if total_gas >= total_cost:
+        for i in range(n):
+            tank += gas[i] - cost[i]
+            if tank < 0:
+                start = i + 1
+                tank = 0
+        res = start
+        
+    return f"{n}\n{' '.join(map(str, gas))}\n{' '.join(map(str, cost))}", str(res)
+
+def solve_rotate_image():
+    n = random.randint(2, 5)
+    matrix = [[random.randint(1, 9) for _ in range(n)] for _ in range(n)]
+    
+    # Rotate 90 deg clockwise
+    res = [[0]*n for _ in range(n)]
+    for i in range(n):
+        for j in range(n):
+            res[j][n - 1 - i] = matrix[i][j]
+            
+    input_str = f"{n}\n" + "\n".join(" ".join(map(str, row)) for row in matrix)
+    output_str = "\n".join(" ".join(map(str, row)) for row in res)
+    return input_str, output_str
+
+def solve_daily_temperatures():
+    n = random.randint(5, 15)
+    temps = [random.randint(30, 100) for _ in range(n)]
+    
+    answer = [0] * n
+    stack = [] # indices
+    
+    for i, t in enumerate(temps):
+        while stack and temps[stack[-1]] < t:
+            prev_idx = stack.pop()
+            answer[prev_idx] = i - prev_idx
+        stack.append(i)
+        
+    return f"{n}\n{' '.join(map(str, temps))}", " ".join(map(str, answer))
+
 SOLVERS = {
     "area_of_a_rectangle": solve_area_of_a_rectangle,
     "binary_to_decimal": solve_binary_to_decimal,
@@ -1247,6 +1553,26 @@ SOLVERS = {
     "subsets": solve_subsets,
     "letter_combinations_of_a_phone_number": solve_letter_combinations,
     "sliding_window_maximum": solve_sliding_window_maximum,
+    "count_odd_numbers_in_interval_range": solve_count_odd_numbers_in_interval_range,
+    "add_digits": solve_add_digits,
+    "power_of_three": solve_power_of_three,
+    "power_of_four": solve_power_of_four,
+    "ugly_number": solve_ugly_number,
+    "move_zeroes": solve_move_zeroes,
+    "isomorphic_strings": solve_isomorphic_strings,
+    "contains_duplicate": solve_contains_duplicate,
+    "contains_duplicate_ii": solve_contains_duplicate_ii,
+    "intersection_of_two_arrays": solve_intersection_of_two_arrays,
+    "ransom_note": solve_ransom_note,
+    "first_unique_character": solve_first_unique_character,
+    "sort_characters_by_frequency": solve_sort_characters_by_frequency,
+    "integer_to_roman": solve_integer_to_roman,
+    "roman_to_integer": solve_roman_to_integer,
+    "zigzag_conversion": solve_zigzag_conversion,
+    "set_matrix_zeroes": solve_set_matrix_zeroes,
+    "gas_station": solve_gas_station,
+    "rotate_image": solve_rotate_image,
+    "daily_temperatures": solve_daily_temperatures,
 }
 
 HARD_PROBLEMS = {

@@ -1,0 +1,2030 @@
+{
+    "id": "zigzag_conversion",
+    "title": "Zigzag Conversion",
+    "description": "The string 'PAYPALISHIRING' is written in a zigzag pattern on a given number of rows like this: (you may want to display this pattern in a fixed font for better legibility). P   A   H   N\nA P L S I I G\nY   I   R. And then read line by line: 'PAHNAPLSIIGYIR'. Write the code that will take a string and make this conversion given a number of rows.",
+    "input_format": "String s and integer numRows separated by newline.",
+    "output_format": "The converted string.",
+    "constraints": {
+        "s.length": "1 <= s.length <= 1000",
+        "numRows": "1 <= numRows <= 1000"
+    },
+    "difficulty": "medium",
+    "judge_mode": "str_compare_strip",
+    "time_limit": 1,
+    "sample_test_cases": [
+        {
+            "input": "PAYPALISHIRING\n3",
+            "output": "PAHNAPLSIIGYIR"
+        },
+        {
+            "input": "PAYPALISHIRING\n4",
+            "output": "PINALSIGYAHRPI"
+        },
+        {
+            "input": "A\n1",
+            "output": "A"
+        }
+    ],
+    "hidden_test_cases": [
+        {
+            "input": "PEQDHFDUUAGBITH\n9",
+            "output": "PEQHDTHIFBDGUAU"
+        },
+        {
+            "input": "XJBXCUGXYJSRFMMMPQ\n2",
+            "output": "XBCGYSFMPJXUXJRMMQ"
+        },
+        {
+            "input": "EDMHY\n3",
+            "output": "EYDHM"
+        },
+        {
+            "input": "WRCIKSLOXBQ\n6",
+            "output": "WQRBCXIOKLS"
+        },
+        {
+            "input": "WCSGWUCWUHEAEFYWNSN\n11",
+            "output": "WCSNGSWNUWCYWFUEHAE"
+        },
+        {
+            "input": "LHCDOIBNJAQCVEOXFH\n16",
+            "output": "LHCDOIBNJAQCVEHOFX"
+        },
+        {
+            "input": "ENSDAYNCYEXT\n9",
+            "output": "ENSDAYTNXCEY"
+        },
+        {
+            "input": "GCHLCAJOITLCUQULSED\n4",
+            "output": "GJUDCAOCQEHCILUSLTL"
+        },
+        {
+            "input": "NHWCYOV\n4",
+            "output": "NVHOWYC"
+        },
+        {
+            "input": "HBEHYONXQZQMVVQYCTY\n19",
+            "output": "HBEHYONXQZQMVVQYCTY"
+        },
+        {
+            "input": "OIJTZYKNOFFNJHORBVZ\n2",
+            "output": "OJZKOFJOBZITYNFNHRV"
+        },
+        {
+            "input": "MSEYCS\n1",
+            "output": "MSEYCS"
+        },
+        {
+            "input": "VCVEFDPIHFMMWT\n11",
+            "output": "VCVEFDPITHWFMM"
+        },
+        {
+            "input": "MSOIE\n4",
+            "output": "MSOEI"
+        },
+        {
+            "input": "GPGBFHREXHI\n10",
+            "output": "GPGBFHREXIH"
+        },
+        {
+            "input": "LLHYSQ\n5",
+            "output": "LLHYQS"
+        },
+        {
+            "input": "JUIJV\n2",
+            "output": "JIVUJ"
+        },
+        {
+            "input": "HUKCXDISYG\n1",
+            "output": "HUKCXDISYG"
+        },
+        {
+            "input": "LYZKRJ\n3",
+            "output": "LRYKJZ"
+        },
+        {
+            "input": "GUJJNFFICITQLLCA\n1",
+            "output": "GUJJNFFICITQLLCA"
+        },
+        {
+            "input": "XIDPWUMOZRPQF\n2",
+            "output": "XDWMZPFIPUORQ"
+        },
+        {
+            "input": "OYWPUTRKNYJ\n7",
+            "output": "OYWJPYUNTKR"
+        },
+        {
+            "input": "IPYSHMBLHCUHWLX\n3",
+            "output": "IHHWPSMLCHLYBUX"
+        },
+        {
+            "input": "NPYLDJKOXTZMNCIGARKO\n14",
+            "output": "NPYLDJKOOXKTRZAMGNIC"
+        },
+        {
+            "input": "HOWPOBQDMKUDGOJOMBO\n11",
+            "output": "HOWOPBOMBOQJDOMGKDU"
+        },
+        {
+            "input": "ZKPHZZWGAZWLDPNZQ\n1",
+            "output": "ZKPHZZWGAZWLDPNZQ"
+        },
+        {
+            "input": "LZCCFZXHSZP\n4",
+            "output": "LXZZHCFSPCZ"
+        },
+        {
+            "input": "ADBBBOIQMDRBBHTC\n6",
+            "output": "ARDDBBMBBQHBITOC"
+        },
+        {
+            "input": "QXICYV\n5",
+            "output": "QXICVY"
+        },
+        {
+            "input": "LLCLRZKZ\n8",
+            "output": "LLCLRZKZ"
+        },
+        {
+            "input": "GYCOUX\n6",
+            "output": "GYCOUX"
+        },
+        {
+            "input": "GUNZIKFRSOINBNEMPLIB\n15",
+            "output": "GUNZIKFRSOBIINLBPNME"
+        },
+        {
+            "input": "MJCOG\n5",
+            "output": "MJCOG"
+        },
+        {
+            "input": "NIYLDG\n6",
+            "output": "NIYLDG"
+        },
+        {
+            "input": "DUBBGQAAAKJGZSHOBCKY\n2",
+            "output": "DBGAAJZHBKUBQAKGSOCY"
+        },
+        {
+            "input": "PGXNCLNPRIUIEBORCF\n18",
+            "output": "PGXNCLNPRIUIEBORCF"
+        },
+        {
+            "input": "QLTMHYYESENWCN\n7",
+            "output": "QCLWNTNMEHSYEY"
+        },
+        {
+            "input": "ZLTFFXATNNDEDYKRCT\n8",
+            "output": "ZKLYRTDCFETFDXNANT"
+        },
+        {
+            "input": "AGLIGXOUEZJTFSKZUQO\n17",
+            "output": "AGLIGXOUEZJTFSKOZQU"
+        },
+        {
+            "input": "URUANEODZTQWPRCWMRE\n14",
+            "output": "URUANEODZETRQMWWPCR"
+        },
+        {
+            "input": "MWMDRQFXDS\n5",
+            "output": "MDWXSMFDQR"
+        },
+        {
+            "input": "SYQHHRLP\n1",
+            "output": "SYQHHRLP"
+        },
+        {
+            "input": "YTRJEAKPHQHMO\n2",
+            "output": "YREKHHOTJAPQM"
+        },
+        {
+            "input": "TLYER\n5",
+            "output": "TLYER"
+        },
+        {
+            "input": "XRRLDORYTHEEKLKJZFR\n15",
+            "output": "XRRLDORYTHEREFKZLJK"
+        },
+        {
+            "input": "GZXFMOYR\n4",
+            "output": "GYZORXMF"
+        },
+        {
+            "input": "EVMLNXB\n5",
+            "output": "EVMBLXN"
+        },
+        {
+            "input": "EEAMPETIF\n1",
+            "output": "EEAMPETIF"
+        },
+        {
+            "input": "SLGCVMGSUUSCXSW\n8",
+            "output": "SWLSGXCCVSMUGUS"
+        },
+        {
+            "input": "DIQHOSWRTXLPEIUN\n14",
+            "output": "DIQHOSWRTXLPNEUI"
+        },
+        {
+            "input": "DAPLTKA\n5",
+            "output": "DAPALKT"
+        },
+        {
+            "input": "ZCKERZGQLJEKGKWYO\n13",
+            "output": "ZCKERZGQLOJYEWKKG"
+        },
+        {
+            "input": "EPMQGTZJNUOLSG\n1",
+            "output": "EPMQGTZJNUOLSG"
+        },
+        {
+            "input": "WQYXZIIWUMIRB\n6",
+            "output": "WIQMRYUBXWZII"
+        },
+        {
+            "input": "JKCWYKCADBPLSLJUPH\n2",
+            "output": "JCYCDPSJPKWKABLLUH"
+        },
+        {
+            "input": "BSILIUMWHBFUGWR\n2",
+            "output": "BIIMHFGRSLUWBUW"
+        },
+        {
+            "input": "GYHCACBQBTXWMOKYP\n1",
+            "output": "GYHCACBQBTXWMOKYP"
+        },
+        {
+            "input": "QSIAMLULXUVKLOVLDQZ\n14",
+            "output": "QSIAMLULXZUQVDKLLVO"
+        },
+        {
+            "input": "TTORVUPCQVNVHLNC\n8",
+            "output": "TNTLCOHRVVNUVPQC"
+        },
+        {
+            "input": "TQLEMEQJXTPXFMSPXKTV\n19",
+            "output": "TQLEMEQJXTPXFMSPXKVT"
+        },
+        {
+            "input": "LTXWWWCBRXFVNGFD\n12",
+            "output": "LTXWWWCBDRFXGFNV"
+        },
+        {
+            "input": "BARVPWZ\n1",
+            "output": "BARVPWZ"
+        },
+        {
+            "input": "PSKRZTEOCENBN\n5",
+            "output": "PCSOEKENRTBZN"
+        },
+        {
+            "input": "ZYFXGG\n6",
+            "output": "ZYFXGG"
+        },
+        {
+            "input": "VYVIDOQVNIWIEGQLLVD\n4",
+            "output": "VQEDYOVIGVVDNWQLIIL"
+        },
+        {
+            "input": "HXNTPPQFZIQXOSHCUOXR\n14",
+            "output": "HXNTPPQFRZXIOQUXCOHS"
+        },
+        {
+            "input": "MBACQPZM\n6",
+            "output": "MBACMQZP"
+        },
+        {
+            "input": "HNFJYYXQSKQLDBI\n2",
+            "output": "HFYXSQDINJYQKLB"
+        },
+        {
+            "input": "GSTMYJKVKSNJ\n9",
+            "output": "GSTMYJJKNVSK"
+        },
+        {
+            "input": "OEPFJLPU\n8",
+            "output": "OEPFJLPU"
+        },
+        {
+            "input": "KSVIXCKVJIH\n9",
+            "output": "KSVIXCKHVIJ"
+        },
+        {
+            "input": "IVEPVBTWIJONXFSV\n9",
+            "output": "IVVESPFVXBNTOWJI"
+        },
+        {
+            "input": "LRWLKINESEMBIVNDX\n2",
+            "output": "LWKNSMINXRLIEEBVD"
+        },
+        {
+            "input": "UFREVYSW\n1",
+            "output": "UFREVYSW"
+        },
+        {
+            "input": "UHDYSQHZVRHNBOHEDUGX\n14",
+            "output": "UHDYSQHZXVGRUHDNEBHO"
+        },
+        {
+            "input": "PJXLEZIGRY\n3",
+            "output": "PERJLZGYXI"
+        },
+        {
+            "input": "VYVRNM\n4",
+            "output": "VYMVNR"
+        },
+        {
+            "input": "SFUVFVKADO\n3",
+            "output": "SFDFVVAOUK"
+        },
+        {
+            "input": "PCKUOAEWTBLR\n3",
+            "output": "POTCUAWBRKEL"
+        },
+        {
+            "input": "UGIPTPGEQDNIGCJNJAS\n7",
+            "output": "UGGICINJPDNTQJPEAGS"
+        },
+        {
+            "input": "PYMLSY\n5",
+            "output": "PYMLYS"
+        },
+        {
+            "input": "YUJOORCEJCKBQXCWQ\n17",
+            "output": "YUJOORCEJCKBQXCWQ"
+        },
+        {
+            "input": "HQZVUVC\n5",
+            "output": "HQZCVVU"
+        },
+        {
+            "input": "CCWPKC\n6",
+            "output": "CCWPKC"
+        },
+        {
+            "input": "MIMMKKTNB\n1",
+            "output": "MIMMKKTNB"
+        },
+        {
+            "input": "LGDBFSBLHWHOUK\n11",
+            "output": "LGDBFSBLKHUWOH"
+        },
+        {
+            "input": "TYUQPIXGOABLLRXK\n13",
+            "output": "TYUQPIXGOAKBXLRL"
+        },
+        {
+            "input": "TFLWBDFSTCU\n6",
+            "output": "TUFCLTWSBFD"
+        },
+        {
+            "input": "EPKYMXR\n7",
+            "output": "EPKYMXR"
+        },
+        {
+            "input": "MAJLHVBTBXBMELRF\n13",
+            "output": "MAJLHVBTBXFBRMLE"
+        },
+        {
+            "input": "MLMJADH\n4",
+            "output": "MHLDMAJ"
+        },
+        {
+            "input": "RLOLXOFBWPKOIKRYMC\n17",
+            "output": "RLOLXOFBWPKOIKRYCM"
+        },
+        {
+            "input": "VAWDXZOTHWZYRTK\n8",
+            "output": "VKATWRDYXZZWOHT"
+        },
+        {
+            "input": "SKHSJBVXQXI\n9",
+            "output": "SKHSJBVIXXQ"
+        },
+        {
+            "input": "CYWWJOUMREK\n5",
+            "output": "CRYMEWUKWOJ"
+        },
+        {
+            "input": "KROCRIZTKQDDMLG\n8",
+            "output": "KGRLOMCDRDIQZKT"
+        },
+        {
+            "input": "YVEFJIPMPLOKYGVQDVL\n19",
+            "output": "YVEFJIPMPLOKYGVQDVL"
+        },
+        {
+            "input": "MEKCSI\n2",
+            "output": "MKSECI"
+        },
+        {
+            "input": "HYSFGG\n3",
+            "output": "HGYFGS"
+        },
+        {
+            "input": "KTMWTSDFR\n3",
+            "output": "KTRTWSFMD"
+        },
+        {
+            "input": "WRVTKJLHPFIV\n3",
+            "output": "WKPRTJHFVVLI"
+        },
+        {
+            "input": "SDJAEOJM\n8",
+            "output": "SDJAEOJM"
+        },
+        {
+            "input": "PGPLTJBSIXOLK\n2",
+            "output": "PPTBIOKGLJSXL"
+        },
+        {
+            "input": "KJBMOQOQXDIDVOFR\n15",
+            "output": "KJBMOQOQXDIDVORF"
+        },
+        {
+            "input": "TYZVVAKSYBOAK\n2",
+            "output": "TZVKYOKYVASBA"
+        },
+        {
+            "input": "XGOBUQUZCFRYSZVBB\n7",
+            "output": "XSGYZORVBFBUCBQZU"
+        },
+        {
+            "input": "WMUKRWSY\n8",
+            "output": "WMUKRWSY"
+        },
+        {
+            "input": "PSHMADUKLNXPATRE\n6",
+            "output": "PXSNPHLAMKTAURDE"
+        },
+        {
+            "input": "PNNVGVLA\n1",
+            "output": "PNNVGVLA"
+        },
+        {
+            "input": "NYEHXTZV\n1",
+            "output": "NYEHXTZV"
+        },
+        {
+            "input": "MQVGFFDWKWTJMZWA\n2",
+            "output": "MVFDKTMWQGFWWJZA"
+        },
+        {
+            "input": "DFAJCEEWOXEL\n11",
+            "output": "DFAJCEEWOXLE"
+        },
+        {
+            "input": "RQWDWZXVBW\n3",
+            "output": "RWBQDZVWWX"
+        },
+        {
+            "input": "PIOAZ\n3",
+            "output": "PZIAO"
+        },
+        {
+            "input": "VQGBSWVM\n2",
+            "output": "VGSVQBWM"
+        },
+        {
+            "input": "GDPXAYGEHWPDCWNQUL\n18",
+            "output": "GDPXAYGEHWPDCWNQUL"
+        },
+        {
+            "input": "YJALX\n1",
+            "output": "YJALX"
+        },
+        {
+            "input": "PXPMVSWB\n5",
+            "output": "PXBPWMSV"
+        },
+        {
+            "input": "XYYKFJSVMCOESEJ\n15",
+            "output": "XYYKFJSVMCOESEJ"
+        },
+        {
+            "input": "RVIAMIOELAPVUURYTTU\n4",
+            "output": "ROUUVIEVUTIMLPRTAAY"
+        },
+        {
+            "input": "LOVFVDNXHNKF\n3",
+            "output": "LVHOFDXNFVNK"
+        },
+        {
+            "input": "PUGXNQGSQBTPGBBWR\n6",
+            "output": "PTUBPGQGXSBNGBRQW"
+        },
+        {
+            "input": "QDNMGXVDAPVLPXGSHSTJ\n14",
+            "output": "QDNMGXVDJATPSVHLSPGX"
+        },
+        {
+            "input": "UVNYVYXMQIZTUBKBIBU\n14",
+            "output": "UVNYVYXMQUIBZITBUKB"
+        },
+        {
+            "input": "AWEKWJRSCQXBFDJM\n1",
+            "output": "AWEKWJRSCQXBFDJM"
+        },
+        {
+            "input": "JFWPNQMLZVIGG\n7",
+            "output": "JGFGWIPVNZQLM"
+        },
+        {
+            "input": "WROCTKYDDPWWKBPJ\n5",
+            "output": "WDRDPJOYWPCKWBTK"
+        },
+        {
+            "input": "BJDCNUSDCRMCSKT\n9",
+            "output": "BJDTCKNSUCSMDRC"
+        },
+        {
+            "input": "IJXAAXZHSORXMVVNB\n17",
+            "output": "IJXAAXZHSORXMVVNB"
+        },
+        {
+            "input": "NYHFUDLJUB\n4",
+            "output": "NLYDJHUUFB"
+        },
+        {
+            "input": "LIFREFJYULGVEQPXV\n11",
+            "output": "LIFREVFXJPYQUELVG"
+        },
+        {
+            "input": "UTSIVBKEICUBAQK\n5",
+            "output": "UITECSKUKIBBQVA"
+        },
+        {
+            "input": "DDEPBFZCQLOU\n2",
+            "output": "DEBZQODPFCLU"
+        },
+        {
+            "input": "USJPEVWHGLKPONHCH\n15",
+            "output": "USJPEVWHGLKPOHNCH"
+        },
+        {
+            "input": "JTSFIJTWKNIF\n4",
+            "output": "JTTJWFSIKIFN"
+        },
+        {
+            "input": "MANPGMNRI\n5",
+            "output": "MIARNNPMG"
+        },
+        {
+            "input": "OOXWFW\n1",
+            "output": "OOXWFW"
+        },
+        {
+            "input": "SBPBLOZSNPVLAYK\n13",
+            "output": "SBPBLOZSNPVKLYA"
+        },
+        {
+            "input": "APUBCNYXSMO\n7",
+            "output": "APUOBMCSNXY"
+        },
+        {
+            "input": "RQKDGGFLPJWRKVEHE\n17",
+            "output": "RQKDGGFLPJWRKVEHE"
+        },
+        {
+            "input": "HMCQAFWTYWRDJ\n1",
+            "output": "HMCQAFWTYWRDJ"
+        },
+        {
+            "input": "LABAHCLSLAA\n8",
+            "output": "LABAHACALLS"
+        },
+        {
+            "input": "BTTQXPQXIL\n9",
+            "output": "BTTQXPQXLI"
+        },
+        {
+            "input": "PKGFR\n1",
+            "output": "PKGFR"
+        },
+        {
+            "input": "PVHTZWLF\n2",
+            "output": "PHZLVTWF"
+        },
+        {
+            "input": "IOCSSMNM\n3",
+            "output": "ISOSMMCN"
+        },
+        {
+            "input": "KJZBAKVLXYKWZOBIIQY\n16",
+            "output": "KJZBAKVLXYKWZYOQBII"
+        },
+        {
+            "input": "AVRTOFKUAG\n3",
+            "output": "AOAVTFUGRK"
+        },
+        {
+            "input": "HNJNPSMSATGUH\n7",
+            "output": "HHNUJGNTPASSM"
+        },
+        {
+            "input": "JBXEWGW\n2",
+            "output": "JXWWBEG"
+        },
+        {
+            "input": "DHGVCCIILA\n9",
+            "output": "DHGVCCIIAL"
+        },
+        {
+            "input": "SQMAGNYJTZFFSEBZK\n6",
+            "output": "SFQZFMTSAJEGYBKNZ"
+        },
+        {
+            "input": "EETIJHMPKM\n2",
+            "output": "ETJMKEIHPM"
+        },
+        {
+            "input": "QYMIDVO\n3",
+            "output": "QDYIVMO"
+        },
+        {
+            "input": "DOIZLSE\n1",
+            "output": "DOIZLSE"
+        },
+        {
+            "input": "WZQWPLHFEZTOFRRUMW\n15",
+            "output": "WZQWPLHFEZTOWFMRUR"
+        },
+        {
+            "input": "DETMINZKDATIIAPVCD\n16",
+            "output": "DETMINZKDATIIADPCV"
+        },
+        {
+            "input": "ACVUFEXH\n6",
+            "output": "ACVUHFXE"
+        },
+        {
+            "input": "YYTXCFEXEEGWD\n1",
+            "output": "YYTXCFEXEEGWD"
+        },
+        {
+            "input": "NETKTBZ\n5",
+            "output": "NETZKBT"
+        },
+        {
+            "input": "HDEVCLK\n6",
+            "output": "HDEVCKL"
+        },
+        {
+            "input": "QOBWCURGWPY\n1",
+            "output": "QOBWCURGWPY"
+        },
+        {
+            "input": "CJNKKTHQXGFLRWAFI\n2",
+            "output": "CNKHXFRAIJKTQGLWF"
+        },
+        {
+            "input": "DFSJCRUXVAOVFPD\n12",
+            "output": "DFSJCRUXVDAPOFV"
+        },
+        {
+            "input": "RMMAVOMGKIORWPE\n3",
+            "output": "RVKWMAOGIRPMMOE"
+        },
+        {
+            "input": "WYPWKZHO\n7",
+            "output": "WYPWKZOH"
+        },
+        {
+            "input": "OCCSIQYLYZFZODZAP\n10",
+            "output": "OCCPSAIZQDYOLZYFZ"
+        },
+        {
+            "input": "ARXNJIBSMN\n3",
+            "output": "AJMRNISNXB"
+        },
+        {
+            "input": "ZWMRHRUKLCLOFVQXNMLP\n8",
+            "output": "ZQWVXMFNROMHLLRCPULK"
+        },
+        {
+            "input": "BPDCNVWCBDFNBTHYQU\n2",
+            "output": "BDNWBFBHQPCVCDNTYU"
+        },
+        {
+            "input": "JYNVLP\n2",
+            "output": "JNLYVP"
+        },
+        {
+            "input": "UNLWXNXJTXB\n5",
+            "output": "UTNJXLXBWNX"
+        },
+        {
+            "input": "EFILQSB\n1",
+            "output": "EFILQSB"
+        },
+        {
+            "input": "INQEMIGBBN\n1",
+            "output": "INQEMIGBBN"
+        },
+        {
+            "input": "CBSWDQFUUZSIWMJ\n4",
+            "output": "CFWBQUIMSDUSJWZ"
+        },
+        {
+            "input": "CSUFAGYHF\n3",
+            "output": "CAFSFGHUY"
+        },
+        {
+            "input": "FMWNCHCCQFTA\n5",
+            "output": "FQMCFWCTNHAC"
+        },
+        {
+            "input": "ONSUPCHYJNDKYOPVSCHN\n12",
+            "output": "ONSUNPHCCHSYVJPNODYK"
+        },
+        {
+            "input": "VXVMWITPRVNA\n12",
+            "output": "VXVMWITPRVNA"
+        },
+        {
+            "input": "ZEAZZZDYGFAGKCAYV\n3",
+            "output": "ZZGKVEZZYFGCYADAA"
+        },
+        {
+            "input": "OMKAIRNNCCV\n9",
+            "output": "OMKAIRNVNCC"
+        },
+        {
+            "input": "BYCCNPDHLVT\n8",
+            "output": "BYCCNTPVDLH"
+        },
+        {
+            "input": "QGOWIH\n3",
+            "output": "QIGWHO"
+        },
+        {
+            "input": "HGDLNKDJULLAKERIA\n15",
+            "output": "HGDLNKDJULLAKAEIR"
+        },
+        {
+            "input": "EEHTKNJBPLJRQSE\n10",
+            "output": "EEHTKENSJQBRPJL"
+        },
+        {
+            "input": "GONGEUAWNALPQHEHJMVK\n18",
+            "output": "GONGEUAWNALPQHEHKJVM"
+        },
+        {
+            "input": "WEAQRKMRFJVLMEDJ\n7",
+            "output": "WMELEAVDQJJRFKRM"
+        },
+        {
+            "input": "WKHIELHGVOSDHSLNQ\n6",
+            "output": "WSKODHVHIGSEHLQLN"
+        },
+        {
+            "input": "GGMJGKNG\n4",
+            "output": "GNGKGMGJ"
+        },
+        {
+            "input": "PHLRZTOBWJUVIJIGS\n17",
+            "output": "PHLRZTOBWJUVIJIGS"
+        },
+        {
+            "input": "GDMVRTVL\n8",
+            "output": "GDMVRTVL"
+        },
+        {
+            "input": "UWVHFHVFWY\n1",
+            "output": "UWVHFHVFWY"
+        },
+        {
+            "input": "ZEPFWMVUVD\n2",
+            "output": "ZPWVVEFMUD"
+        },
+        {
+            "input": "ZJCICZZML\n8",
+            "output": "ZJCICZZLM"
+        },
+        {
+            "input": "ZRMZTFYGMIHNX\n1",
+            "output": "ZRMZTFYGMIHNX"
+        },
+        {
+            "input": "GHIAEQKLKIILAVGFPP\n8",
+            "output": "GGHVFIAPALPEIQIKKL"
+        },
+        {
+            "input": "NSYYSO\n1",
+            "output": "NSYYSO"
+        },
+        {
+            "input": "LRGELVXDHLEPGX\n11",
+            "output": "LRGELVXDXHGLPE"
+        },
+        {
+            "input": "EWRVDKPINWNUXTGTNC\n7",
+            "output": "EXWUTRNGVWTDNNKICP"
+        },
+        {
+            "input": "JGVXT\n2",
+            "output": "JVTGX"
+        },
+        {
+            "input": "UHJBJEMCK\n4",
+            "output": "UMHECJJKB"
+        },
+        {
+            "input": "MYSVLJU\n4",
+            "output": "MUYJSLV"
+        },
+        {
+            "input": "HRGHWAQFUBIALPI\n10",
+            "output": "HRGHWIAPQLFAUIB"
+        },
+        {
+            "input": "SMBWPBUPDTKAFN\n3",
+            "output": "SPDFMWBPTANBUK"
+        },
+        {
+            "input": "LWIZPXWQ\n1",
+            "output": "LWIZPXWQ"
+        },
+        {
+            "input": "OSBNBBTTFNRJHUF\n6",
+            "output": "ORSNJBFHNTUBTFB"
+        },
+        {
+            "input": "ZXOETNONZACSQ\n12",
+            "output": "ZXOETNONZACQS"
+        },
+        {
+            "input": "HXZLNYXQUFZVKCOUOR\n17",
+            "output": "HXZLNYXQUFZVKCOURO"
+        },
+        {
+            "input": "LDRESNULLTBSIAKJ\n15",
+            "output": "LDRESNULLTBSIAJK"
+        },
+        {
+            "input": "IZAUXVMIJO\n6",
+            "output": "IZOAJUIXMV"
+        },
+        {
+            "input": "AGXTBFORERYDWRHGLF\n16",
+            "output": "AGXTBFORERYDWRFHLG"
+        },
+        {
+            "input": "QDPDFXXJSU\n10",
+            "output": "QDPDFXXJSU"
+        },
+        {
+            "input": "OHFWOLOYBS\n9",
+            "output": "OHFWOLOYSB"
+        },
+        {
+            "input": "EFVDWYKBLMCMHXCXSOV\n11",
+            "output": "EFVVDOWSYXKCBXLHMMC"
+        },
+        {
+            "input": "CKOAVKIOTURLQ\n12",
+            "output": "CKOAVKIOTURQL"
+        },
+        {
+            "input": "RXWMWFAUZIEDW\n4",
+            "output": "RAWXFUDWWZEMI"
+        },
+        {
+            "input": "YVMOT\n1",
+            "output": "YVMOT"
+        },
+        {
+            "input": "IHIVX\n3",
+            "output": "IXHVI"
+        },
+        {
+            "input": "LWJFXHXGMZRNYFEYM\n7",
+            "output": "LYWNFJREFZYXMMHGX"
+        },
+        {
+            "input": "SDKMPQAIRWFDYWHZIW\n6",
+            "output": "SFDWDKRYMIWWPAHIQZ"
+        },
+        {
+            "input": "SBMEB\n5",
+            "output": "SBMEB"
+        },
+        {
+            "input": "WSRLQCLCRWCMZXZAGDN\n8",
+            "output": "WZSXARZGLMDQCNCWLRC"
+        },
+        {
+            "input": "MTMXZKSAIRPAAZBDLA\n17",
+            "output": "MTMXZKSAIRPAAZBDAL"
+        },
+        {
+            "input": "NETURISWS\n7",
+            "output": "NETURSIWS"
+        },
+        {
+            "input": "KXRRJZPUK\n4",
+            "output": "KPXZURJKR"
+        },
+        {
+            "input": "WXDIPYGBCQCEMMMTWSHJ\n1",
+            "output": "WXDIPYGBCQCEMMMTWSHJ"
+        },
+        {
+            "input": "OJLIADY\n6",
+            "output": "OJLIAYD"
+        },
+        {
+            "input": "LGUAMX\n1",
+            "output": "LGUAMX"
+        },
+        {
+            "input": "QOUXCZEB\n2",
+            "output": "QUCEOXZB"
+        },
+        {
+            "input": "EFSLIPZIISIMSD\n6",
+            "output": "EIFSMSISLIDIZP"
+        },
+        {
+            "input": "WJCTEQXZJGLKEIU\n1",
+            "output": "WJCTEQXZJGLKEIU"
+        },
+        {
+            "input": "EHSWDZMOODBYKPVUKMRX\n3",
+            "output": "EDOKKHWZODYPUMXSMBVR"
+        },
+        {
+            "input": "HEWYUTXFQ\n8",
+            "output": "HEWYUTXQF"
+        },
+        {
+            "input": "SBSNJEWFCKQY\n6",
+            "output": "SQBKYSCNFJWE"
+        },
+        {
+            "input": "XNCKKGCTMUW\n9",
+            "output": "XNCKKGCWTUM"
+        },
+        {
+            "input": "UJRFVGERSRIEARPX\n16",
+            "output": "UJRFVGERSRIEARPX"
+        },
+        {
+            "input": "KZCBKZWWBMEGLLWTCC\n13",
+            "output": "KZCBKZWWCBCMTEWGLL"
+        },
+        {
+            "input": "DEKWCMHNQZOE\n3",
+            "output": "DCQEWMNZEKHO"
+        },
+        {
+            "input": "GTDPVVCJATXRFLX\n12",
+            "output": "GTDPVVCJAXTLXFR"
+        },
+        {
+            "input": "XRAURWRUSREGJ\n11",
+            "output": "XRAURWRUSJRGE"
+        },
+        {
+            "input": "SXSTWEKLRBL\n7",
+            "output": "SXSLTBWRELK"
+        },
+        {
+            "input": "GJTHUHOMVPUFQLTHMB\n15",
+            "output": "GJTHUHOMVPUFBQMLHT"
+        },
+        {
+            "input": "TLNZJFFJFXEIJCXPKSD\n1",
+            "output": "TLNZJFFJFXEIJCXPKSD"
+        },
+        {
+            "input": "IZRENFMOKOJB\n11",
+            "output": "IZRENFMOKOBJ"
+        },
+        {
+            "input": "LWYSYUTGR\n8",
+            "output": "LWYSYUTRG"
+        },
+        {
+            "input": "GSYHNLRHJZXO\n7",
+            "output": "GSOYXHZNJLHR"
+        },
+        {
+            "input": "UXUJNNFGMNLBCEO\n5",
+            "output": "UMXGNUFLOJNBENC"
+        },
+        {
+            "input": "BTHKDWQKOJQRFVUGECN\n16",
+            "output": "BTHKDWQKOJQRFNVCUEG"
+        },
+        {
+            "input": "EEAIJGAFYGYUKCCDSVPJ\n17",
+            "output": "EEAIJGAFYGYUKCJCPDVS"
+        },
+        {
+            "input": "PNBOYXC\n1",
+            "output": "PNBOYXC"
+        },
+        {
+            "input": "SYOZAMSVKJ\n5",
+            "output": "SKYVJOSZMA"
+        },
+        {
+            "input": "MCBWMYPZSUMVADRHKX\n3",
+            "output": "MMSAKCWYZUVDHXBPMR"
+        },
+        {
+            "input": "WDEYV\n1",
+            "output": "WDEYV"
+        },
+        {
+            "input": "RDGGJTZLQTLBNOXEUVK\n1",
+            "output": "RDGGJTZLQTLBNOXEUVK"
+        },
+        {
+            "input": "JUQXELQLYOHCQSPBTL\n3",
+            "output": "JEYQTUXLLOCSBLQQHP"
+        },
+        {
+            "input": "OFTNZ\n3",
+            "output": "OZFNT"
+        },
+        {
+            "input": "YQSMCXVWVXMOVQV\n1",
+            "output": "YQSMCXVWVXMOVQV"
+        },
+        {
+            "input": "LBIVACBCWHALHJYXI\n5",
+            "output": "LWIBCHXIBAYVCLJAH"
+        },
+        {
+            "input": "QLZLXAKDFYH\n5",
+            "output": "QFLDYZKHLAX"
+        },
+        {
+            "input": "OWCFKZIVI\n9",
+            "output": "OWCFKZIVI"
+        },
+        {
+            "input": "BRVPPCHNEGYCGLXWVMPA\n4",
+            "output": "BHGPRCNCLMAVPEYXVPGW"
+        },
+        {
+            "input": "JRGHSTHUF\n4",
+            "output": "JHRTUGSFH"
+        },
+        {
+            "input": "IAZJUIWFAMZRSBAU\n13",
+            "output": "IAZJUIWFAMUZARBS"
+        },
+        {
+            "input": "PXXPHZPEREGAAOIGKUL\n4",
+            "output": "PPALXZEAOUXHRGIKPEG"
+        },
+        {
+            "input": "CFITAACLOAEKOXU\n11",
+            "output": "CFITAACULXOOAKE"
+        },
+        {
+            "input": "KYQZCWABVPZNUB\n2",
+            "output": "KQCAVZUYZWBPNB"
+        },
+        {
+            "input": "UQGAAQWRJDGNDZE\n5",
+            "output": "UJQRDGWGEAQNZAD"
+        },
+        {
+            "input": "FRDSLRBNPCETQYHYC\n1",
+            "output": "FRDSLRBNPCETQYHYC"
+        },
+        {
+            "input": "DQFZPPRFXVEHXGHYMVA\n16",
+            "output": "DQFZPPRFXVEHXAGVHMY"
+        },
+        {
+            "input": "DWCFAYAA\n4",
+            "output": "DAWYACAF"
+        },
+        {
+            "input": "HXMEHNVVZWHHJDN\n6",
+            "output": "HHXWHMZJEVDHVNN"
+        },
+        {
+            "input": "IQNIKVNWNTPCZO\n4",
+            "output": "INZQVWCONKNPIT"
+        },
+        {
+            "input": "KTZWZLHPCEEXCIHU\n4",
+            "output": "KHCTLPXIZZCEHWEU"
+        },
+        {
+            "input": "CCHBHX\n5",
+            "output": "CCHBXH"
+        },
+        {
+            "input": "MTSPGAYBOBBQGKJYE\n16",
+            "output": "MTSPGAYBOBBQGKJEY"
+        },
+        {
+            "input": "SXYUAZJPWB\n4",
+            "output": "SJXZPYAWUB"
+        },
+        {
+            "input": "ACTPKOMQV\n9",
+            "output": "ACTPKOMQV"
+        },
+        {
+            "input": "HOQLULXJGG\n7",
+            "output": "HOQLGUGLJX"
+        },
+        {
+            "input": "LSTRIIBRXKJ\n4",
+            "output": "LBSIRTIXJRK"
+        },
+        {
+            "input": "AOCVWNF\n3",
+            "output": "AWOVNCF"
+        },
+        {
+            "input": "KEQFRBUBWK\n2",
+            "output": "KQRUWEFBBK"
+        },
+        {
+            "input": "QBKSBVXOPIGRBSXLMM\n4",
+            "output": "QXBBVORSMKBPGXMSIL"
+        },
+        {
+            "input": "QXKGUXYRTKHTLTSNJILZ\n8",
+            "output": "QSXTNKLJGTIUHLXKZYTR"
+        },
+        {
+            "input": "VCXRCZ\n2",
+            "output": "VXCCRZ"
+        },
+        {
+            "input": "GVNEHZGT\n6",
+            "output": "GVNETHGZ"
+        },
+        {
+            "input": "SAMYJPRAXZJDUTBRVILD\n14",
+            "output": "SAMYJPRADXLZIJVDRUBT"
+        },
+        {
+            "input": "ZZWUGJFSYGHHGEIZETJ\n11",
+            "output": "ZZWJUTGEJZFISEYGGHH"
+        },
+        {
+            "input": "NEFFL\n5",
+            "output": "NEFFL"
+        },
+        {
+            "input": "WICUJQKFU\n5",
+            "output": "WUIFCKUQJ"
+        },
+        {
+            "input": "HOJMLZKSX\n9",
+            "output": "HOJMLZKSX"
+        },
+        {
+            "input": "KSSYTKUOFIHGLGULEG\n9",
+            "output": "KESLGSUYGTLKGUHOIF"
+        },
+        {
+            "input": "NYSFTASMOETBKMUUCZ\n17",
+            "output": "NYSFTASMOETBKMUUZC"
+        },
+        {
+            "input": "GLXMNHWARH\n1",
+            "output": "GLXMNHWARH"
+        },
+        {
+            "input": "WFNHRYUGAAVMM\n5",
+            "output": "WAFGANUVHYMRM"
+        },
+        {
+            "input": "QDQVGPTE\n6",
+            "output": "QDQVEGTP"
+        },
+        {
+            "input": "NLJGLO\n5",
+            "output": "NLJGOL"
+        },
+        {
+            "input": "ZBIIKSROLEDG\n10",
+            "output": "ZBIIKSROGLDE"
+        },
+        {
+            "input": "HRYECAVDJGONXCE\n4",
+            "output": "HVXRADNCYCJOEEG"
+        },
+        {
+            "input": "HKIDBINHIVCMRTDCG\n12",
+            "output": "HKIDBINGHCIDVTCRM"
+        },
+        {
+            "input": "LRDABCXSEKSHKGPYF\n9",
+            "output": "LFRYDPAGBKCHXSSKE"
+        },
+        {
+            "input": "BLHTJQGPUUL\n11",
+            "output": "BLHTJQGPUUL"
+        },
+        {
+            "input": "KOHJUTOGPOUQSRXE\n4",
+            "output": "KOSOTGQRHUPUXJOE"
+        },
+        {
+            "input": "KYTBVS\n6",
+            "output": "KYTBVS"
+        },
+        {
+            "input": "PTYHAGILAX\n7",
+            "output": "PTYHXAAGLI"
+        },
+        {
+            "input": "DMQAFUZ\n6",
+            "output": "DMQAFZU"
+        },
+        {
+            "input": "ERPWIWPFMHZVYON\n4",
+            "output": "EPYRWFVOPIMZNWH"
+        },
+        {
+            "input": "BXYQFFAVWJDZZLWVP\n13",
+            "output": "BXYQFFAVWPJVDWZLZ"
+        },
+        {
+            "input": "RYKILMVCFOKDKSSMQBN\n3",
+            "output": "RLFKQYIMCODSMBKVKSN"
+        },
+        {
+            "input": "OYZXZNTYVHJRQYLGGLMP\n20",
+            "output": "OYZXZNTYVHJRQYLGGLMP"
+        },
+        {
+            "input": "WLTCVOXGAAEGY\n4",
+            "output": "WXYLOGGTVAECA"
+        },
+        {
+            "input": "OZUZSOHK\n8",
+            "output": "OZUZSOHK"
+        },
+        {
+            "input": "IGFDXSNMIWBSP\n1",
+            "output": "IGFDXSNMIWBSP"
+        },
+        {
+            "input": "IPNATVFMNDKI\n10",
+            "output": "IPNATVFMINKD"
+        },
+        {
+            "input": "TZJMSJTED\n8",
+            "output": "TZJMSJTDE"
+        },
+        {
+            "input": "PWXJJQHZFFTII\n10",
+            "output": "PWXJJQHIZIFTF"
+        },
+        {
+            "input": "RZLQKYVXAEAHG\n5",
+            "output": "RAZXELVAQYHKG"
+        },
+        {
+            "input": "LXXCLYLWWBBNADHIYN\n2",
+            "output": "LXLLWBAHYXCYWBNDIN"
+        },
+        {
+            "input": "GAJFOKOVDMCD\n2",
+            "output": "GJOODCAFKVMD"
+        },
+        {
+            "input": "QVOMWNZH\n7",
+            "output": "QVOMWNHZ"
+        },
+        {
+            "input": "UBSESRKZVL\n1",
+            "output": "UBSESRKZVL"
+        },
+        {
+            "input": "CXOLIRPSPYLYR\n4",
+            "output": "CPRXRSYOIPLLY"
+        },
+        {
+            "input": "TVVNGBGQH\n3",
+            "output": "TGHVNBQVG"
+        },
+        {
+            "input": "QLLXGNYMIUJFPKAMQNWM\n5",
+            "output": "QIQLMUMNLYJAWXNFKMGP"
+        },
+        {
+            "input": "LAMSWSCRNGFKCC\n13",
+            "output": "LAMSWSCRNGFKCC"
+        },
+        {
+            "input": "UFRCIOFGEEDBI\n9",
+            "output": "UFRCIIOBFDGEE"
+        },
+        {
+            "input": "IUIDQWZASLZ\n2",
+            "output": "IIQZSZUDWAL"
+        },
+        {
+            "input": "GRYHC\n1",
+            "output": "GRYHC"
+        },
+        {
+            "input": "LZJBXGUL\n7",
+            "output": "LZJBXGLU"
+        },
+        {
+            "input": "XITZYDLE\n5",
+            "output": "XIETLZDY"
+        },
+        {
+            "input": "PBLPISFBWIGMZNDA\n9",
+            "output": "PBALDPNIZSMFGBIW"
+        },
+        {
+            "input": "ZGIPSMRXJ\n4",
+            "output": "ZRGMXISJP"
+        },
+        {
+            "input": "DEMCWXULF\n4",
+            "output": "DUEXLMWFC"
+        },
+        {
+            "input": "OTPXWFOSQXD\n10",
+            "output": "OTPXWFOSQDX"
+        },
+        {
+            "input": "JGYJPHUWTSNKP\n6",
+            "output": "JNGSKYTPJWPUH"
+        },
+        {
+            "input": "GNHLZFNUW\n9",
+            "output": "GNHLZFNUW"
+        },
+        {
+            "input": "TOLKCPSTSFBNXE\n6",
+            "output": "TBOFNLSXKTECSP"
+        },
+        {
+            "input": "ZPMDCZVEIKAU\n6",
+            "output": "ZAPKUMIDECVZ"
+        },
+        {
+            "input": "MLGIBPZUYTERQCMIR\n5",
+            "output": "MYRLUTIGZEMIPRCBQ"
+        },
+        {
+            "input": "FGKPYWU\n5",
+            "output": "FGKUPWY"
+        },
+        {
+            "input": "ORGJAPYUGOB\n4",
+            "output": "OYRPUGAGBJO"
+        },
+        {
+            "input": "UAUIYSLCDFY\n6",
+            "output": "UYAFUDICYLS"
+        },
+        {
+            "input": "RBZHAHGKAZXQRVR\n6",
+            "output": "RXBZQZARHKVAGRH"
+        },
+        {
+            "input": "LIRBP\n2",
+            "output": "LRPIB"
+        },
+        {
+            "input": "CSXCQZCPJHCPEMOBG\n11",
+            "output": "CSXCQGZBCOPMJEHPC"
+        },
+        {
+            "input": "AVRVNFUDG\n9",
+            "output": "AVRVNFUDG"
+        },
+        {
+            "input": "TRJRGRVWFWCVIOIPAL\n4",
+            "output": "TVIRRWVOLJGFCIARWP"
+        },
+        {
+            "input": "ONUFXMXCP\n6",
+            "output": "ONUPFCXXM"
+        },
+        {
+            "input": "PTRBUZYSEYJSEO\n5",
+            "output": "PETSYRYJBZSOUE"
+        },
+        {
+            "input": "GVCPBQPOPNUTVCXE\n5",
+            "output": "GPVONECPUXPQTCBV"
+        },
+        {
+            "input": "FZMCPBNTEZRZXWQLQEOH\n16",
+            "output": "FZMCPBNTEZRZHXOWEQQL"
+        },
+        {
+            "input": "KTAWJNQXY\n8",
+            "output": "KTAWJNQYX"
+        },
+        {
+            "input": "EFARYRNZCP\n9",
+            "output": "EFARYRNZPC"
+        },
+        {
+            "input": "ONBPAMCTF\n3",
+            "output": "OAFNPMTBC"
+        },
+        {
+            "input": "GAFBVQPTKVOEIPAQOQHJ\n5",
+            "output": "GKOATVQQFPOAHBQEPJVI"
+        },
+        {
+            "input": "WNDBBHUIECUJTN\n14",
+            "output": "WNDBBHUIECUJTN"
+        },
+        {
+            "input": "LCRVERAKWBNYVS\n11",
+            "output": "LCRVERAKSWVBYN"
+        },
+        {
+            "input": "SRXEXOYWDFJZB\n12",
+            "output": "SRXEXOYWDFJBZ"
+        },
+        {
+            "input": "QFNKRSAH\n5",
+            "output": "QFHNAKSR"
+        },
+        {
+            "input": "TMXMFY\n2",
+            "output": "TXFMMY"
+        },
+        {
+            "input": "FSSAWJF\n5",
+            "output": "FSSFAJW"
+        },
+        {
+            "input": "JAVIFYVHMYZNVCMURN\n1",
+            "output": "JAVIFYVHMYZNVCMURN"
+        },
+        {
+            "input": "JRMDYAA\n3",
+            "output": "JYRDAMA"
+        },
+        {
+            "input": "ZKDEEMQF\n2",
+            "output": "ZDEQKEMF"
+        },
+        {
+            "input": "WPCDKKGAZKTLL\n9",
+            "output": "WPCDKLKLGTAKZ"
+        },
+        {
+            "input": "LQIHUPXHGMU\n10",
+            "output": "LQIHUPXHGUM"
+        },
+        {
+            "input": "HBRYFLRLPBEQY\n9",
+            "output": "HBRYFYLQRELBP"
+        },
+        {
+            "input": "IULTBRJR\n2",
+            "output": "ILBJUTRR"
+        },
+        {
+            "input": "RUXHIUZUKGTLVIWYM\n6",
+            "output": "RTUGLXKVHUIIZWMUY"
+        },
+        {
+            "input": "QPAMYGTAFK\n4",
+            "output": "QTPGAAYFMK"
+        },
+        {
+            "input": "LZEWLLIT\n8",
+            "output": "LZEWLLIT"
+        },
+        {
+            "input": "JEVZXPAUMXCLVGDR\n12",
+            "output": "JEVZXPAURMDXGCVL"
+        },
+        {
+            "input": "LNIORK\n4",
+            "output": "LNKIRO"
+        },
+        {
+            "input": "BTYGKADFLSIXKIG\n6",
+            "output": "BITSXYLKGFIKDGA"
+        },
+        {
+            "input": "DDQGPXW\n1",
+            "output": "DDQGPXW"
+        },
+        {
+            "input": "KIKEY\n3",
+            "output": "KYIEK"
+        },
+        {
+            "input": "YTGNRDMNKGWGNHQSSJ\n7",
+            "output": "YNTGHGWQNGSRKSDNJM"
+        },
+        {
+            "input": "DCQVQAS\n7",
+            "output": "DCQVQAS"
+        },
+        {
+            "input": "BFRBCKQIKA\n10",
+            "output": "BFRBCKQIKA"
+        },
+        {
+            "input": "DGFJRPFXUEERHRK\n7",
+            "output": "DHGRRFEKJERUPXF"
+        },
+        {
+            "input": "MWJHWWTTUOSRI\n7",
+            "output": "MIWRJSHOWUWTT"
+        },
+        {
+            "input": "AQCGMIIPNOHCYZAPN\n6",
+            "output": "AHQOCCNYGPZMIANIP"
+        },
+        {
+            "input": "GUOJE\n1",
+            "output": "GUOJE"
+        },
+        {
+            "input": "STVGNBRIAKJNHNT\n2",
+            "output": "SVNRAJHTTGBIKNN"
+        },
+        {
+            "input": "ANMCQQP\n7",
+            "output": "ANMCQQP"
+        },
+        {
+            "input": "LFZDRJABYLDQGGUY\n4",
+            "output": "LAGFJBQGZRYDUDLY"
+        },
+        {
+            "input": "SPCYAOGEMZEHDLC\n3",
+            "output": "SAMDPYOEZHLCGEC"
+        },
+        {
+            "input": "SGKEYOOYLWOG\n12",
+            "output": "SGKEYOOYLWOG"
+        },
+        {
+            "input": "SNQPVFYXMYF\n3",
+            "output": "SVMNPFXYQYF"
+        },
+        {
+            "input": "TLTRBYCUABJOWSC\n11",
+            "output": "TLTRBYCCUSAWBOJ"
+        },
+        {
+            "input": "HMGMFVKE\n6",
+            "output": "HMGMEFKV"
+        },
+        {
+            "input": "DIVTZ\n3",
+            "output": "DZITV"
+        },
+        {
+            "input": "IUBPJFAUPBKSSCXTLV\n5",
+            "output": "IPLUUBTVBAKXPFSCJS"
+        },
+        {
+            "input": "YQSLUWUF\n2",
+            "output": "YSUUQLWF"
+        },
+        {
+            "input": "OHHOUHCKEBEEGQPIEBC\n14",
+            "output": "OHHOUHCKECBBEEEIGPQ"
+        },
+        {
+            "input": "CNFJRWCTOXBEKLVROZD\n17",
+            "output": "CNFJRWCTOXBEKLVDRZO"
+        },
+        {
+            "input": "LZGYNN\n1",
+            "output": "LZGYNN"
+        },
+        {
+            "input": "IXSZPYYUVWGBB\n12",
+            "output": "IXSZPYYUVWGBB"
+        },
+        {
+            "input": "RGYRORG\n6",
+            "output": "RGYROGR"
+        },
+        {
+            "input": "IRZFTXRUVARNYTP\n7",
+            "output": "IYRNTZRPFATVXUR"
+        },
+        {
+            "input": "UWMBONYBKUDPWD\n7",
+            "output": "UWWPDMDBUOKNBY"
+        },
+        {
+            "input": "ZSGSAONNIU\n8",
+            "output": "ZSGSAOUNIN"
+        },
+        {
+            "input": "GSOIWKHNF\n6",
+            "output": "GSOFINWHK"
+        },
+        {
+            "input": "EJXWVYJTLR\n2",
+            "output": "EXVJLJWYTR"
+        },
+        {
+            "input": "NCEPC\n1",
+            "output": "NCEPC"
+        },
+        {
+            "input": "ZBEJPTH\n7",
+            "output": "ZBEJPTH"
+        },
+        {
+            "input": "OQMHVLWLPTZGD\n10",
+            "output": "OQMHVLWDLGPZT"
+        },
+        {
+            "input": "YMFMRTJGBZN\n3",
+            "output": "YRBMMTGZFJN"
+        },
+        {
+            "input": "QLGYXDRHYVUANGWLXXS\n15",
+            "output": "QLGYXDRHYVUSAXNXGLW"
+        },
+        {
+            "input": "XFZZYCTDDXMNBU\n8",
+            "output": "XFUZBZNYMCXTDD"
+        },
+        {
+            "input": "XZRQJLRWNJKMKB\n14",
+            "output": "XZRQJLRWNJKMKB"
+        },
+        {
+            "input": "FRLWMPKOJBGIWKX\n3",
+            "output": "FMJWRWPOBIKLKGX"
+        },
+        {
+            "input": "LCHMETOZDZLY\n1",
+            "output": "LCHMETOZDZLY"
+        },
+        {
+            "input": "OYQVYGTROTSDKVZ\n3",
+            "output": "OYOKYVGRTDVQTSZ"
+        },
+        {
+            "input": "NSADIXMKYQRFKYBD\n14",
+            "output": "NSADIXMKYQRFDKBY"
+        },
+        {
+            "input": "WFWAYMCMFRBLPM\n2",
+            "output": "WWYCFBPFAMMRLM"
+        },
+        {
+            "input": "WKMQJVRABAGU\n5",
+            "output": "WBKAAMRGQVUJ"
+        },
+        {
+            "input": "JFAOZFUWYRNUOOV\n13",
+            "output": "JFAOZFUWYRNVUOO"
+        },
+        {
+            "input": "SSXZENJ\n7",
+            "output": "SSXZENJ"
+        },
+        {
+            "input": "MIXVZ\n3",
+            "output": "MZIVX"
+        },
+        {
+            "input": "OUTPQU\n1",
+            "output": "OUTPQU"
+        },
+        {
+            "input": "XWTBWYAX\n3",
+            "output": "XWWBYXTA"
+        },
+        {
+            "input": "SYMVQKCTO\n5",
+            "output": "SOYTMCVKQ"
+        },
+        {
+            "input": "GIXCNADCUNSIP\n3",
+            "output": "GNUPICACNIXDS"
+        },
+        {
+            "input": "EJUIJVPFTBYUQBFO\n7",
+            "output": "EQJUBUYFIBOJTVFP"
+        },
+        {
+            "input": "XZRJFZDEJPBSMF\n4",
+            "output": "XDMZZESFRFJBJP"
+        },
+        {
+            "input": "IBKKBDYHFRLXOPHXBDKZ\n12",
+            "output": "IBKKZBKDDYBHXFHRPLOX"
+        },
+        {
+            "input": "WMDQGWBJPKNBIQ\n4",
+            "output": "WBIMWJBQDGPNQK"
+        },
+        {
+            "input": "OXHICUXKIVJMLZ\n13",
+            "output": "OXHICUXKIVJMZL"
+        },
+        {
+            "input": "UAYDSYA\n3",
+            "output": "USADYYA"
+        },
+        {
+            "input": "ZUXYWWRDLYZCBS\n4",
+            "output": "ZRBUWDCSXWLZYY"
+        },
+        {
+            "input": "NBSQBZWATKD\n6",
+            "output": "NDBKSTQABWZ"
+        },
+        {
+            "input": "XGIRIJEQENOHR\n12",
+            "output": "XGIRIJEQENORH"
+        },
+        {
+            "input": "TAUMVBRDRWKND\n4",
+            "output": "TRDABDNUVRKMW"
+        },
+        {
+            "input": "RPFRGQVQNDP\n9",
+            "output": "RPFRGQVPQDN"
+        },
+        {
+            "input": "IXNUM\n3",
+            "output": "IMXUN"
+        },
+        {
+            "input": "UUUGUCSXM\n6",
+            "output": "UUUMGXUSC"
+        },
+        {
+            "input": "DNQJBPJNUYEMUU\n8",
+            "output": "DNUQUJMBEPYJUN"
+        },
+        {
+            "input": "FMXMWCVUTUZVBHKXH\n6",
+            "output": "FZMUVXTBMUHWVKHCX"
+        },
+        {
+            "input": "HIPISRVLACMIRQT\n9",
+            "output": "HIPTIQSRRIVMLCA"
+        },
+        {
+            "input": "QCWMHTZCSPLXECREISCM\n20",
+            "output": "QCWMHTZCSPLXECREISCM"
+        },
+        {
+            "input": "IDRTI\n5",
+            "output": "IDRTI"
+        },
+        {
+            "input": "WUNWXNXSOPNB\n11",
+            "output": "WUNWXNXSOPBN"
+        },
+        {
+            "input": "OXJLCFRMKJKPJMARBRWR\n2",
+            "output": "OJCRKKJABWXLFMJPMRRR"
+        },
+        {
+            "input": "SFNUY\n1",
+            "output": "SFNUY"
+        },
+        {
+            "input": "DCLEPMXANJD\n1",
+            "output": "DCLEPMXANJD"
+        },
+        {
+            "input": "NYZXZNDBVUPQVO\n1",
+            "output": "NYZXZNDBVUPQVO"
+        },
+        {
+            "input": "SXTGQFCCA\n9",
+            "output": "SXTGQFCCA"
+        },
+        {
+            "input": "JUOTRSRDURIW\n5",
+            "output": "JUUDRORITSWR"
+        },
+        {
+            "input": "SWLPG\n4",
+            "output": "SWLGP"
+        },
+        {
+            "input": "WHSJHPBQVHYK\n4",
+            "output": "WBHPQKSHVYJH"
+        },
+        {
+            "input": "UUXUZZVDYAXYLLMEMB\n10",
+            "output": "UUBXMUEZMZLVLDYYXA"
+        },
+        {
+            "input": "LXKOKQBMEPCH\n7",
+            "output": "LXHKCOPKEQMB"
+        },
+        {
+            "input": "WVWNWTHJYPUXDH\n1",
+            "output": "WVWNWTHJYPUXDH"
+        },
+        {
+            "input": "JVRGTSIEIYSCT\n9",
+            "output": "JVRGTTSCISEYI"
+        },
+        {
+            "input": "QAOROEUMXIWZDX\n3",
+            "output": "QOXDAREMIZXOUW"
+        },
+        {
+            "input": "WXWKX\n5",
+            "output": "WXWKX"
+        },
+        {
+            "input": "KWKFKNGDROTLCYZ\n15",
+            "output": "KWKFKNGDROTLCYZ"
+        },
+        {
+            "input": "TUZVJF\n3",
+            "output": "TJUVFZ"
+        },
+        {
+            "input": "LHCAUAWLWORZNNBW\n7",
+            "output": "LNHZNCRBAOWUWALW"
+        },
+        {
+            "input": "MZACSABRXNZQIRTPX\n16",
+            "output": "MZACSABRXNZQIRTXP"
+        },
+        {
+            "input": "WOKHMPIENH\n7",
+            "output": "WOKHHMNPEI"
+        },
+        {
+            "input": "BBFBTKAIVTSDZPW\n1",
+            "output": "BBFBTKAIVTSDZPW"
+        },
+        {
+            "input": "EAOXV\n5",
+            "output": "EAOXV"
+        },
+        {
+            "input": "FHNHEFWGFKJ\n5",
+            "output": "FFHGKNWJHFE"
+        },
+        {
+            "input": "VKDMABG\n5",
+            "output": "VKDGMBA"
+        },
+        {
+            "input": "OGMXVPMIRUZEZ\n2",
+            "output": "OMVMRZZGXPIUE"
+        },
+        {
+            "input": "GOMYJAWBMXHZCVRVW\n5",
+            "output": "GMWOBXVMWHRYAZVJC"
+        },
+        {
+            "input": "YOAEKEOAKZQUROFOJ\n12",
+            "output": "YOAEKEOJAOKFZOQRU"
+        },
+        {
+            "input": "YTMWMOEIMRUBV\n5",
+            "output": "YMTIRMEUWOBMV"
+        },
+        {
+            "input": "AUTKIDQMLWWRTVZPI\n12",
+            "output": "AUTKIDQIMPLZWVWTR"
+        },
+        {
+            "input": "EKJKKOCZWGID\n4",
+            "output": "ECKOZDJKWIKG"
+        },
+        {
+            "input": "QKBGDGDOFW\n2",
+            "output": "QBDDFKGGOW"
+        },
+        {
+            "input": "ZTRNGWTFMYHVXSS\n13",
+            "output": "ZTRNGWTFMYHSVSX"
+        },
+        {
+            "input": "KVSDOASMS\n9",
+            "output": "KVSDOASMS"
+        },
+        {
+            "input": "BXYTT\n1",
+            "output": "BXYTT"
+        },
+        {
+            "input": "PZXDVNLQTJYRZS\n13",
+            "output": "PZXDVNLQTJYRSZ"
+        },
+        {
+            "input": "RTDQTLEAYDNQQSZBSXOY\n18",
+            "output": "RTDQTLEAYDNQQSZBYSOX"
+        },
+        {
+            "input": "WQHPZLKKPKCIQNPQXML\n14",
+            "output": "WQHPZLKKPLKMCXIQQPN"
+        },
+        {
+            "input": "PLJGTCAV\n4",
+            "output": "PALCVJTG"
+        },
+        {
+            "input": "IMJPLPPPWOQBDZNST\n4",
+            "output": "IPDMPPBZJLWQNTPOS"
+        },
+        {
+            "input": "YSSJIYYJOIMORSC\n11",
+            "output": "YSSJIYYCJSORIOM"
+        },
+        {
+            "input": "YNRQAPQNQN\n4",
+            "output": "YQNPNRAQQN"
+        },
+        {
+            "input": "IGKHVQQRMT\n6",
+            "output": "IGTKMHRVQQ"
+        },
+        {
+            "input": "HNUTEGXLRIOYSAFXPBC\n12",
+            "output": "HNUTECGBXPLXRFIAOSY"
+        },
+        {
+            "input": "GJMEHVDFFMDMY\n6",
+            "output": "GDJMMMFYEFHDV"
+        },
+        {
+            "input": "FJSCAIVOCY\n5",
+            "output": "FCJOYSVCIA"
+        },
+        {
+            "input": "UJCGJ\n4",
+            "output": "UJCJG"
+        },
+        {
+            "input": "NCHKKVEPIQU\n1",
+            "output": "NCHKKVEPIQU"
+        },
+        {
+            "input": "KFMTYBTHOVXEISMGV\n12",
+            "output": "KFMTYBTVHGOMVSXIE"
+        },
+        {
+            "input": "EOZXOXL\n7",
+            "output": "EOZXOXL"
+        },
+        {
+            "input": "FQTHVBSRKQ\n3",
+            "output": "FVKQHBRQTS"
+        },
+        {
+            "input": "CBNEJHCMCNGU\n8",
+            "output": "CBNEUJGHNCCM"
+        },
+        {
+            "input": "ILBBHK\n4",
+            "output": "ILKBHB"
+        },
+        {
+            "input": "IIOTH\n4",
+            "output": "IIOHT"
+        },
+        {
+            "input": "TLFUVRYOBDTF\n1",
+            "output": "TLFUVRYOBDTF"
+        },
+        {
+            "input": "TNMVQLBKMSK\n2",
+            "output": "TMQBMKNVLKS"
+        },
+        {
+            "input": "KTASWFGWAHFNVPSXWIV\n16",
+            "output": "KTASWFGWAHFNVVPISWX"
+        },
+        {
+            "input": "LDTQVOCK\n4",
+            "output": "LCDOKTVQ"
+        },
+        {
+            "input": "CLYHULFBQCAMI\n10",
+            "output": "CLYHULFIBMQAC"
+        },
+        {
+            "input": "TVLOPNBFHDE\n2",
+            "output": "TLPBHEVONFD"
+        }
+    ]
+}
