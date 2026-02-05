@@ -27,1627 +27,123 @@
     ],
     "hidden_test_cases": [
         {
-            "input": "eaacfcd\nceadacaceffbbffbd",
+            "input": "fcdc\nffbcacdcfafcaf",
             "output": "true"
         },
         {
-            "input": "cfa\nffcba",
-            "output": "true"
-        },
-        {
-            "input": "bba\nebccfabccc",
-            "output": "true"
-        },
-        {
-            "input": "dcebfcdbda\needbeecdfeeeaccccacf",
-            "output": "false"
-        },
-        {
-            "input": "e\necceaaeebff",
-            "output": "true"
-        },
-        {
-            "input": "abc\ndedccfc",
-            "output": "false"
-        },
-        {
-            "input": "afebbaeb\nefbeaddabfb",
-            "output": "true"
-        },
-        {
-            "input": "ecadffdc\nbdaafecdb",
-            "output": "false"
-        },
-        {
-            "input": "cdbdecddbe\nddabacbdceaeab",
-            "output": "false"
-        },
-        {
-            "input": "efcaefe\ndafeeefc",
-            "output": "true"
-        },
-        {
-            "input": "ebcbfbcad\nacbecbbcdfee",
-            "output": "true"
-        },
-        {
-            "input": "bfaf\ncbefebddcbae",
-            "output": "false"
-        },
-        {
-            "input": "ddc\nbaacdfddbccedcfdc",
-            "output": "true"
-        },
-        {
-            "input": "b\nfebdcaccbada",
-            "output": "true"
-        },
-        {
-            "input": "fa\nfbadaadddd",
-            "output": "true"
-        },
-        {
-            "input": "cea\nbeafebabbccabdfcf",
-            "output": "true"
-        },
-        {
-            "input": "dafdbd\nfdbddccfa",
-            "output": "true"
-        },
-        {
-            "input": "ebfbdcbcdd\nddacbcbddfa",
-            "output": "false"
-        },
-        {
-            "input": "deeadccb\nddaffbbdbcceeaccdca",
-            "output": "true"
-        },
-        {
-            "input": "dcbebd\ncceaffaeddbebfeaea",
-            "output": "true"
-        },
-        {
-            "input": "beedeacddc\ncbeecdceddadda",
-            "output": "true"
-        },
-        {
-            "input": "faeefffffb\nbcfaeaacecd",
-            "output": "false"
-        },
-        {
-            "input": "edbbd\nebede",
-            "output": "false"
-        },
-        {
-            "input": "fbb\naaecffbbbdfdfdcbffa",
-            "output": "true"
-        },
-        {
-            "input": "b\neebdefdefcccce",
-            "output": "true"
-        },
-        {
-            "input": "bddecf\ndfaefaa",
-            "output": "false"
-        },
-        {
-            "input": "bdee\neeccabdadeafc",
-            "output": "true"
-        },
-        {
-            "input": "a\nbecfde",
-            "output": "false"
-        },
-        {
-            "input": "eefeafb\ndfddcddbafaabbfdec",
-            "output": "false"
-        },
-        {
-            "input": "eabe\neecfbadbba",
-            "output": "true"
-        },
-        {
-            "input": "afdfbcfdfe\nbddafadecfcfbeffae",
-            "output": "true"
-        },
-        {
-            "input": "bbb\nbdfcdadecfcefcbacfc",
-            "output": "false"
-        },
-        {
-            "input": "eadfff\nafeeaab",
-            "output": "false"
-        },
-        {
-            "input": "edcdae\ndcaccedffe",
-            "output": "true"
-        },
-        {
-            "input": "daeae\ndbaaadddfeeefeea",
-            "output": "true"
-        },
-        {
-            "input": "edcbfecfba\nffebfbececadbfe",
-            "output": "true"
-        },
-        {
-            "input": "ad\naaaeeeae",
-            "output": "false"
-        },
-        {
-            "input": "adfdbcaf\necdeadfffb",
-            "output": "false"
-        },
-        {
-            "input": "febff\neefafbfffb",
-            "output": "true"
-        },
-        {
-            "input": "ceeefcb\naaacdbdbcbea",
-            "output": "false"
-        },
-        {
-            "input": "bebf\nbccabaeabdaca",
-            "output": "false"
-        },
-        {
-            "input": "edbce\ncdfbdbebebeec",
-            "output": "true"
-        },
-        {
-            "input": "a\nbbebdcbdcbae",
-            "output": "true"
-        },
-        {
-            "input": "cf\nfcbbcae",
-            "output": "true"
-        },
-        {
-            "input": "cffcb\neafbcffdc",
-            "output": "true"
-        },
-        {
-            "input": "a\nda",
-            "output": "true"
-        },
-        {
-            "input": "abbdfa\nffcaabdab",
-            "output": "true"
-        },
-        {
-            "input": "d\nde",
-            "output": "true"
-        },
-        {
-            "input": "e\ndcfeaca",
-            "output": "true"
-        },
-        {
-            "input": "abf\nafdbcbebfadeaf",
-            "output": "true"
-        },
-        {
-            "input": "cfeacb\nbeccdddeaefc",
-            "output": "true"
-        },
-        {
-            "input": "cbdcab\nefddbf",
-            "output": "false"
-        },
-        {
-            "input": "cefbfeddf\ndbdeefecfcbdbfffe",
-            "output": "true"
-        },
-        {
-            "input": "bbedbb\ncdacbeddfaefdfb",
-            "output": "false"
-        },
-        {
-            "input": "cddeffafa\nffcafedfddaaf",
-            "output": "true"
-        },
-        {
-            "input": "ebece\ncdeccfbabdbdf",
-            "output": "false"
-        },
-        {
-            "input": "fbeaebfdba\nebbfcacbea",
-            "output": "false"
-        },
-        {
-            "input": "fddcce\nbeebcadbbccdecdadffd",
-            "output": "true"
-        },
-        {
-            "input": "dacfdadbaa\nedaecdbabefeaecfe",
-            "output": "false"
-        },
-        {
-            "input": "bbabf\nacfacbdeaedbbda",
-            "output": "true"
-        },
-        {
-            "input": "fafc\nfcacf",
-            "output": "true"
-        },
-        {
-            "input": "abce\nbeabbcebecadd",
-            "output": "true"
-        },
-        {
-            "input": "accbbadd\ncefadacbfbdebda",
-            "output": "true"
-        },
-        {
-            "input": "faedaaceec\naaaecafceceebdfaffb",
-            "output": "true"
-        },
-        {
-            "input": "adf\ndaadabdefccfaacdb",
-            "output": "true"
-        },
-        {
-            "input": "aabcbbbf\nacbeddafbdeb",
-            "output": "false"
-        },
-        {
-            "input": "fcfefa\nfecaff",
-            "output": "true"
-        },
-        {
-            "input": "edb\ndfbecb",
-            "output": "true"
-        },
-        {
-            "input": "fbcdcecebe\nbfadeaaefabbcbaedc",
-            "output": "false"
-        },
-        {
-            "input": "defd\ndecafdddebbbccaedf",
-            "output": "true"
-        },
-        {
-            "input": "dac\naddc",
-            "output": "true"
-        },
-        {
-            "input": "fafbf\neaaef",
-            "output": "false"
-        },
-        {
-            "input": "eecfbc\nebbbeffacc",
-            "output": "true"
-        },
-        {
-            "input": "bdad\ndbdbfbdfdadadefefd",
-            "output": "true"
-        },
-        {
-            "input": "a\ndd",
-            "output": "false"
-        },
-        {
-            "input": "ecadbdedfe\nceebacbbfafcbaacfbb",
-            "output": "false"
-        },
-        {
-            "input": "cccbffdaef\nefcdcffcabdd",
-            "output": "true"
-        },
-        {
-            "input": "bffdddeaea\nddabedecddbffaddef",
-            "output": "true"
-        },
-        {
-            "input": "eaeacfee\ncfcbadebddbefdeed",
-            "output": "false"
-        },
-        {
-            "input": "d\nc",
-            "output": "false"
-        },
-        {
-            "input": "aeebfd\ncfcadabcce",
-            "output": "false"
-        },
-        {
-            "input": "efc\necac",
-            "output": "false"
-        },
-        {
-            "input": "fbadacb\nacfbcadabdfbbfec",
-            "output": "true"
-        },
-        {
-            "input": "bdfadfcbe\nfeaddedaaebedabbcb",
-            "output": "false"
-        },
-        {
-            "input": "badfb\ncdbabfb",
-            "output": "true"
-        },
-        {
-            "input": "feefdcbaeb\neacfdedfda",
-            "output": "false"
-        },
-        {
-            "input": "ebecc\nfebfbcefefeafbd",
-            "output": "false"
-        },
-        {
-            "input": "cfdfecec\ncfdfeeccfdbcfefefeee",
-            "output": "true"
-        },
-        {
-            "input": "bbacfebfdd\nafaebdddefddcadc",
-            "output": "false"
-        },
-        {
-            "input": "bdcecbdff\nfbfededcedcbebfc",
-            "output": "true"
-        },
-        {
-            "input": "adbccd\ncdadbaacedcf",
-            "output": "true"
-        },
-        {
-            "input": "edeea\ncabfedefecaeacadfdce",
-            "output": "true"
-        },
-        {
-            "input": "adc\nbacfbaafedecafcda",
-            "output": "true"
-        },
-        {
-            "input": "bdccdce\ndafddecbcaef",
-            "output": "false"
-        },
-        {
-            "input": "bdcaaecaa\nbafbbdeebfdfddfafe",
-            "output": "false"
-        },
-        {
-            "input": "aeddcdbfad\naadffacdeadbce",
-            "output": "false"
-        },
-        {
-            "input": "ebcaedbb\ndcbfacbeeebd",
-            "output": "true"
-        },
-        {
-            "input": "ea\nececebdffdbbac",
-            "output": "true"
-        },
-        {
-            "input": "becadabbce\nafaacefafbdac",
-            "output": "false"
-        },
-        {
-            "input": "cede\naebaeeddbcfdddcdfc",
-            "output": "true"
-        },
-        {
-            "input": "bafaaeceea\nadefbdedeaecafbeeea",
-            "output": "true"
-        },
-        {
-            "input": "cecd\ncedfbbeeedcbaf",
-            "output": "true"
-        },
-        {
-            "input": "ced\ncbbcbeddd",
-            "output": "true"
-        },
-        {
-            "input": "b\ndebebbfedcbbdddfceb",
-            "output": "true"
-        },
-        {
-            "input": "ecbbbde\nbbbecde",
-            "output": "true"
-        },
-        {
-            "input": "eacbbd\nebbece",
-            "output": "false"
-        },
-        {
-            "input": "ddefcd\nbefdad",
-            "output": "false"
-        },
-        {
-            "input": "bceeefceb\ncdcfaafaebaddcdecec",
-            "output": "false"
-        },
-        {
-            "input": "fceeadac\naeadccafe",
-            "output": "true"
-        },
-        {
-            "input": "bdcfffbbff\ndabcbccbffedadd",
-            "output": "false"
-        },
-        {
-            "input": "bbee\ndabbbfbbbbbfedefbed",
-            "output": "true"
-        },
-        {
-            "input": "eebaaab\nfbafadceebb",
-            "output": "false"
-        },
-        {
-            "input": "caff\nfcfa",
-            "output": "true"
-        },
-        {
-            "input": "cadbfecf\nbbaffafcbdfabcfc",
-            "output": "false"
-        },
-        {
-            "input": "dbbaeedba\nefbfbdddbfccffdafe",
-            "output": "false"
-        },
-        {
-            "input": "ecdbf\nefabaffbbcdecaadfdbe",
-            "output": "true"
-        },
-        {
-            "input": "bbbfec\naeeafafbbdbdaeefa",
-            "output": "false"
-        },
-        {
-            "input": "d\naddfaedcbfaaeddbdfcc",
-            "output": "true"
-        },
-        {
-            "input": "b\nebacdddcbcce",
-            "output": "true"
-        },
-        {
-            "input": "aac\ndebb",
-            "output": "false"
-        },
-        {
-            "input": "fcecfbe\ncbfffeec",
-            "output": "true"
-        },
-        {
-            "input": "de\nbcbdcebdeb",
-            "output": "true"
-        },
-        {
-            "input": "cadccdabe\nbdfccdfeaaceddbd",
-            "output": "true"
-        },
-        {
-            "input": "afbcaddbaf\ncabfadfbad",
-            "output": "true"
-        },
-        {
-            "input": "ffdcddf\ndcddfff",
-            "output": "true"
-        },
-        {
-            "input": "ccdbaeeb\nbdfaeeabeeefaad",
-            "output": "false"
-        },
-        {
-            "input": "fcaabfa\nbfccaffaafadcde",
-            "output": "true"
-        },
-        {
-            "input": "edfffeadb\nbfaddeafeefd",
-            "output": "true"
-        },
-        {
-            "input": "ebdadbbe\naebebdaeddbbeeabbfba",
-            "output": "true"
-        },
-        {
-            "input": "fdcbabfd\nfdbcfafdb",
-            "output": "true"
-        },
-        {
-            "input": "c\ndeccafebdfaf",
-            "output": "true"
-        },
-        {
-            "input": "bffaf\neffaeef",
-            "output": "false"
-        },
-        {
-            "input": "bdcccaaa\nafbccdbeacdacbfeae",
-            "output": "true"
-        },
-        {
-            "input": "ecc\nefabeacccbdbfeaa",
-            "output": "true"
-        },
-        {
-            "input": "ababbc\nfcccdbdecedfad",
-            "output": "false"
-        },
-        {
-            "input": "dafdcedbb\ndedabfacaddbe",
-            "output": "true"
-        },
-        {
-            "input": "befead\nbfeadbdcfefacaecda",
-            "output": "true"
-        },
-        {
-            "input": "fadaceca\nacfecbeadfffaabebbdf",
-            "output": "true"
-        },
-        {
-            "input": "eadfbce\nbeabdfce",
-            "output": "true"
-        },
-        {
-            "input": "afeeeddab\naeadfeedb",
-            "output": "true"
-        },
-        {
-            "input": "dfba\nefbad",
-            "output": "true"
-        },
-        {
-            "input": "cadaed\nabddeedeccaccfbcdbe",
-            "output": "true"
-        },
-        {
-            "input": "ac\ncfcadb",
-            "output": "true"
-        },
-        {
-            "input": "bfdeffa\naebbdadfdfafedbfbea",
-            "output": "true"
-        },
-        {
-            "input": "ced\nbfcbc",
-            "output": "false"
-        },
-        {
-            "input": "feac\nfcecabe",
-            "output": "true"
-        },
-        {
-            "input": "fbe\nfedfacddebccbdfbbd",
-            "output": "true"
-        },
-        {
-            "input": "ecdfebc\ndceebfcebfadaddceb",
-            "output": "true"
-        },
-        {
-            "input": "ef\nbbceaf",
-            "output": "true"
-        },
-        {
-            "input": "bdcebd\nffeafefedbebafed",
-            "output": "false"
-        },
-        {
-            "input": "ece\nabaaaedbcdcedbcd",
-            "output": "true"
-        },
-        {
-            "input": "cfb\nbedec",
-            "output": "false"
-        },
-        {
-            "input": "aedee\nadeaebeabfbeaa",
-            "output": "true"
-        },
-        {
-            "input": "ecbd\ncbebfedfdecebcfcd",
-            "output": "true"
-        },
-        {
-            "input": "e\ndccdcfbefabbdff",
-            "output": "true"
-        },
-        {
-            "input": "fcf\naade",
-            "output": "false"
-        },
-        {
-            "input": "ecfaebebf\naabbfaaedaebfcbdbaef",
-            "output": "true"
-        },
-        {
-            "input": "fbd\ndadaadedbbebfecd",
-            "output": "true"
-        },
-        {
-            "input": "fbecdfec\ndfeabdfbccecb",
-            "output": "true"
-        },
-        {
-            "input": "ed\ndeefbbadf",
-            "output": "true"
-        },
-        {
-            "input": "eefcc\necaddccfdfdf",
-            "output": "false"
-        },
-        {
-            "input": "e\nffbcccabcebeebffb",
-            "output": "true"
-        },
-        {
-            "input": "ed\ndbaffebfeadebaaddfcd",
-            "output": "true"
-        },
-        {
-            "input": "ff\nfcbefafab",
-            "output": "true"
-        },
-        {
-            "input": "fefe\nfefe",
-            "output": "true"
-        },
-        {
-            "input": "dfccba\ndfddcbdfcac",
-            "output": "true"
-        },
-        {
-            "input": "dbbdf\ncffedb",
-            "output": "false"
-        },
-        {
-            "input": "eebca\ncebea",
-            "output": "true"
-        },
-        {
-            "input": "dbdbcabb\neeceaffbccd",
-            "output": "false"
-        },
-        {
-            "input": "da\naaeadeda",
-            "output": "true"
-        },
-        {
-            "input": "aadbdbede\neabddaeeafbcd",
-            "output": "true"
-        },
-        {
-            "input": "bbb\nbabb",
-            "output": "true"
-        },
-        {
-            "input": "fcb\ncededefcebedfff",
-            "output": "true"
-        },
-        {
-            "input": "fdede\naaeadeedebfdcedee",
-            "output": "true"
-        },
-        {
-            "input": "ebff\nfddabbfabeeea",
-            "output": "true"
-        },
-        {
-            "input": "afd\nbdcdbfaa",
-            "output": "true"
-        },
-        {
-            "input": "cfdadaee\nacedfffaed",
-            "output": "true"
-        },
-        {
-            "input": "edeeeb\ndaeedddefdfdfebbf",
-            "output": "true"
-        },
-        {
-            "input": "ca\neecca",
-            "output": "true"
-        },
-        {
-            "input": "cfbeffcd\ncbeffcdbfcdffdfbaa",
-            "output": "true"
-        },
-        {
-            "input": "badb\nabfdb",
-            "output": "true"
-        },
-        {
-            "input": "fffe\nfceadebed",
-            "output": "false"
-        },
-        {
-            "input": "dbdeebfe\nfebddfbee",
-            "output": "true"
-        },
-        {
-            "input": "eadbeaec\ndebabafec",
-            "output": "false"
-        },
-        {
-            "input": "bdbebbf\nbbcfecfbdbcbcb",
-            "output": "true"
-        },
-        {
-            "input": "bbcd\nbbaeebceb",
-            "output": "false"
-        },
-        {
-            "input": "dcbddbfeb\nbfdeebdcfdbb",
-            "output": "true"
-        },
-        {
-            "input": "fdddadf\ncfcdfdeddcdafd",
-            "output": "true"
-        },
-        {
-            "input": "adeffbcbd\nfbdeacbdefdacfb",
-            "output": "true"
-        },
-        {
-            "input": "ceefbfcff\nceafbfeeecaefffbefcf",
-            "output": "true"
-        },
-        {
-            "input": "efebedb\nccadbbeeebebdba",
-            "output": "false"
-        },
-        {
-            "input": "bcddfcdb\ndbeedbedfcac",
-            "output": "true"
-        },
-        {
-            "input": "ab\nbbadebbadbaefbce",
-            "output": "true"
-        },
-        {
-            "input": "dbafc\naeedffab",
-            "output": "false"
-        },
-        {
-            "input": "aeeba\naccacdbdeee",
-            "output": "true"
-        },
-        {
-            "input": "fdedbecdeb\nbdebcbdfbeadebcacddb",
-            "output": "true"
-        },
-        {
-            "input": "a\nbffcdaffaedafe",
-            "output": "true"
-        },
-        {
-            "input": "bbedbb\nbebdbbb",
-            "output": "true"
-        },
-        {
-            "input": "c\nbfea",
-            "output": "false"
-        },
-        {
-            "input": "bfaadc\nfffdedfdcffecabaa",
-            "output": "true"
-        },
-        {
-            "input": "cdc\nfebcddf",
-            "output": "false"
-        },
-        {
-            "input": "aecbceeacd\neafbcaecdbfabccbc",
-            "output": "false"
-        },
-        {
-            "input": "fe\nafefabccdbeebba",
-            "output": "true"
-        },
-        {
-            "input": "afdadfcef\nbfadfeecdef",
-            "output": "false"
-        },
-        {
-            "input": "abffaefe\nbfaebeffbba",
-            "output": "true"
-        },
-        {
-            "input": "afeab\nefbacdfcdcbac",
-            "output": "true"
-        },
-        {
-            "input": "a\nffbbbfddbeadcaeddef",
-            "output": "true"
-        },
-        {
-            "input": "ceacbcfe\ncfccbeeac",
-            "output": "true"
-        },
-        {
-            "input": "ffbefc\nfdddbbbceefdfcf",
-            "output": "true"
-        },
-        {
-            "input": "affbccfaa\nebdeeeabd",
-            "output": "false"
-        },
-        {
-            "input": "adeffaeacf\ncbaaadadcfec",
-            "output": "false"
-        },
-        {
-            "input": "a\nacdffc",
-            "output": "true"
-        },
-        {
-            "input": "cbcdfa\nefedadbca",
-            "output": "false"
-        },
-        {
-            "input": "ccdcada\ndeecabdcdabce",
-            "output": "true"
-        },
-        {
-            "input": "dcfadfa\nfefadcfddfeffeaa",
-            "output": "true"
-        },
-        {
-            "input": "fdbbeaafeb\nefbbbaadefb",
-            "output": "true"
-        },
-        {
-            "input": "eaabadaaba\nccceedbedd",
-            "output": "false"
-        },
-        {
-            "input": "fdeebbfbad\ndebfdabaeebf",
-            "output": "true"
-        },
-        {
-            "input": "faf\nfbdacbccb",
-            "output": "false"
-        },
-        {
-            "input": "aee\ndbeb",
-            "output": "false"
-        },
-        {
-            "input": "adbcdef\ndbcfdfaadbeee",
-            "output": "true"
-        },
-        {
-            "input": "eea\nafceeb",
-            "output": "true"
-        },
-        {
-            "input": "dcaadfccde\ncdadfaecdc",
-            "output": "true"
-        },
-        {
-            "input": "adffdfdeea\nfdddaeeaff",
-            "output": "true"
-        },
-        {
-            "input": "bafe\ncdabd",
-            "output": "false"
-        },
-        {
-            "input": "ebb\nbeaaaccaddcbbac",
-            "output": "true"
-        },
-        {
-            "input": "bab\nbbbaba",
-            "output": "true"
-        },
-        {
-            "input": "adacfbd\ndffbebdbfafcfdfb",
-            "output": "false"
-        },
-        {
-            "input": "cdcf\necede",
-            "output": "false"
-        },
-        {
-            "input": "ceffffa\ndbaffaecffa",
-            "output": "true"
-        },
-        {
-            "input": "fbbfdc\nbcfdabdcffbbc",
-            "output": "true"
-        },
-        {
-            "input": "ebaecbbda\nbffcbaabecfcf",
-            "output": "false"
-        },
-        {
-            "input": "febabfcbb\nccafbbededcee",
-            "output": "false"
-        },
-        {
-            "input": "cbdae\nbabbfccb",
-            "output": "false"
-        },
-        {
-            "input": "febb\ndffaccddafbbbefbabff",
-            "output": "true"
-        },
-        {
-            "input": "ffacfbdcef\ncdbfdebaeaffffecc",
-            "output": "true"
-        },
-        {
-            "input": "fedabf\ndcceeeefecabbfcaa",
-            "output": "true"
-        },
-        {
-            "input": "aa\ncadcaabec",
-            "output": "true"
-        },
-        {
-            "input": "dfacbaaec\naaccaebdeafc",
-            "output": "true"
-        },
-        {
-            "input": "d\nadfaebbae",
-            "output": "true"
-        },
-        {
-            "input": "baabd\ncbdddcdafcaaabcad",
-            "output": "true"
-        },
-        {
-            "input": "dcbdf\nfdeefdfdcfcd",
-            "output": "false"
-        },
-        {
-            "input": "fa\ncdf",
-            "output": "false"
-        },
-        {
-            "input": "ef\ndfbdfaaabfdfdc",
-            "output": "false"
-        },
-        {
-            "input": "adddbcaa\nfddeaecdacd",
-            "output": "false"
-        },
-        {
-            "input": "eafdbddd\nadedddbaddffd",
-            "output": "true"
-        },
-        {
-            "input": "cedea\ncedefdab",
-            "output": "true"
-        },
-        {
-            "input": "dabbeeab\nbbefbafbddaabccdcfb",
-            "output": "false"
-        },
-        {
-            "input": "cdaade\ncadcacb",
-            "output": "false"
-        },
-        {
-            "input": "cbd\ndcdbcbebbcafc",
-            "output": "true"
-        },
-        {
-            "input": "c\nddfcfcecbdbacbcfc",
-            "output": "true"
-        },
-        {
-            "input": "b\nfcdabdb",
-            "output": "true"
-        },
-        {
-            "input": "ffcafe\nfbbcbfdfbbeeea",
-            "output": "true"
-        },
-        {
-            "input": "fcedfeecce\nbfcedfcfbece",
-            "output": "false"
-        },
-        {
-            "input": "fdfbdbbced\ncdfbcaeefdfebbea",
-            "output": "false"
-        },
-        {
-            "input": "cbcddfedee\naadfaefabceedebdcac",
-            "output": "true"
-        },
-        {
-            "input": "ccddde\nbdddcabaddcedac",
-            "output": "true"
-        },
-        {
-            "input": "aabff\nfcbfefdafddfedf",
-            "output": "false"
-        },
-        {
-            "input": "cebebda\nbdbeecaeccea",
-            "output": "true"
-        },
-        {
-            "input": "cfedad\nbccefaddaeeaafd",
-            "output": "true"
-        },
-        {
-            "input": "f\ncefd",
-            "output": "true"
-        },
-        {
-            "input": "eafafefc\nfcacbdbfcebfaeafa",
-            "output": "true"
-        },
-        {
-            "input": "ae\nddcbbeaafdfbfcb",
-            "output": "true"
-        },
-        {
-            "input": "aedfd\nfeedfdfdacfdc",
-            "output": "true"
-        },
-        {
-            "input": "faeafecee\neceebbbbd",
-            "output": "false"
-        },
-        {
-            "input": "ccdadba\ncbeecdddfbba",
-            "output": "false"
-        },
-        {
-            "input": "f\ncfebcfadddbacefdeae",
-            "output": "true"
-        },
-        {
-            "input": "ff\nafbabcfefcbfbbfbfdfe",
-            "output": "true"
-        },
-        {
-            "input": "ccceebed\nbdaeceecceaffe",
-            "output": "true"
-        },
-        {
-            "input": "dfbcbeacbf\nebacfbcadccfb",
-            "output": "true"
-        },
-        {
-            "input": "ffcbece\naffccefeb",
-            "output": "true"
-        },
-        {
-            "input": "dffa\nfbecbbbfdafccddecfc",
-            "output": "true"
-        },
-        {
-            "input": "e\nfaffcbeadc",
-            "output": "true"
-        },
-        {
-            "input": "dc\neafdcbfd",
-            "output": "true"
-        },
-        {
-            "input": "fdacb\nddeeeeafddadbfffede",
-            "output": "false"
-        },
-        {
-            "input": "fcdaaace\nbddcaeeebabfedb",
-            "output": "false"
-        },
-        {
-            "input": "beecb\nceebcbb",
-            "output": "true"
-        },
-        {
-            "input": "a\neababea",
-            "output": "true"
-        },
-        {
-            "input": "ac\nadfcaae",
-            "output": "true"
-        },
-        {
-            "input": "efff\ncefebbeafadbbbbfffe",
-            "output": "true"
-        },
-        {
-            "input": "bb\nccbebbb",
-            "output": "true"
-        },
-        {
-            "input": "efabcb\ndecdaddcdcfdfdabc",
-            "output": "false"
-        },
-        {
-            "input": "dbcafeacd\nceeddadcfabbbbcebaaf",
-            "output": "true"
-        },
-        {
-            "input": "edbe\nadebeb",
-            "output": "true"
-        },
-        {
-            "input": "d\nedfaabdcadacafbdad",
-            "output": "true"
-        },
-        {
-            "input": "dceaaac\nfaebecedbfd",
-            "output": "false"
-        },
-        {
-            "input": "d\ncbadbfdeebab",
-            "output": "true"
-        },
-        {
-            "input": "bea\nfefdcaeeedefefc",
-            "output": "false"
-        },
-        {
-            "input": "dbacfa\nfbdaacaf",
-            "output": "true"
-        },
-        {
-            "input": "aabeacde\naffafecefafbedbc",
-            "output": "true"
-        },
-        {
-            "input": "dffcfefec\nafdcfcfbfccdebddac",
-            "output": "false"
-        },
-        {
-            "input": "a\nfefefcbb",
-            "output": "false"
-        },
-        {
-            "input": "fdadadfe\ndacdbfffdbeeaadddfe",
-            "output": "true"
-        },
-        {
-            "input": "bbecacdfe\ncbfcaeccfdccbae",
-            "output": "true"
-        },
-        {
-            "input": "aede\naededcbeeadffefe",
-            "output": "true"
-        },
-        {
-            "input": "fddffedba\nbcafddfffeedb",
-            "output": "true"
-        },
-        {
-            "input": "d\nfdccfafddbddbdede",
-            "output": "true"
-        },
-        {
-            "input": "a\nfbb",
-            "output": "false"
-        },
-        {
-            "input": "bcaddabb\nbbccbbadba",
-            "output": "false"
-        },
-        {
-            "input": "aab\nbcaadaaef",
-            "output": "true"
-        },
-        {
-            "input": "d\nebfdcbafbb",
-            "output": "true"
-        },
-        {
-            "input": "edbc\nfdfffbeaac",
-            "output": "true"
-        },
-        {
-            "input": "eaaaad\nbaaeaabbda",
-            "output": "true"
-        },
-        {
-            "input": "eabacebafb\neceaedbbdfdbdfface",
-            "output": "false"
-        },
-        {
-            "input": "eccffdbc\ncbeefbebcddcfbacffab",
-            "output": "true"
-        },
-        {
-            "input": "f\nbfcdafd",
-            "output": "true"
-        },
-        {
-            "input": "fbadea\nfabbccbdaebcdedcfab",
-            "output": "true"
-        },
-        {
-            "input": "fbddecdfec\nbaeceaddcfaedd",
-            "output": "false"
-        },
-        {
-            "input": "dfb\ncaeacbcfbccaebcefeb",
-            "output": "false"
-        },
-        {
-            "input": "bdfac\nfbdaeeadcd",
-            "output": "true"
-        },
-        {
-            "input": "aa\naa",
-            "output": "true"
-        },
-        {
-            "input": "cbccbc\nbcbbbccc",
-            "output": "true"
-        },
-        {
-            "input": "effad\nddcefdabadeedffc",
-            "output": "true"
-        },
-        {
-            "input": "efebbcaddc\ndffadebdbeb",
-            "output": "false"
-        },
-        {
-            "input": "daec\ndaabeedbfbecedccfcef",
-            "output": "true"
-        },
-        {
-            "input": "cbdc\nffdc",
-            "output": "false"
-        },
-        {
-            "input": "dee\nedec",
-            "output": "true"
-        },
-        {
-            "input": "dffe\ndaffdebfedced",
-            "output": "true"
-        },
-        {
-            "input": "aebdddfed\nfecbcadfdfbdfe",
-            "output": "false"
-        },
-        {
-            "input": "dedacfadb\ndddccefadeeabfcea",
-            "output": "true"
-        },
-        {
-            "input": "bdfeeccc\necebcdcf",
-            "output": "true"
-        },
-        {
-            "input": "fefb\nfccdddfdcb",
-            "output": "false"
-        },
-        {
-            "input": "fa\nbfcacbedbc",
-            "output": "true"
-        },
-        {
-            "input": "ffffacebbc\nfaacdbffacfbeaffc",
-            "output": "true"
-        },
-        {
-            "input": "cbefdca\nfcbcfbebcdbaceceba",
-            "output": "true"
-        },
-        {
-            "input": "addde\ndaecdebeeddfdeaefd",
-            "output": "true"
-        },
-        {
-            "input": "dbecbecd\nbeefacddefdfcfab",
-            "output": "true"
-        },
-        {
-            "input": "dcdfca\nbdcdadbcebdadfcfaafa",
-            "output": "true"
-        },
-        {
-            "input": "ddc\ndfdc",
-            "output": "true"
-        },
-        {
-            "input": "d\ncd",
-            "output": "true"
-        },
-        {
-            "input": "acedde\nefdcbdedabceedead",
-            "output": "true"
-        },
-        {
-            "input": "beefb\nfedaebcfeffefdbb",
-            "output": "true"
-        },
-        {
-            "input": "fbe\nabbbdfbdc",
+            "input": "ad\ncf",
             "output": "false"
-        },
-        {
-            "input": "bfecdacf\nffcbfaacedc",
-            "output": "true"
-        },
-        {
-            "input": "fd\ndfd",
-            "output": "true"
         },
         {
-            "input": "f\nffdfbdfeacdaddbbfdaf",
+            "input": "caecbeacea\nacfecfeddacaeb",
             "output": "true"
         },
         {
-            "input": "bac\nccdcedebaacfbafeead",
+            "input": "babef\nbdfbcdecdcba",
             "output": "true"
         },
         {
-            "input": "cfbfcdf\ndfccbffcb",
+            "input": "a\naeb",
             "output": "true"
         },
         {
-            "input": "fdffbfc\nebbfabfccafbfcfddc",
+            "input": "deefc\necdcdaedbeefaad",
             "output": "true"
         },
         {
-            "input": "fdeff\nfdffdef",
+            "input": "ffeaa\nbfdaffaefe",
             "output": "true"
         },
         {
-            "input": "ecbafb\ndfbeacbfdcbcceebffcb",
-            "output": "true"
-        },
-        {
-            "input": "de\nbeeeedacbeddce",
-            "output": "true"
-        },
-        {
-            "input": "f\nffbdbef",
-            "output": "true"
-        },
-        {
-            "input": "eaadcbbb\ncfeccecaecbbbfeaffea",
-            "output": "false"
-        },
-        {
-            "input": "ddcdfcaaa\nbeaeeafdacddcf",
-            "output": "true"
-        },
-        {
-            "input": "fc\ndfc",
-            "output": "true"
-        },
-        {
-            "input": "c\nbf",
+            "input": "abfbcdacfe\nceeeaafaedff",
             "output": "false"
-        },
-        {
-            "input": "edfddccba\ncbbcbddefadac",
-            "output": "true"
-        },
-        {
-            "input": "acbceab\necbabdbeacaebcbeb",
-            "output": "true"
-        },
-        {
-            "input": "aca\nceaeadbfaf",
-            "output": "true"
-        },
-        {
-            "input": "decdd\nbdcdfade",
-            "output": "true"
-        },
-        {
-            "input": "e\naea",
-            "output": "true"
-        },
-        {
-            "input": "edfeab\nbeaefd",
-            "output": "true"
         },
         {
-            "input": "cefbfca\nabddfcccfaacceebdbce",
+            "input": "fcbce\ndfdcccafbecaabade",
             "output": "true"
         },
         {
-            "input": "cfdcae\ncffcdceeae",
-            "output": "true"
-        },
-        {
-            "input": "afbcceeefa\ndafbadfadbeb",
+            "input": "aecfd\ncadfaddaabf",
             "output": "false"
-        },
-        {
-            "input": "b\nbfccacecfdeeddfdcdd",
-            "output": "true"
-        },
-        {
-            "input": "baafad\nfecebbafcaabadcac",
-            "output": "true"
-        },
-        {
-            "input": "c\necbbcfeaaa",
-            "output": "true"
         },
         {
-            "input": "cabfbdfedf\ndcbafbfdfce",
+            "input": "fdd\ndebedcff",
             "output": "true"
         },
         {
-            "input": "dfaa\naeaffbd",
-            "output": "true"
-        },
-        {
-            "input": "f\nfcffdaafefbdcfaafffa",
-            "output": "true"
-        },
-        {
-            "input": "dddebbb\nbbfbdedcabdbdefb",
-            "output": "true"
-        },
-        {
-            "input": "badc\neddceefdfbeb",
+            "input": "ccfeddbdab\nbeabfebddbafcdebed",
             "output": "false"
-        },
-        {
-            "input": "d\nd",
-            "output": "true"
-        },
-        {
-            "input": "ddafbefc\nfbcfdeecfbdaccceb",
-            "output": "true"
-        },
-        {
-            "input": "befaae\naefbdbaecffe",
-            "output": "true"
-        },
-        {
-            "input": "aab\nbaadbbfaaea",
-            "output": "true"
-        },
-        {
-            "input": "daec\nbebaaeaccedaeeeac",
-            "output": "true"
         },
         {
-            "input": "ec\ncbdedaddcbcabb",
+            "input": "caaaeeadad\naddacbeafaaaadaeeee",
             "output": "true"
         },
         {
-            "input": "acacbdfeb\nabbceafadcf",
+            "input": "ecebebc\ndeeabdbfccceeadbf",
             "output": "true"
         },
         {
-            "input": "cbcccbdbd\ndfeeadafcffbaadcb",
+            "input": "caaab\nceaacecebddccbfc",
             "output": "false"
-        },
-        {
-            "input": "adbfb\nfacbeccacf",
-            "output": "false"
-        },
-        {
-            "input": "cfcaabcda\nbeacabbadfcacaafd",
-            "output": "true"
-        },
-        {
-            "input": "c\nbdadbbdbabbfeadbefc",
-            "output": "true"
-        },
-        {
-            "input": "eef\nefef",
-            "output": "true"
         },
         {
-            "input": "aadad\nddddcaeaaaee",
+            "input": "fceceb\neabcbcafeecbaab",
             "output": "true"
         },
         {
-            "input": "cccdbfadac\ncfecacbbebdcacaa",
+            "input": "ab\neaadff",
             "output": "false"
-        },
-        {
-            "input": "b\nec",
-            "output": "false"
-        },
-        {
-            "input": "bcadacb\naceeaedcbcdebcb",
-            "output": "true"
         },
         {
-            "input": "ccdeffabf\ncdafcaecebdfcbefefc",
+            "input": "edde\ncdedded",
             "output": "true"
         },
         {
-            "input": "cdaabfedef\nfadafbdfccdaedea",
+            "input": "a\ncedabb",
             "output": "true"
         },
         {
-            "input": "bbacfdde\nbedbbedbcdfebf",
+            "input": "adcfa\ndddccbcdbebacadadbe",
             "output": "false"
-        },
-        {
-            "input": "ccdcdacd\naceabdcaecdddcdc",
-            "output": "true"
-        },
-        {
-            "input": "aecaadfbd\nbdfeaafbdcdca",
-            "output": "true"
         },
         {
-            "input": "fceeffe\nefadcefececfacaa",
-            "output": "true"
-        },
-        {
-            "input": "abcfbdeddd\ndfbdfcceecee",
+            "input": "ce\nbbbdbbfbda",
             "output": "false"
-        },
-        {
-            "input": "cb\ncbb",
-            "output": "true"
-        },
-        {
-            "input": "fca\nacffefabaee",
-            "output": "true"
-        },
-        {
-            "input": "cbabeeedec\nefefcbcebebadace",
-            "output": "true"
-        },
-        {
-            "input": "aaba\naddaeba",
-            "output": "true"
-        },
-        {
-            "input": "ee\ndddeefbbbebdcab",
-            "output": "true"
         },
         {
-            "input": "ce\neacbdeec",
+            "input": "bbaacd\ndcabacfdbadabf",
             "output": "true"
         },
         {
-            "input": "bff\nbff",
+            "input": "bc\nacfcbcde",
             "output": "true"
         },
         {
-            "input": "dc\nddebccafdddcaecec",
+            "input": "eeacbfbccc\nfbecebcaecbeccccc",
             "output": "true"
         },
         {
-            "input": "bafab\naaabcfbaafeb",
+            "input": "acecceb\nbdafcebeceabcc",
             "output": "true"
         },
         {
-            "input": "dfdacbbfaa\nbbeffeabdeeeb",
+            "input": "ccbdefabe\nffffefeabbaaa",
             "output": "false"
-        },
-        {
-            "input": "edfbbd\ncfddbbe",
-            "output": "true"
         },
         {
-            "input": "af\ndfbbfbdbcdfdcebdcd",
+            "input": "edcffb\naedeaf",
             "output": "false"
-        },
-        {
-            "input": "edbabead\nebeeadbda",
-            "output": "true"
         },
         {
-            "input": "fcdc\nfcbdc",
+            "input": "bd\nfdbdbad",
             "output": "true"
         },
         {
-            "input": "bbabcfbff\ndfefbbcbbdffab",
+            "input": "bc\nbbccbc",
             "output": "true"
-        },
-        {
-            "input": "fbdfbbc\ndadcacffc",
-            "output": "false"
-        },
-        {
-            "input": "efd\nbbeacedfabefcc",
-            "output": "true"
-        },
-        {
-            "input": "adcbfebade\nfcdaeceffcbfcbaa",
-            "output": "false"
         },
         {
-            "input": "cddbceebe\naacaedcebcbdbbeafcd",
+            "input": "bdfb\neaddafbfbddfcdfff",
             "output": "true"
         },
         {
@@ -1655,375 +151,1879 @@
             "output": "true"
         },
         {
-            "input": "eeebab\nbefdaafb",
+            "input": "cddcdafde\necdacbbdeef",
             "output": "false"
         },
         {
-            "input": "ebababaea\nebdaaaebbbadbdbacec",
+            "input": "fdcfafc\nfccbfdadaf",
             "output": "true"
         },
         {
-            "input": "bffdcbeff\nfcffffbcbedfc",
+            "input": "ec\naeebcaabaecbceef",
             "output": "true"
         },
         {
-            "input": "a\nadbcaedfdefaffc",
-            "output": "true"
-        },
-        {
-            "input": "cbcbdbedbf\nbdefafbfebc",
+            "input": "ffdcafca\neafedbeacedded",
             "output": "false"
         },
         {
-            "input": "abacadfe\ndccfabfeddfcbfeafc",
+            "input": "bca\ndaadaddcfeb",
+            "output": "true"
+        },
+        {
+            "input": "cebddaefa\ndcddbdefbabceaedf",
+            "output": "true"
+        },
+        {
+            "input": "ecfd\nddceaf",
+            "output": "true"
+        },
+        {
+            "input": "dacbdbaf\nbfadabcd",
+            "output": "true"
+        },
+        {
+            "input": "ecddffbf\neebbcebdffffdb",
+            "output": "true"
+        },
+        {
+            "input": "eedfeeddac\nefbedadbeebcfec",
             "output": "false"
         },
         {
-            "input": "fbdbaaba\nafdccfcbcaadaaae",
+            "input": "aedcfbeafc\ncbdceebbeb",
             "output": "false"
         },
         {
-            "input": "cbf\nceccfaedfeadeeaabfab",
+            "input": "ebea\ndebeabcfabb",
             "output": "true"
         },
         {
-            "input": "eaa\ncccbdcafe",
+            "input": "ecfd\ncedffce",
+            "output": "true"
+        },
+        {
+            "input": "dcfbebfdbc\ndceeeadaaabaf",
             "output": "false"
         },
         {
-            "input": "dccf\nfabbdedcbcdabdeefd",
+            "input": "dde\ndefdaebdddceaabd",
             "output": "true"
         },
         {
-            "input": "deeadb\ndeddbbfebbbdeccdaecb",
-            "output": "true"
-        },
-        {
-            "input": "bcb\nffafbaeac",
+            "input": "fff\ndbebbdaedf",
             "output": "false"
         },
         {
-            "input": "ccdfca\needcedffabaffffcd",
+            "input": "dd\neffdfcadaaccb",
+            "output": "true"
+        },
+        {
+            "input": "d\nadd",
+            "output": "true"
+        },
+        {
+            "input": "aeaeedcf\nfbbdadeafcbf",
             "output": "false"
         },
         {
-            "input": "cdada\ndfcdaaa",
+            "input": "bfd\nbfdaaabcddafffdced",
             "output": "true"
         },
         {
-            "input": "aefefeaadf\nbdeeafceeddaabbdaace",
+            "input": "c\ncbfcafbedbfcdaadf",
+            "output": "true"
+        },
+        {
+            "input": "cfced\nbecccfdceeafde",
+            "output": "true"
+        },
+        {
+            "input": "dffdafbabc\nfabbbcfafdfddecd",
+            "output": "true"
+        },
+        {
+            "input": "edacdac\nafdadfcfcaefcdcee",
+            "output": "true"
+        },
+        {
+            "input": "aeca\neaebfefeaffcfc",
+            "output": "true"
+        },
+        {
+            "input": "eab\nabcedbddefaab",
+            "output": "true"
+        },
+        {
+            "input": "ccace\nbecdaadafebcbbbcffec",
+            "output": "true"
+        },
+        {
+            "input": "ebeeccaf\naeaddeeadeedaafbaf",
             "output": "false"
         },
         {
-            "input": "abc\ndceaab",
+            "input": "debaddaafe\nedaeadfdbfedadaf",
             "output": "true"
         },
         {
-            "input": "cfdfde\ncfdcffceddf",
-            "output": "true"
-        },
-        {
-            "input": "ecdedaa\neebdeedcafebaae",
-            "output": "true"
-        },
-        {
-            "input": "bd\neadb",
-            "output": "true"
-        },
-        {
-            "input": "ccebadffd\nddcecbafcf",
-            "output": "true"
-        },
-        {
-            "input": "d\ndfbbfcafecae",
-            "output": "true"
-        },
-        {
-            "input": "eaccfdeec\ncecdecafe",
-            "output": "true"
-        },
-        {
-            "input": "eefcedfefa\nebebfdcfbddfbfcab",
+            "input": "dcffdd\ncfdeaefbcbbae",
             "output": "false"
         },
         {
-            "input": "adfdcbb\nddbdbbddeaeabaec",
+            "input": "d\nbffcaadfdfefcccaef",
+            "output": "true"
+        },
+        {
+            "input": "cbacbffab\nfbafbaccab",
+            "output": "true"
+        },
+        {
+            "input": "b\ncdbfcbdcebd",
+            "output": "true"
+        },
+        {
+            "input": "acfeedd\nccacaafeceeeaceceec",
             "output": "false"
         },
         {
-            "input": "ebbaaccda\nccadedcebadabdee",
-            "output": "true"
-        },
-        {
-            "input": "bffdcaedfc\nccaddebfff",
-            "output": "true"
-        },
-        {
-            "input": "fea\nfdadcafffafedaf",
-            "output": "true"
-        },
-        {
-            "input": "cce\necfcedcbcedfcdb",
-            "output": "true"
-        },
-        {
-            "input": "b\nbeaffddaebcfddba",
-            "output": "true"
-        },
-        {
-            "input": "cbe\ncaa",
+            "input": "ff\nddeee",
             "output": "false"
         },
         {
-            "input": "f\nfbfeefeffcafdabaca",
+            "input": "c\neccaedd",
             "output": "true"
         },
         {
-            "input": "efbffaaafa\nbfbefafaaaaedbaf",
+            "input": "aed\nbddcaedcbdcfaae",
             "output": "true"
         },
         {
-            "input": "babddaa\naddaabbaa",
+            "input": "cbcfbfff\nacbdbffdeffcccedd",
             "output": "true"
         },
         {
-            "input": "eaefed\ndabdcbaddecee",
+            "input": "ecdbeada\nceeaabcdcaefddd",
+            "output": "true"
+        },
+        {
+            "input": "c\naaeeafcbedebbfccddb",
+            "output": "true"
+        },
+        {
+            "input": "cba\nacddebeabbadabcfee",
+            "output": "true"
+        },
+        {
+            "input": "afaceccee\naeecccdfefeedffa",
+            "output": "true"
+        },
+        {
+            "input": "aacabf\nebcfbeeafdcb",
             "output": "false"
         },
         {
-            "input": "abbbdbfaf\ncfbfccacebccedddbdef",
+            "input": "bcabbdbabd\nbdebacfbabdbdaddeda",
+            "output": "true"
+        },
+        {
+            "input": "effefeefac\neeaeaffeefafcf",
+            "output": "true"
+        },
+        {
+            "input": "ebaecdd\nedbdeeedcaf",
+            "output": "true"
+        },
+        {
+            "input": "ecdac\nabceefdedeccaadece",
+            "output": "true"
+        },
+        {
+            "input": "efefadafcd\nffddacaefdecd",
+            "output": "true"
+        },
+        {
+            "input": "aadbaddabe\nebddaaaadbaed",
+            "output": "true"
+        },
+        {
+            "input": "fdacccff\ncccfefadefdae",
+            "output": "true"
+        },
+        {
+            "input": "a\nbbcfdfaebebfeec",
+            "output": "true"
+        },
+        {
+            "input": "deabbbcfcd\nacbefbfdcbbcccf",
             "output": "false"
         },
         {
-            "input": "cdeeaafdea\nccfedafacdfa",
+            "input": "bfcff\necbeb",
             "output": "false"
         },
         {
-            "input": "acf\nacaccfdfddf",
+            "input": "ecedadead\ndedaedecca",
             "output": "true"
         },
         {
-            "input": "cabefdb\ncefecebbadbefd",
+            "input": "edbafb\ndadfbbdcfeafeabba",
             "output": "true"
         },
         {
-            "input": "dcdfef\nedccdcffbec",
+            "input": "ecee\ncfcdbaaeefaabceccda",
             "output": "true"
         },
         {
-            "input": "bcbaeabbfb\nbfceabbbbaa",
-            "output": "true"
-        },
-        {
-            "input": "cbede\neeacdbeabe",
-            "output": "true"
-        },
-        {
-            "input": "bce\ndadbaacdecbaebed",
-            "output": "true"
-        },
-        {
-            "input": "a\nebabcabfabe",
-            "output": "true"
-        },
-        {
-            "input": "ecfafdf\nbfbdecfcdfce",
+            "input": "cafdffed\nfcaadfccddbebdcaacd",
             "output": "false"
         },
         {
-            "input": "efac\ncddfcbfeeceaa",
+            "input": "d\nadcfadedbddfeba",
             "output": "true"
         },
         {
-            "input": "a\neecbdee",
+            "input": "ddebbf\nceeedbbaf",
             "output": "false"
         },
         {
-            "input": "bbbbdbbeda\neafcdfdedfaadfeeaff",
+            "input": "ebdc\nbaffcecdec",
+            "output": "true"
+        },
+        {
+            "input": "ccefdabbba\nbcfedceacbebfcbfb",
             "output": "false"
         },
         {
-            "input": "cdaccab\ndacacbc",
+            "input": "cc\ncfbfccccd",
             "output": "true"
         },
         {
-            "input": "e\nedf",
+            "input": "a\ncebadfeeaead",
             "output": "true"
         },
         {
-            "input": "adccfd\ndcacfdfabcdd",
-            "output": "true"
-        },
-        {
-            "input": "afffae\nfccfaaafceadd",
-            "output": "true"
-        },
-        {
-            "input": "fddb\naecfbfebcbfceaa",
+            "input": "dfababc\nfcfaeffeafbfaaeccee",
             "output": "false"
         },
         {
-            "input": "fccdfbdccb\nccdbcbdfcf",
-            "output": "true"
-        },
-        {
-            "input": "dae\ncedfdddfdbfadecbce",
-            "output": "true"
-        },
-        {
-            "input": "bfceae\nacdbcba",
+            "input": "beedbadfd\ncfffdcbecffcddbe",
             "output": "false"
         },
         {
-            "input": "afebfcc\nabfcbeadcecfdcebfccb",
+            "input": "efdbadefee\ndfaebdcedeaedbafcbe",
             "output": "true"
         },
         {
-            "input": "aebcceabda\necbadbadace",
+            "input": "bdeeaae\nbbcefdfaddaefadbe",
             "output": "true"
         },
         {
-            "input": "cd\neafeeabcfbadecb",
-            "output": "true"
-        },
-        {
-            "input": "dd\nbebdbaecdfdbcffacccc",
-            "output": "true"
-        },
-        {
-            "input": "cedbddcdc\ndfbaaeaeeedac",
+            "input": "bbfbee\nbacdccaadaebdbb",
             "output": "false"
         },
         {
-            "input": "acaad\naacaadead",
+            "input": "dcbe\ncecdccfbdeefedd",
             "output": "true"
         },
         {
-            "input": "bebadad\nbdaffffc",
-            "output": "false"
-        },
-        {
-            "input": "dffecc\neebbfd",
-            "output": "false"
-        },
-        {
-            "input": "fadbeccba\ncfcadfaeddea",
-            "output": "false"
-        },
-        {
-            "input": "fb\nacfddcf",
-            "output": "false"
-        },
-        {
-            "input": "ba\nadbbaddbdbccccf",
+            "input": "cdeafdfcf\nadfdaaffcce",
             "output": "true"
         },
         {
-            "input": "ac\nbdafdbcaaedfefc",
+            "input": "feaccdbadd\ncfceeddafdcedff",
+            "output": "false"
+        },
+        {
+            "input": "cff\nbbffbac",
             "output": "true"
+        },
+        {
+            "input": "db\nddeaafeddbfcb",
+            "output": "true"
+        },
+        {
+            "input": "aecefcce\necfdccaaee",
+            "output": "true"
+        },
+        {
+            "input": "bbc\nbacfabdacad",
+            "output": "true"
+        },
+        {
+            "input": "feabfab\naafebaeabbeb",
+            "output": "false"
+        },
+        {
+            "input": "dcaeba\ncdebaecdcabafcbac",
+            "output": "true"
+        },
+        {
+            "input": "efbdebfafc\nbbafffabbfacdaabddf",
+            "output": "false"
+        },
+        {
+            "input": "dfeade\ndcadeefea",
+            "output": "true"
+        },
+        {
+            "input": "baebbbceb\ncadadfafc",
+            "output": "false"
+        },
+        {
+            "input": "fca\nbfedca",
+            "output": "true"
+        },
+        {
+            "input": "fd\nbbfbfbcddba",
+            "output": "true"
+        },
+        {
+            "input": "ffdcdfecad\nafdbdbcbebab",
+            "output": "false"
+        },
+        {
+            "input": "fcff\nfbadcafcecddecf",
+            "output": "true"
+        },
+        {
+            "input": "aedaf\ndbbadafafae",
+            "output": "true"
+        },
+        {
+            "input": "fcad\nccbdafbfadbcadaa",
+            "output": "true"
+        },
+        {
+            "input": "edbfcbb\ncfbfeec",
+            "output": "false"
+        },
+        {
+            "input": "edfeeb\naedafefc",
+            "output": "false"
+        },
+        {
+            "input": "bde\ndeefdaaedddbdecbbce",
+            "output": "true"
+        },
+        {
+            "input": "cbbffcda\ncaedfddbcfdecafbcf",
+            "output": "true"
+        },
+        {
+            "input": "adebb\necfbcfeedecbfdb",
+            "output": "false"
+        },
+        {
+            "input": "adeda\naedbeddceddcaaaa",
+            "output": "true"
+        },
+        {
+            "input": "c\ndacebabcfcf",
+            "output": "true"
+        },
+        {
+            "input": "ffee\nccfeabfeaefe",
+            "output": "true"
+        },
+        {
+            "input": "a\nadcd",
+            "output": "true"
+        },
+        {
+            "input": "dc\naeadbaffbdfdbaadeee",
+            "output": "false"
+        },
+        {
+            "input": "eeaeea\neeeecaae",
+            "output": "true"
+        },
+        {
+            "input": "b\nabffaeffdecceb",
+            "output": "true"
+        },
+        {
+            "input": "dfbbe\nfbbfebdb",
+            "output": "true"
+        },
+        {
+            "input": "ebfba\nacefccffcdbaedcfb",
+            "output": "true"
+        },
+        {
+            "input": "eaaeddfcfa\ndbfdbbcdebbd",
+            "output": "false"
+        },
+        {
+            "input": "cfdaf\nccaedefcfbdffdffcc",
+            "output": "true"
+        },
+        {
+            "input": "da\naddcbdaadb",
+            "output": "true"
+        },
+        {
+            "input": "edcfec\nefcbdffbce",
+            "output": "true"
+        },
+        {
+            "input": "daedf\ncfcfeadfdeb",
+            "output": "true"
+        },
+        {
+            "input": "dbbe\ncbbaecbc",
+            "output": "false"
+        },
+        {
+            "input": "fdcf\neecebc",
+            "output": "false"
+        },
+        {
+            "input": "dbdfafdc\nbeebeedadebaa",
+            "output": "false"
+        },
+        {
+            "input": "bacade\nefcdfebccae",
+            "output": "false"
+        },
+        {
+            "input": "faecdf\nebbdccbdbcfeedcfbdfc",
+            "output": "false"
+        },
+        {
+            "input": "cac\nefcbefdfde",
+            "output": "false"
+        },
+        {
+            "input": "babec\nceecbcbcbbefacbedadb",
+            "output": "true"
+        },
+        {
+            "input": "aabfaec\nbeccdaedbbedfecce",
+            "output": "false"
+        },
+        {
+            "input": "bfbcaadeb\nbaefdccdfbfbbebabe",
+            "output": "true"
+        },
+        {
+            "input": "ecdc\ncceceedefefbfcfc",
+            "output": "true"
+        },
+        {
+            "input": "accadfabb\ncdaafdacbb",
+            "output": "true"
+        },
+        {
+            "input": "cfadfbc\ndcbbfafddffac",
+            "output": "true"
+        },
+        {
+            "input": "edafcf\ncedacbbcaccfdedbff",
+            "output": "true"
+        },
+        {
+            "input": "cccfff\nffcccefa",
+            "output": "true"
+        },
+        {
+            "input": "defebedc\nddfadaacac",
+            "output": "false"
+        },
+        {
+            "input": "fafa\naffa",
+            "output": "true"
+        },
+        {
+            "input": "aba\ncbabbafebb",
+            "output": "true"
+        },
+        {
+            "input": "cdfacbeae\ncfadbbabcbfdd",
+            "output": "false"
+        },
+        {
+            "input": "effb\ndceddcdfaffbfdacbe",
+            "output": "true"
+        },
+        {
+            "input": "aefccc\nccddbdbaacaeebfbedf",
+            "output": "true"
+        },
+        {
+            "input": "dbebadeadb\nceedaafcda",
+            "output": "false"
+        },
+        {
+            "input": "dfaa\nbdae",
+            "output": "false"
+        },
+        {
+            "input": "eeefbdf\necddeafebbfedcdea",
+            "output": "true"
+        },
+        {
+            "input": "ffaef\nbbafbcd",
+            "output": "false"
+        },
+        {
+            "input": "bb\nbcbafbbfebf",
+            "output": "true"
+        },
+        {
+            "input": "dbebafdab\nafedbafbdbfbeeeba",
+            "output": "true"
+        },
+        {
+            "input": "fadbdafaca\ncbdcedfdddffdc",
+            "output": "false"
+        },
+        {
+            "input": "edbceaba\nebecbaadc",
+            "output": "true"
+        },
+        {
+            "input": "e\nfcdccedabfbadfdccc",
+            "output": "true"
+        },
+        {
+            "input": "ceb\ncbe",
+            "output": "true"
+        },
+        {
+            "input": "abfbdcddf\naafccbbdffdbbeaed",
+            "output": "true"
+        },
+        {
+            "input": "cdcaaedefe\nfbceafaabedfeb",
+            "output": "false"
+        },
+        {
+            "input": "ee\nedbfddeacfceee",
+            "output": "true"
+        },
+        {
+            "input": "eebecffbc\nefedeccdac",
+            "output": "false"
+        },
+        {
+            "input": "ddcedfa\ncbdfccaeebfd",
+            "output": "false"
+        },
+        {
+            "input": "efdc\ndcef",
+            "output": "true"
+        },
+        {
+            "input": "caa\nfca",
+            "output": "false"
+        },
+        {
+            "input": "beeeecabfe\nebeddcdedbcfffb",
+            "output": "false"
+        },
+        {
+            "input": "ddb\ndeadcccba",
+            "output": "true"
+        },
+        {
+            "input": "cbebfe\nddadaadba",
+            "output": "false"
+        },
+        {
+            "input": "aaef\nefaefccbbdbdffcebebb",
+            "output": "false"
+        },
+        {
+            "input": "ce\nbcfebcbeafeaeaaabdbc",
+            "output": "true"
+        },
+        {
+            "input": "dfebbffe\nebbfedfafefcfacfdcdd",
+            "output": "true"
+        },
+        {
+            "input": "debd\ndedecedebbcabd",
+            "output": "true"
+        },
+        {
+            "input": "effbefbaf\nbfcbaefbfeefffeef",
+            "output": "true"
+        },
+        {
+            "input": "dabeccbcf\ncefcbbbcdcab",
+            "output": "true"
+        },
+        {
+            "input": "bdfcdedd\ncddfdedbdec",
+            "output": "true"
+        },
+        {
+            "input": "edddcababe\nacbdeabfacbedcdbeac",
+            "output": "true"
+        },
+        {
+            "input": "d\nbaefbcadaacadf",
+            "output": "true"
+        },
+        {
+            "input": "cdeaababc\neadffedcfceaefebeaab",
+            "output": "true"
+        },
+        {
+            "input": "eebdf\nffffebadeaedeafe",
+            "output": "true"
+        },
+        {
+            "input": "dfaaf\naecbdfbabcffeedbbd",
+            "output": "true"
+        },
+        {
+            "input": "a\neaddf",
+            "output": "true"
+        },
+        {
+            "input": "aadbc\naaacddba",
+            "output": "true"
+        },
+        {
+            "input": "feeeb\nabfbeefaeaaee",
+            "output": "true"
+        },
+        {
+            "input": "ddbdef\nbfbdbcafabddfcaeae",
+            "output": "true"
+        },
+        {
+            "input": "bdfa\ncebdcecfafbddfddeec",
+            "output": "true"
+        },
+        {
+            "input": "afdcef\nfebfffdefadfbbabfced",
+            "output": "true"
+        },
+        {
+            "input": "afbdafddd\naddfddbfa",
+            "output": "true"
+        },
+        {
+            "input": "dcabeaeaed\nbfdeddaebbb",
+            "output": "false"
+        },
+        {
+            "input": "ecaffbaba\ndafdfaeceadfbbaf",
+            "output": "true"
+        },
+        {
+            "input": "efabdffbda\ndfdacbacefefbffbd",
+            "output": "true"
+        },
+        {
+            "input": "ee\ndfc",
+            "output": "false"
+        },
+        {
+            "input": "ffaffeef\nefcbbfffeabf",
+            "output": "true"
+        },
+        {
+            "input": "cbcbbacfbb\nfdaceafbfcbeacedefc",
+            "output": "false"
+        },
+        {
+            "input": "abfffdfcd\nbaebfeafe",
+            "output": "false"
+        },
+        {
+            "input": "eaecdd\necfcaded",
+            "output": "true"
+        },
+        {
+            "input": "bbd\nebfcfaddfb",
+            "output": "true"
+        },
+        {
+            "input": "adccdfcbea\nadcdfacebcaccadaaa",
+            "output": "true"
+        },
+        {
+            "input": "fcf\nefbdfcbcdefbaadabb",
+            "output": "true"
+        },
+        {
+            "input": "aedccc\ndceefafeaeed",
+            "output": "false"
+        },
+        {
+            "input": "abddbcbb\nabcdeafbdaededabb",
+            "output": "true"
+        },
+        {
+            "input": "cbfadd\nfcbecfbccbcdeadbcab",
+            "output": "true"
+        },
+        {
+            "input": "fa\nebabfcbea",
+            "output": "true"
+        },
+        {
+            "input": "dc\ncdabeafca",
+            "output": "true"
+        },
+        {
+            "input": "b\necdf",
+            "output": "false"
+        },
+        {
+            "input": "adec\nabbcbcbbdbddeedf",
+            "output": "true"
+        },
+        {
+            "input": "dadaedd\nefdadadbfeeaedaed",
+            "output": "true"
+        },
+        {
+            "input": "cbd\nfafafafc",
+            "output": "false"
+        },
+        {
+            "input": "aebd\nddeeadeab",
+            "output": "true"
+        },
+        {
+            "input": "fafd\nbcfea",
+            "output": "false"
+        },
+        {
+            "input": "ffddf\ndcedbdfefdfefaddcd",
+            "output": "true"
+        },
+        {
+            "input": "fecaf\nefaecafccfddddaedbde",
+            "output": "true"
+        },
+        {
+            "input": "beaeeae\ndffdacbedaa",
+            "output": "false"
+        },
+        {
+            "input": "fcbbefca\nfafbabdabdacaefccea",
+            "output": "true"
+        },
+        {
+            "input": "abafe\nedabeabf",
+            "output": "true"
+        },
+        {
+            "input": "abdf\necec",
+            "output": "false"
+        },
+        {
+            "input": "dedbdacf\ncefcbfdfcdcbcfceeeca",
+            "output": "false"
+        },
+        {
+            "input": "efdcdfdf\ndedffdaedaafebb",
+            "output": "false"
+        },
+        {
+            "input": "edefbae\naabdbfbdaccfeeeedee",
+            "output": "true"
+        },
+        {
+            "input": "e\nfddfeeeeed",
+            "output": "true"
+        },
+        {
+            "input": "bfaeadfb\nffaeecdeeeabbfbaedf",
+            "output": "true"
+        },
+        {
+            "input": "fafacaabce\ncefcabaffdacdadeeba",
+            "output": "true"
+        },
+        {
+            "input": "bdfefdad\ncfdbedfbffb",
+            "output": "false"
+        },
+        {
+            "input": "fdacfafeb\ndaffcbaceffabccabd",
+            "output": "true"
+        },
+        {
+            "input": "dada\neecaeacaacaaefdbc",
+            "output": "false"
+        },
+        {
+            "input": "ffa\nacffdfd",
+            "output": "true"
+        },
+        {
+            "input": "dbfefab\ndbfafbdbdafbdccefb",
+            "output": "true"
+        },
+        {
+            "input": "dbdcab\naeffffbccbbcabdbdbf",
+            "output": "true"
+        },
+        {
+            "input": "ab\nbafcbd",
+            "output": "true"
+        },
+        {
+            "input": "a\nafecebca",
+            "output": "true"
+        },
+        {
+            "input": "aa\nacfca",
+            "output": "true"
+        },
+        {
+            "input": "ecdaaf\ndffacbbcaebab",
+            "output": "true"
+        },
+        {
+            "input": "aaddbcaa\ncadaabdea",
+            "output": "true"
+        },
+        {
+            "input": "b\ncbacccbefbbf",
+            "output": "true"
+        },
+        {
+            "input": "d\nb",
+            "output": "false"
+        },
+        {
+            "input": "dddcefedb\naabeaddaeab",
+            "output": "false"
+        },
+        {
+            "input": "ed\nccdabfaddadbcdeeab",
+            "output": "true"
+        },
+        {
+            "input": "cbdedb\nebdbeccbdaccffeffdd",
+            "output": "true"
+        },
+        {
+            "input": "cdce\ndbbeffcffedc",
+            "output": "true"
+        },
+        {
+            "input": "cccdcbcdb\ndfccccdbcb",
+            "output": "true"
+        },
+        {
+            "input": "fadaafb\nbfbeafddbffbbada",
+            "output": "true"
+        },
+        {
+            "input": "baebaecee\nbdcedafcebef",
+            "output": "false"
+        },
+        {
+            "input": "efdbddbab\nadfbeadcddbb",
+            "output": "true"
+        },
+        {
+            "input": "d\nbaadebf",
+            "output": "true"
+        },
+        {
+            "input": "ccecbdd\naadeccdfebacdceebec",
+            "output": "true"
+        },
+        {
+            "input": "acc\nfffacecdeecccbeabf",
+            "output": "true"
+        },
+        {
+            "input": "febacbdbcd\nadeecaeffcaabdcaef",
+            "output": "false"
+        },
+        {
+            "input": "fdfebcadb\nfedfccdccdccbcafbef",
+            "output": "true"
+        },
+        {
+            "input": "bcafbeded\nfdcdcacae",
+            "output": "false"
+        },
+        {
+            "input": "effdcec\nfcdffcee",
+            "output": "true"
+        },
+        {
+            "input": "deaabfdec\ndeefacdbba",
+            "output": "true"
+        },
+        {
+            "input": "fbec\nfccbabcfceb",
+            "output": "true"
+        },
+        {
+            "input": "aecee\nfdccdaeafacdcaadd",
+            "output": "false"
+        },
+        {
+            "input": "fddcbadecc\ndacdcdccfcfdbeafdd",
+            "output": "true"
+        },
+        {
+            "input": "bacdaccdcb\nbcdcbdeeddcdcbffcc",
+            "output": "false"
+        },
+        {
+            "input": "ecebedac\nbcadecdee",
+            "output": "true"
+        },
+        {
+            "input": "eaaf\neeaaeaf",
+            "output": "true"
+        },
+        {
+            "input": "e\nbadecaabdecddaaeefaa",
+            "output": "true"
+        },
+        {
+            "input": "becfcb\nbbaaefccfabcebdcfdab",
+            "output": "true"
+        },
+        {
+            "input": "eeca\nffaceedbccdddeafcdb",
+            "output": "true"
+        },
+        {
+            "input": "dcab\ndcba",
+            "output": "true"
+        },
+        {
+            "input": "ebeffc\nffeebcfccfeeccfdabb",
+            "output": "true"
+        },
+        {
+            "input": "bda\ndacfabe",
+            "output": "true"
+        },
+        {
+            "input": "dad\ncdebcbffdcaea",
+            "output": "true"
+        },
+        {
+            "input": "ba\nfb",
+            "output": "false"
+        },
+        {
+            "input": "edccb\nccbeefddfbafcbccebbb",
+            "output": "true"
+        },
+        {
+            "input": "dadecfaa\naafcdecda",
+            "output": "true"
+        },
+        {
+            "input": "dfadaafb\nbacbfeabbdf",
+            "output": "false"
+        },
+        {
+            "input": "fccddedf\nafefafbb",
+            "output": "false"
+        },
+        {
+            "input": "fb\ndbabbefaddee",
+            "output": "true"
+        },
+        {
+            "input": "eceaaafeb\nfbabaaebeeecaa",
+            "output": "true"
+        },
+        {
+            "input": "ea\nfea",
+            "output": "true"
+        },
+        {
+            "input": "fcdefedb\naaebececbaddccbadeb",
+            "output": "false"
+        },
+        {
+            "input": "badf\nbeccbfbbfadbccedaaa",
+            "output": "true"
+        },
+        {
+            "input": "cbfeebf\nfbcefeffb",
+            "output": "true"
+        },
+        {
+            "input": "b\nbbbcdaaeeebecb",
+            "output": "true"
+        },
+        {
+            "input": "bfbfbdebda\nbbbcfeadaebdbf",
+            "output": "true"
+        },
+        {
+            "input": "ebcaa\nebfeffcccaafabacfed",
+            "output": "true"
+        },
+        {
+            "input": "faaaed\nceaacfdacad",
+            "output": "true"
+        },
+        {
+            "input": "eeecea\ndbaceadeeeecebece",
+            "output": "true"
+        },
+        {
+            "input": "cbbe\nbafaeab",
+            "output": "false"
+        },
+        {
+            "input": "addfbcec\nbacbcfadcdeecaddc",
+            "output": "true"
+        },
+        {
+            "input": "a\nacbdaccbfa",
+            "output": "true"
+        },
+        {
+            "input": "d\ndbaaeeababdbea",
+            "output": "true"
+        },
+        {
+            "input": "bdfeb\necadcacbebcefecbcdb",
+            "output": "true"
+        },
+        {
+            "input": "bcfaadafb\ncdafbdaaabff",
+            "output": "true"
+        },
+        {
+            "input": "affafdf\nefecafafbdcdcfaf",
+            "output": "true"
+        },
+        {
+            "input": "ebeea\nafbbbabccdcaaeeaf",
+            "output": "false"
+        },
+        {
+            "input": "fecbd\ndebabbacfeceaccbdfc",
+            "output": "true"
+        },
+        {
+            "input": "bffdfdcb\nbfebfeddffbcdedfca",
+            "output": "true"
+        },
+        {
+            "input": "eacdcf\nacefccbfabdffb",
+            "output": "true"
+        },
+        {
+            "input": "fbb\neefeddceccaff",
+            "output": "false"
+        },
+        {
+            "input": "efeced\nffaaaadeffbbfafa",
+            "output": "false"
+        },
+        {
+            "input": "aeeefbfaf\nddfcffecacd",
+            "output": "false"
+        },
+        {
+            "input": "fdccaaaf\ndcadfadacbddeffbfe",
+            "output": "true"
+        },
+        {
+            "input": "baeb\nbcbaeabfbbbbeddeeefa",
+            "output": "true"
+        },
+        {
+            "input": "cfcfceddf\ndfdfceefebaecccdc",
+            "output": "true"
+        },
+        {
+            "input": "d\nd",
+            "output": "true"
+        },
+        {
+            "input": "e\nebbcbbbe",
+            "output": "true"
+        },
+        {
+            "input": "caafadabfc\nbddfdeedbe",
+            "output": "false"
+        },
+        {
+            "input": "afb\nfddfbdccbfab",
+            "output": "true"
+        },
+        {
+            "input": "bd\ndaecfedfafacfbc",
+            "output": "true"
+        },
+        {
+            "input": "dffdabb\nccfebfaded",
+            "output": "false"
+        },
+        {
+            "input": "acdefae\ndecffaae",
+            "output": "true"
+        },
+        {
+            "input": "dfba\nacecaebcecbcfabdcfba",
+            "output": "true"
+        },
+        {
+            "input": "bceeb\neeebffbceeafaedfbdb",
+            "output": "true"
+        },
+        {
+            "input": "df\nfecfadbfbeddacfa",
+            "output": "true"
+        },
+        {
+            "input": "fffbebe\nbfeefbbfead",
+            "output": "true"
+        },
+        {
+            "input": "fc\nddfcd",
+            "output": "true"
+        },
+        {
+            "input": "f\nbddbafcecaffb",
+            "output": "true"
+        },
+        {
+            "input": "ebcb\nddbcaebebcc",
+            "output": "true"
+        },
+        {
+            "input": "dfea\nbeedbaadaaadfbcc",
+            "output": "true"
+        },
+        {
+            "input": "eb\nfdefcfcbdefbeeacca",
+            "output": "true"
+        },
+        {
+            "input": "ddfc\nbaffccdaaadeceb",
+            "output": "true"
+        },
+        {
+            "input": "ffcd\ncdfaf",
+            "output": "true"
+        },
+        {
+            "input": "bfab\nabdcaccacbfbeefee",
+            "output": "true"
+        },
+        {
+            "input": "ca\nebcdfbfdfbacba",
+            "output": "true"
+        },
+        {
+            "input": "faccacfdba\ncbaeafeeabc",
+            "output": "false"
+        },
+        {
+            "input": "bdbcdac\nacffebeacaedbddecae",
+            "output": "true"
+        },
+        {
+            "input": "decefbe\ncbcdabfecebbe",
+            "output": "true"
+        },
+        {
+            "input": "f\nccaaedbecfbbccdbeda",
+            "output": "true"
+        },
+        {
+            "input": "dcebdcefd\naffdaaccb",
+            "output": "false"
         },
         {
             "input": "f\naf",
             "output": "true"
         },
         {
-            "input": "bdacee\nceffdaebbddb",
-            "output": "true"
-        },
-        {
-            "input": "ffeded\nffcbcddfeadeddafcafd",
-            "output": "true"
-        },
-        {
-            "input": "bdfcfcfcfd\ncddcffafcdcbfb",
-            "output": "true"
-        },
-        {
-            "input": "ca\nfaedcadfac",
-            "output": "true"
-        },
-        {
-            "input": "a\ncdc",
+            "input": "dda\nafc",
             "output": "false"
         },
         {
-            "input": "ffde\nbbbdcfeaacbafeebc",
-            "output": "true"
-        },
-        {
-            "input": "cbcbde\nefbccdbbffdbecdcdc",
-            "output": "true"
-        },
-        {
-            "input": "dbbeadfc\nbedebbdaffeedabebecc",
-            "output": "true"
-        },
-        {
-            "input": "ffb\nffb",
-            "output": "true"
-        },
-        {
-            "input": "bbd\nebbfabffdb",
-            "output": "true"
-        },
-        {
-            "input": "aebdf\ncfbeecdbabacede",
-            "output": "true"
-        },
-        {
-            "input": "af\nefaeafdfc",
-            "output": "true"
-        },
-        {
-            "input": "ebc\nebecedcbdd",
-            "output": "true"
-        },
-        {
-            "input": "edebdcfdeb\ndbcaedbcdefaddbffee",
-            "output": "true"
-        },
-        {
-            "input": "ecfbbfaede\nbdbafaefdba",
+            "input": "acae\nddeffffc",
             "output": "false"
         },
         {
-            "input": "d\ncfcfcfdfbcefd",
+            "input": "dc\nccdfccebbdaa",
             "output": "true"
         },
         {
-            "input": "fdcac\necfaade",
+            "input": "fff\nbfdffffaaa",
+            "output": "true"
+        },
+        {
+            "input": "dcfcccc\nfaacedcbffbba",
             "output": "false"
         },
         {
-            "input": "beacf\nbeabebfc",
-            "output": "true"
-        },
-        {
-            "input": "cbbadafc\ncbcdbbaadfebafbaf",
-            "output": "true"
-        },
-        {
-            "input": "dcaacaebed\ndffdfcebfdbbc",
+            "input": "bcca\nefeafadababaed",
             "output": "false"
         },
         {
-            "input": "fcdebbfc\nebccadfbfdbaab",
+            "input": "dbbdc\neffaaedfedfcfbcf",
+            "output": "false"
+        },
+        {
+            "input": "daeafb\nfcdfbafcccdfbb",
+            "output": "false"
+        },
+        {
+            "input": "fddafcfce\nfeefceafcdacdeafcd",
             "output": "true"
         },
         {
-            "input": "ac\naaccbebecfdae",
+            "input": "cbbeaecaeb\ndbcaabbebecfec",
             "output": "true"
         },
         {
-            "input": "ceda\nfccaaedffff",
+            "input": "bfceeba\nebefeeafadbdeebbeef",
+            "output": "false"
+        },
+        {
+            "input": "fedbffdcc\ncfbafcbdeddcefdcfe",
             "output": "true"
         },
         {
-            "input": "fe\nefeac",
+            "input": "ebcb\ncccbfedfafcbebbfdfb",
             "output": "true"
         },
         {
-            "input": "dcfeee\ncaafbedadbefeacdfee",
+            "input": "fb\nbaafaffc",
+            "output": "true"
+        },
+        {
+            "input": "eacffedfe\ndbfabefeebedfc",
+            "output": "true"
+        },
+        {
+            "input": "cdcddfdac\nceeddbbfceaaccc",
+            "output": "false"
+        },
+        {
+            "input": "b\nfefaeceffedb",
+            "output": "true"
+        },
+        {
+            "input": "a\nfc",
+            "output": "false"
+        },
+        {
+            "input": "ff\nfbeedbfbc",
+            "output": "true"
+        },
+        {
+            "input": "fbfffbd\ndfeaaddfbfbebdfdaccf",
+            "output": "true"
+        },
+        {
+            "input": "beabcdc\nbdbfaeecdccdbbe",
+            "output": "true"
+        },
+        {
+            "input": "dceeebdbac\nfcfcdcbaaf",
+            "output": "false"
+        },
+        {
+            "input": "aeceabf\ndbfdaadfe",
+            "output": "false"
+        },
+        {
+            "input": "feffae\nadafdacffcaedaecafbc",
+            "output": "true"
+        },
+        {
+            "input": "eadfffedbf\ndddafeffefba",
+            "output": "true"
+        },
+        {
+            "input": "efee\ncafd",
+            "output": "false"
+        },
+        {
+            "input": "eab\ndfdeeadcceebc",
+            "output": "true"
+        },
+        {
+            "input": "edbfcea\ncabecdfeaabdcbbffaa",
+            "output": "true"
+        },
+        {
+            "input": "efcbdcbbb\nfdbbaccbbe",
+            "output": "true"
+        },
+        {
+            "input": "cea\nebafcbbadecedafcfeca",
+            "output": "true"
+        },
+        {
+            "input": "efcafffc\ndfaeeebfbcabdfbeb",
+            "output": "false"
+        },
+        {
+            "input": "acbebce\ndebeacafdcaceecbe",
+            "output": "true"
+        },
+        {
+            "input": "ffaa\nbdffc",
+            "output": "false"
+        },
+        {
+            "input": "fbfbbef\nffbcdfffbdc",
+            "output": "false"
+        },
+        {
+            "input": "edbbdcedd\ncdddcdeebb",
+            "output": "true"
+        },
+        {
+            "input": "efaeafbe\nebfebabbadca",
+            "output": "false"
+        },
+        {
+            "input": "cbadc\nddccfcdcbdafefcacdf",
+            "output": "true"
+        },
+        {
+            "input": "ff\nebdaccdafceabdee",
+            "output": "false"
+        },
+        {
+            "input": "cf\nafacfaabdb",
+            "output": "true"
+        },
+        {
+            "input": "efceffefec\ndffacdeafa",
+            "output": "false"
+        },
+        {
+            "input": "abcdfe\ncdbdcadfac",
+            "output": "false"
+        },
+        {
+            "input": "dad\nedcadfbedca",
+            "output": "true"
+        },
+        {
+            "input": "f\nfee",
+            "output": "true"
+        },
+        {
+            "input": "ebffddebcf\nedddbcbdecbfcfafab",
+            "output": "true"
+        },
+        {
+            "input": "aceafcfccd\nfeacbcccafdbcdae",
+            "output": "true"
+        },
+        {
+            "input": "fc\nadffbfdbcbcbdcfafdaf",
+            "output": "true"
+        },
+        {
+            "input": "acefecfba\nefaabcceebaafb",
+            "output": "true"
+        },
+        {
+            "input": "dabdecc\ndcacdacaefc",
+            "output": "false"
+        },
+        {
+            "input": "ebffeeafe\neefcdeeaaeefdeccecf",
+            "output": "false"
+        },
+        {
+            "input": "cacb\ndadaecbebefc",
+            "output": "true"
+        },
+        {
+            "input": "fbccfb\nbadccbcfccffec",
+            "output": "true"
+        },
+        {
+            "input": "bb\nfbe",
+            "output": "false"
+        },
+        {
+            "input": "baefeafba\ncfaafdace",
+            "output": "false"
+        },
+        {
+            "input": "cedecbcaab\nbebceebcbeafece",
+            "output": "false"
+        },
+        {
+            "input": "afeaa\neeefbdbdaa",
+            "output": "false"
+        },
+        {
+            "input": "ebaba\nbebcbaaabaef",
+            "output": "true"
+        },
+        {
+            "input": "ebeef\nbbaccb",
+            "output": "false"
+        },
+        {
+            "input": "bafdb\ncdfeebf",
+            "output": "false"
+        },
+        {
+            "input": "a\nca",
+            "output": "true"
+        },
+        {
+            "input": "deacdeaa\ndeaaddaaaeeaeaddc",
+            "output": "true"
+        },
+        {
+            "input": "cdbdedba\ncdaafadbccafdfdded",
+            "output": "false"
+        },
+        {
+            "input": "bffccabdb\nccadacddabfbffbb",
+            "output": "true"
+        },
+        {
+            "input": "ffaaacb\nbadbbefabdffecb",
+            "output": "false"
+        },
+        {
+            "input": "afda\naafafffafe",
+            "output": "false"
+        },
+        {
+            "input": "fbbacc\nbccacafbf",
+            "output": "true"
+        },
+        {
+            "input": "bc\nfceacabadeffcffa",
+            "output": "true"
+        },
+        {
+            "input": "bdccbfdddf\nadddecdbbfcfbffdeda",
+            "output": "true"
+        },
+        {
+            "input": "cdbabace\nfeaffceeabbeca",
+            "output": "false"
+        },
+        {
+            "input": "fcfafbbc\naccbcaebfeccffbcaf",
+            "output": "true"
+        },
+        {
+            "input": "aaecd\nabdaaecca",
+            "output": "true"
+        },
+        {
+            "input": "fccbbda\neacefbacaeaacbba",
+            "output": "false"
+        },
+        {
+            "input": "bcdebbe\ndbbeceb",
+            "output": "true"
+        },
+        {
+            "input": "ccdd\naeceade",
+            "output": "false"
+        },
+        {
+            "input": "ebcafbebbb\naecaedefbbfdefaebf",
+            "output": "false"
+        },
+        {
+            "input": "acd\nadceddecffeabbdad",
+            "output": "true"
+        },
+        {
+            "input": "eaaedbdbfc\nacbddbdbadfdcbeffee",
+            "output": "true"
+        },
+        {
+            "input": "be\nbfa",
+            "output": "false"
+        },
+        {
+            "input": "afa\nedbbceaafbfceadd",
+            "output": "true"
+        },
+        {
+            "input": "ecbabfe\nfdcbabccbdffeeecddea",
+            "output": "true"
+        },
+        {
+            "input": "fcad\nbebafefbe",
+            "output": "false"
+        },
+        {
+            "input": "b\ndababcbadbabdaf",
+            "output": "true"
+        },
+        {
+            "input": "bbdfacdec\nbfcdaccaecafbe",
+            "output": "false"
+        },
+        {
+            "input": "adefa\nfbaceddfedda",
+            "output": "true"
+        },
+        {
+            "input": "cef\nedfeacc",
+            "output": "true"
+        },
+        {
+            "input": "ef\ndef",
+            "output": "true"
+        },
+        {
+            "input": "bfacdefdfe\nabedfafadaedbfcccdd",
+            "output": "true"
+        },
+        {
+            "input": "cdaf\ncdacafcea",
+            "output": "true"
+        },
+        {
+            "input": "ac\nbabffbacecbaabecee",
+            "output": "true"
+        },
+        {
+            "input": "ccbde\nccbde",
+            "output": "true"
+        },
+        {
+            "input": "abeaabaeff\ncfaaafabbeecbac",
+            "output": "true"
+        },
+        {
+            "input": "eceb\ndbecaedb",
+            "output": "true"
+        },
+        {
+            "input": "ffdbfbf\nbffcfddfb",
+            "output": "true"
+        },
+        {
+            "input": "ceaeaefb\nbcdacebfadebcdf",
+            "output": "false"
+        },
+        {
+            "input": "baffedbaad\nbecbfeffcadce",
+            "output": "false"
+        },
+        {
+            "input": "ecde\nfdeeffccbedaacccfd",
+            "output": "true"
+        },
+        {
+            "input": "ed\ndccefd",
+            "output": "true"
+        },
+        {
+            "input": "edebcebacd\naecbbbcfcacbbcefaca",
+            "output": "false"
+        },
+        {
+            "input": "bbdebca\nbaaafaacbacdbadcaaf",
+            "output": "false"
+        },
+        {
+            "input": "accfedfbbc\nafbbaceecebabaeecb",
+            "output": "false"
+        },
+        {
+            "input": "edfdeedfae\nebaecbaaeebdaceb",
+            "output": "false"
+        },
+        {
+            "input": "ee\ncadedefcbfbefbffe",
+            "output": "true"
+        },
+        {
+            "input": "dfaea\nbbfaee",
+            "output": "false"
+        },
+        {
+            "input": "cbeafdbcca\nacbecccdddecadf",
+            "output": "false"
+        },
+        {
+            "input": "fabfada\nfaaafdcfecacdedaaddb",
+            "output": "true"
+        },
+        {
+            "input": "efbbbcbf\nbbcfdacdeadbcccd",
+            "output": "false"
+        },
+        {
+            "input": "faedb\nbcecceaef",
+            "output": "false"
+        },
+        {
+            "input": "afcaeeebad\naceeedbaedeefabaac",
+            "output": "true"
+        },
+        {
+            "input": "a\na",
+            "output": "true"
+        },
+        {
+            "input": "efbfcfbf\ndbefcfcffedfbd",
+            "output": "true"
+        },
+        {
+            "input": "b\nacdaebdd",
+            "output": "true"
+        },
+        {
+            "input": "cbdfeece\nfbbccbabcafefe",
+            "output": "false"
+        },
+        {
+            "input": "caab\nfaab",
+            "output": "false"
+        },
+        {
+            "input": "fecfa\nfdcaeecff",
+            "output": "true"
+        },
+        {
+            "input": "ebca\nbeadfaccefacfeebcdb",
+            "output": "true"
+        },
+        {
+            "input": "eebdb\nbfaeafbfcdbebccdfe",
+            "output": "true"
+        },
+        {
+            "input": "aefacacbd\nbcafeaeeba",
+            "output": "false"
+        },
+        {
+            "input": "fa\ncbebafaeeadbbbeaea",
+            "output": "true"
+        },
+        {
+            "input": "cbadfcd\ncdcefabefade",
+            "output": "true"
+        },
+        {
+            "input": "bb\nebfcebdccecfdcf",
+            "output": "true"
+        },
+        {
+            "input": "adeb\ncfbbaaadeccaafc",
+            "output": "true"
+        },
+        {
+            "input": "dfe\ndfeceeddd",
+            "output": "true"
+        },
+        {
+            "input": "ecefabbdd\nedaadccdeeceeed",
+            "output": "false"
+        },
+        {
+            "input": "b\ndbfbbadfddfe",
+            "output": "true"
+        },
+        {
+            "input": "fefbffddd\needbfdfdfdff",
+            "output": "true"
+        },
+        {
+            "input": "beeaeefd\naaceeddb",
+            "output": "false"
+        },
+        {
+            "input": "aefeeaec\nfaaeeaafeec",
+            "output": "true"
+        },
+        {
+            "input": "efdcfc\nfdccbb",
+            "output": "false"
+        },
+        {
+            "input": "accc\ncbdbefecffd",
+            "output": "false"
+        },
+        {
+            "input": "e\neadcabffad",
+            "output": "true"
+        },
+        {
+            "input": "af\nefca",
+            "output": "true"
+        },
+        {
+            "input": "caacce\ndedebbdcfcd",
+            "output": "false"
+        },
+        {
+            "input": "deb\ndeffb",
+            "output": "true"
+        },
+        {
+            "input": "fb\nfecccfbcafadfbbd",
+            "output": "true"
+        },
+        {
+            "input": "cec\ncdeebcdc",
+            "output": "true"
+        },
+        {
+            "input": "dbfa\nedffbbea",
+            "output": "true"
+        },
+        {
+            "input": "fcdcb\nbdfef",
+            "output": "false"
+        },
+        {
+            "input": "d\nbedafdee",
+            "output": "true"
+        },
+        {
+            "input": "aedbbfbcc\nebaebfcdbbbceccfb",
+            "output": "true"
+        },
+        {
+            "input": "fcdbdb\nbfceffdacca",
+            "output": "false"
+        },
+        {
+            "input": "ca\nacdcdfbf",
+            "output": "true"
+        },
+        {
+            "input": "accebefa\ncbcfaeaeadef",
+            "output": "true"
+        },
+        {
+            "input": "dcfccaa\nadaccfdcc",
+            "output": "true"
+        },
+        {
+            "input": "fbdbdc\naeedda",
+            "output": "false"
+        },
+        {
+            "input": "ccdaafcc\nacfdccca",
+            "output": "true"
+        },
+        {
+            "input": "dafcfef\neacffdf",
+            "output": "true"
+        },
+        {
+            "input": "bafdecfb\ncadaaafd",
+            "output": "false"
+        },
+        {
+            "input": "aacefc\ncdbfbabd",
+            "output": "false"
+        },
+        {
+            "input": "ce\ndaacaaccdbac",
+            "output": "false"
+        },
+        {
+            "input": "cafaafb\ncbacaebebcafbeddbcf",
+            "output": "true"
+        },
+        {
+            "input": "fdbffdea\nfdacfdfa",
+            "output": "false"
+        },
+        {
+            "input": "c\neeebacddcfadeffbebdd",
+            "output": "true"
+        },
+        {
+            "input": "afafaedff\nfdffaeafafff",
+            "output": "true"
+        },
+        {
+            "input": "e\ncdfeaeda",
+            "output": "true"
+        },
+        {
+            "input": "aefd\nbabdefdff",
+            "output": "true"
+        },
+        {
+            "input": "ffa\nfdbcffaedebfeefdfeaf",
+            "output": "true"
+        },
+        {
+            "input": "acaeafc\needeeececfbeddecdfa",
+            "output": "false"
+        },
+        {
+            "input": "ccff\nfcfdaccc",
+            "output": "true"
+        },
+        {
+            "input": "fafcebac\nccacfbfead",
+            "output": "true"
+        },
+        {
+            "input": "bbdaccf\nfdfbabdefacbcefdbdf",
+            "output": "true"
+        },
+        {
+            "input": "ff\nbabdabebacb",
+            "output": "false"
+        },
+        {
+            "input": "cbdacfce\nccdefbceab",
+            "output": "true"
+        },
+        {
+            "input": "cfdffeefef\nacbaedbcbbafefcedcdc",
+            "output": "false"
+        },
+        {
+            "input": "ede\nbadadaffcebcbdbbd",
+            "output": "false"
+        },
+        {
+            "input": "bdcdbe\ncefeffffaaafcb",
+            "output": "false"
+        },
+        {
+            "input": "eccbef\nabfbabbbfaedafd",
+            "output": "false"
+        },
+        {
+            "input": "bfbfacebee\ncbebceabadad",
+            "output": "false"
+        },
+        {
+            "input": "fdd\nfbbfff",
+            "output": "false"
+        },
+        {
+            "input": "ff\nfcebafbebbbfbc",
+            "output": "true"
+        },
+        {
+            "input": "bfcdcfaefd\nddecfbcdcfdacaaf",
+            "output": "true"
+        },
+        {
+            "input": "abcfbdae\nacbbdffaeeb",
             "output": "true"
         }
     ]
