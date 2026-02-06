@@ -59,7 +59,7 @@ export default function ProblemViewer({ problem }: ProblemViewerProps) {
                         }}
                         className="prose prose-lg dark:prose-invert max-w-none text-gray-700 dark:text-gray-300"
                     >
-                        {problem.description}
+                        {typeof problem.description === 'string' ? problem.description : JSON.stringify(problem.description)}
                     </motion.div>
 
                     {problem.input_format && (
@@ -74,7 +74,7 @@ export default function ProblemViewer({ problem }: ProblemViewerProps) {
                                 Input Format
                             </h4>
                             <p className="text-gray-600 dark:text-gray-300 bg-gray-50 dark:bg-gray-900/50 p-3 rounded-lg border border-transparent hover:border-indigo-500/30 transition-all">
-                                {problem.input_format}
+                                {typeof problem.input_format === 'string' ? problem.input_format : JSON.stringify(problem.input_format)}
                             </p>
                         </motion.div>
                     )}
@@ -91,7 +91,7 @@ export default function ProblemViewer({ problem }: ProblemViewerProps) {
                                 Output Format
                             </h4>
                             <p className="text-gray-600 dark:text-gray-300 bg-gray-50 dark:bg-gray-900/50 p-3 rounded-lg border border-transparent hover:border-indigo-500/30 transition-all">
-                                {problem.output_format}
+                                {typeof problem.output_format === 'string' ? problem.output_format : JSON.stringify(problem.output_format)}
                             </p>
                         </motion.div>
                     )}

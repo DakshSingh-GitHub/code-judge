@@ -199,7 +199,7 @@ export default function CodeEditor({
                 />
             </div>
             {!isDisabled && (
-                <Toolbar fontSize={fontSize} setFontSize={setFontSize} />
+                <Toolbar code={code} fontSize={fontSize} setFontSize={setFontSize} />
             )}
         </div>
     );
