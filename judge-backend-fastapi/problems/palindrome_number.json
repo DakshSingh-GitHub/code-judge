@@ -1,0 +1,2029 @@
+{
+    "id": "palindrome_number",
+    "title": "Palindrome Number",
+    "description": "Given an integer x, return true if x is a palindrome, and false otherwise.",
+    "input_format": "A single integer x.",
+    "output_format": "'Yes' if x is a palindrome, 'No' otherwise.",
+    "constraints": {
+        "x": "-2^31 <= x <= 2^31 - 1"
+    },
+    "difficulty": "easy",
+    "judge_mode": "str_compare_strip",
+    "time_limit": 1,
+    "sample_test_cases": [
+        {
+            "input": "121",
+            "output": "Yes"
+        },
+        {
+            "input": "-121",
+            "output": "No"
+        },
+        {
+            "input": "10",
+            "output": "No"
+        }
+    ],
+    "hidden_test_cases": [
+        {
+            "input": "61698",
+            "output": "No"
+        },
+        {
+            "input": "70538",
+            "output": "No"
+        },
+        {
+            "input": "77366377",
+            "output": "Yes"
+        },
+        {
+            "input": "95219",
+            "output": "No"
+        },
+        {
+            "input": "3360990633",
+            "output": "Yes"
+        },
+        {
+            "input": "2855005582",
+            "output": "Yes"
+        },
+        {
+            "input": "60723",
+            "output": "No"
+        },
+        {
+            "input": "36727",
+            "output": "No"
+        },
+        {
+            "input": "27828",
+            "output": "No"
+        },
+        {
+            "input": "18712",
+            "output": "No"
+        },
+        {
+            "input": "25970",
+            "output": "No"
+        },
+        {
+            "input": "68155",
+            "output": "No"
+        },
+        {
+            "input": "2263",
+            "output": "No"
+        },
+        {
+            "input": "4974554794",
+            "output": "Yes"
+        },
+        {
+            "input": "8161881618",
+            "output": "Yes"
+        },
+        {
+            "input": "8376006738",
+            "output": "Yes"
+        },
+        {
+            "input": "3394884933",
+            "output": "Yes"
+        },
+        {
+            "input": "6612112166",
+            "output": "Yes"
+        },
+        {
+            "input": "94928",
+            "output": "No"
+        },
+        {
+            "input": "8322552238",
+            "output": "Yes"
+        },
+        {
+            "input": "4161881614",
+            "output": "Yes"
+        },
+        {
+            "input": "1451221541",
+            "output": "Yes"
+        },
+        {
+            "input": "41775",
+            "output": "No"
+        },
+        {
+            "input": "8517557158",
+            "output": "Yes"
+        },
+        {
+            "input": "53063",
+            "output": "No"
+        },
+        {
+            "input": "74528",
+            "output": "No"
+        },
+        {
+            "input": "38079",
+            "output": "No"
+        },
+        {
+            "input": "5926886295",
+            "output": "Yes"
+        },
+        {
+            "input": "5260",
+            "output": "No"
+        },
+        {
+            "input": "91865",
+            "output": "No"
+        },
+        {
+            "input": "7921331297",
+            "output": "Yes"
+        },
+        {
+            "input": "38814",
+            "output": "No"
+        },
+        {
+            "input": "9160",
+            "output": "No"
+        },
+        {
+            "input": "1643333461",
+            "output": "Yes"
+        },
+        {
+            "input": "8806226088",
+            "output": "Yes"
+        },
+        {
+            "input": "3065445603",
+            "output": "Yes"
+        },
+        {
+            "input": "5257447525",
+            "output": "Yes"
+        },
+        {
+            "input": "76733767",
+            "output": "Yes"
+        },
+        {
+            "input": "7961001697",
+            "output": "Yes"
+        },
+        {
+            "input": "37996",
+            "output": "No"
+        },
+        {
+            "input": "3427007243",
+            "output": "Yes"
+        },
+        {
+            "input": "82478",
+            "output": "No"
+        },
+        {
+            "input": "2388888832",
+            "output": "Yes"
+        },
+        {
+            "input": "41699",
+            "output": "No"
+        },
+        {
+            "input": "5177777715",
+            "output": "Yes"
+        },
+        {
+            "input": "5359449535",
+            "output": "Yes"
+        },
+        {
+            "input": "64555",
+            "output": "No"
+        },
+        {
+            "input": "6432772346",
+            "output": "Yes"
+        },
+        {
+            "input": "2954444592",
+            "output": "Yes"
+        },
+        {
+            "input": "54366345",
+            "output": "Yes"
+        },
+        {
+            "input": "76805",
+            "output": "No"
+        },
+        {
+            "input": "46078",
+            "output": "No"
+        },
+        {
+            "input": "94704",
+            "output": "No"
+        },
+        {
+            "input": "5849889485",
+            "output": "Yes"
+        },
+        {
+            "input": "1180660811",
+            "output": "Yes"
+        },
+        {
+            "input": "2166666612",
+            "output": "Yes"
+        },
+        {
+            "input": "20666",
+            "output": "No"
+        },
+        {
+            "input": "95566559",
+            "output": "Yes"
+        },
+        {
+            "input": "4576776754",
+            "output": "Yes"
+        },
+        {
+            "input": "1038118301",
+            "output": "Yes"
+        },
+        {
+            "input": "4990",
+            "output": "No"
+        },
+        {
+            "input": "8644884468",
+            "output": "Yes"
+        },
+        {
+            "input": "70287",
+            "output": "No"
+        },
+        {
+            "input": "93384",
+            "output": "No"
+        },
+        {
+            "input": "31633613",
+            "output": "Yes"
+        },
+        {
+            "input": "89991",
+            "output": "No"
+        },
+        {
+            "input": "8801661088",
+            "output": "Yes"
+        },
+        {
+            "input": "5230770325",
+            "output": "Yes"
+        },
+        {
+            "input": "92061",
+            "output": "No"
+        },
+        {
+            "input": "2308338032",
+            "output": "Yes"
+        },
+        {
+            "input": "47578",
+            "output": "No"
+        },
+        {
+            "input": "3553333553",
+            "output": "Yes"
+        },
+        {
+            "input": "1861331681",
+            "output": "Yes"
+        },
+        {
+            "input": "32680",
+            "output": "No"
+        },
+        {
+            "input": "28711",
+            "output": "No"
+        },
+        {
+            "input": "37445",
+            "output": "No"
+        },
+        {
+            "input": "4589339854",
+            "output": "Yes"
+        },
+        {
+            "input": "6546996456",
+            "output": "Yes"
+        },
+        {
+            "input": "8428338248",
+            "output": "Yes"
+        },
+        {
+            "input": "93666",
+            "output": "No"
+        },
+        {
+            "input": "77559",
+            "output": "No"
+        },
+        {
+            "input": "42044",
+            "output": "No"
+        },
+        {
+            "input": "32632",
+            "output": "No"
+        },
+        {
+            "input": "30411403",
+            "output": "Yes"
+        },
+        {
+            "input": "5241",
+            "output": "No"
+        },
+        {
+            "input": "50643",
+            "output": "No"
+        },
+        {
+            "input": "1990440991",
+            "output": "Yes"
+        },
+        {
+            "input": "1432442341",
+            "output": "Yes"
+        },
+        {
+            "input": "4901331094",
+            "output": "Yes"
+        },
+        {
+            "input": "8465115648",
+            "output": "Yes"
+        },
+        {
+            "input": "18667",
+            "output": "No"
+        },
+        {
+            "input": "23465",
+            "output": "No"
+        },
+        {
+            "input": "31393",
+            "output": "No"
+        },
+        {
+            "input": "6289339826",
+            "output": "Yes"
+        },
+        {
+            "input": "15756",
+            "output": "No"
+        },
+        {
+            "input": "3311001133",
+            "output": "Yes"
+        },
+        {
+            "input": "7362882637",
+            "output": "Yes"
+        },
+        {
+            "input": "24704",
+            "output": "No"
+        },
+        {
+            "input": "92843",
+            "output": "No"
+        },
+        {
+            "input": "7692992967",
+            "output": "Yes"
+        },
+        {
+            "input": "3488998843",
+            "output": "Yes"
+        },
+        {
+            "input": "66144",
+            "output": "No"
+        },
+        {
+            "input": "5925555295",
+            "output": "Yes"
+        },
+        {
+            "input": "37674",
+            "output": "No"
+        },
+        {
+            "input": "65680",
+            "output": "No"
+        },
+        {
+            "input": "15824",
+            "output": "No"
+        },
+        {
+            "input": "61296",
+            "output": "No"
+        },
+        {
+            "input": "6234664326",
+            "output": "Yes"
+        },
+        {
+            "input": "6562112656",
+            "output": "Yes"
+        },
+        {
+            "input": "6104114016",
+            "output": "Yes"
+        },
+        {
+            "input": "91177119",
+            "output": "Yes"
+        },
+        {
+            "input": "7644664467",
+            "output": "Yes"
+        },
+        {
+            "input": "9034884309",
+            "output": "Yes"
+        },
+        {
+            "input": "11197",
+            "output": "No"
+        },
+        {
+            "input": "18618",
+            "output": "No"
+        },
+        {
+            "input": "14137",
+            "output": "No"
+        },
+        {
+            "input": "9198998919",
+            "output": "Yes"
+        },
+        {
+            "input": "6088888806",
+            "output": "Yes"
+        },
+        {
+            "input": "75429",
+            "output": "No"
+        },
+        {
+            "input": "9124554219",
+            "output": "Yes"
+        },
+        {
+            "input": "41561",
+            "output": "No"
+        },
+        {
+            "input": "18749",
+            "output": "No"
+        },
+        {
+            "input": "2001331002",
+            "output": "Yes"
+        },
+        {
+            "input": "4254224524",
+            "output": "Yes"
+        },
+        {
+            "input": "39799793",
+            "output": "Yes"
+        },
+        {
+            "input": "3488778843",
+            "output": "Yes"
+        },
+        {
+            "input": "42263",
+            "output": "No"
+        },
+        {
+            "input": "23217",
+            "output": "No"
+        },
+        {
+            "input": "10297",
+            "output": "No"
+        },
+        {
+            "input": "9269559629",
+            "output": "Yes"
+        },
+        {
+            "input": "48287",
+            "output": "No"
+        },
+        {
+            "input": "65433",
+            "output": "No"
+        },
+        {
+            "input": "3083553803",
+            "output": "Yes"
+        },
+        {
+            "input": "94972",
+            "output": "No"
+        },
+        {
+            "input": "23074",
+            "output": "No"
+        },
+        {
+            "input": "7719669177",
+            "output": "Yes"
+        },
+        {
+            "input": "29575",
+            "output": "No"
+        },
+        {
+            "input": "13076",
+            "output": "No"
+        },
+        {
+            "input": "5588008855",
+            "output": "Yes"
+        },
+        {
+            "input": "83967",
+            "output": "No"
+        },
+        {
+            "input": "96746",
+            "output": "No"
+        },
+        {
+            "input": "652256",
+            "output": "Yes"
+        },
+        {
+            "input": "98741",
+            "output": "No"
+        },
+        {
+            "input": "2267117622",
+            "output": "Yes"
+        },
+        {
+            "input": "3756886573",
+            "output": "Yes"
+        },
+        {
+            "input": "3564774653",
+            "output": "Yes"
+        },
+        {
+            "input": "19553",
+            "output": "No"
+        },
+        {
+            "input": "4962002694",
+            "output": "Yes"
+        },
+        {
+            "input": "3638998363",
+            "output": "Yes"
+        },
+        {
+            "input": "28151",
+            "output": "No"
+        },
+        {
+            "input": "782287",
+            "output": "Yes"
+        },
+        {
+            "input": "94369",
+            "output": "No"
+        },
+        {
+            "input": "8240",
+            "output": "No"
+        },
+        {
+            "input": "35929",
+            "output": "No"
+        },
+        {
+            "input": "8188228818",
+            "output": "Yes"
+        },
+        {
+            "input": "63505",
+            "output": "No"
+        },
+        {
+            "input": "3300990033",
+            "output": "Yes"
+        },
+        {
+            "input": "80616",
+            "output": "No"
+        },
+        {
+            "input": "1242112421",
+            "output": "Yes"
+        },
+        {
+            "input": "91135",
+            "output": "No"
+        },
+        {
+            "input": "2819669182",
+            "output": "Yes"
+        },
+        {
+            "input": "9549889459",
+            "output": "Yes"
+        },
+        {
+            "input": "4196886914",
+            "output": "Yes"
+        },
+        {
+            "input": "50967",
+            "output": "No"
+        },
+        {
+            "input": "1977447791",
+            "output": "Yes"
+        },
+        {
+            "input": "9247",
+            "output": "No"
+        },
+        {
+            "input": "8694224968",
+            "output": "Yes"
+        },
+        {
+            "input": "44116",
+            "output": "No"
+        },
+        {
+            "input": "837",
+            "output": "No"
+        },
+        {
+            "input": "24591",
+            "output": "No"
+        },
+        {
+            "input": "24911942",
+            "output": "Yes"
+        },
+        {
+            "input": "69748",
+            "output": "No"
+        },
+        {
+            "input": "722227",
+            "output": "Yes"
+        },
+        {
+            "input": "7884224887",
+            "output": "Yes"
+        },
+        {
+            "input": "93577539",
+            "output": "Yes"
+        },
+        {
+            "input": "2336116332",
+            "output": "Yes"
+        },
+        {
+            "input": "7595225957",
+            "output": "Yes"
+        },
+        {
+            "input": "79211",
+            "output": "No"
+        },
+        {
+            "input": "1042",
+            "output": "No"
+        },
+        {
+            "input": "4762552674",
+            "output": "Yes"
+        },
+        {
+            "input": "24277242",
+            "output": "Yes"
+        },
+        {
+            "input": "4697667964",
+            "output": "Yes"
+        },
+        {
+            "input": "6580110856",
+            "output": "Yes"
+        },
+        {
+            "input": "1064884601",
+            "output": "Yes"
+        },
+        {
+            "input": "5328008235",
+            "output": "Yes"
+        },
+        {
+            "input": "70019",
+            "output": "No"
+        },
+        {
+            "input": "1246996421",
+            "output": "Yes"
+        },
+        {
+            "input": "43968",
+            "output": "No"
+        },
+        {
+            "input": "69837",
+            "output": "No"
+        },
+        {
+            "input": "12744721",
+            "output": "Yes"
+        },
+        {
+            "input": "97532",
+            "output": "No"
+        },
+        {
+            "input": "73300337",
+            "output": "Yes"
+        },
+        {
+            "input": "10421",
+            "output": "No"
+        },
+        {
+            "input": "50159",
+            "output": "No"
+        },
+        {
+            "input": "6993003996",
+            "output": "Yes"
+        },
+        {
+            "input": "6012552106",
+            "output": "Yes"
+        },
+        {
+            "input": "55133155",
+            "output": "Yes"
+        },
+        {
+            "input": "26689",
+            "output": "No"
+        },
+        {
+            "input": "9915225199",
+            "output": "Yes"
+        },
+        {
+            "input": "71887",
+            "output": "No"
+        },
+        {
+            "input": "34046",
+            "output": "No"
+        },
+        {
+            "input": "6684224866",
+            "output": "Yes"
+        },
+        {
+            "input": "4302552034",
+            "output": "Yes"
+        },
+        {
+            "input": "14153",
+            "output": "No"
+        },
+        {
+            "input": "3342332433",
+            "output": "Yes"
+        },
+        {
+            "input": "6772552776",
+            "output": "Yes"
+        },
+        {
+            "input": "2826556282",
+            "output": "Yes"
+        },
+        {
+            "input": "8932552398",
+            "output": "Yes"
+        },
+        {
+            "input": "7117887117",
+            "output": "Yes"
+        },
+        {
+            "input": "7083",
+            "output": "No"
+        },
+        {
+            "input": "97346",
+            "output": "No"
+        },
+        {
+            "input": "79652",
+            "output": "No"
+        },
+        {
+            "input": "6999",
+            "output": "No"
+        },
+        {
+            "input": "85365",
+            "output": "No"
+        },
+        {
+            "input": "1807997081",
+            "output": "Yes"
+        },
+        {
+            "input": "7867447687",
+            "output": "Yes"
+        },
+        {
+            "input": "48714",
+            "output": "No"
+        },
+        {
+            "input": "16233261",
+            "output": "Yes"
+        },
+        {
+            "input": "24682",
+            "output": "No"
+        },
+        {
+            "input": "4241881424",
+            "output": "Yes"
+        },
+        {
+            "input": "33435",
+            "output": "No"
+        },
+        {
+            "input": "73800837",
+            "output": "Yes"
+        },
+        {
+            "input": "97713",
+            "output": "No"
+        },
+        {
+            "input": "40082",
+            "output": "No"
+        },
+        {
+            "input": "4773663774",
+            "output": "Yes"
+        },
+        {
+            "input": "9111221119",
+            "output": "Yes"
+        },
+        {
+            "input": "7670110767",
+            "output": "Yes"
+        },
+        {
+            "input": "336633",
+            "output": "Yes"
+        },
+        {
+            "input": "13776",
+            "output": "No"
+        },
+        {
+            "input": "1431551341",
+            "output": "Yes"
+        },
+        {
+            "input": "73499",
+            "output": "No"
+        },
+        {
+            "input": "2625115262",
+            "output": "Yes"
+        },
+        {
+            "input": "9459",
+            "output": "No"
+        },
+        {
+            "input": "34373",
+            "output": "No"
+        },
+        {
+            "input": "19514",
+            "output": "No"
+        },
+        {
+            "input": "39",
+            "output": "No"
+        },
+        {
+            "input": "8406776048",
+            "output": "Yes"
+        },
+        {
+            "input": "8012002108",
+            "output": "Yes"
+        },
+        {
+            "input": "94413",
+            "output": "No"
+        },
+        {
+            "input": "35411453",
+            "output": "Yes"
+        },
+        {
+            "input": "2386666832",
+            "output": "Yes"
+        },
+        {
+            "input": "8937337398",
+            "output": "Yes"
+        },
+        {
+            "input": "6185",
+            "output": "No"
+        },
+        {
+            "input": "32449",
+            "output": "No"
+        },
+        {
+            "input": "7796116977",
+            "output": "Yes"
+        },
+        {
+            "input": "54019",
+            "output": "No"
+        },
+        {
+            "input": "1991771991",
+            "output": "Yes"
+        },
+        {
+            "input": "12798",
+            "output": "No"
+        },
+        {
+            "input": "68315",
+            "output": "No"
+        },
+        {
+            "input": "61868",
+            "output": "No"
+        },
+        {
+            "input": "5326",
+            "output": "No"
+        },
+        {
+            "input": "6976226796",
+            "output": "Yes"
+        },
+        {
+            "input": "88753",
+            "output": "No"
+        },
+        {
+            "input": "28281",
+            "output": "No"
+        },
+        {
+            "input": "5867",
+            "output": "No"
+        },
+        {
+            "input": "2882",
+            "output": "Yes"
+        },
+        {
+            "input": "5334774335",
+            "output": "Yes"
+        },
+        {
+            "input": "2093443902",
+            "output": "Yes"
+        },
+        {
+            "input": "88143",
+            "output": "No"
+        },
+        {
+            "input": "34649",
+            "output": "No"
+        },
+        {
+            "input": "23966",
+            "output": "No"
+        },
+        {
+            "input": "5654994565",
+            "output": "Yes"
+        },
+        {
+            "input": "2645665462",
+            "output": "Yes"
+        },
+        {
+            "input": "9581001859",
+            "output": "Yes"
+        },
+        {
+            "input": "93845",
+            "output": "No"
+        },
+        {
+            "input": "57787",
+            "output": "No"
+        },
+        {
+            "input": "6630770366",
+            "output": "Yes"
+        },
+        {
+            "input": "60707",
+            "output": "No"
+        },
+        {
+            "input": "9363553639",
+            "output": "Yes"
+        },
+        {
+            "input": "7885445887",
+            "output": "Yes"
+        },
+        {
+            "input": "66779",
+            "output": "No"
+        },
+        {
+            "input": "3288",
+            "output": "No"
+        },
+        {
+            "input": "4435335344",
+            "output": "Yes"
+        },
+        {
+            "input": "4789889874",
+            "output": "Yes"
+        },
+        {
+            "input": "2071551702",
+            "output": "Yes"
+        },
+        {
+            "input": "31937",
+            "output": "No"
+        },
+        {
+            "input": "5577557755",
+            "output": "Yes"
+        },
+        {
+            "input": "12146",
+            "output": "No"
+        },
+        {
+            "input": "67989",
+            "output": "No"
+        },
+        {
+            "input": "9678558769",
+            "output": "Yes"
+        },
+        {
+            "input": "83326",
+            "output": "No"
+        },
+        {
+            "input": "42441",
+            "output": "No"
+        },
+        {
+            "input": "92541",
+            "output": "No"
+        },
+        {
+            "input": "30086",
+            "output": "No"
+        },
+        {
+            "input": "61686",
+            "output": "No"
+        },
+        {
+            "input": "8781",
+            "output": "No"
+        },
+        {
+            "input": "83570",
+            "output": "No"
+        },
+        {
+            "input": "94868",
+            "output": "No"
+        },
+        {
+            "input": "2661001662",
+            "output": "Yes"
+        },
+        {
+            "input": "63446",
+            "output": "No"
+        },
+        {
+            "input": "3349119433",
+            "output": "Yes"
+        },
+        {
+            "input": "86877868",
+            "output": "Yes"
+        },
+        {
+            "input": "4326996234",
+            "output": "Yes"
+        },
+        {
+            "input": "55011055",
+            "output": "Yes"
+        },
+        {
+            "input": "90269",
+            "output": "No"
+        },
+        {
+            "input": "10707",
+            "output": "No"
+        },
+        {
+            "input": "6674554766",
+            "output": "Yes"
+        },
+        {
+            "input": "37691",
+            "output": "No"
+        },
+        {
+            "input": "2779449772",
+            "output": "Yes"
+        },
+        {
+            "input": "1761111671",
+            "output": "Yes"
+        },
+        {
+            "input": "89262",
+            "output": "No"
+        },
+        {
+            "input": "37806",
+            "output": "No"
+        },
+        {
+            "input": "12421",
+            "output": "Yes"
+        },
+        {
+            "input": "13083",
+            "output": "No"
+        },
+        {
+            "input": "7457007547",
+            "output": "Yes"
+        },
+        {
+            "input": "2556226552",
+            "output": "Yes"
+        },
+        {
+            "input": "1641551461",
+            "output": "Yes"
+        },
+        {
+            "input": "3643223463",
+            "output": "Yes"
+        },
+        {
+            "input": "9753",
+            "output": "No"
+        },
+        {
+            "input": "8730440378",
+            "output": "Yes"
+        },
+        {
+            "input": "93106",
+            "output": "No"
+        },
+        {
+            "input": "8109009018",
+            "output": "Yes"
+        },
+        {
+            "input": "8965335698",
+            "output": "Yes"
+        },
+        {
+            "input": "55272",
+            "output": "No"
+        },
+        {
+            "input": "3126336213",
+            "output": "Yes"
+        },
+        {
+            "input": "1747007471",
+            "output": "Yes"
+        },
+        {
+            "input": "6687007866",
+            "output": "Yes"
+        },
+        {
+            "input": "2850",
+            "output": "No"
+        },
+        {
+            "input": "60779",
+            "output": "No"
+        },
+        {
+            "input": "2357777532",
+            "output": "Yes"
+        },
+        {
+            "input": "36589",
+            "output": "No"
+        },
+        {
+            "input": "87969",
+            "output": "No"
+        },
+        {
+            "input": "6248",
+            "output": "No"
+        },
+        {
+            "input": "3654224563",
+            "output": "Yes"
+        },
+        {
+            "input": "99488499",
+            "output": "Yes"
+        },
+        {
+            "input": "75976",
+            "output": "No"
+        },
+        {
+            "input": "88760",
+            "output": "No"
+        },
+        {
+            "input": "9465335649",
+            "output": "Yes"
+        },
+        {
+            "input": "56241",
+            "output": "No"
+        },
+        {
+            "input": "12891",
+            "output": "No"
+        },
+        {
+            "input": "75530",
+            "output": "No"
+        },
+        {
+            "input": "5013003105",
+            "output": "Yes"
+        },
+        {
+            "input": "28087",
+            "output": "No"
+        },
+        {
+            "input": "9931881399",
+            "output": "Yes"
+        },
+        {
+            "input": "3452002543",
+            "output": "Yes"
+        },
+        {
+            "input": "7507777057",
+            "output": "Yes"
+        },
+        {
+            "input": "1816666181",
+            "output": "Yes"
+        },
+        {
+            "input": "2349559432",
+            "output": "Yes"
+        },
+        {
+            "input": "6328778236",
+            "output": "Yes"
+        },
+        {
+            "input": "15144151",
+            "output": "Yes"
+        },
+        {
+            "input": "8234774328",
+            "output": "Yes"
+        },
+        {
+            "input": "76469",
+            "output": "No"
+        },
+        {
+            "input": "83466",
+            "output": "No"
+        },
+        {
+            "input": "19511",
+            "output": "No"
+        },
+        {
+            "input": "8473003748",
+            "output": "Yes"
+        },
+        {
+            "input": "7593443957",
+            "output": "Yes"
+        },
+        {
+            "input": "66132",
+            "output": "No"
+        },
+        {
+            "input": "98204",
+            "output": "No"
+        },
+        {
+            "input": "55074",
+            "output": "No"
+        },
+        {
+            "input": "42813",
+            "output": "No"
+        },
+        {
+            "input": "10952",
+            "output": "No"
+        },
+        {
+            "input": "66521",
+            "output": "No"
+        },
+        {
+            "input": "4916",
+            "output": "No"
+        },
+        {
+            "input": "75836",
+            "output": "No"
+        },
+        {
+            "input": "43130",
+            "output": "No"
+        },
+        {
+            "input": "58140",
+            "output": "No"
+        },
+        {
+            "input": "3260440623",
+            "output": "Yes"
+        },
+        {
+            "input": "9608558069",
+            "output": "Yes"
+        },
+        {
+            "input": "9508448059",
+            "output": "Yes"
+        },
+        {
+            "input": "52189",
+            "output": "No"
+        },
+        {
+            "input": "9511331159",
+            "output": "Yes"
+        },
+        {
+            "input": "58972",
+            "output": "No"
+        },
+        {
+            "input": "1214774121",
+            "output": "Yes"
+        },
+        {
+            "input": "56291",
+            "output": "No"
+        },
+        {
+            "input": "4760880674",
+            "output": "Yes"
+        },
+        {
+            "input": "8457",
+            "output": "No"
+        },
+        {
+            "input": "1327",
+            "output": "No"
+        },
+        {
+            "input": "8974224798",
+            "output": "Yes"
+        },
+        {
+            "input": "8138558318",
+            "output": "Yes"
+        },
+        {
+            "input": "7975005797",
+            "output": "Yes"
+        },
+        {
+            "input": "7572552757",
+            "output": "Yes"
+        },
+        {
+            "input": "2851001582",
+            "output": "Yes"
+        },
+        {
+            "input": "1948778491",
+            "output": "Yes"
+        },
+        {
+            "input": "8701441078",
+            "output": "Yes"
+        },
+        {
+            "input": "7714554177",
+            "output": "Yes"
+        },
+        {
+            "input": "9137447319",
+            "output": "Yes"
+        },
+        {
+            "input": "23962",
+            "output": "No"
+        },
+        {
+            "input": "42555",
+            "output": "No"
+        },
+        {
+            "input": "15056",
+            "output": "No"
+        },
+        {
+            "input": "26456",
+            "output": "No"
+        },
+        {
+            "input": "5452772545",
+            "output": "Yes"
+        },
+        {
+            "input": "67373",
+            "output": "No"
+        },
+        {
+            "input": "8336006338",
+            "output": "Yes"
+        },
+        {
+            "input": "4515005154",
+            "output": "Yes"
+        },
+        {
+            "input": "24473",
+            "output": "No"
+        },
+        {
+            "input": "2069119602",
+            "output": "Yes"
+        },
+        {
+            "input": "1309009031",
+            "output": "Yes"
+        },
+        {
+            "input": "42742",
+            "output": "No"
+        },
+        {
+            "input": "6398558936",
+            "output": "Yes"
+        },
+        {
+            "input": "3372442733",
+            "output": "Yes"
+        },
+        {
+            "input": "64557",
+            "output": "No"
+        },
+        {
+            "input": "4275005724",
+            "output": "Yes"
+        },
+        {
+            "input": "68038",
+            "output": "No"
+        },
+        {
+            "input": "4703663074",
+            "output": "Yes"
+        },
+        {
+            "input": "74885",
+            "output": "No"
+        },
+        {
+            "input": "3378448733",
+            "output": "Yes"
+        },
+        {
+            "input": "4633773364",
+            "output": "Yes"
+        },
+        {
+            "input": "29706",
+            "output": "No"
+        },
+        {
+            "input": "3336336333",
+            "output": "Yes"
+        },
+        {
+            "input": "2359669532",
+            "output": "Yes"
+        },
+        {
+            "input": "80822",
+            "output": "No"
+        },
+        {
+            "input": "80039",
+            "output": "No"
+        },
+        {
+            "input": "54971",
+            "output": "No"
+        },
+        {
+            "input": "81745",
+            "output": "No"
+        },
+        {
+            "input": "20687",
+            "output": "No"
+        },
+        {
+            "input": "80786",
+            "output": "No"
+        },
+        {
+            "input": "5867447685",
+            "output": "Yes"
+        },
+        {
+            "input": "55382",
+            "output": "No"
+        },
+        {
+            "input": "21258",
+            "output": "No"
+        },
+        {
+            "input": "70455407",
+            "output": "Yes"
+        },
+        {
+            "input": "7196116917",
+            "output": "Yes"
+        },
+        {
+            "input": "51290",
+            "output": "No"
+        },
+        {
+            "input": "67988",
+            "output": "No"
+        },
+        {
+            "input": "1406336041",
+            "output": "Yes"
+        },
+        {
+            "input": "88210",
+            "output": "No"
+        },
+        {
+            "input": "2070220702",
+            "output": "Yes"
+        },
+        {
+            "input": "8597777958",
+            "output": "Yes"
+        },
+        {
+            "input": "1894224981",
+            "output": "Yes"
+        },
+        {
+            "input": "71067",
+            "output": "No"
+        },
+        {
+            "input": "72101",
+            "output": "No"
+        },
+        {
+            "input": "36077",
+            "output": "No"
+        },
+        {
+            "input": "2276006722",
+            "output": "Yes"
+        },
+        {
+            "input": "69632",
+            "output": "No"
+        },
+        {
+            "input": "7938228397",
+            "output": "Yes"
+        },
+        {
+            "input": "3187007813",
+            "output": "Yes"
+        },
+        {
+            "input": "7839229387",
+            "output": "Yes"
+        },
+        {
+            "input": "6337227336",
+            "output": "Yes"
+        },
+        {
+            "input": "6193443916",
+            "output": "Yes"
+        },
+        {
+            "input": "8683993868",
+            "output": "Yes"
+        },
+        {
+            "input": "55290",
+            "output": "No"
+        },
+        {
+            "input": "72624",
+            "output": "No"
+        },
+        {
+            "input": "77262",
+            "output": "No"
+        },
+        {
+            "input": "99771",
+            "output": "No"
+        },
+        {
+            "input": "3105445013",
+            "output": "Yes"
+        },
+        {
+            "input": "41296",
+            "output": "No"
+        },
+        {
+            "input": "7784114877",
+            "output": "Yes"
+        },
+        {
+            "input": "4007",
+            "output": "No"
+        },
+        {
+            "input": "94523",
+            "output": "No"
+        },
+        {
+            "input": "34442",
+            "output": "No"
+        },
+        {
+            "input": "9277117729",
+            "output": "Yes"
+        },
+        {
+            "input": "82421",
+            "output": "No"
+        },
+        {
+            "input": "39571",
+            "output": "No"
+        },
+        {
+            "input": "5002992005",
+            "output": "Yes"
+        },
+        {
+            "input": "2357337532",
+            "output": "Yes"
+        },
+        {
+            "input": "3624554263",
+            "output": "Yes"
+        },
+        {
+            "input": "33463",
+            "output": "No"
+        },
+        {
+            "input": "80196",
+            "output": "No"
+        },
+        {
+            "input": "42922924",
+            "output": "Yes"
+        },
+        {
+            "input": "92495",
+            "output": "No"
+        },
+        {
+            "input": "76085",
+            "output": "No"
+        },
+        {
+            "input": "5401551045",
+            "output": "Yes"
+        },
+        {
+            "input": "53799735",
+            "output": "Yes"
+        },
+        {
+            "input": "8330110338",
+            "output": "Yes"
+        },
+        {
+            "input": "6047997406",
+            "output": "Yes"
+        },
+        {
+            "input": "9313663139",
+            "output": "Yes"
+        },
+        {
+            "input": "27180",
+            "output": "No"
+        },
+        {
+            "input": "99481",
+            "output": "No"
+        },
+        {
+            "input": "2278558722",
+            "output": "Yes"
+        },
+        {
+            "input": "4611001164",
+            "output": "Yes"
+        },
+        {
+            "input": "96326",
+            "output": "No"
+        },
+        {
+            "input": "28637",
+            "output": "No"
+        },
+        {
+            "input": "1203993021",
+            "output": "Yes"
+        },
+        {
+            "input": "93598",
+            "output": "No"
+        },
+        {
+            "input": "2628",
+            "output": "No"
+        },
+        {
+            "input": "75116",
+            "output": "No"
+        },
+        {
+            "input": "4812552184",
+            "output": "Yes"
+        },
+        {
+            "input": "38709",
+            "output": "No"
+        },
+        {
+            "input": "4142552414",
+            "output": "Yes"
+        },
+        {
+            "input": "3870000783",
+            "output": "Yes"
+        },
+        {
+            "input": "75199",
+            "output": "No"
+        },
+        {
+            "input": "40844",
+            "output": "No"
+        },
+        {
+            "input": "8191111918",
+            "output": "Yes"
+        },
+        {
+            "input": "2835885382",
+            "output": "Yes"
+        },
+        {
+            "input": "6287447826",
+            "output": "Yes"
+        },
+        {
+            "input": "2031771302",
+            "output": "Yes"
+        },
+        {
+            "input": "328823",
+            "output": "Yes"
+        },
+        {
+            "input": "4563553654",
+            "output": "Yes"
+        },
+        {
+            "input": "90616",
+            "output": "No"
+        },
+        {
+            "input": "9678998769",
+            "output": "Yes"
+        },
+        {
+            "input": "42691",
+            "output": "No"
+        },
+        {
+            "input": "6420",
+            "output": "No"
+        },
+        {
+            "input": "7969449697",
+            "output": "Yes"
+        },
+        {
+            "input": "57067",
+            "output": "No"
+        },
+        {
+            "input": "7634554367",
+            "output": "Yes"
+        },
+        {
+            "input": "79427",
+            "output": "No"
+        },
+        {
+            "input": "2773223772",
+            "output": "Yes"
+        },
+        {
+            "input": "5155995515",
+            "output": "Yes"
+        },
+        {
+            "input": "65350",
+            "output": "No"
+        },
+        {
+            "input": "91252",
+            "output": "No"
+        },
+        {
+            "input": "3017557103",
+            "output": "Yes"
+        },
+        {
+            "input": "4471331744",
+            "output": "Yes"
+        },
+        {
+            "input": "73688637",
+            "output": "Yes"
+        },
+        {
+            "input": "59061",
+            "output": "No"
+        },
+        {
+            "input": "6866006686",
+            "output": "Yes"
+        },
+        {
+            "input": "26275",
+            "output": "No"
+        },
+        {
+            "input": "21688612",
+            "output": "Yes"
+        },
+        {
+            "input": "6429009246",
+            "output": "Yes"
+        },
+        {
+            "input": "8601001068",
+            "output": "Yes"
+        },
+        {
+            "input": "6363223636",
+            "output": "Yes"
+        },
+        {
+            "input": "1264774621",
+            "output": "Yes"
+        }
+    ]
+}

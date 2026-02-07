@@ -21,2004 +21,2004 @@
     ],
     "hidden_test_cases": [
         {
-            "input": "cceagaeagd",
-            "output": "dgaeagaecc"
+            "input": "dagcd",
+            "output": "dcgad"
         },
         {
-            "input": "fcb",
-            "output": "bcf"
+            "input": "dbg",
+            "output": "gbd"
         },
         {
-            "input": "ccbg",
-            "output": "gbcc"
+            "input": "fecf",
+            "output": "fcef"
         },
         {
-            "input": "bgbc",
-            "output": "cbgb"
+            "input": "eebbfdaadaebg",
+            "output": "gbeadaadfbbee"
         },
         {
-            "input": "ggeddfaa",
-            "output": "aafddegg"
+            "input": "cccfccggfccfbdg",
+            "output": "gdbfccfggccfccc"
         },
         {
-            "input": "dbfcefffddbb",
-            "output": "bbddfffecfbd"
+            "input": "gcacfab",
+            "output": "bafcacg"
         },
         {
-            "input": "cfaabdf",
-            "output": "fdbaafc"
+            "input": "affdc",
+            "output": "cdffa"
         },
         {
-            "input": "gcfffffe",
-            "output": "efffffcg"
-        },
-        {
-            "input": "bcdbfebbgdfbgb",
-            "output": "bgbfdgbbefbdcb"
-        },
-        {
-            "input": "ged",
-            "output": "deg"
-        },
-        {
-            "input": "ccaaffbeaeabcaf",
-            "output": "facbaeaebffaacc"
-        },
-        {
-            "input": "dcafggafbcadc",
-            "output": "cdacbfaggfacd"
-        },
-        {
-            "input": "ccfegddedccfdfb",
-            "output": "bfdfccdeddgefcc"
-        },
-        {
-            "input": "cebeff",
-            "output": "ffebec"
-        },
-        {
-            "input": "cfgfgfa",
-            "output": "afgfgfc"
-        },
-        {
-            "input": "geffggbaggddfb",
-            "output": "bfddggabggffeg"
-        },
-        {
-            "input": "fdbbaecdcaefe",
-            "output": "efeacdceabbdf"
-        },
-        {
-            "input": "acegaegggb",
-            "output": "bgggeageca"
-        },
-        {
-            "input": "edaecgdec",
-            "output": "cedgceade"
-        },
-        {
-            "input": "addgc",
-            "output": "cgdda"
-        },
-        {
-            "input": "adbabeff",
-            "output": "ffebabda"
-        },
-        {
-            "input": "ffabdgdedaeg",
-            "output": "geadedgdbaff"
-        },
-        {
-            "input": "aggcdgecbae",
-            "output": "eabcegdcgga"
-        },
-        {
-            "input": "ccffgbgfbaff",
-            "output": "ffabfgbgffcc"
-        },
-        {
-            "input": "cbefdeeeeffaf",
-            "output": "faffeeeedfebc"
-        },
-        {
-            "input": "bddgfecgedcd",
-            "output": "dcdegcefgddb"
-        },
-        {
-            "input": "cddgagbfecbcde",
-            "output": "edcbcefbgagddc"
-        },
-        {
-            "input": "fcfggde",
-            "output": "edggfcf"
-        },
-        {
-            "input": "cffaeegcfdbag",
-            "output": "gabdfcgeeaffc"
-        },
-        {
-            "input": "cbggbafbdf",
-            "output": "fdbfabggbc"
-        },
-        {
-            "input": "eecfeggaffe",
-            "output": "effaggefcee"
-        },
-        {
-            "input": "febdgg",
-            "output": "ggdbef"
-        },
-        {
-            "input": "ggdccecb",
-            "output": "bceccdgg"
-        },
-        {
-            "input": "eac",
-            "output": "cae"
-        },
-        {
-            "input": "aaedfffbbaafab",
-            "output": "bafaabbfffdeaa"
-        },
-        {
-            "input": "deedadgfcbcfdee",
-            "output": "eedfcbcfgdadeed"
-        },
-        {
-            "input": "agbga",
-            "output": "agbga"
-        },
-        {
-            "input": "affd",
-            "output": "dffa"
-        },
-        {
-            "input": "deeggf",
-            "output": "fggeed"
-        },
-        {
-            "input": "aaaeggeacfa",
-            "output": "afcaeggeaaa"
-        },
-        {
-            "input": "ccafafadgdcgeec",
-            "output": "ceegcdgdafafacc"
-        },
-        {
-            "input": "adcbfaebcdffe",
-            "output": "effdcbeafbcda"
-        },
-        {
-            "input": "ddgfadbdb",
-            "output": "bdbdafgdd"
-        },
-        {
-            "input": "bdece",
-            "output": "ecedb"
-        },
-        {
-            "input": "efegaeg",
-            "output": "geagefe"
-        },
-        {
-            "input": "gggdg",
-            "output": "gdggg"
-        },
-        {
-            "input": "gedfccgabeee",
-            "output": "eeebagccfdeg"
-        },
-        {
-            "input": "beeagbbdcgcde",
-            "output": "edcgcdbbgaeeb"
-        },
-        {
-            "input": "egbgbdeebgcf",
-            "output": "fcgbeedbgbge"
-        },
-        {
-            "input": "fgdcgabegg",
-            "output": "ggebagcdgf"
-        },
-        {
-            "input": "gfbeabdfefaacbc",
-            "output": "cbcaafefdbaebfg"
-        },
-        {
-            "input": "fdbaccadfe",
-            "output": "efdaccabdf"
-        },
-        {
-            "input": "fbfaadgdacaedgd",
-            "output": "dgdeacadgdaafbf"
-        },
-        {
-            "input": "gdedaeag",
-            "output": "gaeadedg"
-        },
-        {
-            "input": "eceb",
-            "output": "bece"
-        },
-        {
-            "input": "eedeeeca",
-            "output": "aceeedee"
-        },
-        {
-            "input": "gabagacbefecd",
-            "output": "dcefebcagabag"
-        },
-        {
-            "input": "ccfefgebefb",
-            "output": "bfebegfefcc"
-        },
-        {
-            "input": "egb",
-            "output": "bge"
-        },
-        {
-            "input": "dddcffb",
-            "output": "bffcddd"
-        },
-        {
-            "input": "gagcb",
-            "output": "bcgag"
-        },
-        {
-            "input": "dafeed",
-            "output": "deefad"
-        },
-        {
-            "input": "dgca",
-            "output": "acgd"
-        },
-        {
-            "input": "bdefacgca",
-            "output": "acgcafedb"
-        },
-        {
-            "input": "adbace",
-            "output": "ecabda"
-        },
-        {
-            "input": "abedg",
-            "output": "gdeba"
-        },
-        {
-            "input": "bafdfbaca",
-            "output": "acabfdfab"
-        },
-        {
-            "input": "bebdbfacceece",
-            "output": "eceeccafbdbeb"
-        },
-        {
-            "input": "dbcegdccgda",
-            "output": "adgccdgecbd"
-        },
-        {
-            "input": "aegcfced",
-            "output": "decfcgea"
-        },
-        {
-            "input": "aeaggddcd",
-            "output": "dcddggaea"
-        },
-        {
-            "input": "fedg",
-            "output": "gdef"
-        },
-        {
-            "input": "abfgbf",
-            "output": "fbgfba"
-        },
-        {
-            "input": "feedbcf",
-            "output": "fcbdeef"
-        },
-        {
-            "input": "agdeaef",
-            "output": "feaedga"
-        },
-        {
-            "input": "afgeaccafb",
-            "output": "bfaccaegfa"
-        },
-        {
-            "input": "gdcafffgdbf",
-            "output": "fbdgfffacdg"
-        },
-        {
-            "input": "acgdbeccfge",
-            "output": "egfccebdgca"
-        },
-        {
-            "input": "cce",
-            "output": "ecc"
-        },
-        {
-            "input": "afacdcaeace",
-            "output": "ecaeacdcafa"
-        },
-        {
-            "input": "cdbbcgfgdaegef",
-            "output": "fegeadgfgcbbdc"
-        },
-        {
-            "input": "bfgfggacbccgd",
-            "output": "dgccbcaggfgfb"
-        },
-        {
-            "input": "fbcdcbecef",
-            "output": "fecebcdcbf"
-        },
-        {
-            "input": "accdfgbfag",
-            "output": "gafbgfdcca"
-        },
-        {
-            "input": "cbfgcdfb",
-            "output": "bfdcgfbc"
-        },
-        {
-            "input": "gbbfedc",
-            "output": "cdefbbg"
-        },
-        {
-            "input": "bfdccadeddgg",
-            "output": "ggddedaccdfb"
-        },
-        {
-            "input": "daceeg",
-            "output": "geecad"
-        },
-        {
-            "input": "beb",
-            "output": "beb"
-        },
-        {
-            "input": "adcbdgdfebbdd",
-            "output": "ddbbefdgdbcda"
-        },
-        {
-            "input": "cgbafgaecfggaac",
-            "output": "caaggfceagfabgc"
-        },
-        {
-            "input": "baac",
-            "output": "caab"
-        },
-        {
-            "input": "gbgfcdbecd",
-            "output": "dcebdcfgbg"
-        },
-        {
-            "input": "bege",
-            "output": "egeb"
-        },
-        {
-            "input": "cfafeddbcg",
-            "output": "gcbddefafc"
-        },
-        {
-            "input": "cedfeecbbbe",
-            "output": "ebbbceefdec"
-        },
-        {
-            "input": "gdagdabde",
-            "output": "edbadgadg"
-        },
-        {
-            "input": "dbbgeeafafgadg",
-            "output": "gdagfafaeegbbd"
-        },
-        {
-            "input": "fgedbgdgaegf",
-            "output": "fgeagdgbdegf"
-        },
-        {
-            "input": "ebaegefbgadg",
-            "output": "gdagbfegeabe"
-        },
-        {
-            "input": "gegcbd",
-            "output": "dbcgeg"
-        },
-        {
-            "input": "afbcbbgbeb",
-            "output": "bebgbbcbfa"
-        },
-        {
-            "input": "ffdad",
-            "output": "dadff"
-        },
-        {
-            "input": "aafgfaaff",
-            "output": "ffaafgfaa"
-        },
-        {
-            "input": "daafafebed",
-            "output": "debefafaad"
-        },
-        {
-            "input": "abcbeggacgdag",
-            "output": "gadgcaggebcba"
-        },
-        {
-            "input": "fabgc",
-            "output": "cgbaf"
-        },
-        {
-            "input": "gffafadbedcf",
-            "output": "fcdebdafaffg"
-        },
-        {
-            "input": "ggbdbdgfbe",
-            "output": "ebfgdbdbgg"
-        },
-        {
-            "input": "ceaf",
-            "output": "faec"
-        },
-        {
-            "input": "feebcefg",
-            "output": "gfecbeef"
-        },
-        {
-            "input": "bgbfccdagaagd",
-            "output": "dgaagadccfbgb"
-        },
-        {
-            "input": "fbaaaccacfafcc",
-            "output": "ccfafcaccaaabf"
-        },
-        {
-            "input": "eggeeggagcfaf",
-            "output": "fafcgaggeegge"
-        },
-        {
-            "input": "acabcccaaa",
-            "output": "aaacccbaca"
-        },
-        {
-            "input": "cbgdcffeca",
-            "output": "aceffcdgbc"
-        },
-        {
-            "input": "fafcffefcg",
-            "output": "gcfeffcfaf"
-        },
-        {
-            "input": "dffca",
-            "output": "acffd"
-        },
-        {
-            "input": "egddegffec",
-            "output": "ceffgeddge"
-        },
-        {
-            "input": "bgf",
-            "output": "fgb"
-        },
-        {
-            "input": "gdaeafeedbgac",
-            "output": "cagbdeefaeadg"
-        },
-        {
-            "input": "gacggcefdabbb",
-            "output": "bbbadfecggcag"
-        },
-        {
-            "input": "facddceaagcdc",
-            "output": "cdcgaaecddcaf"
-        },
-        {
-            "input": "ggegabfdfeebfca",
-            "output": "acfbeefdfbagegg"
-        },
-        {
-            "input": "aaadb",
-            "output": "bdaaa"
-        },
-        {
-            "input": "fab",
-            "output": "baf"
-        },
-        {
-            "input": "ggdagafb",
-            "output": "bfagadgg"
-        },
-        {
-            "input": "efgacbf",
-            "output": "fbcagfe"
-        },
-        {
-            "input": "ebgcagaeededga",
-            "output": "agdedeeagacgbe"
-        },
-        {
-            "input": "bageag",
-            "output": "gaegab"
-        },
-        {
-            "input": "ddcffaccaagcbe",
-            "output": "ebcgaaccaffcdd"
-        },
-        {
-            "input": "fgccagcagac",
-            "output": "cagacgaccgf"
-        },
-        {
-            "input": "cbcggfeccc",
-            "output": "cccefggcbc"
-        },
-        {
-            "input": "dgcdegecaa",
-            "output": "aacegedcgd"
-        },
-        {
-            "input": "ebbbggdaabbfe",
-            "output": "efbbaadggbbbe"
-        },
-        {
-            "input": "gdaadee",
-            "output": "eedaadg"
-        },
-        {
-            "input": "fgabfg",
-            "output": "gfbagf"
-        },
-        {
-            "input": "dbdcecbc",
-            "output": "cbcecdbd"
-        },
-        {
-            "input": "dbecde",
-            "output": "edcebd"
-        },
-        {
-            "input": "cedabebcdefcbc",
-            "output": "cbcfedcbebadec"
-        },
-        {
-            "input": "bedfbgggfcga",
-            "output": "agcfgggbfdeb"
-        },
-        {
-            "input": "dcgbebgde",
-            "output": "edgbebgcd"
-        },
-        {
-            "input": "daabgdacdecd",
-            "output": "dcedcadgbaad"
-        },
-        {
-            "input": "eaff",
-            "output": "ffae"
-        },
-        {
-            "input": "fgeccc",
-            "output": "cccegf"
-        },
-        {
-            "input": "acgdefcabbgb",
-            "output": "bgbbacfedgca"
-        },
-        {
-            "input": "dceaf",
-            "output": "faecd"
-        },
-        {
-            "input": "fbagec",
-            "output": "cegabf"
-        },
-        {
-            "input": "bedc",
-            "output": "cdeb"
-        },
-        {
-            "input": "bccef",
-            "output": "feccb"
-        },
-        {
-            "input": "fbbbea",
-            "output": "aebbbf"
-        },
-        {
-            "input": "ccc",
-            "output": "ccc"
-        },
-        {
-            "input": "geebe",
-            "output": "ebeeg"
-        },
-        {
-            "input": "dgcededed",
-            "output": "dededecgd"
-        },
-        {
-            "input": "agbce",
-            "output": "ecbga"
-        },
-        {
-            "input": "bgaffegfeg",
-            "output": "gefgeffagb"
-        },
-        {
-            "input": "adecefeggceb",
-            "output": "becggefeceda"
-        },
-        {
-            "input": "dcd",
-            "output": "dcd"
-        },
-        {
-            "input": "eebdfbbaffada",
-            "output": "adaffabbfdbee"
-        },
-        {
-            "input": "fedaggdbgd",
-            "output": "dgbdggadef"
-        },
-        {
-            "input": "dedgced",
-            "output": "decgded"
-        },
-        {
-            "input": "cfbeg",
-            "output": "gebfc"
-        },
-        {
-            "input": "fceecfgccdg",
-            "output": "gdccgfceecf"
-        },
-        {
-            "input": "abgega",
-            "output": "agegba"
-        },
-        {
-            "input": "dageefaccgfddeb",
-            "output": "beddfgccafeegad"
-        },
-        {
-            "input": "bafggaaacecfgac",
-            "output": "cagfcecaaaggfab"
-        },
-        {
-            "input": "beecegeefgfbff",
-            "output": "ffbfgfeegeceeb"
-        },
-        {
-            "input": "bfaccgcfg",
-            "output": "gfcgccafb"
-        },
-        {
-            "input": "gfffcbeebacbd",
-            "output": "dbcabeebcfffg"
-        },
-        {
-            "input": "aae",
-            "output": "eaa"
-        },
-        {
-            "input": "cdadcdfcddgb",
-            "output": "bgddcfdcdadc"
-        },
-        {
-            "input": "cfgebcc",
-            "output": "ccbegfc"
-        },
-        {
-            "input": "fadgafcgdb",
-            "output": "bdgcfagdaf"
-        },
-        {
-            "input": "gdfgfdgcbdge",
-            "output": "egdbcgdfgfdg"
-        },
-        {
-            "input": "baebbcgbf",
-            "output": "fbgcbbeab"
-        },
-        {
-            "input": "fdgeeggeb",
-            "output": "beggeegdf"
-        },
-        {
-            "input": "fdca",
-            "output": "acdf"
-        },
-        {
-            "input": "fdeffbgf",
-            "output": "fgbffedf"
-        },
-        {
-            "input": "fgagffaggfgeca",
-            "output": "acegfggaffgagf"
-        },
-        {
-            "input": "gdgbafegeaafd",
-            "output": "dfaaegefabgdg"
-        },
-        {
-            "input": "fafdccedda",
-            "output": "addeccdfaf"
-        },
-        {
-            "input": "dedafcf",
-            "output": "fcfaded"
-        },
-        {
-            "input": "bcc",
-            "output": "ccb"
-        },
-        {
-            "input": "bcdggg",
-            "output": "gggdcb"
-        },
-        {
-            "input": "cgeeacbbbbece",
-            "output": "ecebbbbcaeegc"
-        },
-        {
-            "input": "ebcc",
-            "output": "ccbe"
-        },
-        {
-            "input": "gdeaaba",
-            "output": "abaaedg"
-        },
-        {
-            "input": "cfecadge",
-            "output": "egdacefc"
-        },
-        {
-            "input": "bdcdcccadcbeefc",
-            "output": "cfeebcdacccdcdb"
-        },
-        {
-            "input": "aeedbcdabccf",
-            "output": "fccbadcbdeea"
-        },
-        {
-            "input": "ebgaeefffeca",
-            "output": "acefffeeagbe"
-        },
-        {
-            "input": "eeadcdgcg",
-            "output": "gcgdcdaee"
-        },
-        {
-            "input": "gdde",
-            "output": "eddg"
-        },
-        {
-            "input": "gbdddc",
-            "output": "cdddbg"
-        },
-        {
-            "input": "acdaacgc",
-            "output": "cgcaadca"
-        },
-        {
-            "input": "fdgaaafaacdcbdg",
-            "output": "gdbcdcaafaaagdf"
-        },
-        {
-            "input": "degffda",
-            "output": "adffged"
-        },
-        {
-            "input": "cccd",
-            "output": "dccc"
-        },
-        {
-            "input": "gdgde",
-            "output": "edgdg"
-        },
-        {
-            "input": "bbg",
-            "output": "gbb"
-        },
-        {
-            "input": "bbdccge",
-            "output": "egccdbb"
-        },
-        {
-            "input": "ddabd",
-            "output": "dbadd"
-        },
-        {
-            "input": "gbdgbbfffcb",
-            "output": "bcfffbbgdbg"
-        },
-        {
-            "input": "gfabe",
-            "output": "ebafg"
-        },
-        {
-            "input": "edefcccfbagf",
-            "output": "fgabfcccfede"
-        },
-        {
-            "input": "afg",
-            "output": "gfa"
-        },
-        {
-            "input": "cfeggfa",
-            "output": "afggefc"
-        },
-        {
-            "input": "ecaeb",
-            "output": "beace"
-        },
-        {
-            "input": "aeaagdafadebec",
-            "output": "cebedafadgaaea"
-        },
-        {
-            "input": "aeecbea",
-            "output": "aebceea"
-        },
-        {
-            "input": "cdg",
-            "output": "gdc"
-        },
-        {
-            "input": "abfbagf",
-            "output": "fgabfba"
-        },
-        {
-            "input": "fcebedecdeacgae",
-            "output": "eagcaedcedebecf"
-        },
-        {
-            "input": "cbacb",
-            "output": "bcabc"
-        },
-        {
-            "input": "edfggabdeg",
-            "output": "gedbaggfde"
-        },
-        {
-            "input": "gebcfc",
-            "output": "cfcbeg"
-        },
-        {
-            "input": "dafaffgbc",
-            "output": "cbgffafad"
-        },
-        {
-            "input": "acef",
-            "output": "feca"
-        },
-        {
-            "input": "acdgcgebdgg",
-            "output": "ggdbegcgdca"
-        },
-        {
-            "input": "adefbccead",
-            "output": "daeccbfeda"
-        },
-        {
-            "input": "abgedcefgeee",
-            "output": "eeegfecdegba"
-        },
-        {
-            "input": "bbgddedf",
-            "output": "fdeddgbb"
-        },
-        {
-            "input": "ebdgacae",
-            "output": "eacagdbe"
-        },
-        {
-            "input": "gfbeafea",
-            "output": "aefaebfg"
-        },
-        {
-            "input": "abgbfbbdaecafeg",
-            "output": "gefaceadbbfbgba"
-        },
-        {
-            "input": "edgcgacdcgde",
-            "output": "edgcdcagcgde"
-        },
-        {
-            "input": "fdacbgbef",
-            "output": "febgbcadf"
-        },
-        {
-            "input": "fgabbeae",
-            "output": "eaebbagf"
-        },
-        {
-            "input": "ffeegbbbfcafc",
-            "output": "cfacfbbbgeeff"
-        },
-        {
-            "input": "fggba",
-            "output": "abggf"
-        },
-        {
-            "input": "bdbe",
-            "output": "ebdb"
-        },
-        {
-            "input": "fbdd",
-            "output": "ddbf"
-        },
-        {
-            "input": "gecbbaeda",
-            "output": "adeabbceg"
-        },
-        {
-            "input": "adddccfefbggacf",
-            "output": "fcaggbfefccddda"
-        },
-        {
-            "input": "bffbgedcaageddb",
-            "output": "bddegaacdegbffb"
-        },
-        {
-            "input": "aabagadgcaeecc",
-            "output": "cceeacgdagabaa"
-        },
-        {
-            "input": "ccac",
-            "output": "cacc"
-        },
-        {
-            "input": "afbfcac",
-            "output": "cacfbfa"
-        },
-        {
-            "input": "baacabafadcfcbd",
-            "output": "dbcfcdafabacaab"
-        },
-        {
-            "input": "aagccbgbbabf",
-            "output": "fbabbgbccgaa"
-        },
-        {
-            "input": "ggfbafefbcceec",
-            "output": "ceeccbfefabfgg"
-        },
-        {
-            "input": "ffgbbde",
-            "output": "edbbgff"
-        },
-        {
-            "input": "edgefggfb",
-            "output": "bfggfegde"
-        },
-        {
-            "input": "aef",
-            "output": "fea"
-        },
-        {
-            "input": "acdadcgcdf",
-            "output": "fdcgcdadca"
-        },
-        {
-            "input": "bffdagdf",
-            "output": "fdgadffb"
-        },
-        {
-            "input": "bgcf",
-            "output": "fcgb"
-        },
-        {
-            "input": "cgcda",
-            "output": "adcgc"
-        },
-        {
-            "input": "edffcbeabgee",
-            "output": "eegbaebcffde"
-        },
-        {
-            "input": "ecabffffd",
-            "output": "dffffbace"
-        },
-        {
-            "input": "gfgfdgaabffab",
-            "output": "baffbaagdfgfg"
-        },
-        {
-            "input": "aafbec",
-            "output": "cebfaa"
-        },
-        {
-            "input": "dbeaedbegcccace",
-            "output": "ecacccgebdeaebd"
-        },
-        {
-            "input": "gbcbbafd",
-            "output": "dfabbcbg"
-        },
-        {
-            "input": "eedb",
-            "output": "bdee"
-        },
-        {
-            "input": "gbfedadfceadde",
-            "output": "eddaecfdadefbg"
-        },
-        {
-            "input": "aedeadba",
-            "output": "abdaedea"
-        },
-        {
-            "input": "bdefc",
-            "output": "cfedb"
+            "input": "aeee",
+            "output": "eeea"
         },
         {
             "input": "aed",
             "output": "dea"
         },
         {
-            "input": "bbaafagf",
-            "output": "fgafaabb"
+            "input": "dabafbebedccfb",
+            "output": "bfccdebebfabad"
         },
         {
-            "input": "feddadbcdec",
-            "output": "cedcbdaddef"
+            "input": "dacffb",
+            "output": "bffcad"
         },
         {
-            "input": "bbaabbcbfg",
-            "output": "gfbcbbaabb"
+            "input": "gedfe",
+            "output": "efdeg"
         },
         {
-            "input": "fgcadfcbba",
-            "output": "abbcfdacgf"
+            "input": "fadbfg",
+            "output": "gfbdaf"
         },
         {
-            "input": "bgae",
-            "output": "eagb"
+            "input": "cgfbdbead",
+            "output": "daebdbfgc"
         },
         {
-            "input": "ebb",
-            "output": "bbe"
+            "input": "gdfg",
+            "output": "gfdg"
         },
         {
-            "input": "bdeefg",
-            "output": "gfeedb"
+            "input": "edffababaaafge",
+            "output": "egfaaababaffde"
         },
         {
-            "input": "cddafebg",
-            "output": "gbefaddc"
+            "input": "cfabbeedeedd",
+            "output": "ddeedeebbafc"
         },
         {
-            "input": "aacafbgced",
-            "output": "decgbfacaa"
+            "input": "gbebageceaed",
+            "output": "deaecegabebg"
         },
         {
-            "input": "cgggegadcbaed",
-            "output": "deabcdagegggc"
+            "input": "cgcc",
+            "output": "ccgc"
         },
         {
-            "input": "cafga",
-            "output": "agfac"
+            "input": "ccga",
+            "output": "agcc"
         },
         {
-            "input": "acabfcgebaedd",
-            "output": "ddeabegcfbaca"
+            "input": "acceeec",
+            "output": "ceeecca"
         },
         {
-            "input": "bdc",
-            "output": "cdb"
+            "input": "cbdcafcgageb",
+            "output": "begagcfacdbc"
         },
         {
-            "input": "dfeggecgecf",
-            "output": "fcegceggefd"
+            "input": "decaececceb",
+            "output": "becceceaced"
         },
         {
-            "input": "bcafeaaeeffgd",
-            "output": "dgffeeaaefacb"
+            "input": "agddca",
+            "output": "acddga"
         },
         {
-            "input": "gebabgcdcbad",
-            "output": "dabcdcgbabeg"
+            "input": "gaffcgbecec",
+            "output": "cecebgcffag"
         },
         {
-            "input": "gdcc",
-            "output": "ccdg"
+            "input": "aggebgffe",
+            "output": "effgbegga"
         },
         {
-            "input": "efdd",
-            "output": "ddfe"
+            "input": "fbf",
+            "output": "fbf"
         },
         {
-            "input": "fafbfagedcccaf",
-            "output": "facccdegafbfaf"
+            "input": "cffcgcaacg",
+            "output": "gcaacgcffc"
         },
         {
-            "input": "facffe",
-            "output": "effcaf"
+            "input": "ddaebbabdfbc",
+            "output": "cbfdbabbeadd"
         },
         {
-            "input": "ggf",
-            "output": "fgg"
+            "input": "faaca",
+            "output": "acaaf"
         },
         {
-            "input": "ebceg",
-            "output": "gecbe"
+            "input": "cbgbg",
+            "output": "gbgbc"
         },
         {
-            "input": "ccbdgfedabagc",
-            "output": "cgabadefgdbcc"
+            "input": "cfedfed",
+            "output": "defdefc"
         },
         {
-            "input": "gfbbb",
-            "output": "bbbfg"
+            "input": "abbfd",
+            "output": "dfbba"
         },
         {
-            "input": "dcggdfdfgcdgdd",
-            "output": "ddgdcgfdfdggcd"
+            "input": "cegbbaccbdb",
+            "output": "bdbccabbgec"
         },
         {
-            "input": "cfffc",
-            "output": "cfffc"
+            "input": "dbbgbccg",
+            "output": "gccbgbbd"
         },
         {
-            "input": "cccdabcdc",
-            "output": "cdcbadccc"
+            "input": "deg",
+            "output": "ged"
         },
         {
-            "input": "dfeebedeafgbfc",
-            "output": "cfbgfaedebeefd"
+            "input": "efaddcgabedb",
+            "output": "bdebagcddafe"
         },
         {
-            "input": "bdccbdbdd",
-            "output": "ddbdbccdb"
+            "input": "dged",
+            "output": "degd"
         },
         {
-            "input": "gacdadaefffbcd",
-            "output": "dcbfffeadadcag"
+            "input": "afgcgd",
+            "output": "dgcgfa"
         },
         {
-            "input": "bgfd",
-            "output": "dfgb"
+            "input": "egfcddaae",
+            "output": "eaaddcfge"
         },
         {
-            "input": "fbcdcbeageadcc",
-            "output": "ccdaegaebcdcbf"
+            "input": "fdabdcdf",
+            "output": "fdcdbadf"
         },
         {
-            "input": "cfaedbbfc",
-            "output": "cfbbdeafc"
+            "input": "bfaeafbdedgeg",
+            "output": "gegdedbfaeafb"
         },
         {
-            "input": "dbgabbgggceg",
-            "output": "gecgggbbagbd"
+            "input": "fbaacgegeagce",
+            "output": "ecgaegegcaabf"
         },
         {
-            "input": "ccbagaddf",
-            "output": "fddagabcc"
+            "input": "ecfgdgaggadbf",
+            "output": "fbdaggagdgfce"
         },
         {
-            "input": "bgcbfafabcfeadd",
-            "output": "ddaefcbafafbcgb"
+            "input": "edgacaefbd",
+            "output": "dbfeacagde"
         },
         {
-            "input": "agdafdffdegf",
-            "output": "fgedffdfadga"
+            "input": "bdbafdcccadb",
+            "output": "bdacccdfabdb"
         },
         {
-            "input": "cfbaaaebccff",
-            "output": "ffccbeaaabfc"
+            "input": "gbcdadfceafegc",
+            "output": "cgefaecfdadcbg"
         },
         {
-            "input": "fgaef",
-            "output": "feagf"
+            "input": "ead",
+            "output": "dae"
         },
         {
-            "input": "fad",
-            "output": "daf"
+            "input": "ebbggdb",
+            "output": "bdggbbe"
         },
         {
-            "input": "caaeeefaccdgda",
-            "output": "adgdccafeeeaac"
+            "input": "gegcee",
+            "output": "eecgeg"
         },
         {
-            "input": "bgcadcfaaddgca",
-            "output": "acgddaafcdacgb"
+            "input": "gedf",
+            "output": "fdeg"
         },
         {
-            "input": "afefabaaedbe",
-            "output": "ebdeaabafefa"
+            "input": "daccefegaa",
+            "output": "aagefeccad"
         },
         {
-            "input": "daedbgbd",
-            "output": "dbgbdead"
+            "input": "fefbdgff",
+            "output": "ffgdbfef"
         },
         {
-            "input": "gadc",
-            "output": "cdag"
+            "input": "fgeagbdbedgec",
+            "output": "cegdebdbgaegf"
         },
         {
-            "input": "fbgeggeaa",
-            "output": "aaeggegbf"
+            "input": "dccca",
+            "output": "acccd"
         },
         {
-            "input": "edfafagadg",
-            "output": "gdagafafde"
+            "input": "fbfegcfadegff",
+            "output": "ffgedafcgefbf"
         },
         {
-            "input": "gbgeagc",
-            "output": "cgaegbg"
+            "input": "fgdfd",
+            "output": "dfdgf"
         },
         {
-            "input": "bggbeaadd",
-            "output": "ddaaebggb"
+            "input": "ddcf",
+            "output": "fcdd"
         },
         {
-            "input": "deccdgbdcfdegdc",
-            "output": "cdgedfcdbgdcced"
+            "input": "dba",
+            "output": "abd"
         },
         {
-            "input": "gcgegffdc",
-            "output": "cdffgegcg"
+            "input": "dgdacca",
+            "output": "accadgd"
         },
         {
-            "input": "gafa",
-            "output": "afag"
+            "input": "ccdefdefefadb",
+            "output": "bdafefedfedcc"
         },
         {
-            "input": "febddgc",
-            "output": "cgddbef"
+            "input": "egd",
+            "output": "dge"
         },
         {
-            "input": "cggddgdegeeg",
-            "output": "geegedgddggc"
+            "input": "daagfecc",
+            "output": "ccefgaad"
         },
         {
-            "input": "efbbaebdgcaabgd",
-            "output": "dgbaacgdbeabbfe"
+            "input": "cefeeedgcaagfa",
+            "output": "afgaacgdeeefec"
         },
         {
-            "input": "aagfbdafae",
-            "output": "eafadbfgaa"
+            "input": "beedf",
+            "output": "fdeeb"
         },
         {
-            "input": "deedc",
-            "output": "cdeed"
+            "input": "agcbf",
+            "output": "fbcga"
         },
         {
-            "input": "fgfadaaegc",
-            "output": "cgeaadafgf"
+            "input": "ebcefbggc",
+            "output": "cggbfecbe"
         },
         {
-            "input": "gagcfb",
-            "output": "bfcgag"
+            "input": "ffgf",
+            "output": "fgff"
         },
         {
-            "input": "babga",
-            "output": "agbab"
+            "input": "cfcceaad",
+            "output": "daaeccfc"
         },
         {
-            "input": "feegagedfcaadg",
-            "output": "gdaacfdegageef"
+            "input": "fegebefeebab",
+            "output": "babeefebegef"
         },
         {
-            "input": "bgdfae",
-            "output": "eafdgb"
+            "input": "egcg",
+            "output": "gcge"
         },
         {
-            "input": "abfgdefbg",
-            "output": "gbfedgfba"
+            "input": "edacdcabece",
+            "output": "ecebacdcade"
         },
         {
-            "input": "cddccegabdf",
-            "output": "fdbageccddc"
+            "input": "faeacaa",
+            "output": "aacaeaf"
         },
         {
-            "input": "fede",
-            "output": "edef"
+            "input": "cdbb",
+            "output": "bbdc"
         },
         {
-            "input": "fdggd",
-            "output": "dggdf"
+            "input": "eebbffg",
+            "output": "gffbbee"
         },
         {
-            "input": "fgeg",
-            "output": "gegf"
+            "input": "fgdc",
+            "output": "cdgf"
         },
         {
-            "input": "edaec",
-            "output": "ceade"
+            "input": "ffd",
+            "output": "dff"
         },
         {
-            "input": "geabfafaaa",
-            "output": "aaafafbaeg"
+            "input": "aebbfceeafe",
+            "output": "efaeecfbbea"
         },
         {
-            "input": "daagafeacafcbf",
-            "output": "fbcfacaefagaad"
+            "input": "deddae",
+            "output": "eadded"
         },
         {
-            "input": "cad",
-            "output": "dac"
+            "input": "aaafgfbbfa",
+            "output": "afbbfgfaaa"
         },
         {
-            "input": "ffffccadgfbad",
-            "output": "dabfgdaccffff"
+            "input": "dccedbdadd",
+            "output": "ddadbdeccd"
         },
         {
-            "input": "eedefc",
-            "output": "cfedee"
+            "input": "ddagaegeaded",
+            "output": "dedaegeagadd"
         },
         {
-            "input": "bfeggfb",
-            "output": "bfggefb"
+            "input": "dgc",
+            "output": "cgd"
         },
         {
-            "input": "abbgdbcageabda",
-            "output": "adbaegacbdgbba"
+            "input": "cbdb",
+            "output": "bdbc"
         },
         {
-            "input": "gdbffafdggbdbd",
-            "output": "dbdbggdfaffbdg"
+            "input": "bdd",
+            "output": "ddb"
         },
         {
-            "input": "egaaebdebddcb",
-            "output": "bcddbedbeaage"
+            "input": "ebeecf",
+            "output": "fceebe"
         },
         {
-            "input": "ecfafdgbb",
-            "output": "bbgdfafce"
+            "input": "ggg",
+            "output": "ggg"
         },
         {
-            "input": "dgfbbc",
-            "output": "cbbfgd"
+            "input": "bfgcce",
+            "output": "eccgfb"
         },
         {
-            "input": "afd",
-            "output": "dfa"
+            "input": "fbadgagfbcd",
+            "output": "dcbfgagdabf"
         },
         {
-            "input": "egfdbca",
-            "output": "acbdfge"
+            "input": "fbgaagcg",
+            "output": "gcgaagbf"
         },
         {
-            "input": "eeeaaeedfgb",
-            "output": "bgfdeeaaeee"
+            "input": "gfefgbbdeeace",
+            "output": "ecaeedbbgfefg"
         },
         {
-            "input": "ffecgffa",
-            "output": "affgceff"
+            "input": "ebfaebadbc",
+            "output": "cbdabeafbe"
         },
         {
-            "input": "bdacebfac",
-            "output": "cafbecadb"
+            "input": "cfecgfcg",
+            "output": "gcfgcefc"
         },
         {
-            "input": "fbd",
-            "output": "dbf"
+            "input": "ggbeagdcfeagdc",
+            "output": "cdgaefcdgaebgg"
         },
         {
-            "input": "eefgafbcgfefaf",
-            "output": "fafefgcbfagfee"
+            "input": "dfdca",
+            "output": "acdfd"
         },
         {
-            "input": "bcca",
-            "output": "accb"
+            "input": "fgaceffbdgcf",
+            "output": "fcgdbffecagf"
         },
         {
-            "input": "dgeabg",
-            "output": "gbaegd"
+            "input": "febgebbgeedaeg",
+            "output": "geadeegbbegbef"
         },
         {
-            "input": "dcecd",
-            "output": "dcecd"
+            "input": "fffcaadfebabdde",
+            "output": "eddbabefdaacfff"
         },
         {
-            "input": "cagcgcggcfgf",
-            "output": "fgfcggcgcgac"
+            "input": "gfedcecffg",
+            "output": "gffcecdefg"
         },
         {
-            "input": "beeceeac",
-            "output": "caeeceeb"
+            "input": "bbge",
+            "output": "egbb"
         },
         {
-            "input": "bcg",
-            "output": "gcb"
+            "input": "ddddgcfbdadf",
+            "output": "fdadbfcgdddd"
         },
         {
-            "input": "baaaeab",
-            "output": "baeaaab"
+            "input": "gbdafcab",
+            "output": "bacfadbg"
         },
         {
-            "input": "fgfgagedf",
-            "output": "fdegagfgf"
+            "input": "bcbb",
+            "output": "bbcb"
         },
         {
-            "input": "gdbdcae",
-            "output": "eacdbdg"
+            "input": "bcdagd",
+            "output": "dgadcb"
         },
         {
-            "input": "gefgfdfdbcbfb",
-            "output": "bfbcbdfdfgfeg"
+            "input": "eeadccgaeg",
+            "output": "geagccdaee"
         },
         {
-            "input": "bdacegggafbafc",
-            "output": "cfabfagggecadb"
+            "input": "fbeeedcb",
+            "output": "bcdeeebf"
         },
         {
-            "input": "fgefaeacgc",
-            "output": "cgcaeafegf"
+            "input": "aacefcace",
+            "output": "ecacfecaa"
         },
         {
-            "input": "dbfdec",
-            "output": "cedfbd"
+            "input": "daabccccaegd",
+            "output": "dgeaccccbaad"
         },
         {
-            "input": "dgebfbdfgggc",
-            "output": "cgggfdbfbegd"
+            "input": "faffcfdeacgdf",
+            "output": "fdgcaedfcffaf"
         },
         {
-            "input": "aabccbbcac",
-            "output": "cacbbccbaa"
+            "input": "bfgbgbbgecaddg",
+            "output": "gddacegbbgbgfb"
         },
         {
-            "input": "bbbggfc",
-            "output": "cfggbbb"
+            "input": "cbbcdeeacebbcd",
+            "output": "dcbbecaeedcbbc"
         },
         {
-            "input": "eeagdcagfdf",
-            "output": "fdfgacdgaee"
+            "input": "dgbffgfdb",
+            "output": "bdfgffbgd"
         },
         {
-            "input": "bacgbg",
-            "output": "gbgcab"
+            "input": "dgcg",
+            "output": "gcgd"
         },
         {
-            "input": "fgbdcbgebdeg",
-            "output": "gedbegbcdbgf"
+            "input": "cadcfdbf",
+            "output": "fbdfcdac"
         },
         {
-            "input": "cdeafdfdadbfgfg",
-            "output": "gfgfbdadfdfaedc"
+            "input": "gecf",
+            "output": "fceg"
         },
         {
-            "input": "becafdb",
-            "output": "bdfaceb"
+            "input": "cgcgacfe",
+            "output": "efcagcgc"
         },
         {
-            "input": "bbddbbbc",
-            "output": "cbbbddbb"
+            "input": "fbeggcf",
+            "output": "fcggebf"
         },
         {
-            "input": "cecaagdacaf",
-            "output": "facadgaacec"
+            "input": "cgdefdbeeaa",
+            "output": "aaeebdfedgc"
         },
         {
-            "input": "bcdcaeegaefdab",
-            "output": "badfeageeacdcb"
+            "input": "aaaabeabgfeeg",
+            "output": "geefgbaebaaaa"
         },
         {
-            "input": "eeefeegbadcabb",
-            "output": "bbacdabgeefeee"
+            "input": "gad",
+            "output": "dag"
         },
         {
-            "input": "dfdabacc",
-            "output": "ccabadfd"
+            "input": "fabfade",
+            "output": "edafbaf"
         },
         {
-            "input": "gcccebgd",
-            "output": "dgbecccg"
+            "input": "cbaf",
+            "output": "fabc"
         },
         {
-            "input": "bebgaaebgeg",
-            "output": "gegbeaagbeb"
+            "input": "aeacfddcbe",
+            "output": "ebcddfcaea"
         },
         {
-            "input": "caagefebbe",
-            "output": "ebbefegaac"
+            "input": "acagaggaabfeb",
+            "output": "befbaaggagaca"
         },
         {
-            "input": "faegcbcbeg",
-            "output": "gebcbcgeaf"
+            "input": "egggccg",
+            "output": "gccggge"
         },
         {
-            "input": "eea",
-            "output": "aee"
+            "input": "fdbdefgdfce",
+            "output": "ecfdgfedbdf"
         },
         {
-            "input": "cdcaeadbdaf",
-            "output": "fadbdaeacdc"
+            "input": "afegacdeecaca",
+            "output": "acaceedcagefa"
         },
         {
-            "input": "edfege",
-            "output": "egefde"
+            "input": "ebcd",
+            "output": "dcbe"
         },
         {
-            "input": "fgffegaceg",
-            "output": "gecageffgf"
+            "input": "ebfcdc",
+            "output": "cdcfbe"
         },
         {
-            "input": "bgeadfgbfbd",
-            "output": "dbfbgfdaegb"
+            "input": "adffdfegcgac",
+            "output": "cagcgefdffda"
         },
         {
-            "input": "cebebfecgdcace",
-            "output": "ecacdgcefbebec"
+            "input": "ceebbegaagfag",
+            "output": "gafgaagebbeec"
         },
         {
-            "input": "facegbd",
-            "output": "dbgecaf"
+            "input": "acebeefa",
+            "output": "afeebeca"
         },
         {
-            "input": "badgbgdabcgcdaa",
-            "output": "aadcgcbadgbgdab"
+            "input": "efdacfcgddacbg",
+            "output": "gbcaddgcfcadfe"
         },
         {
-            "input": "fceefdadae",
-            "output": "eadadfeecf"
+            "input": "faggda",
+            "output": "adggaf"
         },
         {
-            "input": "adefcacebdd",
-            "output": "ddbecacfeda"
+            "input": "egaafddcacbe",
+            "output": "ebcacddfaage"
         },
         {
-            "input": "abbeddce",
-            "output": "ecddebba"
+            "input": "gecde",
+            "output": "edceg"
         },
         {
-            "input": "egada",
-            "output": "adage"
+            "input": "eacfbebff",
+            "output": "ffbebfcae"
         },
         {
-            "input": "cefddddeegacge",
-            "output": "egcageeddddfec"
+            "input": "ebgbcaeg",
+            "output": "geacbgbe"
         },
         {
-            "input": "fdeeffdcfebdaa",
-            "output": "aadbefcdffeedf"
+            "input": "dcba",
+            "output": "abcd"
         },
         {
-            "input": "ebefcdb",
-            "output": "bdcfebe"
+            "input": "fbbdd",
+            "output": "ddbbf"
         },
         {
-            "input": "fbbbcegbc",
-            "output": "cbgecbbbf"
+            "input": "aeab",
+            "output": "baea"
         },
         {
-            "input": "cdb",
-            "output": "bdc"
+            "input": "ccdcgd",
+            "output": "dgcdcc"
         },
         {
-            "input": "gaeadcgebe",
-            "output": "ebegcdaeag"
+            "input": "dagccfad",
+            "output": "dafccgad"
         },
         {
-            "input": "ccfb",
-            "output": "bfcc"
+            "input": "fbcbgacaeccdfag",
+            "output": "gafdcceacagbcbf"
         },
         {
-            "input": "ebc",
-            "output": "cbe"
+            "input": "deddddeffab",
+            "output": "baffedddded"
         },
         {
-            "input": "dcddcgfedceae",
-            "output": "eaecdefgcddcd"
+            "input": "aabgafcbegaefde",
+            "output": "edfeagebcfagbaa"
         },
         {
-            "input": "eggbeabcccd",
-            "output": "dcccbaebgge"
+            "input": "deafafce",
+            "output": "ecfafaed"
         },
         {
-            "input": "cdcccefc",
-            "output": "cfecccdc"
+            "input": "cebb",
+            "output": "bbec"
         },
         {
-            "input": "agbaceggg",
-            "output": "gggecabga"
+            "input": "fcbbfebagf",
+            "output": "fgabefbbcf"
         },
         {
-            "input": "cbfbbgdbcgc",
-            "output": "cgcbdgbbfbc"
+            "input": "dfdabbefeebdd",
+            "output": "ddbeefebbadfd"
         },
         {
-            "input": "eaacfcgdee",
-            "output": "eedgcfcaae"
+            "input": "bdb",
+            "output": "bdb"
         },
         {
-            "input": "adfbeecbadbf",
-            "output": "fbdabceebfda"
+            "input": "dagadbcd",
+            "output": "dcbdagad"
         },
         {
-            "input": "cbbabeeecca",
-            "output": "acceeebabbc"
+            "input": "afebfeccfdc",
+            "output": "cdfccefbefa"
         },
         {
-            "input": "gbbegfcecgbe",
-            "output": "ebgcecfgebbg"
+            "input": "gcgbfdcdegdc",
+            "output": "cdgedcdfbgcg"
         },
         {
-            "input": "abdcgggcabcfcdc",
-            "output": "cdcfcbacgggcdba"
+            "input": "aggfccaegeggcca",
+            "output": "accggegeaccfgga"
         },
         {
-            "input": "cbaabcegef",
-            "output": "fegecbaabc"
+            "input": "deefgffgdbcba",
+            "output": "abcbdgffgfeed"
         },
         {
-            "input": "bafddedg",
-            "output": "gdeddfab"
+            "input": "aeebcabggggffac",
+            "output": "caffggggbacbeea"
         },
         {
-            "input": "bfaddfeddb",
-            "output": "bddefddafb"
+            "input": "abecefdfd",
+            "output": "dfdfeceba"
         },
         {
-            "input": "bdgecde",
-            "output": "edcegdb"
+            "input": "bagabcga",
+            "output": "agcbagab"
         },
         {
-            "input": "cddfccabcggbf",
-            "output": "fbggcbaccfddc"
+            "input": "ecagcdabcfacfgb",
+            "output": "bgfcafcbadcgace"
         },
         {
-            "input": "dbfadfabe",
-            "output": "ebafdafbd"
+            "input": "aafbebdfbbafade",
+            "output": "edafabbfdbebfaa"
         },
         {
-            "input": "bbaf",
-            "output": "fabb"
+            "input": "fcgedefdeb",
+            "output": "bedfedegcf"
         },
         {
-            "input": "dcgd",
-            "output": "dgcd"
+            "input": "bdfaeeecceffffe",
+            "output": "effffecceeeafdb"
         },
         {
-            "input": "ddacadeb",
-            "output": "bedacadd"
+            "input": "abfcdgf",
+            "output": "fgdcfba"
         },
         {
-            "input": "bcafdedfbddb",
-            "output": "bddbfdedfacb"
+            "input": "agdeedbcbegcff",
+            "output": "ffcgebcbdeedga"
         },
         {
-            "input": "gaggebeecdcdebc",
-            "output": "cbedcdceebeggag"
+            "input": "adea",
+            "output": "aeda"
         },
         {
-            "input": "gbbgaegbcfdab",
-            "output": "badfcbgeagbbg"
+            "input": "bbfgeg",
+            "output": "gegfbb"
         },
         {
-            "input": "eacbfeedec",
-            "output": "cedeefbcae"
+            "input": "ecgfegae",
+            "output": "eagefgce"
         },
         {
-            "input": "adcagad",
-            "output": "dagacda"
+            "input": "facegeb",
+            "output": "begecaf"
         },
         {
-            "input": "gcfecadcfcf",
-            "output": "fcfcdacefcg"
+            "input": "ddfcebcacbd",
+            "output": "dbcacbecfdd"
         },
         {
-            "input": "dabggbfgcdcfa",
-            "output": "afcdcgfbggbad"
+            "input": "afcdfgdeebae",
+            "output": "eabeedgfdcfa"
         },
         {
-            "input": "ggaedfdac",
-            "output": "cadfdeagg"
+            "input": "aabdacfaggbecc",
+            "output": "ccebggafcadbaa"
         },
         {
-            "input": "ggacegcfdcececd",
-            "output": "dcececdfcgecagg"
+            "input": "abeaacgb",
+            "output": "bgcaaeba"
         },
         {
-            "input": "aafafgegeagba",
-            "output": "abgaegegfafaa"
+            "input": "dacdgabece",
+            "output": "ecebagdcad"
         },
         {
-            "input": "bfedag",
-            "output": "gadefb"
+            "input": "deceeabb",
+            "output": "bbaeeced"
         },
         {
-            "input": "daf",
-            "output": "fad"
+            "input": "bgdg",
+            "output": "gdgb"
         },
         {
-            "input": "dcdbeeabgdecbb",
-            "output": "bbcedgbaeebdcd"
+            "input": "fcfea",
+            "output": "aefcf"
         },
         {
-            "input": "ccdfadg",
-            "output": "gdafdcc"
+            "input": "baebbedfcgcccc",
+            "output": "ccccgcfdebbeab"
         },
         {
-            "input": "fgffe",
-            "output": "effgf"
+            "input": "ecaaabeafaecdcb",
+            "output": "bcdceafaebaaace"
         },
         {
-            "input": "dcfaccgbafedccb",
-            "output": "bccdefabgccafcd"
+            "input": "babgdfacfega",
+            "output": "agefcafdgbab"
         },
         {
-            "input": "ddba",
-            "output": "abdd"
+            "input": "aeffcfbebfbb",
+            "output": "bbfbebfcffea"
         },
         {
-            "input": "aagceabaccbbb",
-            "output": "bbbccabaecgaa"
+            "input": "feggcfgf",
+            "output": "fgfcggef"
         },
         {
-            "input": "gcebbbfcdfag",
-            "output": "gafdcfbbbecg"
+            "input": "gddfdcecbaaagdd",
+            "output": "ddgaaabcecdfddg"
         },
         {
-            "input": "dcadeebcggge",
-            "output": "egggcbeedacd"
+            "input": "begc",
+            "output": "cgeb"
         },
         {
-            "input": "dcefecbfcedg",
-            "output": "gdecfbcefecd"
+            "input": "cgaeefdafgbbcce",
+            "output": "eccbbgfadfeeagc"
         },
         {
-            "input": "bagaaf",
-            "output": "faagab"
+            "input": "fccg",
+            "output": "gccf"
         },
         {
-            "input": "eacdddde",
-            "output": "eddddcae"
+            "input": "dfcfdcafcggg",
+            "output": "gggcfacdfcfd"
         },
         {
-            "input": "gdbggg",
-            "output": "gggbdg"
+            "input": "fbgcgfbfbaeaf",
+            "output": "faeabfbfgcgbf"
         },
         {
-            "input": "fabcbbb",
-            "output": "bbbcbaf"
+            "input": "caeabbedgeagadf",
+            "output": "fdagaegdebbaeac"
         },
         {
-            "input": "dbegacccfcddf",
-            "output": "fddcfcccagebd"
+            "input": "cadbebe",
+            "output": "ebebdac"
         },
         {
-            "input": "edccagfgaecabbc",
-            "output": "cbbaceagfgaccde"
+            "input": "abadefecccafd",
+            "output": "dfacccefedaba"
         },
         {
-            "input": "ccdf",
-            "output": "fdcc"
+            "input": "bbf",
+            "output": "fbb"
         },
         {
-            "input": "agabgd",
-            "output": "dgbaga"
+            "input": "aefedadeef",
+            "output": "feedadefea"
         },
         {
-            "input": "cacedabfeegdb",
-            "output": "bdgeefbadecac"
+            "input": "ddbcagfgefafcag",
+            "output": "gacfafegfgacbdd"
         },
         {
-            "input": "gadbgdaaf",
-            "output": "faadgbdag"
+            "input": "aaedfgacacgfgfd",
+            "output": "dfgfgcacagfdeaa"
         },
         {
-            "input": "adbabgecbed",
-            "output": "debcegbabda"
+            "input": "babbb",
+            "output": "bbbab"
         },
         {
-            "input": "aaadc",
-            "output": "cdaaa"
+            "input": "baedcbgdfae",
+            "output": "eafdgbcdeab"
         },
         {
-            "input": "bgbcgfacdbbggac",
-            "output": "caggbbdcafgcbgb"
+            "input": "ffcfgegdbcg",
+            "output": "gcbdgegfcff"
         },
         {
-            "input": "aefegaddffbdfde",
-            "output": "edfdbffddagefea"
+            "input": "ggccecdfbgfgd",
+            "output": "dgfgbfdceccgg"
         },
         {
-            "input": "gfbd",
-            "output": "dbfg"
+            "input": "aefegeeecbfg",
+            "output": "gfbceeegefea"
         },
         {
-            "input": "fccgdeffeeg",
-            "output": "geeffedgccf"
+            "input": "caddgfdedccbabf",
+            "output": "fbabccdedfgddac"
         },
         {
-            "input": "agc",
-            "output": "cga"
+            "input": "fdgecbgaad",
+            "output": "daagbcegdf"
         },
         {
-            "input": "fgcafbgbgdbagc",
-            "output": "cgabdgbgbfacgf"
+            "input": "ebdebgdcffaa",
+            "output": "aaffcdgbedbe"
         },
         {
-            "input": "edeaaedf",
-            "output": "fdeaaede"
+            "input": "cfdaae",
+            "output": "eaadfc"
         },
         {
-            "input": "egbbbcc",
-            "output": "ccbbbge"
+            "input": "ggda",
+            "output": "adgg"
         },
         {
-            "input": "ffa",
-            "output": "aff"
+            "input": "ggcfg",
+            "output": "gfcgg"
         },
         {
-            "input": "agcdggbgga",
-            "output": "aggbggdcga"
+            "input": "bbafbafgcce",
+            "output": "eccgfabfabb"
         },
         {
-            "input": "fdadfdabedfa",
-            "output": "afdebadfdadf"
+            "input": "cdgd",
+            "output": "dgdc"
         },
         {
-            "input": "eef",
-            "output": "fee"
+            "input": "fbfgfgedbd",
+            "output": "dbdegfgfbf"
         },
         {
-            "input": "dedbdffcdgaabf",
-            "output": "fbaagdcffdbded"
+            "input": "cfadadfbfceec",
+            "output": "ceecfbfdadafc"
         },
         {
-            "input": "gdcdfgefa",
-            "output": "afegfdcdg"
+            "input": "cefaefde",
+            "output": "edfeafec"
         },
         {
-            "input": "cfga",
-            "output": "agfc"
+            "input": "agg",
+            "output": "gga"
         },
         {
-            "input": "aefbfefaedfdb",
-            "output": "bdfdeafefbfea"
+            "input": "fbbfcc",
+            "output": "ccfbbf"
         },
         {
-            "input": "fafd",
-            "output": "dfaf"
+            "input": "fgd",
+            "output": "dgf"
         },
         {
-            "input": "fbcceagbcdb",
-            "output": "bdcbgaeccbf"
+            "input": "fbe",
+            "output": "ebf"
         },
         {
-            "input": "fgdfbef",
-            "output": "febfdgf"
+            "input": "eafgd",
+            "output": "dgfae"
         },
         {
-            "input": "dbbfgggegeb",
-            "output": "begegggfbbd"
+            "input": "gfac",
+            "output": "cafg"
         },
         {
-            "input": "gdbccagfeegabff",
-            "output": "ffbageefgaccbdg"
+            "input": "ddaffgafddgbf",
+            "output": "fbgddfagffadd"
         },
         {
-            "input": "aebfbe",
-            "output": "ebfbea"
+            "input": "bceadddebb",
+            "output": "bbedddaecb"
+        },
+        {
+            "input": "gecgefcf",
+            "output": "fcfegceg"
+        },
+        {
+            "input": "aecbf",
+            "output": "fbcea"
+        },
+        {
+            "input": "bfbcacggcfdcbab",
+            "output": "babcdfcggcacbfb"
+        },
+        {
+            "input": "dcdefeffa",
+            "output": "affefedcd"
+        },
+        {
+            "input": "fbabcebecbde",
+            "output": "edbcebecbabf"
+        },
+        {
+            "input": "agca",
+            "output": "acga"
+        },
+        {
+            "input": "cddadcbdcfb",
+            "output": "bfcdbcdaddc"
+        },
+        {
+            "input": "gafedfdddbac",
+            "output": "cabdddfdefag"
+        },
+        {
+            "input": "gbcabgegeeedbgc",
+            "output": "cgbdeeegegbacbg"
+        },
+        {
+            "input": "ccbbadfdb",
+            "output": "bdfdabbcc"
+        },
+        {
+            "input": "baggbbcgcfdfed",
+            "output": "defdfcgcbbggab"
+        },
+        {
+            "input": "eefabdc",
+            "output": "cdbafee"
+        },
+        {
+            "input": "acfedaad",
+            "output": "daadefca"
+        },
+        {
+            "input": "edcdbbbdfad",
+            "output": "dafdbbbdcde"
+        },
+        {
+            "input": "bgfdfeaadg",
+            "output": "gdaaefdfgb"
+        },
+        {
+            "input": "gbeff",
+            "output": "ffebg"
+        },
+        {
+            "input": "cdeeced",
+            "output": "deceedc"
+        },
+        {
+            "input": "ecce",
+            "output": "ecce"
+        },
+        {
+            "input": "gffgccb",
+            "output": "bccgffg"
+        },
+        {
+            "input": "aegadddgff",
+            "output": "ffgdddagea"
+        },
+        {
+            "input": "gadggagggcedbfa",
+            "output": "afbdecgggaggdag"
+        },
+        {
+            "input": "ffgabcefadb",
+            "output": "bdafecbagff"
+        },
+        {
+            "input": "agaadbfge",
+            "output": "egfbdaaga"
+        },
+        {
+            "input": "gafedfdfcgg",
+            "output": "ggcfdfdefag"
+        },
+        {
+            "input": "egabggafeffgag",
+            "output": "gagffefaggbage"
+        },
+        {
+            "input": "bbcdeafaegabe",
+            "output": "ebageafaedcbb"
+        },
+        {
+            "input": "aadefcgfcf",
+            "output": "fcfgcfedaa"
+        },
+        {
+            "input": "gaeffbddddbaafa",
+            "output": "afaabddddbffeag"
+        },
+        {
+            "input": "gdaacae",
+            "output": "eacaadg"
+        },
+        {
+            "input": "begaf",
+            "output": "fageb"
+        },
+        {
+            "input": "gebc",
+            "output": "cbeg"
+        },
+        {
+            "input": "deffed",
+            "output": "deffed"
+        },
+        {
+            "input": "ggcdcgaggaf",
+            "output": "faggagcdcgg"
+        },
+        {
+            "input": "dcggbebgfgded",
+            "output": "dedgfgbebggcd"
+        },
+        {
+            "input": "bbfacgebdebfg",
+            "output": "gfbedbegcafbb"
+        },
+        {
+            "input": "effgeac",
+            "output": "caegffe"
+        },
+        {
+            "input": "cacfgbd",
+            "output": "dbgfcac"
+        },
+        {
+            "input": "fddgaefcfgbc",
+            "output": "cbgfcfeagddf"
+        },
+        {
+            "input": "gdbfdc",
+            "output": "cdfbdg"
+        },
+        {
+            "input": "gacedfgdacafe",
+            "output": "efacadgfdecag"
+        },
+        {
+            "input": "bacdcfdcbadeagd",
+            "output": "dgaedabcdfcdcab"
+        },
+        {
+            "input": "eeecfaccbdefd",
+            "output": "dfedbccafceee"
+        },
+        {
+            "input": "gccebafeabfa",
+            "output": "afbaefabeccg"
+        },
+        {
+            "input": "begfddbbcffaec",
+            "output": "ceaffcbbddfgeb"
+        },
+        {
+            "input": "faea",
+            "output": "aeaf"
+        },
+        {
+            "input": "fgf",
+            "output": "fgf"
+        },
+        {
+            "input": "cfc",
+            "output": "cfc"
+        },
+        {
+            "input": "dbcggggfgfaebfe",
+            "output": "efbeafgfggggcbd"
+        },
+        {
+            "input": "ddadg",
+            "output": "gdadd"
+        },
+        {
+            "input": "ccdgbceccgad",
+            "output": "dagccecbgdcc"
+        },
+        {
+            "input": "fcecfffaabeb",
+            "output": "bebaafffcecf"
+        },
+        {
+            "input": "gcefdedee",
+            "output": "eededfecg"
+        },
+        {
+            "input": "fdcagadbadfea",
+            "output": "aefdabdagacdf"
+        },
+        {
+            "input": "gbbb",
+            "output": "bbbg"
+        },
+        {
+            "input": "bdagdcedgcdbe",
+            "output": "ebdcgdecdgadb"
+        },
+        {
+            "input": "adabddfe",
+            "output": "efddbada"
+        },
+        {
+            "input": "cbbbgdgcgfacf",
+            "output": "fcafgcgdgbbbc"
+        },
+        {
+            "input": "dcacbgedcggg",
+            "output": "gggcdegbcacd"
+        },
+        {
+            "input": "edcfedcc",
+            "output": "ccdefcde"
         },
         {
             "input": "facd",
             "output": "dcaf"
         },
         {
-            "input": "bcdfeaeggecd",
-            "output": "dceggeaefdcb"
+            "input": "gcfcdecacbbcacc",
+            "output": "ccacbbcacedcfcg"
         },
         {
-            "input": "fffebedf",
-            "output": "fdebefff"
+            "input": "dfcegfbdafcc",
+            "output": "ccfadbfgecfd"
         },
         {
-            "input": "baaegfedacga",
-            "output": "agcadefgeaab"
+            "input": "cagbbdfabb",
+            "output": "bbafdbbgac"
         },
         {
-            "input": "cgdcaadb",
-            "output": "bdaacdgc"
+            "input": "cbdc",
+            "output": "cdbc"
         },
         {
-            "input": "addfbdgadgageg",
-            "output": "gegagdagdbfdda"
+            "input": "fcccfagggeca",
+            "output": "acegggafcccf"
         },
         {
-            "input": "bbaaacbaedbceae",
-            "output": "eaecbdeabcaaabb"
+            "input": "ffcced",
+            "output": "deccff"
         },
         {
-            "input": "cabaedfbf",
-            "output": "fbfdeabac"
+            "input": "dcd",
+            "output": "dcd"
         },
         {
-            "input": "ecafbf",
-            "output": "fbface"
+            "input": "eebfce",
+            "output": "ecfbee"
         },
         {
-            "input": "egecdaadbgdg",
-            "output": "gdgbdaadcege"
+            "input": "cbbcadabdfggcaf",
+            "output": "facggfdbadacbbc"
         },
         {
-            "input": "gafcabaagfcadef",
-            "output": "fedacfgaabacfag"
+            "input": "fedcbd",
+            "output": "dbcdef"
         },
         {
-            "input": "cbgegef",
-            "output": "fegegbc"
+            "input": "efba",
+            "output": "abfe"
         },
         {
-            "input": "ddaaefgccegbe",
-            "output": "ebgeccgfeaadd"
+            "input": "cdecbcea",
+            "output": "aecbcedc"
         },
         {
-            "input": "dddeeddeed",
-            "output": "deeddeeddd"
+            "input": "cebfebadea",
+            "output": "aedabefbec"
         },
         {
-            "input": "ffeae",
-            "output": "eaeff"
+            "input": "efb",
+            "output": "bfe"
         },
         {
-            "input": "acgeadagaccb",
-            "output": "bccagadaegca"
+            "input": "gdeebedbbade",
+            "output": "edabbdebeedg"
         },
         {
-            "input": "gcdfacagebaaga",
-            "output": "agaabegacafdcg"
+            "input": "ecg",
+            "output": "gce"
         },
         {
-            "input": "bdbaafabgbgce",
-            "output": "ecgbgbafaabdb"
+            "input": "eeffdbacagagfb",
+            "output": "bfgagacabdffee"
         },
         {
-            "input": "bdabcca",
-            "output": "accbadb"
+            "input": "bdc",
+            "output": "cdb"
         },
         {
-            "input": "eabcbfbbd",
-            "output": "dbbfbcbae"
+            "input": "ddddbfgccgfdbda",
+            "output": "adbdfgccgfbdddd"
         },
         {
-            "input": "bggebcfccdefff",
-            "output": "fffedccfcbeggb"
+            "input": "dggbdebcedga",
+            "output": "agdecbedbggd"
         },
         {
-            "input": "cdgbdabgeafbgf",
-            "output": "fgbfaegbadbgdc"
+            "input": "bfacc",
+            "output": "ccafb"
         },
         {
-            "input": "gafb",
-            "output": "bfag"
+            "input": "dacegfaebgge",
+            "output": "eggbeafgecad"
         },
         {
-            "input": "cagedeca",
-            "output": "acedegac"
+            "input": "adbefead",
+            "output": "daefebda"
         },
         {
-            "input": "eeggfegfbgdedc",
-            "output": "cdedgbfgefggee"
+            "input": "dbefg",
+            "output": "gfebd"
         },
         {
-            "input": "aggdaeege",
-            "output": "egeeadgga"
+            "input": "fecff",
+            "output": "ffcef"
         },
         {
-            "input": "eaf",
-            "output": "fae"
+            "input": "cdfgabgfegfff",
+            "output": "fffgefgbagfdc"
         },
         {
-            "input": "bbd",
-            "output": "dbb"
+            "input": "aebgcfge",
+            "output": "egfcgbea"
         },
         {
-            "input": "fbdfafcdfgcbc",
-            "output": "cbcgfdcfafdbf"
+            "input": "ggfdddedabafa",
+            "output": "afabadedddfgg"
         },
         {
-            "input": "gbaac",
-            "output": "caabg"
+            "input": "geaacafc",
+            "output": "cfacaaeg"
         },
         {
-            "input": "facfgeeb",
-            "output": "beegfcaf"
+            "input": "bbb",
+            "output": "bbb"
+        },
+        {
+            "input": "badbfbadfdgacfc",
+            "output": "cfcagdfdabfbdab"
+        },
+        {
+            "input": "agbfda",
+            "output": "adfbga"
+        },
+        {
+            "input": "eaed",
+            "output": "deae"
+        },
+        {
+            "input": "efecedcaecdcb",
+            "output": "bcdceacdecefe"
+        },
+        {
+            "input": "gadcaedfefegb",
+            "output": "bgefefdeacdag"
+        },
+        {
+            "input": "ecaacc",
+            "output": "ccaace"
+        },
+        {
+            "input": "fbfadfc",
+            "output": "cfdafbf"
+        },
+        {
+            "input": "eeecegea",
+            "output": "aegeceee"
+        },
+        {
+            "input": "gcebfgfg",
+            "output": "gfgfbecg"
+        },
+        {
+            "input": "daaa",
+            "output": "aaad"
+        },
+        {
+            "input": "fecadaf",
+            "output": "fadacef"
+        },
+        {
+            "input": "gdaabddcddf",
+            "output": "fddcddbaadg"
+        },
+        {
+            "input": "ggfdbbcec",
+            "output": "cecbbdfgg"
+        },
+        {
+            "input": "cbee",
+            "output": "eebc"
+        },
+        {
+            "input": "cgaedfca",
+            "output": "acfdeagc"
+        },
+        {
+            "input": "eedacfdb",
+            "output": "bdfcadee"
+        },
+        {
+            "input": "aacbe",
+            "output": "ebcaa"
+        },
+        {
+            "input": "eccggeee",
+            "output": "eeeggcce"
+        },
+        {
+            "input": "cfcfdfb",
+            "output": "bfdfcfc"
+        },
+        {
+            "input": "ccbafcdbcde",
+            "output": "edcbdcfabcc"
+        },
+        {
+            "input": "ddeaebb",
+            "output": "bbeaedd"
+        },
+        {
+            "input": "bgffedgf",
+            "output": "fgdeffgb"
+        },
+        {
+            "input": "ccd",
+            "output": "dcc"
+        },
+        {
+            "input": "eddaegafd",
+            "output": "dfageadde"
+        },
+        {
+            "input": "aceeca",
+            "output": "aceeca"
+        },
+        {
+            "input": "babgce",
+            "output": "ecgbab"
+        },
+        {
+            "input": "abbbede",
+            "output": "edebbba"
+        },
+        {
+            "input": "fgbdfaaffeab",
+            "output": "baeffaafdbgf"
+        },
+        {
+            "input": "ddbecfc",
+            "output": "cfcebdd"
+        },
+        {
+            "input": "ebbebbfc",
+            "output": "cfbbebbe"
+        },
+        {
+            "input": "eeedagaa",
+            "output": "aagadeee"
+        },
+        {
+            "input": "cbefec",
+            "output": "cefebc"
+        },
+        {
+            "input": "aeaddbfefdff",
+            "output": "ffdfefbddaea"
+        },
+        {
+            "input": "edcgcbbbbbb",
+            "output": "bbbbbbcgcde"
+        },
+        {
+            "input": "aeegg",
+            "output": "ggeea"
+        },
+        {
+            "input": "afeedggbaddc",
+            "output": "cddabggdeefa"
+        },
+        {
+            "input": "dcddcc",
+            "output": "ccddcd"
+        },
+        {
+            "input": "gcaea",
+            "output": "aeacg"
+        },
+        {
+            "input": "fdceacedfd",
+            "output": "dfdecaecdf"
+        },
+        {
+            "input": "bgafgdafe",
+            "output": "efadgfagb"
+        },
+        {
+            "input": "cbfgeebc",
+            "output": "cbeegfbc"
+        },
+        {
+            "input": "ebaagcedgbee",
+            "output": "eebgdecgaabe"
+        },
+        {
+            "input": "gagafeagbedbdc",
+            "output": "cdbdebgaefagag"
+        },
+        {
+            "input": "baeea",
+            "output": "aeeab"
+        },
+        {
+            "input": "dafebdbfgd",
+            "output": "dgfbdbefad"
+        },
+        {
+            "input": "geaceafdbb",
+            "output": "bbdfaecaeg"
+        },
+        {
+            "input": "fabd",
+            "output": "dbaf"
+        },
+        {
+            "input": "bddcefgag",
+            "output": "gagfecddb"
+        },
+        {
+            "input": "bbdeegfdgg",
+            "output": "ggdfgeedbb"
+        },
+        {
+            "input": "gdgfaefbefbadg",
+            "output": "gdabfebfeafgdg"
+        },
+        {
+            "input": "gbccgfe",
+            "output": "efgccbg"
+        },
+        {
+            "input": "cgedfaaeeeede",
+            "output": "edeeeeaafdegc"
+        },
+        {
+            "input": "fgbbccgbgabfcfa",
+            "output": "afcfbagbgccbbgf"
+        },
+        {
+            "input": "feadbbcdad",
+            "output": "dadcbbdaef"
+        },
+        {
+            "input": "bagfgfggaa",
+            "output": "aaggfgfgab"
+        },
+        {
+            "input": "dcecfbccbagea",
+            "output": "aegabccbfcecd"
+        },
+        {
+            "input": "febdbbbddafdcab",
+            "output": "bacdfaddbbbdbef"
+        },
+        {
+            "input": "gcaeecfcac",
+            "output": "cacfceeacg"
+        },
+        {
+            "input": "bbfeadcfcac",
+            "output": "cacfcdaefbb"
+        },
+        {
+            "input": "fdeddf",
+            "output": "fddedf"
+        },
+        {
+            "input": "dade",
+            "output": "edad"
+        },
+        {
+            "input": "ccgfcbcgbgcbddb",
+            "output": "bddbcgbgcbcfgcc"
+        },
+        {
+            "input": "abddeagcafe",
+            "output": "efacgaeddba"
+        },
+        {
+            "input": "edcgdfd",
+            "output": "dfdgcde"
+        },
+        {
+            "input": "afff",
+            "output": "fffa"
+        },
+        {
+            "input": "gceccaacbggg",
+            "output": "gggbcaaccecg"
+        },
+        {
+            "input": "cddafcfbf",
+            "output": "fbfcfaddc"
+        },
+        {
+            "input": "cgaecbabeffdac",
+            "output": "cadffebabceagc"
+        },
+        {
+            "input": "fdcfbgageddgda",
+            "output": "adgddegagbfcdf"
+        },
+        {
+            "input": "gagf",
+            "output": "fgag"
+        },
+        {
+            "input": "gcdfdab",
+            "output": "badfdcg"
+        },
+        {
+            "input": "cbcgfege",
+            "output": "egefgcbc"
+        },
+        {
+            "input": "eaegfe",
+            "output": "efgeae"
+        },
+        {
+            "input": "dgecdbfdg",
+            "output": "gdfbdcegd"
+        },
+        {
+            "input": "egeeafbfc",
+            "output": "cfbfaeege"
+        },
+        {
+            "input": "ggfceb",
+            "output": "becfgg"
+        },
+        {
+            "input": "gfebbdecaf",
+            "output": "facedbbefg"
+        },
+        {
+            "input": "geg",
+            "output": "geg"
+        },
+        {
+            "input": "bgbcceedbea",
+            "output": "aebdeeccbgb"
+        },
+        {
+            "input": "aeedbagea",
+            "output": "aegabdeea"
+        },
+        {
+            "input": "cbgbfdgaecfcc",
+            "output": "ccfceagdfbgbc"
+        },
+        {
+            "input": "bcffefb",
+            "output": "bfeffcb"
+        },
+        {
+            "input": "daafcbbgfb",
+            "output": "bfgbbcfaad"
+        },
+        {
+            "input": "dcccgdbdg",
+            "output": "gdbdgcccd"
+        },
+        {
+            "input": "fbb",
+            "output": "bbf"
+        },
+        {
+            "input": "dabedage",
+            "output": "egadebad"
+        },
+        {
+            "input": "bagddcbdca",
+            "output": "acdbcddgab"
+        },
+        {
+            "input": "faacegcc",
+            "output": "ccgecaaf"
+        },
+        {
+            "input": "gafaceacfb",
+            "output": "bfcaecafag"
+        },
+        {
+            "input": "dbbecbbfccgdb",
+            "output": "bdgccfbbcebbd"
+        },
+        {
+            "input": "gcgf",
+            "output": "fgcg"
+        },
+        {
+            "input": "eabbbabfadbebaa",
+            "output": "aabebdafbabbbae"
+        },
+        {
+            "input": "fbbcc",
+            "output": "ccbbf"
+        },
+        {
+            "input": "ecgfadegefeaab",
+            "output": "baaefegedafgce"
+        },
+        {
+            "input": "aeagagedagfg",
+            "output": "gfgadegagaea"
+        },
+        {
+            "input": "gcdg",
+            "output": "gdcg"
+        },
+        {
+            "input": "bffde",
+            "output": "edffb"
+        },
+        {
+            "input": "eedd",
+            "output": "ddee"
+        },
+        {
+            "input": "fef",
+            "output": "fef"
+        },
+        {
+            "input": "geaebfedf",
+            "output": "fdefbeaeg"
+        },
+        {
+            "input": "fceddebdbccbfd",
+            "output": "dfbccbdbeddecf"
+        },
+        {
+            "input": "bcea",
+            "output": "aecb"
+        },
+        {
+            "input": "bfbbcg",
+            "output": "gcbbfb"
+        },
+        {
+            "input": "bbadfebefdc",
+            "output": "cdfebefdabb"
+        },
+        {
+            "input": "ecfdcfdebcdd",
+            "output": "ddcbedfcdfce"
+        },
+        {
+            "input": "dbfaab",
+            "output": "baafbd"
+        },
+        {
+            "input": "adafgdcbfab",
+            "output": "bafbcdgfada"
+        },
+        {
+            "input": "bffbgaggf",
+            "output": "fggagbffb"
+        },
+        {
+            "input": "debccfccecfeae",
+            "output": "eaefceccfccbed"
+        },
+        {
+            "input": "cddae",
+            "output": "eaddc"
+        },
+        {
+            "input": "bdaeafdg",
+            "output": "gdfaeadb"
+        },
+        {
+            "input": "bedfcbegbb",
+            "output": "bbgebcfdeb"
+        },
+        {
+            "input": "afcfdafbdd",
+            "output": "ddbfadfcfa"
+        },
+        {
+            "input": "afedcgefcdfef",
+            "output": "fefdcfegcdefa"
+        },
+        {
+            "input": "eaaaabcce",
+            "output": "eccbaaaae"
+        },
+        {
+            "input": "dddcbecegdfc",
+            "output": "cfdgecebcddd"
+        },
+        {
+            "input": "bfcecbceedeb",
+            "output": "bedeecbcecfb"
+        },
+        {
+            "input": "abgfeefde",
+            "output": "edfeefgba"
+        },
+        {
+            "input": "cafbaaad",
+            "output": "daaabfac"
+        },
+        {
+            "input": "cgddebddbbac",
+            "output": "cabbddbeddgc"
+        },
+        {
+            "input": "acbeccgbeagfb",
+            "output": "bfgaebgccebca"
+        },
+        {
+            "input": "gecbgbgcagb",
+            "output": "bgacgbgbceg"
+        },
+        {
+            "input": "fedccbabgdcega",
+            "output": "agecdgbabccdef"
+        },
+        {
+            "input": "adfaaabgeb",
+            "output": "begbaaafda"
+        },
+        {
+            "input": "bgadfeb",
+            "output": "befdagb"
+        },
+        {
+            "input": "eegeeebd",
+            "output": "dbeeegee"
+        },
+        {
+            "input": "bbaebeac",
+            "output": "caebeabb"
+        },
+        {
+            "input": "gafgec",
+            "output": "cegfag"
+        },
+        {
+            "input": "caef",
+            "output": "feac"
+        },
+        {
+            "input": "eef",
+            "output": "fee"
+        },
+        {
+            "input": "ebg",
+            "output": "gbe"
+        },
+        {
+            "input": "fdbfbacfgeeb",
+            "output": "beegfcabfbdf"
+        },
+        {
+            "input": "affaada",
+            "output": "adaaffa"
+        },
+        {
+            "input": "bgddgdefcefee",
+            "output": "eefecfedgddgb"
+        },
+        {
+            "input": "faa",
+            "output": "aaf"
+        },
+        {
+            "input": "gebcecfcaca",
+            "output": "acacfcecbeg"
+        },
+        {
+            "input": "afcbfde",
+            "output": "edfbcfa"
+        },
+        {
+            "input": "affba",
+            "output": "abffa"
+        },
+        {
+            "input": "ccgbaabcd",
+            "output": "dcbaabgcc"
+        },
+        {
+            "input": "cbeageaa",
+            "output": "aaegaebc"
+        },
+        {
+            "input": "dadbdcdgebffbbf",
+            "output": "fbbffbegdcdbdad"
+        },
+        {
+            "input": "ebccbdggeccggd",
+            "output": "dggcceggdbccbe"
+        },
+        {
+            "input": "cbdbaccfggb",
+            "output": "bggfccabdbc"
+        },
+        {
+            "input": "cacdcgcgbfggeb",
+            "output": "beggfbgcgcdcac"
+        },
+        {
+            "input": "ada",
+            "output": "ada"
+        },
+        {
+            "input": "fefg",
+            "output": "gfef"
+        },
+        {
+            "input": "bdgefbggffab",
+            "output": "baffggbfegdb"
+        },
+        {
+            "input": "edfebfcdgbfdecb",
+            "output": "bcedfbgdcfbefde"
+        },
+        {
+            "input": "ddcfbeacb",
+            "output": "bcaebfcdd"
+        },
+        {
+            "input": "bdebc",
+            "output": "cbedb"
+        },
+        {
+            "input": "eed",
+            "output": "dee"
+        },
+        {
+            "input": "efgafg",
+            "output": "gfagfe"
+        },
+        {
+            "input": "geefdfebgadgb",
+            "output": "bgdagbefdfeeg"
+        },
+        {
+            "input": "egeafbcdca",
+            "output": "acdcbfaege"
+        },
+        {
+            "input": "gfdfead",
+            "output": "daefdfg"
+        },
+        {
+            "input": "gcf",
+            "output": "fcg"
+        },
+        {
+            "input": "gefefaegead",
+            "output": "daegeafefeg"
+        },
+        {
+            "input": "eac",
+            "output": "cae"
+        },
+        {
+            "input": "efbde",
+            "output": "edbfe"
+        },
+        {
+            "input": "cgeabdgdf",
+            "output": "fdgdbaegc"
+        },
+        {
+            "input": "bagf",
+            "output": "fgab"
+        },
+        {
+            "input": "cafgfgbad",
+            "output": "dabgfgfac"
+        },
+        {
+            "input": "ebggdfcafffbab",
+            "output": "babfffacfdggbe"
+        },
+        {
+            "input": "gcdd",
+            "output": "ddcg"
+        },
+        {
+            "input": "gfcfc",
+            "output": "cfcfg"
+        },
+        {
+            "input": "cegdefbadef",
+            "output": "fedabfedgec"
+        },
+        {
+            "input": "ggacfbfgd",
+            "output": "dgfbfcagg"
+        },
+        {
+            "input": "afadedbecag",
+            "output": "gacebdedafa"
+        },
+        {
+            "input": "acdfggbfccbfagf",
+            "output": "fgafbccfbggfdca"
+        },
+        {
+            "input": "ecbdadegf",
+            "output": "fgedadbce"
+        },
+        {
+            "input": "adcgcdfa",
+            "output": "afdcgcda"
+        },
+        {
+            "input": "dfaacae",
+            "output": "eacaafd"
+        },
+        {
+            "input": "dgfbccddacaeega",
+            "output": "ageeacaddccbfgd"
+        },
+        {
+            "input": "ebbgd",
+            "output": "dgbbe"
+        },
+        {
+            "input": "gcegbcgdgadedge",
+            "output": "egdedagdgcbgecg"
+        },
+        {
+            "input": "dcbcdbgc",
+            "output": "cgbdcbcd"
+        },
+        {
+            "input": "geagfegcg",
+            "output": "gcgefgaeg"
+        },
+        {
+            "input": "afaddefgafbgfb",
+            "output": "bfgbfagfeddafa"
+        },
+        {
+            "input": "cddacdgbfgcgaa",
+            "output": "aagcgfbgdcaddc"
+        },
+        {
+            "input": "feeac",
+            "output": "caeef"
+        },
+        {
+            "input": "cabfggfegefbc",
+            "output": "cbfegefggfbac"
+        },
+        {
+            "input": "gbbcefdacgdbfd",
+            "output": "dfbdgcadfecbbg"
+        },
+        {
+            "input": "fafdgbedeebeaac",
+            "output": "caaebeedebgdfaf"
+        },
+        {
+            "input": "bddabefbgdc",
+            "output": "cdgbfebaddb"
+        },
+        {
+            "input": "egedecdafdbdcae",
+            "output": "eacdbdfadcedege"
+        },
+        {
+            "input": "cfeafcd",
+            "output": "dcfaefc"
+        },
+        {
+            "input": "baabedgfc",
+            "output": "cfgdebaab"
+        },
+        {
+            "input": "caeddfgca",
+            "output": "acgfddeac"
+        },
+        {
+            "input": "cbcfagf",
+            "output": "fgafcbc"
+        },
+        {
+            "input": "eegcgfed",
+            "output": "defgcgee"
+        },
+        {
+            "input": "gedacaac",
+            "output": "caacadeg"
         }
     ],
     "difficulty": "easy"

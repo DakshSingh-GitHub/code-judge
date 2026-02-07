@@ -21,8 +21,28 @@
     ],
     "hidden_test_cases": [
         {
+            "input": "4",
+            "output": "2"
+        },
+        {
             "input": "2",
             "output": "0"
+        },
+        {
+            "input": "6",
+            "output": "4"
+        },
+        {
+            "input": "7",
+            "output": "40"
+        },
+        {
+            "input": "3",
+            "output": "0"
+        },
+        {
+            "input": "8",
+            "output": "92"
         },
         {
             "input": "1",
@@ -31,26 +51,6 @@
         {
             "input": "5",
             "output": "10"
-        },
-        {
-            "input": "3",
-            "output": "0"
-        },
-        {
-            "input": "6",
-            "output": "4"
-        },
-        {
-            "input": "4",
-            "output": "2"
-        },
-        {
-            "input": "8",
-            "output": "92"
-        },
-        {
-            "input": "7",
-            "output": "40"
         }
     ],
     "difficulty": "hard"

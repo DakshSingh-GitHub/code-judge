@@ -21,359 +21,11 @@
     ],
     "hidden_test_cases": [
         {
-            "input": "(())()",
-            "output": "Yes"
-        },
-        {
-            "input": "()(())",
-            "output": "Yes"
-        },
-        {
-            "input": "(())()()()",
-            "output": "Yes"
-        },
-        {
-            "input": "()()()()",
-            "output": "Yes"
-        },
-        {
-            "input": "))())))))(",
-            "output": "No"
-        },
-        {
-            "input": "()(()()((",
-            "output": "No"
-        },
-        {
-            "input": ")()))(())",
-            "output": "No"
-        },
-        {
-            "input": "((()()((()",
-            "output": "No"
-        },
-        {
-            "input": ")((",
-            "output": "No"
-        },
-        {
-            "input": "))))((",
-            "output": "No"
-        },
-        {
             "input": "((()))",
             "output": "Yes"
         },
         {
-            "input": "()((()()))",
-            "output": "Yes"
-        },
-        {
-            "input": "(())",
-            "output": "Yes"
-        },
-        {
-            "input": "()(",
-            "output": "No"
-        },
-        {
-            "input": "(()((())))",
-            "output": "Yes"
-        },
-        {
-            "input": "))))((()",
-            "output": "No"
-        },
-        {
-            "input": ")()())",
-            "output": "No"
-        },
-        {
-            "input": "()()",
-            "output": "Yes"
-        },
-        {
-            "input": ")(((()(",
-            "output": "No"
-        },
-        {
-            "input": "()",
-            "output": "Yes"
-        },
-        {
-            "input": "())",
-            "output": "No"
-        },
-        {
-            "input": "()((())())",
-            "output": "Yes"
-        },
-        {
-            "input": "()())((()",
-            "output": "No"
-        },
-        {
-            "input": "((((()))))",
-            "output": "Yes"
-        },
-        {
-            "input": "())))(()",
-            "output": "No"
-        },
-        {
-            "input": ")(())))",
-            "output": "No"
-        },
-        {
-            "input": "(()(()))",
-            "output": "Yes"
-        },
-        {
-            "input": "))()()",
-            "output": "No"
-        },
-        {
-            "input": "(()())",
-            "output": "Yes"
-        },
-        {
-            "input": "()()(())",
-            "output": "Yes"
-        },
-        {
-            "input": ")))((",
-            "output": "No"
-        },
-        {
-            "input": "(()()())",
-            "output": "Yes"
-        },
-        {
-            "input": "()(())()",
-            "output": "Yes"
-        },
-        {
-            "input": "((()))()()",
-            "output": "Yes"
-        },
-        {
-            "input": "(()()()()(",
-            "output": "No"
-        },
-        {
-            "input": "())(())",
-            "output": "No"
-        },
-        {
-            "input": "))(()",
-            "output": "No"
-        },
-        {
-            "input": "(((()))(((",
-            "output": "No"
-        },
-        {
-            "input": "(((()()()(",
-            "output": "No"
-        },
-        {
-            "input": "()()()(())",
-            "output": "Yes"
-        },
-        {
-            "input": "))()())(",
-            "output": "No"
-        },
-        {
-            "input": "())(()))))",
-            "output": "No"
-        },
-        {
-            "input": ")()())))(",
-            "output": "No"
-        },
-        {
-            "input": "(())((()",
-            "output": "No"
-        },
-        {
-            "input": ")))",
-            "output": "No"
-        },
-        {
-            "input": "(()",
-            "output": "No"
-        },
-        {
-            "input": "())((())(",
-            "output": "No"
-        },
-        {
-            "input": ")(()()))(",
-            "output": "No"
-        },
-        {
-            "input": "(()())(())",
-            "output": "Yes"
-        },
-        {
-            "input": "((()(())))",
-            "output": "Yes"
-        },
-        {
-            "input": "))()",
-            "output": "No"
-        },
-        {
-            "input": "(((())))",
-            "output": "Yes"
-        },
-        {
-            "input": "((()))()",
-            "output": "Yes"
-        },
-        {
-            "input": "(()()(()))",
-            "output": "Yes"
-        },
-        {
-            "input": ")(",
-            "output": "No"
-        },
-        {
-            "input": "((()()()))",
-            "output": "Yes"
-        },
-        {
-            "input": "((())())",
-            "output": "Yes"
-        },
-        {
-            "input": "((((())))",
-            "output": "No"
-        },
-        {
-            "input": "(()((",
-            "output": "No"
-        },
-        {
-            "input": "))(((()",
-            "output": "No"
-        },
-        {
-            "input": "((()((",
-            "output": "No"
-        },
-        {
-            "input": ")))())((((",
-            "output": "No"
-        },
-        {
-            "input": ")()())))",
-            "output": "No"
-        },
-        {
-            "input": ")()",
-            "output": "No"
-        },
-        {
-            "input": "(((())(((",
-            "output": "No"
-        },
-        {
-            "input": "())(",
-            "output": "No"
-        },
-        {
-            "input": ")())(())(",
-            "output": "No"
-        },
-        {
-            "input": "())(()())",
-            "output": "No"
-        },
-        {
-            "input": "()()()())",
-            "output": "No"
-        },
-        {
-            "input": "((()()(((",
-            "output": "No"
-        },
-        {
-            "input": ")()((()",
-            "output": "No"
-        },
-        {
-            "input": "(((()",
-            "output": "No"
-        },
-        {
-            "input": "))(()())",
-            "output": "No"
-        },
-        {
-            "input": "()()())",
-            "output": "No"
-        },
-        {
-            "input": ")(())(",
-            "output": "No"
-        },
-        {
-            "input": "))",
-            "output": "No"
-        },
-        {
-            "input": ")))((((",
-            "output": "No"
-        },
-        {
-            "input": "())())(",
-            "output": "No"
-        },
-        {
-            "input": "((())()())",
-            "output": "Yes"
-        },
-        {
-            "input": "(()))))()",
-            "output": "No"
-        },
-        {
-            "input": ")(((",
-            "output": "No"
-        },
-        {
-            "input": "(())(())",
-            "output": "Yes"
-        },
-        {
-            "input": "()(())(())",
-            "output": "Yes"
-        },
-        {
-            "input": "((())(()))",
-            "output": "Yes"
-        },
-        {
-            "input": "))()())(()",
-            "output": "No"
-        },
-        {
-            "input": ")))()(",
-            "output": "No"
-        },
-        {
-            "input": "))()))",
-            "output": "No"
-        },
-        {
-            "input": "))))",
-            "output": "No"
-        },
-        {
-            "input": "))(()(())",
+            "input": "))((()))",
             "output": "No"
         },
         {
@@ -381,1051 +33,11 @@
             "output": "No"
         },
         {
-            "input": "()(((()",
+            "input": "((())()(()",
             "output": "No"
-        },
-        {
-            "input": "()))))))()",
-            "output": "No"
-        },
-        {
-            "input": "))()()((",
-            "output": "No"
-        },
-        {
-            "input": "(())()()",
-            "output": "Yes"
-        },
-        {
-            "input": ")((((",
-            "output": "No"
-        },
-        {
-            "input": ")((())",
-            "output": "No"
-        },
-        {
-            "input": "))()((((",
-            "output": "No"
-        },
-        {
-            "input": "))(())())",
-            "output": "No"
-        },
-        {
-            "input": ")())))(",
-            "output": "No"
-        },
-        {
-            "input": "(((((",
-            "output": "No"
-        },
-        {
-            "input": "))))))((()",
-            "output": "No"
-        },
-        {
-            "input": "(()))(())",
-            "output": "No"
-        },
-        {
-            "input": "()()(((",
-            "output": "No"
-        },
-        {
-            "input": "(())((()))",
-            "output": "Yes"
-        },
-        {
-            "input": "))((",
-            "output": "No"
-        },
-        {
-            "input": "(()(()))()",
-            "output": "Yes"
-        },
-        {
-            "input": "()()(())()",
-            "output": "Yes"
-        },
-        {
-            "input": ")(((())((",
-            "output": "No"
-        },
-        {
-            "input": "))))(",
-            "output": "No"
-        },
-        {
-            "input": "()))(()",
-            "output": "No"
-        },
-        {
-            "input": "(()(())())",
-            "output": "Yes"
-        },
-        {
-            "input": ")()())()((",
-            "output": "No"
-        },
-        {
-            "input": "(()()()",
-            "output": "No"
-        },
-        {
-            "input": "((()(())",
-            "output": "No"
-        },
-        {
-            "input": "))))))))",
-            "output": "No"
-        },
-        {
-            "input": "((()()))()",
-            "output": "Yes"
-        },
-        {
-            "input": ")(()()()",
-            "output": "No"
-        },
-        {
-            "input": "(())()(())",
-            "output": "Yes"
-        },
-        {
-            "input": "(()(()",
-            "output": "No"
-        },
-        {
-            "input": ")))))()(",
-            "output": "No"
-        },
-        {
-            "input": "(()(()()))",
-            "output": "Yes"
-        },
-        {
-            "input": "((()()))",
-            "output": "Yes"
-        },
-        {
-            "input": ")(((((()",
-            "output": "No"
-        },
-        {
-            "input": ")())(",
-            "output": "No"
-        },
-        {
-            "input": "))))(()()",
-            "output": "No"
-        },
-        {
-            "input": "(((())()))",
-            "output": "Yes"
-        },
-        {
-            "input": "((((()()))",
-            "output": "No"
-        },
-        {
-            "input": "(())(((",
-            "output": "No"
-        },
-        {
-            "input": "(((()))",
-            "output": "No"
-        },
-        {
-            "input": "))(()(()(",
-            "output": "No"
-        },
-        {
-            "input": "))((((",
-            "output": "No"
-        },
-        {
-            "input": "))(())(",
-            "output": "No"
-        },
-        {
-            "input": "()()(()",
-            "output": "No"
-        },
-        {
-            "input": "(()()()())",
-            "output": "Yes"
-        },
-        {
-            "input": "))))((()(",
-            "output": "No"
-        },
-        {
-            "input": "((()))(())",
-            "output": "Yes"
-        },
-        {
-            "input": "))()))(",
-            "output": "No"
-        },
-        {
-            "input": "()(())(",
-            "output": "No"
-        },
-        {
-            "input": "))(",
-            "output": "No"
-        },
-        {
-            "input": ")(()())",
-            "output": "No"
-        },
-        {
-            "input": "(())())",
-            "output": "No"
-        },
-        {
-            "input": ")))))())(",
-            "output": "No"
-        },
-        {
-            "input": "(()())()",
-            "output": "Yes"
-        },
-        {
-            "input": "()))((",
-            "output": "No"
-        },
-        {
-            "input": ")()))(()",
-            "output": "No"
-        },
-        {
-            "input": "(()))",
-            "output": "No"
-        },
-        {
-            "input": ")(((()",
-            "output": "No"
-        },
-        {
-            "input": "()(((()(",
-            "output": "No"
-        },
-        {
-            "input": "()()()",
-            "output": "Yes"
-        },
-        {
-            "input": "()(((()()",
-            "output": "No"
-        },
-        {
-            "input": "(((())))()",
-            "output": "Yes"
         },
         {
             "input": "(((()())))",
-            "output": "Yes"
-        },
-        {
-            "input": "(()()())()",
-            "output": "Yes"
-        },
-        {
-            "input": "())(()(()(",
-            "output": "No"
-        },
-        {
-            "input": ")((()((",
-            "output": "No"
-        },
-        {
-            "input": "(()((((((",
-            "output": "No"
-        },
-        {
-            "input": "(()()()(",
-            "output": "No"
-        },
-        {
-            "input": ")())()((",
-            "output": "No"
-        },
-        {
-            "input": ")))((()))",
-            "output": "No"
-        },
-        {
-            "input": "()(()",
-            "output": "No"
-        },
-        {
-            "input": ")())",
-            "output": "No"
-        },
-        {
-            "input": "))(((",
-            "output": "No"
-        },
-        {
-            "input": ")()())(())",
-            "output": "No"
-        },
-        {
-            "input": ")(()",
-            "output": "No"
-        },
-        {
-            "input": "()((()))",
-            "output": "Yes"
-        },
-        {
-            "input": "((()())(((",
-            "output": "No"
-        },
-        {
-            "input": "(())(())()",
-            "output": "Yes"
-        },
-        {
-            "input": "()((",
-            "output": "No"
-        },
-        {
-            "input": "(()(((",
-            "output": "No"
-        },
-        {
-            "input": "))()(((",
-            "output": "No"
-        },
-        {
-            "input": "((())()()(",
-            "output": "No"
-        },
-        {
-            "input": "()()(",
-            "output": "No"
-        },
-        {
-            "input": ")))))(()(",
-            "output": "No"
-        },
-        {
-            "input": "))(())",
-            "output": "No"
-        },
-        {
-            "input": "(()))()((",
-            "output": "No"
-        },
-        {
-            "input": "(((",
-            "output": "No"
-        },
-        {
-            "input": "))))())()(",
-            "output": "No"
-        },
-        {
-            "input": "()(()(()",
-            "output": "No"
-        },
-        {
-            "input": ")((()))",
-            "output": "No"
-        },
-        {
-            "input": "())(((((((",
-            "output": "No"
-        },
-        {
-            "input": ")())(()))",
-            "output": "No"
-        },
-        {
-            "input": "()()()()(",
-            "output": "No"
-        },
-        {
-            "input": "(()((((",
-            "output": "No"
-        },
-        {
-            "input": ")()(",
-            "output": "No"
-        },
-        {
-            "input": "(())(()",
-            "output": "No"
-        },
-        {
-            "input": "))((()()",
-            "output": "No"
-        },
-        {
-            "input": ")()(()(",
-            "output": "No"
-        },
-        {
-            "input": ")()))))((",
-            "output": "No"
-        },
-        {
-            "input": ")()((((",
-            "output": "No"
-        },
-        {
-            "input": "((((()(()",
-            "output": "No"
-        },
-        {
-            "input": "(((()())((",
-            "output": "No"
-        },
-        {
-            "input": "(())(",
-            "output": "No"
-        },
-        {
-            "input": ")(()())((",
-            "output": "No"
-        },
-        {
-            "input": ")))()))",
-            "output": "No"
-        },
-        {
-            "input": "))()()(()",
-            "output": "No"
-        },
-        {
-            "input": "(())))(()(",
-            "output": "No"
-        },
-        {
-            "input": ")))())((",
-            "output": "No"
-        },
-        {
-            "input": "(()))))",
-            "output": "No"
-        },
-        {
-            "input": "))(((((",
-            "output": "No"
-        },
-        {
-            "input": "))))()",
-            "output": "No"
-        },
-        {
-            "input": ")())()())",
-            "output": "No"
-        },
-        {
-            "input": ")()))",
-            "output": "No"
-        },
-        {
-            "input": ")((())())",
-            "output": "No"
-        },
-        {
-            "input": "()()(((())",
-            "output": "No"
-        },
-        {
-            "input": ")(()()((",
-            "output": "No"
-        },
-        {
-            "input": "()((((()",
-            "output": "No"
-        },
-        {
-            "input": "(((()))())",
-            "output": "Yes"
-        },
-        {
-            "input": ")((())(",
-            "output": "No"
-        },
-        {
-            "input": ")))()(()()",
-            "output": "No"
-        },
-        {
-            "input": ")()(())(",
-            "output": "No"
-        },
-        {
-            "input": ")()(()",
-            "output": "No"
-        },
-        {
-            "input": "()(()(",
-            "output": "No"
-        },
-        {
-            "input": "()((())(",
-            "output": "No"
-        },
-        {
-            "input": "()))())((",
-            "output": "No"
-        },
-        {
-            "input": "()(((())(",
-            "output": "No"
-        },
-        {
-            "input": ")((()",
-            "output": "No"
-        },
-        {
-            "input": "()(()())()",
-            "output": "Yes"
-        },
-        {
-            "input": "()))",
-            "output": "No"
-        },
-        {
-            "input": ")(()(",
-            "output": "No"
-        },
-        {
-            "input": "((()(()(((",
-            "output": "No"
-        },
-        {
-            "input": "))))())))(",
-            "output": "No"
-        },
-        {
-            "input": "((((",
-            "output": "No"
-        },
-        {
-            "input": "))((()((()",
-            "output": "No"
-        },
-        {
-            "input": ")(((()))",
-            "output": "No"
-        },
-        {
-            "input": "()))((()()",
-            "output": "No"
-        },
-        {
-            "input": "()(()()())",
-            "output": "Yes"
-        },
-        {
-            "input": "()(())))",
-            "output": "No"
-        },
-        {
-            "input": ")()(()()(",
-            "output": "No"
-        },
-        {
-            "input": ")())(())",
-            "output": "No"
-        },
-        {
-            "input": ")()()(()",
-            "output": "No"
-        },
-        {
-            "input": ")())((",
-            "output": "No"
-        },
-        {
-            "input": ")))(",
-            "output": "No"
-        },
-        {
-            "input": "()(()()",
-            "output": "No"
-        },
-        {
-            "input": ")(((()())",
-            "output": "No"
-        },
-        {
-            "input": "(()(())(((",
-            "output": "No"
-        },
-        {
-            "input": "(())(()())",
-            "output": "Yes"
-        },
-        {
-            "input": "))()))(()",
-            "output": "No"
-        },
-        {
-            "input": "()()((",
-            "output": "No"
-        },
-        {
-            "input": "())))",
-            "output": "No"
-        },
-        {
-            "input": "(((())())(",
-            "output": "No"
-        },
-        {
-            "input": ")(((((",
-            "output": "No"
-        },
-        {
-            "input": ")))()",
-            "output": "No"
-        },
-        {
-            "input": "))()()(",
-            "output": "No"
-        },
-        {
-            "input": "()))(((()",
-            "output": "No"
-        },
-        {
-            "input": "()((((((",
-            "output": "No"
-        },
-        {
-            "input": "()))))())",
-            "output": "No"
-        },
-        {
-            "input": ")()))))",
-            "output": "No"
-        },
-        {
-            "input": "()(()((",
-            "output": "No"
-        },
-        {
-            "input": "))((((())",
-            "output": "No"
-        },
-        {
-            "input": "(()))))()(",
-            "output": "No"
-        },
-        {
-            "input": "))))()((",
-            "output": "No"
-        },
-        {
-            "input": ")))((()(",
-            "output": "No"
-        },
-        {
-            "input": "(()((()())",
-            "output": "No"
-        },
-        {
-            "input": "((()())()",
-            "output": "No"
-        },
-        {
-            "input": "))())))))",
-            "output": "No"
-        },
-        {
-            "input": "()()()()))",
-            "output": "No"
-        },
-        {
-            "input": ")())(()",
-            "output": "No"
-        },
-        {
-            "input": ")))())",
-            "output": "No"
-        },
-        {
-            "input": "())))((()",
-            "output": "No"
-        },
-        {
-            "input": "()))))(((",
-            "output": "No"
-        },
-        {
-            "input": "(()())))))",
-            "output": "No"
-        },
-        {
-            "input": ")()))((",
-            "output": "No"
-        },
-        {
-            "input": "((((()(",
-            "output": "No"
-        },
-        {
-            "input": ")((())((((",
-            "output": "No"
-        },
-        {
-            "input": "(((((((",
-            "output": "No"
-        },
-        {
-            "input": "))())",
-            "output": "No"
-        },
-        {
-            "input": ")))))))(",
-            "output": "No"
-        },
-        {
-            "input": ")))())(",
-            "output": "No"
-        },
-        {
-            "input": "())()",
-            "output": "No"
-        },
-        {
-            "input": "))))((())",
-            "output": "No"
-        },
-        {
-            "input": "((()))))((",
-            "output": "No"
-        },
-        {
-            "input": ")())))((()",
-            "output": "No"
-        },
-        {
-            "input": "))))(())(",
-            "output": "No"
-        },
-        {
-            "input": "()()))((",
-            "output": "No"
-        },
-        {
-            "input": ")))((((())",
-            "output": "No"
-        },
-        {
-            "input": "(((()((())",
-            "output": "No"
-        },
-        {
-            "input": "()))(())",
-            "output": "No"
-        },
-        {
-            "input": "()(()())",
-            "output": "Yes"
-        },
-        {
-            "input": "(()))(",
-            "output": "No"
-        },
-        {
-            "input": ")())()",
-            "output": "No"
-        },
-        {
-            "input": ")(()(()(",
-            "output": "No"
-        },
-        {
-            "input": "((())((",
-            "output": "No"
-        },
-        {
-            "input": ")()()(",
-            "output": "No"
-        },
-        {
-            "input": "(()))()(",
-            "output": "No"
-        },
-        {
-            "input": ")()()((",
-            "output": "No"
-        },
-        {
-            "input": "(())(()(",
-            "output": "No"
-        },
-        {
-            "input": "())(()()()",
-            "output": "No"
-        },
-        {
-            "input": "(())))))()",
-            "output": "No"
-        },
-        {
-            "input": "(((()()(((",
-            "output": "No"
-        },
-        {
-            "input": ")(()()(",
-            "output": "No"
-        },
-        {
-            "input": "))))()())",
-            "output": "No"
-        },
-        {
-            "input": ")((()(()))",
-            "output": "No"
-        },
-        {
-            "input": "()(())(()",
-            "output": "No"
-        },
-        {
-            "input": "())(()",
-            "output": "No"
-        },
-        {
-            "input": ")()()()((",
-            "output": "No"
-        },
-        {
-            "input": "(()(()))(",
-            "output": "No"
-        },
-        {
-            "input": ")(()(()",
-            "output": "No"
-        },
-        {
-            "input": "())(())(",
-            "output": "No"
-        },
-        {
-            "input": "((())",
-            "output": "No"
-        },
-        {
-            "input": ")))()((",
-            "output": "No"
-        },
-        {
-            "input": "((())()))",
-            "output": "No"
-        },
-        {
-            "input": ")((()(())(",
-            "output": "No"
-        },
-        {
-            "input": "))())()(",
-            "output": "No"
-        },
-        {
-            "input": "(()()())(",
-            "output": "No"
-        },
-        {
-            "input": "))((()",
-            "output": "No"
-        },
-        {
-            "input": "))))))())",
-            "output": "No"
-        },
-        {
-            "input": "()((()))()",
-            "output": "Yes"
-        },
-        {
-            "input": ")()))(((",
-            "output": "No"
-        },
-        {
-            "input": "()))((())",
-            "output": "No"
-        },
-        {
-            "input": ")())))()(",
-            "output": "No"
-        },
-        {
-            "input": "())))())",
-            "output": "No"
-        },
-        {
-            "input": "())((())",
-            "output": "No"
-        },
-        {
-            "input": "((()",
-            "output": "No"
-        },
-        {
-            "input": "(()((()",
-            "output": "No"
-        },
-        {
-            "input": ")(())",
-            "output": "No"
-        },
-        {
-            "input": ")()))())()",
-            "output": "No"
-        },
-        {
-            "input": "((())()",
-            "output": "No"
-        },
-        {
-            "input": "(()))))((",
-            "output": "No"
-        },
-        {
-            "input": "(()((())",
-            "output": "No"
-        },
-        {
-            "input": ")(((())",
-            "output": "No"
-        },
-        {
-            "input": "(((()()()",
-            "output": "No"
-        },
-        {
-            "input": "((())()(",
-            "output": "No"
-        },
-        {
-            "input": "(()())()()",
-            "output": "Yes"
-        },
-        {
-            "input": "()))())",
-            "output": "No"
-        },
-        {
-            "input": ")))(())",
-            "output": "No"
-        },
-        {
-            "input": "))())(())",
-            "output": "No"
-        },
-        {
-            "input": "))())))(()",
-            "output": "No"
-        },
-        {
-            "input": "((())())()",
-            "output": "Yes"
-        },
-        {
-            "input": ")()()()()",
-            "output": "No"
-        },
-        {
-            "input": "()()()()()",
-            "output": "Yes"
-        },
-        {
-            "input": "((()())())",
-            "output": "Yes"
-        },
-        {
-            "input": "(()()))",
-            "output": "No"
-        },
-        {
-            "input": ")()(()((()",
-            "output": "No"
-        },
-        {
-            "input": "))((()(",
-            "output": "No"
-        },
-        {
-            "input": "))()(()",
-            "output": "No"
-        },
-        {
-            "input": "()(((())))",
-            "output": "Yes"
-        },
-        {
-            "input": "(()(())((",
-            "output": "No"
-        },
-        {
-            "input": "))(())((((",
-            "output": "No"
-        },
-        {
-            "input": "))())(()()",
-            "output": "No"
-        },
-        {
-            "input": "()()))",
-            "output": "No"
-        },
-        {
-            "input": "))))(()(",
-            "output": "No"
-        },
-        {
-            "input": "()()()((",
-            "output": "No"
-        },
-        {
-            "input": ")()))((())",
-            "output": "No"
-        },
-        {
-            "input": "(()((()(",
-            "output": "No"
-        },
-        {
-            "input": ")))(((()))",
-            "output": "No"
-        },
-        {
-            "input": ")))()()))",
-            "output": "No"
-        },
-        {
-            "input": "(((())))(",
-            "output": "No"
-        },
-        {
-            "input": "()))(",
-            "output": "No"
-        },
-        {
-            "input": "())()())",
-            "output": "No"
-        },
-        {
-            "input": "))()()())",
-            "output": "No"
-        },
-        {
-            "input": ")))())()((",
-            "output": "No"
-        },
-        {
-            "input": "()(())()()",
             "output": "Yes"
         },
         {
@@ -1433,23 +45,251 @@
             "output": "No"
         },
         {
-            "input": "())(((",
+            "input": "))))",
             "output": "No"
         },
         {
-            "input": ")))(()",
+            "input": "()(()",
             "output": "No"
         },
         {
-            "input": ")))()(())(",
+            "input": "()",
+            "output": "Yes"
+        },
+        {
+            "input": "(((())))",
+            "output": "Yes"
+        },
+        {
+            "input": "()(((()",
             "output": "No"
         },
         {
-            "input": "))()((()",
+            "input": "(())",
+            "output": "Yes"
+        },
+        {
+            "input": "(()))))()",
             "output": "No"
         },
         {
-            "input": "()))))((()",
+            "input": "(()(()()))",
+            "output": "Yes"
+        },
+        {
+            "input": "((()()",
+            "output": "No"
+        },
+        {
+            "input": "))(",
+            "output": "No"
+        },
+        {
+            "input": ")())()",
+            "output": "No"
+        },
+        {
+            "input": ")((((()",
+            "output": "No"
+        },
+        {
+            "input": "(())(()())",
+            "output": "Yes"
+        },
+        {
+            "input": "()((()))",
+            "output": "Yes"
+        },
+        {
+            "input": "(()(((",
+            "output": "No"
+        },
+        {
+            "input": ")))()))(",
+            "output": "No"
+        },
+        {
+            "input": "()()()",
+            "output": "Yes"
+        },
+        {
+            "input": ")))()()())",
+            "output": "No"
+        },
+        {
+            "input": "()(()(",
+            "output": "No"
+        },
+        {
+            "input": ")()(",
+            "output": "No"
+        },
+        {
+            "input": ")(",
+            "output": "No"
+        },
+        {
+            "input": "())",
+            "output": "No"
+        },
+        {
+            "input": ")()))",
+            "output": "No"
+        },
+        {
+            "input": "((())((",
+            "output": "No"
+        },
+        {
+            "input": "(((",
+            "output": "No"
+        },
+        {
+            "input": "(())()",
+            "output": "Yes"
+        },
+        {
+            "input": "(())(())",
+            "output": "Yes"
+        },
+        {
+            "input": "(()((((()",
+            "output": "No"
+        },
+        {
+            "input": "())()",
+            "output": "No"
+        },
+        {
+            "input": ")))))))",
+            "output": "No"
+        },
+        {
+            "input": ")((()",
+            "output": "No"
+        },
+        {
+            "input": "(((())))()",
+            "output": "Yes"
+        },
+        {
+            "input": ")))",
+            "output": "No"
+        },
+        {
+            "input": "((()))()((",
+            "output": "No"
+        },
+        {
+            "input": ")()())",
+            "output": "No"
+        },
+        {
+            "input": ")))()()))",
+            "output": "No"
+        },
+        {
+            "input": ")(()(()()",
+            "output": "No"
+        },
+        {
+            "input": "(())()()",
+            "output": "Yes"
+        },
+        {
+            "input": "()((",
+            "output": "No"
+        },
+        {
+            "input": "()()(())",
+            "output": "Yes"
+        },
+        {
+            "input": ")()((",
+            "output": "No"
+        },
+        {
+            "input": ")()()((()",
+            "output": "No"
+        },
+        {
+            "input": "((()()))",
+            "output": "Yes"
+        },
+        {
+            "input": "((())(()))",
+            "output": "Yes"
+        },
+        {
+            "input": "((())()()",
+            "output": "No"
+        },
+        {
+            "input": ")((()((",
+            "output": "No"
+        },
+        {
+            "input": "))())(()((",
+            "output": "No"
+        },
+        {
+            "input": "()()",
+            "output": "Yes"
+        },
+        {
+            "input": "()(()(()(",
+            "output": "No"
+        },
+        {
+            "input": "(()())",
+            "output": "Yes"
+        },
+        {
+            "input": ")(()((()(",
+            "output": "No"
+        },
+        {
+            "input": ")((()()(((",
+            "output": "No"
+        },
+        {
+            "input": "()(()()())",
+            "output": "Yes"
+        },
+        {
+            "input": "()(",
+            "output": "No"
+        },
+        {
+            "input": "(()())((",
+            "output": "No"
+        },
+        {
+            "input": "))",
+            "output": "No"
+        },
+        {
+            "input": "))())())()",
+            "output": "No"
+        },
+        {
+            "input": "()()()()",
+            "output": "Yes"
+        },
+        {
+            "input": ")(((()(()",
+            "output": "No"
+        },
+        {
+            "input": "(()))()",
+            "output": "No"
+        },
+        {
+            "input": "(()(())())",
+            "output": "Yes"
+        },
+        {
+            "input": "())(()",
             "output": "No"
         },
         {
@@ -1457,151 +297,23 @@
             "output": "No"
         },
         {
-            "input": "()()))))()",
+            "input": "()))((()",
             "output": "No"
         },
         {
-            "input": "))))())",
+            "input": "()(((())",
             "output": "No"
         },
         {
-            "input": "((())(()",
+            "input": "()))((",
             "output": "No"
         },
         {
-            "input": "())(()))",
+            "input": "(()(()",
             "output": "No"
         },
         {
-            "input": ")(())((()(",
-            "output": "No"
-        },
-        {
-            "input": ")())((()",
-            "output": "No"
-        },
-        {
-            "input": "))(()()))",
-            "output": "No"
-        },
-        {
-            "input": "()(()))))",
-            "output": "No"
-        },
-        {
-            "input": "(())()))))",
-            "output": "No"
-        },
-        {
-            "input": "((((((()))",
-            "output": "No"
-        },
-        {
-            "input": ")()())(",
-            "output": "No"
-        },
-        {
-            "input": ")((((()))",
-            "output": "No"
-        },
-        {
-            "input": "(())))()",
-            "output": "No"
-        },
-        {
-            "input": "()))()(())",
-            "output": "No"
-        },
-        {
-            "input": ")))))",
-            "output": "No"
-        },
-        {
-            "input": "))))))()((",
-            "output": "No"
-        },
-        {
-            "input": "(()))(((",
-            "output": "No"
-        },
-        {
-            "input": "))(()(",
-            "output": "No"
-        },
-        {
-            "input": ")()(((",
-            "output": "No"
-        },
-        {
-            "input": "())((()))",
-            "output": "No"
-        },
-        {
-            "input": "(()()(",
-            "output": "No"
-        },
-        {
-            "input": "()((()",
-            "output": "No"
-        },
-        {
-            "input": "))())))",
-            "output": "No"
-        },
-        {
-            "input": ")())(((((",
-            "output": "No"
-        },
-        {
-            "input": "(((((()(",
-            "output": "No"
-        },
-        {
-            "input": ")(()((()((",
-            "output": "No"
-        },
-        {
-            "input": "))((()())",
-            "output": "No"
-        },
-        {
-            "input": ")))((()((",
-            "output": "No"
-        },
-        {
-            "input": "()(()())))",
-            "output": "No"
-        },
-        {
-            "input": "(((((()())",
-            "output": "No"
-        },
-        {
-            "input": "()))))()(",
-            "output": "No"
-        },
-        {
-            "input": "((())(",
-            "output": "No"
-        },
-        {
-            "input": "()()((()(",
-            "output": "No"
-        },
-        {
-            "input": "()(((",
-            "output": "No"
-        },
-        {
-            "input": "))()(())",
-            "output": "No"
-        },
-        {
-            "input": "(()()((",
-            "output": "No"
-        },
-        {
-            "input": "(()())()((",
+            "input": "))())))())",
             "output": "No"
         },
         {
@@ -1609,35 +321,447 @@
             "output": "No"
         },
         {
-            "input": "(()()))(()",
+            "input": "(()((",
             "output": "No"
         },
         {
-            "input": ")))((()()",
+            "input": "))(())))))",
             "output": "No"
         },
         {
-            "input": "(((((())(",
+            "input": ")(((()",
             "output": "No"
         },
         {
-            "input": "))())((()(",
+            "input": "())())((",
             "output": "No"
         },
         {
-            "input": "))(())(())",
+            "input": "()))())",
             "output": "No"
         },
         {
-            "input": "())())",
+            "input": "()(())()",
+            "output": "Yes"
+        },
+        {
+            "input": ")(()((",
             "output": "No"
         },
         {
-            "input": "()()(())(",
+            "input": ")()()()(",
             "output": "No"
         },
         {
-            "input": "()()))()(",
+            "input": "(())(",
+            "output": "No"
+        },
+        {
+            "input": "(()()(",
+            "output": "No"
+        },
+        {
+            "input": ")(()()(",
+            "output": "No"
+        },
+        {
+            "input": "(())((()))",
+            "output": "Yes"
+        },
+        {
+            "input": "(()(()))",
+            "output": "Yes"
+        },
+        {
+            "input": "()((()()))",
+            "output": "Yes"
+        },
+        {
+            "input": "((())())",
+            "output": "Yes"
+        },
+        {
+            "input": "())(()()",
+            "output": "No"
+        },
+        {
+            "input": "))()()))",
+            "output": "No"
+        },
+        {
+            "input": "((()))()",
+            "output": "Yes"
+        },
+        {
+            "input": "())))()",
+            "output": "No"
+        },
+        {
+            "input": "()(())",
+            "output": "Yes"
+        },
+        {
+            "input": "))(((())()",
+            "output": "No"
+        },
+        {
+            "input": "((((()",
+            "output": "No"
+        },
+        {
+            "input": "))()))",
+            "output": "No"
+        },
+        {
+            "input": "()((())())",
+            "output": "Yes"
+        },
+        {
+            "input": "((((()))))",
+            "output": "Yes"
+        },
+        {
+            "input": "()((()",
+            "output": "No"
+        },
+        {
+            "input": "()))))",
+            "output": "No"
+        },
+        {
+            "input": ")((()()))",
+            "output": "No"
+        },
+        {
+            "input": "(()(()(()(",
+            "output": "No"
+        },
+        {
+            "input": "()(())(",
+            "output": "No"
+        },
+        {
+            "input": "(((())()))",
+            "output": "Yes"
+        },
+        {
+            "input": "()(()())",
+            "output": "Yes"
+        },
+        {
+            "input": "(((()(",
+            "output": "No"
+        },
+        {
+            "input": ")))()",
+            "output": "No"
+        },
+        {
+            "input": "((()()()))",
+            "output": "Yes"
+        },
+        {
+            "input": "()()()(())",
+            "output": "Yes"
+        },
+        {
+            "input": ")())(",
+            "output": "No"
+        },
+        {
+            "input": "((((((",
+            "output": "No"
+        },
+        {
+            "input": ")((())((()",
+            "output": "No"
+        },
+        {
+            "input": "((())()())",
+            "output": "Yes"
+        },
+        {
+            "input": "(((()))",
+            "output": "No"
+        },
+        {
+            "input": "((()))))",
+            "output": "No"
+        },
+        {
+            "input": "))(())))(",
+            "output": "No"
+        },
+        {
+            "input": "))))((()))",
+            "output": "No"
+        },
+        {
+            "input": ")(((",
+            "output": "No"
+        },
+        {
+            "input": ")(()(()(",
+            "output": "No"
+        },
+        {
+            "input": ")))))))(()",
+            "output": "No"
+        },
+        {
+            "input": "((((())",
+            "output": "No"
+        },
+        {
+            "input": "())))))",
+            "output": "No"
+        },
+        {
+            "input": "()(())))",
+            "output": "No"
+        },
+        {
+            "input": "((()(",
+            "output": "No"
+        },
+        {
+            "input": ")((((()))(",
+            "output": "No"
+        },
+        {
+            "input": "()())()(",
+            "output": "No"
+        },
+        {
+            "input": ")()(()())",
+            "output": "No"
+        },
+        {
+            "input": "))()))()))",
+            "output": "No"
+        },
+        {
+            "input": "()))",
+            "output": "No"
+        },
+        {
+            "input": "()()(()",
+            "output": "No"
+        },
+        {
+            "input": "()()(((",
+            "output": "No"
+        },
+        {
+            "input": "))(((",
+            "output": "No"
+        },
+        {
+            "input": "()))(()",
+            "output": "No"
+        },
+        {
+            "input": ")())()(",
+            "output": "No"
+        },
+        {
+            "input": "()((()()()",
+            "output": "No"
+        },
+        {
+            "input": ")(()",
+            "output": "No"
+        },
+        {
+            "input": "((())(()((",
+            "output": "No"
+        },
+        {
+            "input": "(((())()((",
+            "output": "No"
+        },
+        {
+            "input": ")((",
+            "output": "No"
+        },
+        {
+            "input": "))(()((((",
+            "output": "No"
+        },
+        {
+            "input": "((()(())))",
+            "output": "Yes"
+        },
+        {
+            "input": "(((((((()(",
+            "output": "No"
+        },
+        {
+            "input": ")(())))))",
+            "output": "No"
+        },
+        {
+            "input": "(()))()((",
+            "output": "No"
+        },
+        {
+            "input": ")(()((((",
+            "output": "No"
+        },
+        {
+            "input": ")((()(",
+            "output": "No"
+        },
+        {
+            "input": ")())()(()(",
+            "output": "No"
+        },
+        {
+            "input": "()))(())((",
+            "output": "No"
+        },
+        {
+            "input": ")(()())()",
+            "output": "No"
+        },
+        {
+            "input": "()()((",
+            "output": "No"
+        },
+        {
+            "input": "(()",
+            "output": "No"
+        },
+        {
+            "input": ")((((",
+            "output": "No"
+        },
+        {
+            "input": "(()())()",
+            "output": "Yes"
+        },
+        {
+            "input": "()())))()",
+            "output": "No"
+        },
+        {
+            "input": "(((()",
+            "output": "No"
+        },
+        {
+            "input": "()(())(())",
+            "output": "Yes"
+        },
+        {
+            "input": "(()()())",
+            "output": "Yes"
+        },
+        {
+            "input": "()())(",
+            "output": "No"
+        },
+        {
+            "input": "()))(",
+            "output": "No"
+        },
+        {
+            "input": "))))(()(((",
+            "output": "No"
+        },
+        {
+            "input": "((((",
+            "output": "No"
+        },
+        {
+            "input": "()(()(()))",
+            "output": "Yes"
+        },
+        {
+            "input": ")))((((",
+            "output": "No"
+        },
+        {
+            "input": ")))(((()(",
+            "output": "No"
+        },
+        {
+            "input": ")))(",
+            "output": "No"
+        },
+        {
+            "input": ")((())",
+            "output": "No"
+        },
+        {
+            "input": ")(((((()()",
+            "output": "No"
+        },
+        {
+            "input": "()()((()))",
+            "output": "Yes"
+        },
+        {
+            "input": "))((",
+            "output": "No"
+        },
+        {
+            "input": "())((",
+            "output": "No"
+        },
+        {
+            "input": ")))(()((",
+            "output": "No"
+        },
+        {
+            "input": "((()))(())",
+            "output": "Yes"
+        },
+        {
+            "input": ")(()))(",
+            "output": "No"
+        },
+        {
+            "input": "()()(())((",
+            "output": "No"
+        },
+        {
+            "input": "(()()(()))",
+            "output": "Yes"
+        },
+        {
+            "input": ")))()((",
+            "output": "No"
+        },
+        {
+            "input": ")())",
+            "output": "No"
+        },
+        {
+            "input": "()(((())))",
+            "output": "Yes"
+        },
+        {
+            "input": "()(())()()",
+            "output": "Yes"
+        },
+        {
+            "input": "()()(",
+            "output": "No"
+        },
+        {
+            "input": ")((())(",
+            "output": "No"
+        },
+        {
+            "input": "(()()()()",
+            "output": "No"
+        },
+        {
+            "input": "))))(()(",
+            "output": "No"
+        },
+        {
+            "input": ")(()()((((",
             "output": "No"
         },
         {
@@ -1649,259 +773,43 @@
             "output": "No"
         },
         {
-            "input": ")))))()",
+            "input": ")))()))())",
             "output": "No"
         },
         {
-            "input": "(())))))",
+            "input": "()))())()(",
             "output": "No"
         },
         {
-            "input": "()(()(()))",
-            "output": "Yes"
-        },
-        {
-            "input": "((()()()(",
+            "input": "()))))()(",
             "output": "No"
         },
         {
-            "input": "))(()()",
+            "input": ")()",
             "output": "No"
         },
         {
-            "input": "))()(",
+            "input": "()))(())",
             "output": "No"
         },
         {
-            "input": "())((",
+            "input": "))())",
             "output": "No"
         },
         {
-            "input": "))))()()(",
+            "input": "))((((",
             "output": "No"
         },
         {
-            "input": ")(()())(",
+            "input": ")(()((())",
             "output": "No"
         },
         {
-            "input": ")))(((((",
+            "input": "(())()(()",
             "output": "No"
         },
         {
-            "input": "((((()",
-            "output": "No"
-        },
-        {
-            "input": "((((((",
-            "output": "No"
-        },
-        {
-            "input": "())())((",
-            "output": "No"
-        },
-        {
-            "input": ")()()()())",
-            "output": "No"
-        },
-        {
-            "input": "()()))(",
-            "output": "No"
-        },
-        {
-            "input": "()())",
-            "output": "No"
-        },
-        {
-            "input": "))))(())",
-            "output": "No"
-        },
-        {
-            "input": "((()(",
-            "output": "No"
-        },
-        {
-            "input": ")()))(()((",
-            "output": "No"
-        },
-        {
-            "input": "(((()(()))",
-            "output": "No"
-        },
-        {
-            "input": ")())(((())",
-            "output": "No"
-        },
-        {
-            "input": ")))()(()",
-            "output": "No"
-        },
-        {
-            "input": ")))())(()(",
-            "output": "No"
-        },
-        {
-            "input": ")()(((()",
-            "output": "No"
-        },
-        {
-            "input": "((()(()(",
-            "output": "No"
-        },
-        {
-            "input": ")))))()))",
-            "output": "No"
-        },
-        {
-            "input": ")()())()(",
-            "output": "No"
-        },
-        {
-            "input": "()(()()(()",
-            "output": "No"
-        },
-        {
-            "input": "(())))",
-            "output": "No"
-        },
-        {
-            "input": ")()()",
-            "output": "No"
-        },
-        {
-            "input": ")(()))",
-            "output": "No"
-        },
-        {
-            "input": ")())))",
-            "output": "No"
-        },
-        {
-            "input": "()()))))((",
-            "output": "No"
-        },
-        {
-            "input": "))((()))(",
-            "output": "No"
-        },
-        {
-            "input": "()())()",
-            "output": "No"
-        },
-        {
-            "input": "))))())(((",
-            "output": "No"
-        },
-        {
-            "input": ")))(((())",
-            "output": "No"
-        },
-        {
-            "input": ")))))((()(",
-            "output": "No"
-        },
-        {
-            "input": "((()()(",
-            "output": "No"
-        },
-        {
-            "input": ")(()(((((",
-            "output": "No"
-        },
-        {
-            "input": "()((()())(",
-            "output": "No"
-        },
-        {
-            "input": "))(()((((",
-            "output": "No"
-        },
-        {
-            "input": "(((()(()",
-            "output": "No"
-        },
-        {
-            "input": "()))))",
-            "output": "No"
-        },
-        {
-            "input": "))(()()(",
-            "output": "No"
-        },
-        {
-            "input": "(((())",
-            "output": "No"
-        },
-        {
-            "input": "()()((()",
-            "output": "No"
-        },
-        {
-            "input": ")()()())",
-            "output": "No"
-        },
-        {
-            "input": "))(())))))",
-            "output": "No"
-        },
-        {
-            "input": "()())()(",
-            "output": "No"
-        },
-        {
-            "input": "))()(())(",
-            "output": "No"
-        },
-        {
-            "input": "(()))()",
-            "output": "No"
-        },
-        {
-            "input": "(((())(",
-            "output": "No"
-        },
-        {
-            "input": ")())))))",
-            "output": "No"
-        },
-        {
-            "input": "()((((",
-            "output": "No"
-        },
-        {
-            "input": "))(()((()",
-            "output": "No"
-        },
-        {
-            "input": "(((((()",
-            "output": "No"
-        },
-        {
-            "input": "))()((",
-            "output": "No"
-        },
-        {
-            "input": ")())))())",
-            "output": "No"
-        },
-        {
-            "input": "(((((((())",
-            "output": "No"
-        },
-        {
-            "input": ")()())())",
-            "output": "No"
-        },
-        {
-            "input": "))(())))(",
-            "output": "No"
-        },
-        {
-            "input": "()()))))",
-            "output": "No"
-        },
-        {
-            "input": "))((())(()",
+            "input": "()))()((",
             "output": "No"
         },
         {
@@ -1909,71 +817,551 @@
             "output": "No"
         },
         {
-            "input": "()))()(()",
+            "input": "()(()()()",
             "output": "No"
         },
         {
-            "input": "()()((()))",
+            "input": "))((()((",
+            "output": "No"
+        },
+        {
+            "input": "(()()",
+            "output": "No"
+        },
+        {
+            "input": ")((((())",
+            "output": "No"
+        },
+        {
+            "input": ")))())",
+            "output": "No"
+        },
+        {
+            "input": "(()()()())",
             "output": "Yes"
         },
         {
-            "input": "(()())(((",
+            "input": ")())()())",
             "output": "No"
         },
         {
-            "input": "(((()))(",
+            "input": "())(((",
             "output": "No"
         },
         {
-            "input": ")())(())((",
+            "input": "()((()))()",
+            "output": "Yes"
+        },
+        {
+            "input": "())()()((",
             "output": "No"
         },
         {
-            "input": ")()(((((()",
+            "input": ")))((()()",
             "output": "No"
         },
         {
-            "input": "))(()))",
+            "input": "))(()((())",
             "output": "No"
         },
         {
-            "input": ")(()())()",
+            "input": "()(()(((",
             "output": "No"
         },
         {
-            "input": "))))()((()",
+            "input": ")()))))(",
             "output": "No"
         },
         {
-            "input": ")())())()",
+            "input": "))()()(",
             "output": "No"
         },
         {
-            "input": "(())))(",
+            "input": ")))((",
             "output": "No"
         },
         {
-            "input": "()(())(((",
+            "input": "())()())(",
             "output": "No"
         },
         {
-            "input": "())(((()",
+            "input": "(((())()",
             "output": "No"
         },
         {
-            "input": "))()())",
+            "input": "()))()",
             "output": "No"
         },
         {
-            "input": ")()))()))",
+            "input": ")()()(",
             "output": "No"
         },
         {
-            "input": "()())()(((",
+            "input": "(())()()()",
+            "output": "Yes"
+        },
+        {
+            "input": "((())(())(",
             "output": "No"
         },
         {
-            "input": ")(()((()",
+            "input": "())())(",
+            "output": "No"
+        },
+        {
+            "input": "))(()",
+            "output": "No"
+        },
+        {
+            "input": "()())(()(",
+            "output": "No"
+        },
+        {
+            "input": "(()))((())",
+            "output": "No"
+        },
+        {
+            "input": ")())())",
+            "output": "No"
+        },
+        {
+            "input": "(((((",
+            "output": "No"
+        },
+        {
+            "input": ")()()()",
+            "output": "No"
+        },
+        {
+            "input": ")((())()",
+            "output": "No"
+        },
+        {
+            "input": "))()",
+            "output": "No"
+        },
+        {
+            "input": "))(())()()",
+            "output": "No"
+        },
+        {
+            "input": "())(",
+            "output": "No"
+        },
+        {
+            "input": ")()))))",
+            "output": "No"
+        },
+        {
+            "input": "())()((",
+            "output": "No"
+        },
+        {
+            "input": "()((())",
+            "output": "No"
+        },
+        {
+            "input": ")(())(",
+            "output": "No"
+        },
+        {
+            "input": ")())(((",
+            "output": "No"
+        },
+        {
+            "input": "))))))(())",
+            "output": "No"
+        },
+        {
+            "input": "()((()(",
+            "output": "No"
+        },
+        {
+            "input": ")()((((",
+            "output": "No"
+        },
+        {
+            "input": "(())(()",
+            "output": "No"
+        },
+        {
+            "input": "())))(",
+            "output": "No"
+        },
+        {
+            "input": ")(()()))))",
+            "output": "No"
+        },
+        {
+            "input": ")()()",
+            "output": "No"
+        },
+        {
+            "input": ")))()())()",
+            "output": "No"
+        },
+        {
+            "input": "(())()(()(",
+            "output": "No"
+        },
+        {
+            "input": "((())",
+            "output": "No"
+        },
+        {
+            "input": ")()()()()",
+            "output": "No"
+        },
+        {
+            "input": "())(()))",
+            "output": "No"
+        },
+        {
+            "input": ")()))())",
+            "output": "No"
+        },
+        {
+            "input": "))((()()",
+            "output": "No"
+        },
+        {
+            "input": "()()))()",
+            "output": "No"
+        },
+        {
+            "input": "))()((",
+            "output": "No"
+        },
+        {
+            "input": "((())(()",
+            "output": "No"
+        },
+        {
+            "input": "))))(",
+            "output": "No"
+        },
+        {
+            "input": "(()())((((",
+            "output": "No"
+        },
+        {
+            "input": ")()))))((",
+            "output": "No"
+        },
+        {
+            "input": "())((())()",
+            "output": "No"
+        },
+        {
+            "input": "()()(((()(",
+            "output": "No"
+        },
+        {
+            "input": "(((((()())",
+            "output": "No"
+        },
+        {
+            "input": ")((()(()))",
+            "output": "No"
+        },
+        {
+            "input": "))()((()",
+            "output": "No"
+        },
+        {
+            "input": "(((()))())",
+            "output": "Yes"
+        },
+        {
+            "input": "))(()(()",
+            "output": "No"
+        },
+        {
+            "input": "))()))(",
+            "output": "No"
+        },
+        {
+            "input": "(()(()()(",
+            "output": "No"
+        },
+        {
+            "input": "()((((((",
+            "output": "No"
+        },
+        {
+            "input": "((()))()()",
+            "output": "Yes"
+        },
+        {
+            "input": ")()))(()",
+            "output": "No"
+        },
+        {
+            "input": "()))((((((",
+            "output": "No"
+        },
+        {
+            "input": "(())(((())",
+            "output": "No"
+        },
+        {
+            "input": "())())))(",
+            "output": "No"
+        },
+        {
+            "input": "())())())",
+            "output": "No"
+        },
+        {
+            "input": "))()(()()",
+            "output": "No"
+        },
+        {
+            "input": ")())(((())",
+            "output": "No"
+        },
+        {
+            "input": "()(()((((",
+            "output": "No"
+        },
+        {
+            "input": ")()))()(",
+            "output": "No"
+        },
+        {
+            "input": "))())))",
+            "output": "No"
+        },
+        {
+            "input": ")())))((((",
+            "output": "No"
+        },
+        {
+            "input": ")()((((()",
+            "output": "No"
+        },
+        {
+            "input": "(())(())()",
+            "output": "Yes"
+        },
+        {
+            "input": ")()(()()",
+            "output": "No"
+        },
+        {
+            "input": "()))))())",
+            "output": "No"
+        },
+        {
+            "input": "()()(()())",
+            "output": "Yes"
+        },
+        {
+            "input": "(((())((",
+            "output": "No"
+        },
+        {
+            "input": ")))((()",
+            "output": "No"
+        },
+        {
+            "input": "()))))))",
+            "output": "No"
+        },
+        {
+            "input": ")))()(",
+            "output": "No"
+        },
+        {
+            "input": ")()()))))(",
+            "output": "No"
+        },
+        {
+            "input": "))))((()",
+            "output": "No"
+        },
+        {
+            "input": "))))))(",
+            "output": "No"
+        },
+        {
+            "input": ")())))",
+            "output": "No"
+        },
+        {
+            "input": "(()((())))",
+            "output": "Yes"
+        },
+        {
+            "input": "(()((((",
+            "output": "No"
+        },
+        {
+            "input": ")))()())(",
+            "output": "No"
+        },
+        {
+            "input": ")()((()(",
+            "output": "No"
+        },
+        {
+            "input": ")(()()((()",
+            "output": "No"
+        },
+        {
+            "input": "(()())(())",
+            "output": "Yes"
+        },
+        {
+            "input": "()))()))((",
+            "output": "No"
+        },
+        {
+            "input": "()())",
+            "output": "No"
+        },
+        {
+            "input": "))(((()",
+            "output": "No"
+        },
+        {
+            "input": ")(())",
+            "output": "No"
+        },
+        {
+            "input": "(()())()(",
+            "output": "No"
+        },
+        {
+            "input": "())((((",
+            "output": "No"
+        },
+        {
+            "input": "))(((((",
+            "output": "No"
+        },
+        {
+            "input": ")())()))))",
+            "output": "No"
+        },
+        {
+            "input": "(()()((",
+            "output": "No"
+        },
+        {
+            "input": ")))))((",
+            "output": "No"
+        },
+        {
+            "input": ")(()((((((",
+            "output": "No"
+        },
+        {
+            "input": "))((()((((",
+            "output": "No"
+        },
+        {
+            "input": ")))())(",
+            "output": "No"
+        },
+        {
+            "input": ")(()))",
+            "output": "No"
+        },
+        {
+            "input": ")()()(())(",
+            "output": "No"
+        },
+        {
+            "input": "))(()(",
+            "output": "No"
+        },
+        {
+            "input": ")((())((",
+            "output": "No"
+        },
+        {
+            "input": "(()))(",
+            "output": "No"
+        },
+        {
+            "input": ")))())))",
+            "output": "No"
+        },
+        {
+            "input": "(((((()(",
+            "output": "No"
+        },
+        {
+            "input": "()((((",
+            "output": "No"
+        },
+        {
+            "input": ")))())))(",
+            "output": "No"
+        },
+        {
+            "input": ")(())(()(",
+            "output": "No"
+        },
+        {
+            "input": "(()()()",
+            "output": "No"
+        },
+        {
+            "input": "(((()())(",
+            "output": "No"
+        },
+        {
+            "input": "())())",
+            "output": "No"
+        },
+        {
+            "input": "()((((()",
+            "output": "No"
+        },
+        {
+            "input": "()(()()",
+            "output": "No"
+        },
+        {
+            "input": "())()(()))",
+            "output": "No"
+        },
+        {
+            "input": "(((())())",
+            "output": "No"
+        },
+        {
+            "input": "())()))()",
+            "output": "No"
+        },
+        {
+            "input": "(()(((()((",
+            "output": "No"
+        },
+        {
+            "input": "))())((())",
+            "output": "No"
+        },
+        {
+            "input": ")))((())",
+            "output": "No"
+        },
+        {
+            "input": ")(((((()",
+            "output": "No"
+        },
+        {
+            "input": "(()(()))()",
+            "output": "Yes"
+        },
+        {
+            "input": "))))()()",
+            "output": "No"
+        },
+        {
+            "input": ")()(((()",
             "output": "No"
         },
         {
@@ -1981,35 +1369,79 @@
             "output": "No"
         },
         {
-            "input": "))())(()((",
+            "input": "()))((()((",
             "output": "No"
         },
         {
-            "input": ")()((()))",
+            "input": ")(((())(",
             "output": "No"
         },
         {
-            "input": ")(())())((",
+            "input": "))))()((()",
             "output": "No"
         },
         {
-            "input": ")()()(((",
+            "input": ")))())())",
             "output": "No"
         },
         {
-            "input": ")(()(()()",
+            "input": "))))(())()",
             "output": "No"
         },
         {
-            "input": "())(()()",
+            "input": ")(((((())(",
             "output": "No"
         },
         {
-            "input": ")())))((",
+            "input": "(()())(",
             "output": "No"
         },
         {
-            "input": "))((((()((",
+            "input": "((()()))()",
+            "output": "Yes"
+        },
+        {
+            "input": ")))))())",
+            "output": "No"
+        },
+        {
+            "input": ")((()()()(",
+            "output": "No"
+        },
+        {
+            "input": ")(()(",
+            "output": "No"
+        },
+        {
+            "input": "()))(())()",
+            "output": "No"
+        },
+        {
+            "input": "()((((()()",
+            "output": "No"
+        },
+        {
+            "input": "))()())(()",
+            "output": "No"
+        },
+        {
+            "input": "((()()(",
+            "output": "No"
+        },
+        {
+            "input": "))())))))(",
+            "output": "No"
+        },
+        {
+            "input": "))(((()))",
+            "output": "No"
+        },
+        {
+            "input": "()()(())(",
+            "output": "No"
+        },
+        {
+            "input": "())))())",
             "output": "No"
         },
         {
@@ -2017,7 +1449,575 @@
             "output": "No"
         },
         {
-            "input": "))))()(()",
+            "input": ")()())(",
+            "output": "No"
+        },
+        {
+            "input": "))(((()()(",
+            "output": "No"
+        },
+        {
+            "input": "())(((((",
+            "output": "No"
+        },
+        {
+            "input": "))((()",
+            "output": "No"
+        },
+        {
+            "input": ")())(()()",
+            "output": "No"
+        },
+        {
+            "input": ")(((()(())",
+            "output": "No"
+        },
+        {
+            "input": "(()(())))",
+            "output": "No"
+        },
+        {
+            "input": "()(((()())",
+            "output": "No"
+        },
+        {
+            "input": "(((())",
+            "output": "No"
+        },
+        {
+            "input": "))((()(",
+            "output": "No"
+        },
+        {
+            "input": "()()()))",
+            "output": "No"
+        },
+        {
+            "input": ")())((((",
+            "output": "No"
+        },
+        {
+            "input": "(()))",
+            "output": "No"
+        },
+        {
+            "input": "(((())))((",
+            "output": "No"
+        },
+        {
+            "input": "())()()(",
+            "output": "No"
+        },
+        {
+            "input": "))((((())",
+            "output": "No"
+        },
+        {
+            "input": "((()))((",
+            "output": "No"
+        },
+        {
+            "input": "()))((((",
+            "output": "No"
+        },
+        {
+            "input": "()(((()(()",
+            "output": "No"
+        },
+        {
+            "input": "((()((",
+            "output": "No"
+        },
+        {
+            "input": "))))(()))(",
+            "output": "No"
+        },
+        {
+            "input": "()((())()",
+            "output": "No"
+        },
+        {
+            "input": "()))()((((",
+            "output": "No"
+        },
+        {
+            "input": "(()()()((",
+            "output": "No"
+        },
+        {
+            "input": "))()(())",
+            "output": "No"
+        },
+        {
+            "input": "()((()((((",
+            "output": "No"
+        },
+        {
+            "input": ")(())))(((",
+            "output": "No"
+        },
+        {
+            "input": "((()(((()(",
+            "output": "No"
+        },
+        {
+            "input": "()()(())()",
+            "output": "Yes"
+        },
+        {
+            "input": ")((()(((",
+            "output": "No"
+        },
+        {
+            "input": "()())(((((",
+            "output": "No"
+        },
+        {
+            "input": ")())()))((",
+            "output": "No"
+        },
+        {
+            "input": "(((()())",
+            "output": "No"
+        },
+        {
+            "input": ")()(())(",
+            "output": "No"
+        },
+        {
+            "input": "((((()()",
+            "output": "No"
+        },
+        {
+            "input": "))))()))",
+            "output": "No"
+        },
+        {
+            "input": "())((()(()",
+            "output": "No"
+        },
+        {
+            "input": "))()()()()",
+            "output": "No"
+        },
+        {
+            "input": "))()(()(((",
+            "output": "No"
+        },
+        {
+            "input": "))(())",
+            "output": "No"
+        },
+        {
+            "input": "))()())((",
+            "output": "No"
+        },
+        {
+            "input": ")(((((",
+            "output": "No"
+        },
+        {
+            "input": "()((()((",
+            "output": "No"
+        },
+        {
+            "input": "((()(((((",
+            "output": "No"
+        },
+        {
+            "input": "))))(()",
+            "output": "No"
+        },
+        {
+            "input": ")((()())",
+            "output": "No"
+        },
+        {
+            "input": "(((((())(",
+            "output": "No"
+        },
+        {
+            "input": "))()(((",
+            "output": "No"
+        },
+        {
+            "input": "))()))()((",
+            "output": "No"
+        },
+        {
+            "input": "())((()",
+            "output": "No"
+        },
+        {
+            "input": "()((()()",
+            "output": "No"
+        },
+        {
+            "input": "())))))()",
+            "output": "No"
+        },
+        {
+            "input": "))(())(())",
+            "output": "No"
+        },
+        {
+            "input": "())(())))",
+            "output": "No"
+        },
+        {
+            "input": "()()))(",
+            "output": "No"
+        },
+        {
+            "input": ")())))()(",
+            "output": "No"
+        },
+        {
+            "input": "(())(()()",
+            "output": "No"
+        },
+        {
+            "input": "())))()((",
+            "output": "No"
+        },
+        {
+            "input": "))()())())",
+            "output": "No"
+        },
+        {
+            "input": "((((()(",
+            "output": "No"
+        },
+        {
+            "input": "()))(((",
+            "output": "No"
+        },
+        {
+            "input": "((()())())",
+            "output": "Yes"
+        },
+        {
+            "input": "()(((((",
+            "output": "No"
+        },
+        {
+            "input": "()()()(",
+            "output": "No"
+        },
+        {
+            "input": ")((()()))(",
+            "output": "No"
+        },
+        {
+            "input": "()(((",
+            "output": "No"
+        },
+        {
+            "input": "))()))(((",
+            "output": "No"
+        },
+        {
+            "input": ")()(((()()",
+            "output": "No"
+        },
+        {
+            "input": "(())(((",
+            "output": "No"
+        },
+        {
+            "input": "(())))",
+            "output": "No"
+        },
+        {
+            "input": "()))()(",
+            "output": "No"
+        },
+        {
+            "input": ")()(()(",
+            "output": "No"
+        },
+        {
+            "input": "(()()()))(",
+            "output": "No"
+        },
+        {
+            "input": "()))()))()",
+            "output": "No"
+        },
+        {
+            "input": "))())))((",
+            "output": "No"
+        },
+        {
+            "input": "))()))))((",
+            "output": "No"
+        },
+        {
+            "input": ")))()(()",
+            "output": "No"
+        },
+        {
+            "input": "))((())((",
+            "output": "No"
+        },
+        {
+            "input": "(()(())",
+            "output": "No"
+        },
+        {
+            "input": "(())()))",
+            "output": "No"
+        },
+        {
+            "input": "())()((()",
+            "output": "No"
+        },
+        {
+            "input": "))((()())",
+            "output": "No"
+        },
+        {
+            "input": ")()(()",
+            "output": "No"
+        },
+        {
+            "input": "()((()((()",
+            "output": "No"
+        },
+        {
+            "input": "()())((",
+            "output": "No"
+        },
+        {
+            "input": "))))()",
+            "output": "No"
+        },
+        {
+            "input": "))()(((()",
+            "output": "No"
+        },
+        {
+            "input": ")))((())((",
+            "output": "No"
+        },
+        {
+            "input": "()(()(())",
+            "output": "No"
+        },
+        {
+            "input": "((())))((",
+            "output": "No"
+        },
+        {
+            "input": "))()))()",
+            "output": "No"
+        },
+        {
+            "input": ")))())((",
+            "output": "No"
+        },
+        {
+            "input": ")())())()",
+            "output": "No"
+        },
+        {
+            "input": ")()()(()",
+            "output": "No"
+        },
+        {
+            "input": "))))))())(",
+            "output": "No"
+        },
+        {
+            "input": "())())()((",
+            "output": "No"
+        },
+        {
+            "input": "))()())",
+            "output": "No"
+        },
+        {
+            "input": ")(()(())(",
+            "output": "No"
+        },
+        {
+            "input": ")(())))))(",
+            "output": "No"
+        },
+        {
+            "input": "))((((()()",
+            "output": "No"
+        },
+        {
+            "input": ")((()(()",
+            "output": "No"
+        },
+        {
+            "input": ")((())()((",
+            "output": "No"
+        },
+        {
+            "input": ")())()()()",
+            "output": "No"
+        },
+        {
+            "input": ")()((())(",
+            "output": "No"
+        },
+        {
+            "input": "(()(((()",
+            "output": "No"
+        },
+        {
+            "input": "))(()((",
+            "output": "No"
+        },
+        {
+            "input": ")(())((",
+            "output": "No"
+        },
+        {
+            "input": "(()))(((",
+            "output": "No"
+        },
+        {
+            "input": "(()((()(",
+            "output": "No"
+        },
+        {
+            "input": "(())()(())",
+            "output": "Yes"
+        },
+        {
+            "input": "((()",
+            "output": "No"
+        },
+        {
+            "input": "))))(((()(",
+            "output": "No"
+        },
+        {
+            "input": ")()))((",
+            "output": "No"
+        },
+        {
+            "input": "()())))",
+            "output": "No"
+        },
+        {
+            "input": ")()()()))(",
+            "output": "No"
+        },
+        {
+            "input": "(((()))(()",
+            "output": "No"
+        },
+        {
+            "input": "()()()()()",
+            "output": "Yes"
+        },
+        {
+            "input": "())())(((",
+            "output": "No"
+        },
+        {
+            "input": "((()(()(",
+            "output": "No"
+        },
+        {
+            "input": ")()()())()",
+            "output": "No"
+        },
+        {
+            "input": ")(()(((",
+            "output": "No"
+        },
+        {
+            "input": ")((((())()",
+            "output": "No"
+        },
+        {
+            "input": "))()(",
+            "output": "No"
+        },
+        {
+            "input": "())))()(((",
+            "output": "No"
+        },
+        {
+            "input": ")()()))(",
+            "output": "No"
+        },
+        {
+            "input": ")())()((((",
+            "output": "No"
+        },
+        {
+            "input": ")()())((",
+            "output": "No"
+        },
+        {
+            "input": "((())()(((",
+            "output": "No"
+        },
+        {
+            "input": "))((())",
+            "output": "No"
+        },
+        {
+            "input": "))))((",
+            "output": "No"
+        },
+        {
+            "input": "()((())))(",
+            "output": "No"
+        },
+        {
+            "input": "))((()))(",
+            "output": "No"
+        },
+        {
+            "input": "(())()((",
+            "output": "No"
+        },
+        {
+            "input": "))(()))",
+            "output": "No"
+        },
+        {
+            "input": "(()))())))",
+            "output": "No"
+        },
+        {
+            "input": ")(()((()",
+            "output": "No"
+        },
+        {
+            "input": ")())))(",
+            "output": "No"
+        },
+        {
+            "input": "))())()))",
+            "output": "No"
+        },
+        {
+            "input": "(()()(()",
+            "output": "No"
+        },
+        {
+            "input": ")(()(()",
+            "output": "No"
+        },
+        {
+            "input": "()(()))",
+            "output": "No"
+        },
+        {
+            "input": ")()))((()",
+            "output": "No"
+        },
+        {
+            "input": "(()()))(()",
             "output": "No"
         }
     ],

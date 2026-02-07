@@ -833,6 +833,322 @@ def solve_partition_labels():
             anchor = i + 1
     return s, " ".join(map(str, res))
 
+def solve_excel_sheet_column_title():
+    columnNumber = random.randint(1, 2**31 - 1)
+    res = ""
+    n = columnNumber
+    while n > 0:
+        n -= 1
+        res = chr(ord('A') + n % 26) + res
+        n //= 26
+    return str(columnNumber), res
+
+def solve_excel_sheet_column_number():
+    length = random.randint(1, 7)
+    columnTitle = "".join(random.choices("ABCDEFGHIJKLMNOPQRSTUVWXYZ", k=length))
+    res = 0
+    for char in columnTitle:
+        res = res * 26 + (ord(char) - ord('A') + 1)
+    return columnTitle, str(res)
+
+def solve_word_pattern():
+    pattern_len = random.randint(1, 10)
+    pattern = "".join(random.choices("abcd", k=pattern_len))
+    words_pool = ["dog", "cat", "fish", "bird", "lion"]
+    
+    if random.choice([True, False]):
+        mapping = {}
+        for char in set(pattern):
+            mapping[char] = random.choice(words_pool)
+        s_words = [mapping[char] for char in pattern]
+        s = " ".join(s_words)
+    else:
+        s = " ".join(random.choices(words_pool, k=pattern_len))
+        
+    def check(p, s_str):
+        words = s_str.split()
+        if len(p) != len(words): return False
+        char_to_word = {}
+        word_to_char = {}
+        for char, word in zip(p, words):
+            if char in char_to_word:
+                if char_to_word[char] != word: return False
+            else:
+                if word in word_to_char: return False
+                char_to_word[char] = word
+                word_to_char[word] = char
+        return True
+
+    return f"{pattern}\n{s}", "Yes" if check(pattern, s) else "No"
+
+def solve_find_the_difference():
+    s_len = random.randint(0, 50)
+    s = "".join(random.choices("abcdefghijklmnopqrstuvwxyz", k=s_len))
+    extra_char = random.choice("abcdefghijklmnopqrstuvwxyz")
+    t_list = list(s) + [extra_char]
+    random.shuffle(t_list)
+    t = "".join(t_list)
+    return f"{s}\n{t}", extra_char
+
+def solve_relative_sort_array():
+    arr2_len = random.randint(1, 10)
+    arr2 = random.sample(range(1, 21), arr2_len)
+    arr1 = []
+    for x in arr2:
+        arr1.extend([x] * random.randint(1, 3))
+    others = [random.randint(1, 20) for _ in range(random.randint(0, 5))]
+    arr1.extend(others)
+    random.shuffle(arr1)
+    
+    count = {}
+    for x in arr1: count[x] = count.get(x, 0) + 1
+    res = []
+    for x in arr2:
+        if x in count:
+            res.extend([x] * count[x])
+            del count[x]
+    remaining = sorted(count.keys())
+    for x in remaining:
+        res.extend([x] * count[x])
+        
+    return f"{' '.join(map(str, arr1))}\n{' '.join(map(str, arr2))}", " ".join(map(str, res))
+
+def solve_peak_index_in_mountain_array():
+    n = random.randint(3, 20)
+    peak = random.randint(1, n - 2)
+    arr = [0] * n
+    arr[peak] = 100
+    for i in range(peak - 1, -1, -1):
+        arr[i] = arr[i+1] - random.randint(1, 5)
+    for i in range(peak + 1, n):
+        arr[i] = arr[i-1] - random.randint(1, 5)
+    return " ".join(map(str, arr)), str(peak)
+
+def solve_valid_palindrome_ii():
+    s_len = random.randint(5, 15)
+    half = "".join(random.choices("abc", k=s_len // 2))
+    s = half + (random.choice("abc") if s_len % 2 else "") + half[::-1]
+    
+    if random.choice([True, False]):
+        # Inject one error
+        idx = random.randint(0, len(s) - 1)
+        s_list = list(s)
+        s_list[idx] = "z"
+        s = "".join(s_list)
+        
+    def is_pali(sub): return sub == sub[::-1]
+    
+    res = "No"
+    l, r = 0, len(s) - 1
+    while l < r:
+        if s[l] != s[r]:
+            if is_pali(s[l+1:r+1]) or is_pali(s[l:r]):
+                res = "Yes"
+                break
+            else:
+                res = "No"
+                break
+        l += 1
+        r -= 1
+    else:
+        res = "Yes"
+        
+    return s, res
+
+def solve_palindrome_number():
+    if random.choice([True, False]):
+        n = random.randint(0, 100000)
+        s = str(n)
+        s = s + s[::-1]
+        n = int(s)
+    else:
+        n = random.randint(-100, 100000)
+    
+    s = str(n)
+    is_pali = (s == s[::-1])
+    return str(n), "Yes" if is_pali else "No"
+
+def solve_remove_element():
+    n = random.randint(0, 20)
+    nums = [random.randint(0, 10) for _ in range(n)]
+    val = random.randint(0, 10)
+    res_nums = [x for x in nums if x != val]
+    return f"{' '.join(map(str, nums))}\n{val}", f"{len(res_nums)}\n{' '.join(map(str, res_nums))}"
+
+def solve_search_insert_position():
+    n = random.randint(1, 20)
+    nums = sorted(random.sample(range(-100, 100), n))
+    target = random.randint(-100, 100)
+    import bisect
+    res = bisect.bisect_left(nums, target)
+    return f"{' '.join(map(str, nums))}\n{target}", str(res)
+
+def solve_best_time_to_buy_and_sell_stock_ii():
+    n = random.randint(1, 20)
+    prices = [random.randint(1, 100) for _ in range(n)]
+    profit = 0
+    for i in range(1, n):
+        if prices[i] > prices[i-1]:
+            profit += prices[i] - prices[i-1]
+    return " ".join(map(str, prices)), str(profit)
+
+def solve_h_index():
+    n = random.randint(1, 20)
+    citations = [random.randint(0, 20) for _ in range(n)]
+    citations.sort(reverse=True)
+    h = 0
+    for i, c in enumerate(citations):
+        if c >= i + 1:
+            h = i + 1
+        else:
+            break
+    return " ".join(map(str, citations)), str(h)
+
+def solve_jump_game_ii():
+    n = random.randint(2, 20)
+    nums = [random.randint(1, 5) for _ in range(n)]
+    dp = [float('inf')] * n
+    dp[0] = 0
+    for i in range(n):
+        for j in range(1, nums[i] + 1):
+            if i + j < n:
+                dp[i+j] = min(dp[i+j], dp[i] + 1)
+    return " ".join(map(str, nums)), str(dp[n-1])
+
+def solve_find_index_of_first_occurrence():
+    words = ["hello", "world", "abc", "def", "aaaaa", "mississippi"]
+    haystack = random.choice(words)
+    if random.choice([True, False]):
+        needle = haystack[random.randint(0, len(haystack)-1):random.randint(1, len(haystack))]
+        if not needle: needle = random.choice("abcde")
+    else:
+        needle = "xyz"
+    res = haystack.find(needle)
+    return f"{haystack}\n{needle}", str(res)
+
+def solve_length_of_longest_substring():
+    s = "".join(random.choices("abcde", k=random.randint(0, 20)))
+    char_map = {}
+    max_len = 0
+    start = 0
+    for i, char in enumerate(s):
+        if char in char_map and char_map[char] >= start:
+            start = char_map[char] + 1
+        char_map[char] = i
+        max_len = max(max_len, i - start + 1)
+    return s, str(max_len)
+
+def solve_string_to_integer_atoi():
+    prefixes = ["", "   ", "words and ", "-+", "+", "-"]
+    n = random.randint(-2**32, 2**32)
+    s = random.choice(prefixes) + str(n) + random.choice(["", " with words", " 123"])
+    
+    # Simple atoi implementation for solver
+    idx = 0
+    s_cleaned = s.lstrip()
+    if not s_cleaned: return s, "0"
+    
+    sign = 1
+    if s_cleaned[0] == '-':
+        sign = -1
+        idx = 1
+    elif s_cleaned[0] == '+':
+        idx = 1
+        
+    res = 0
+    while idx < len(s_cleaned) and s_cleaned[idx].isdigit():
+        res = res * 10 + int(s_cleaned[idx])
+        idx += 1
+    
+    res *= sign
+    INT_MIN, INT_MAX = -2**31, 2**31 - 1
+    if res < INT_MIN: res = INT_MIN
+    if res > INT_MAX: res = INT_MAX
+    
+    return s, str(res)
+
+def solve_three_sum_closest():
+    n = random.randint(3, 15)
+    nums = [random.randint(-20, 20) for _ in range(n)]
+    target = random.randint(-50, 50)
+    nums.sort()
+    closest_sum = sum(nums[:3])
+    for i in range(len(nums) - 2):
+        l, r = i + 1, len(nums) - 1
+        while l < r:
+            current_sum = nums[i] + nums[l] + nums[r]
+            if abs(current_sum - target) < abs(closest_sum - target):
+                closest_sum = current_sum
+            if current_sum < target:
+                l += 1
+            else:
+                r -= 1
+    return f"{' '.join(map(str, nums))}\n{target}", str(closest_sum)
+
+def solve_four_sum():
+    n = random.randint(4, 10)
+    nums = [random.randint(-10, 10) for _ in range(n)]
+    target = random.randint(-20, 20)
+    nums.sort()
+    res = []
+    for i in range(len(nums) - 3):
+        if i > 0 and nums[i] == nums[i-1]: continue
+        for j in range(i + 1, len(nums) - 2):
+            if j > i + 1 and nums[j] == nums[j-1]: continue
+            l, r = j + 1, len(nums) - 1
+            while l < r:
+                s = nums[i] + nums[j] + nums[l] + nums[r]
+                if s == target:
+                    res.append([nums[i], nums[j], nums[l], nums[r]])
+                    l += 1
+                    while l < r and nums[l] == nums[l-1]: l += 1
+                elif s < target:
+                    l += 1
+                else:
+                    r -= 1
+    res.sort()
+    output = "\n".join(" ".join(map(str, q)) for q in res)
+    return f"{' '.join(map(str, nums))}\n{target}", output
+
+def solve_minimum_number_of_arrows_to_burst_balloons():
+    n = random.randint(1, 10)
+    points = []
+    for _ in range(n):
+        x1 = random.randint(-50, 50)
+        x2 = x1 + random.randint(1, 20)
+        points.append([x1, x2])
+    
+    points.sort(key=lambda x: x[1])
+    arrows = 1
+    last_end = points[0][1]
+    for i in range(1, n):
+        if points[i][0] > last_end:
+            arrows += 1
+            last_end = points[i][1]
+            
+    input_str = f"{n}\n" + "\n".join(f"{p[0]} {p[1]}" for p in points)
+    return input_str, str(arrows)
+
+def solve_non_overlapping_intervals():
+    n = random.randint(1, 10)
+    intervals = []
+    for _ in range(n):
+        x1 = random.randint(-50, 50)
+        x2 = x1 + random.randint(1, 20)
+        intervals.append([x1, x2])
+    
+    intervals.sort(key=lambda x: x[1])
+    count = 0
+    last_end = -float('inf')
+    for i in range(n):
+        if intervals[i][0] >= last_end:
+            last_end = intervals[i][1]
+        else:
+            count += 1
+            
+    input_str = f"{n}\n" + "\n".join(f"{p[0]} {p[1]}" for p in intervals)
+    return input_str, str(count)
+
 def solve_spiral_matrix():
     m, n = random.randint(2, 4), random.randint(2, 4)
     matrix = [[random.randint(1, 20) for _ in range(n)] for _ in range(m)]
@@ -1781,6 +2097,26 @@ SOLVERS = {
     "maximum_product_of_three_numbers": solve_maximum_product_of_three_numbers,
     "keyboard_row": solve_keyboard_row,
     "binary_search": solve_binary_search,
+    "excel_sheet_column_title": solve_excel_sheet_column_title,
+    "excel_sheet_column_number": solve_excel_sheet_column_number,
+    "word_pattern": solve_word_pattern,
+    "find_the_difference": solve_find_the_difference,
+    "relative_sort_array": solve_relative_sort_array,
+    "peak_index_in_mountain_array": solve_peak_index_in_mountain_array,
+    "valid_palindrome_ii": solve_valid_palindrome_ii,
+    "palindrome_number": solve_palindrome_number,
+    "remove_element": solve_remove_element,
+    "search_insert_position": solve_search_insert_position,
+    "best_time_to_buy_and_sell_stock_ii": solve_best_time_to_buy_and_sell_stock_ii,
+    "h_index": solve_h_index,
+    "jump_game_ii": solve_jump_game_ii,
+    "find_index_of_first_occurrence": solve_find_index_of_first_occurrence,
+    "length_of_longest_substring": solve_length_of_longest_substring,
+    "string_to_integer_atoi": solve_string_to_integer_atoi,
+    "three_sum_closest": solve_three_sum_closest,
+    "four_sum": solve_four_sum,
+    "minimum_number_of_arrows_to_burst_balloons": solve_minimum_number_of_arrows_to_burst_balloons,
+    "non_overlapping_intervals": solve_non_overlapping_intervals,
 }
 
 HARD_PROBLEMS = {
@@ -1802,7 +2138,17 @@ HARD_PROBLEMS = {
     "word_search",
     "number_of_islands",
     "word_break",
-    "sliding_window_maximum"
+    "sliding_window_maximum",
+    "peak_index_in_mountain_array",
+    "best_time_to_buy_and_sell_stock_ii",
+    "h_index",
+    "jump_game_ii",
+    "length_of_longest_substring",
+    "string_to_integer_atoi",
+    "three_sum_closest",
+    "four_sum",
+    "minimum_number_of_arrows_to_burst_balloons",
+    "non_overlapping_intervals",
 }
 
 def main():

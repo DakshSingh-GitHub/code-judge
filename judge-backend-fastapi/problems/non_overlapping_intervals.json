@@ -1,0 +1,26 @@
+{
+    "id": "non_overlapping_intervals",
+    "title": "Non-overlapping Intervals",
+    "description": "Given an array of intervals intervals where intervals[i] = [starti, endi], return the minimum number of intervals you need to remove to make the rest of the intervals non-overlapping.",
+    "input_format": "The first line contains the number of intervals n. Each of the following n lines contains two space-separated integers starti and endi.",
+    "output_format": "A single integer.",
+    "constraints": {
+        "n": "1 <= intervals.length <= 10^5",
+        "intervals[i].length == 2",
+        "-5 * 10^4 <= starti < endi <= 5 * 10^4"
+    },
+    "difficulty": "medium",
+    "judge_mode": "str_compare_strip",
+    "time_limit": 1,
+    "sample_test_cases": [
+        {
+            "input": "4\n1 2\n2 3\n3 4\n1 3",
+            "output": "1"
+        },
+        {
+            "input": "3\n1 2\n1 2\n1 2",
+            "output": "2"
+        }
+    ],
+    "hidden_test_cases": []
+}

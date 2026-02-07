@@ -1,0 +1,26 @@
+{
+    "id": "minimum_number_of_arrows_to_burst_balloons",
+    "title": "Minimum Number of Arrows to Burst Balloons",
+    "description": "There are some spherical balloons taped onto a flat wall that represents the XY-plane. The balloons are represented as a 2D integer array points where points[i] = [xstart, xend] denotes a balloon whose horizontal diameter stretches between xstart and xend. An arrow can be shot up vertically (in the positive y-direction) from different points along the x-axis. A balloon with xstart and xend is burst by an arrow shot at x if xstart <= x <= xend. There is no limit to the number of arrows that can be shot. A single arrow shot at some x can burst all balloons that include x in their range. Given the array points, return the minimum number of arrows that must be shot to burst all balloons.",
+    "input_format": "The first line contains the number of balloons n. Each of the following n lines contains two space-separated integers xstart and xend.",
+    "output_format": "A single integer.",
+    "constraints": {
+        "points": "1 <= points.length <= 10^5",
+        "points[i]": "points[i].length == 2",
+        "xstart, xend": "-2^31 <= xstart < xend <= 2^31 - 1"
+    },
+    "difficulty": "medium",
+    "judge_mode": "str_compare_strip",
+    "time_limit": 1,
+    "sample_test_cases": [
+        {
+            "input": "4\n10 16\n2 8\n1 6\n7 12",
+            "output": "2"
+        },
+        {
+            "input": "4\n1 2\n3 4\n5 6\n7 8",
+            "output": "4"
+        }
+    ],
+    "hidden_test_cases": []
+}
